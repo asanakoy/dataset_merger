@@ -180,7 +180,7 @@ def filter_genre(data_folder, rijks_unique):
     return rijks_unique
 
 
-def add_source_column(data_folder, wiki, moma_unique,info):
+def add_source_column(data_folder, wiki, moma_unique, info):
     num_wiki = len(wiki)
     num_moma = len(moma_unique)
     num_rijks = len(info) - num_wiki - num_moma

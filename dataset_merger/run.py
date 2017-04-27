@@ -1,3 +1,6 @@
+import pandas as pd
+import os
+
 from path_extractor import path_extractor, first_second_unique_path_extractor, path_list_extactor_all
 from feature_extractor import feature_extractor
 from compute_similarity import compute_similarity
@@ -6,8 +9,19 @@ from split_duplicates_unique import split_duplicates_unique, split_duplicates_un
 from false_neg_pairs_visualization import false_neg_pairs_visualization
 from split_second_dataframe import unique_part_second_dataframe, merge_first_second_df, get_unique_rijks
 from update_dataframe import update_wiki, update_same_artist_names, update_w_m_based_rijks_dup, merge_wikimoma_rijks, add_source_column, filter_genre
-import pandas as pd
-import os
+
+
+data_folder = '/export/home/jli/workspace/readable_code_data'
+img_folder_first = '/export/home/asanakoy/workspace/wikiart/images/'
+img_folder_second = '/export/home/jli/workspace/moma_boder_cropped/'
+img_folder_third = '/export/home/jli/workspace/rijks_images/jpg2/'
+
+df_first_name = 'wiki_info.hdf5'
+df_second_name = 'moma_info.csv'
+df_third_name = 'rijks_info.hdf5'
+base_name_first = 'wiki'
+base_name_second = 'moma'
+base_name_third = 'rijks'
 
 snapshot_path_first = '/export/home/jli/PycharmProjects/practical/data/bvlc_alexnet.tf'
 snapshot_path_second = '/export/home/asanakoy/workspace/wikiart/cnn/artist_50/rs_balance/model/snap_iter_335029.tf'
@@ -76,3 +90,8 @@ def run(data_folder, base_name_first, img_folder_first, df_first_name, base_name
     df_wikimoma_rijks = merge_wikimoma_rijks(data_folder, wikimoma_update, df_third)
     # step 12:add source column
     add_source_column(data_folder, df_first, df_second_unique, unique_part, df_wikimoma_rijks)
+
+
+if __name__ == '__main__':
+    run(data_folder, base_name_first, img_folder_first, df_first_name, base_name_second,
+        img_folder_second, df_second_name, img_folder_third, df_third_name, base_name_third)
