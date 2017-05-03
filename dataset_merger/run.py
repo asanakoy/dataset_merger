@@ -13,14 +13,14 @@ from split_second_dataframe import unique_part_second_dataframe, merge_first_sec
 from update_dataframe import update_wiki, update_same_artist_names, update_w_m_based_rijks_dup, merge_wikimoma_rijks, add_source_column, filter_genre
 
 
-data_folder = '/export/home/jli/workspace/data_after_run/'
+data_folder = '/export/home/asanakoy/tmp/dataset_merger_results' # /export/home/jli/workspace/data_after_run/'
 img_folder_first = '/export/home/asanakoy/workspace/wikiart/images/'
 img_folder_second = '/export/home/jli/workspace/moma_boder_cropped/'
 img_folder_third = '/export/home/jli/workspace/rijks_images/jpg2/'
 
-df_first_name = 'wiki_info.hdf5'
-df_second_name = 'moma_info.csv'
-df_third_name = 'rijks_info.hdf5'
+df_first_path = '/export/home/jli/workspace/data_after_run/wiki_info.hdf5'
+df_second_path = '/export/home/jli/workspace/data_after_run/moma_info.csv'
+df_third_path = '/export/home/jli/workspace/data_after_run/rijks_info.hdf5'
 base_name_first = 'wiki'
 base_name_second = 'moma'
 base_name_third = 'rijks'
@@ -30,12 +30,12 @@ snapshot_path_second = '/export/home/asanakoy/workspace/wikiart/cnn/artist_50/rs
 mean_path_second = '/export/home/asanakoy/workspace/wikiart/cnn/artist_50/rs_balance/data/mean.npy'
 
 
-def run(data_folder, base_name_first, img_folder_first, df_first_name, base_name_second,
-        img_folder_second, df_second_name, img_folder_third, df_third_name, base_name_third):
+def run(data_folder, base_name_first, img_folder_first, df_first_path, base_name_second,
+        img_folder_second, df_second_path, img_folder_third, df_third_path, base_name_third):
     ### merge the first and second dataframes
     # step 0:load two dataframe
-    df_first = pd.read_hdf(os.path.join(data_folder, df_first_name))
-    df_second = pd.read_csv(os.path.join(data_folder, df_second_name), index_col='id')
+    df_first = pd.read_hdf(df_first_path)
+    df_second = pd.read_csv(df_second_path, index_col='id')
     # step 1: filter classification for moma
     df_second = moma_classification_filter(data_folder, df_second)
     # step 2:extract path and save it
@@ -85,7 +85,7 @@ def run(data_folder, base_name_first, img_folder_first, df_first_name, base_name
 
     ### merge rijks with wiki and moma
     # step 0:load dataframe
-    df_third = pd.read_hdf(os.path.join(data_folder, df_third_name))
+    df_third = pd.read_hdf(df_third_path)
     # step 1: filter genre for rijks
     df_third = filter_genre(data_folder, df_third)
     # step 2:extract path combination between first and second dataframe
@@ -143,6 +143,8 @@ def run(data_folder, base_name_first, img_folder_first, df_first_name, base_name
 
 if __name__ == '__main__':
     time_start = time.time()
-    run(data_folder, base_name_first, img_folder_first, df_first_name, base_name_second,
-        img_folder_second, df_second_name, img_folder_third, df_third_name, base_name_third)
+    if not os.path.exists(data_folder):
+        os.makedirs(data_folder)
+    run(data_folder, base_name_first, img_folder_first, df_first_path, base_name_second,
+        img_folder_second, df_second_path, img_folder_third, df_third_path, base_name_third)
     print 'Elapsed time: {:.2f} sec'.format(time.time() - time_start)
