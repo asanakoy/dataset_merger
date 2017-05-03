@@ -6,6 +6,7 @@ snapshot_path_first = '/export/home/jli/PycharmProjects/practical/data/bvlc_alex
 snapshot_path_second = '/export/home/asanakoy/workspace/wikiart/cnn/artist_50/rs_balance/model/snap_iter_335029.tf'
 mean_path_second = '/export/home/asanakoy/workspace/wikiart/cnn/artist_50/rs_balance/data/mean.npy'
 
+
 def feature_extractor(snapshot_path, path_list, data_folder, base_name, mean_path=None):
     """
     extract features
@@ -19,28 +20,34 @@ def feature_extractor(snapshot_path, path_list, data_folder, base_name, mean_pat
     Returns: feature matrix
 
     """
-    print len(path_list)
-    net_args = {'gpu_memory_fraction': 0.5,
-            'conv5': 'conv5/conv:0', 'fc6':
-            'fc6/fc:0', 'fc7': 'fc7/fc:0'}
-
-    if mean_path == None:
-        extractor = FeatureExtractorTf(snapshot_path, feature_norm_method=None,
-                                               mean_path=None,
-                                               net_args=net_args)
+    print 'Num images to extract features:', len(path_list)
+    file_path = os.path.join(data_folder, 'features_' + base_name + '.h5')
+    if os.path.exists(file_path):
+        print 'Loaded cached features {}'.format(file_path)
+        features = dd.io.load(file_path)
+        if features.shape[0] != len(path_list):
+            raise ValueError('Features loaded from disk ({}) don\'t correspond '
+                             'to the number of paths ({})'.format(features.shape,
+                                                                  len(path_list)))
     else:
-        extractor = FeatureExtractorTf(snapshot_path, feature_norm_method=None,
-                                               mean_path=mean_path,
-                                               net_args=net_args)
+        net_args = {'gpu_memory_fraction': 0.5,
+                'conv5': 'conv5/conv:0', 'fc6':
+                'fc6/fc:0', 'fc7': 'fc7/fc:0'}
 
-    layers = ['fc7']
-    # extract features from image_path
-    features = extractor.extract(path_list, layer_names=layers)
-    print features.shape
-    # save features from the model
-    file_name = 'features_' + base_name + '.h5'
-    dd.io.save(os.path.join(data_folder, file_name), features)
-    print 'save features successfully'
+        if mean_path == None:
+            extractor = FeatureExtractorTf(snapshot_path, feature_norm_method=None,
+                                                   mean_path=None,
+                                                   net_args=net_args)
+        else:
+            extractor = FeatureExtractorTf(snapshot_path, feature_norm_method=None,
+                                                   mean_path=mean_path,
+                                                   net_args=net_args)
+        layers = ['fc7']
+        # extract features from image_path
+        features = extractor.extract(path_list, layer_names=layers)
+        dd.io.save(file_path, features)
+        print 'save features successfully'
+    print 'Features shape:', features.shape
     return features
 
 
