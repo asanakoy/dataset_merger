@@ -163,16 +163,16 @@ def filter_genre(data_folder, rijks_unique):
     I've coped result of this function from my laptop to this server. I think the different version of python lead to this
     bug.
     """
-    list = ['prent', 'tekening', 'boekillustratie', 'ornamentprent', 'schilderij', 'historieprent', 'nieuwsprent', 'foto', 'ontwerp',\
-        'kaart', 'titelpagina', 'spotprent', 'titelprent', 'surimono', 'propagandaprent', 'kostuumprent', 'stereofoto',\
-        'albumblad', 'historisch objectvoorstelling', 'volksprent', 'schetsboek', 'Indiase miniatuur', 'embleem',\
-        'embleem', 'grisaille', 'shunga', 'wandtapijt', 'ruit', 'tegel', 'portret', 'topografische tekening',\
-        'titelblad', 'schildering', 'silhouet', 'karikatuur', 'pamflet', 'plaque', 'pastel', 'triptiek', 'dierstudie',\
-        'schetsboekblad', 'nieuwjaarswens', 'kopie naar prent ', 'prentenalbum', 'album', 'zijpaneel', 'architectuurtekening',\
-        'kostuumstudie', 'krant', 'panorama', 'rolschildering', 'familiewapen', 'kopie naar tekening ', 'achterglasschildering',\
-        'sprei', 'vignet', 'kamerbeschildering', 'diptiek', 'magistratenkussen', 'Perzische miniatuur ', 'almanak', 'penschildering',\
-        'papiernegatief', 'aquarel', 'ornamenttekening', 'huwelijksprent', 'muurschildering', 'sits', 'gouache', 'bidprent',\
-        'decoratiestuk', 'schilderijlijst', 'verdure', 'documentaire foto', 'prenttekening', 'vidimus', 'vingerschildering',\
+    list = ['prent', 'tekening', 'boekillustratie', 'ornamentprent', 'schilderij', 'historieprent', 'nieuwsprent', 'foto', 'ontwerp',
+        'kaart', 'titelpagina', 'spotprent', 'titelprent', 'surimono', 'propagandaprent', 'kostuumprent', 'stereofoto',
+        'albumblad', 'historisch objectvoorstelling', 'volksprent', 'schetsboek', 'Indiase miniatuur', 'embleem',
+        'embleem', 'grisaille', 'shunga', 'wandtapijt', 'ruit', 'tegel', 'portret', 'topografische tekening',
+        'titelblad', 'schildering', 'silhouet', 'karikatuur', 'pamflet', 'plaque', 'pastel', 'triptiek', 'dierstudie',
+        'schetsboekblad', 'nieuwjaarswens', 'kopie naar prent ', 'prentenalbum', 'album', 'zijpaneel', 'architectuurtekening',
+        'kostuumstudie', 'krant', 'panorama', 'rolschildering', 'familiewapen', 'kopie naar tekening ', 'achterglasschildering',
+        'sprei', 'vignet', 'kamerbeschildering', 'diptiek', 'magistratenkussen', 'Perzische miniatuur ', 'almanak', 'penschildering',
+        'papiernegatief', 'aquarel', 'ornamenttekening', 'huwelijksprent', 'muurschildering', 'sits', 'gouache', 'bidprent',
+        'decoratiestuk', 'schilderijlijst', 'verdure', 'prenttekening', 'vidimus', 'vingerschildering',
         'kamerscherm', 'beeldmotet', 'promotieprent', 'prentbriefkaart', 'cartografie', 'loterijprent']
     rijks_unique[rijks_unique['genre'].str.contains('prent', na=False)]
     rijks_unique = rijks_unique[rijks_unique['genre'].str.contains('|'.join(list), na=False)]

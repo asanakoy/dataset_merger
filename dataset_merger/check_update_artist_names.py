@@ -9,6 +9,7 @@ import sys
 import os
 import re
 
+
 def get_artist_names(data_folder, base_name_first, df_first, base_name_second, df_second):
     """
     get artist names for dataframes
