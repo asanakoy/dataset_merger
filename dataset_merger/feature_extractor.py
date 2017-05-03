@@ -19,6 +19,7 @@ def feature_extractor(snapshot_path, path_list, data_folder, base_name, mean_pat
     Returns: feature matrix
 
     """
+    print len(path_list)
     net_args = {'gpu_memory_fraction': 0.5,
             'conv5': 'conv5/conv:0', 'fc6':
             'fc6/fc:0', 'fc7': 'fc7/fc:0'}
@@ -37,8 +38,18 @@ def feature_extractor(snapshot_path, path_list, data_folder, base_name, mean_pat
     features = extractor.extract(path_list, layer_names=layers)
     print features.shape
     # save features from the model
-    file_name = 'features_' + base_name + '_.h5'
-    if not os.path.exists(os.path.join(data_folder, file_name)):
-        dd.io.save(os.path.join(data_folder, file_name))
-        print 'save features successfully'
+    file_name = 'features_' + base_name + '.h5'
+    dd.io.save(os.path.join(data_folder, file_name), features)
+    print 'save features successfully'
     return features
+
+
+if __name__ == '__main__':
+    # test
+    data_folder = '/export/home/jli/workspace/data_after_run'
+    img_path_third = dd.io.load(os.path.join(data_folder, 'img_path_list_rijks.h5'))
+    base_name_third = 'rijks_fir'
+    img_path_fir_sec = dd.io.load(os.path.join(data_folder, 'img_path_wikimoma.h5'))
+    base_name_fir_sec = 'wikimoma_fir'
+    features_combine_fir_sec = feature_extractor(snapshot_path_first, img_path_fir_sec, data_folder, base_name_fir_sec)
+    second = feature_extractor(snapshot_path_first, img_path_third, data_folder, base_name_third)

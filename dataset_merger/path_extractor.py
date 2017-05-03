@@ -34,10 +34,9 @@ def path_extractor(data_folder, base_name_first, df_first, img_folder_first, bas
     save_file_name = []
     save_file_name.append('img_path_list_' + base_name_first + '.h5')
     save_file_name.append('img_path_list_' + base_name_second + '.h5')
-    if not (os.path.exists(os.path.join(data_folder, save_file_name[0])) and os.path.exists(os.path.join(data_folder, save_file_name[1])) ):
-        dd.io.save(os.path.join(data_folder, save_file_name[0]), path_list_first)
-        dd.io.save(os.path.join(data_folder, save_file_name[1]), path_list_second)
-        print 'save image path list successfully'
+    dd.io.save(os.path.join(data_folder, save_file_name[0]), path_list_first)
+    dd.io.save(os.path.join(data_folder, save_file_name[1]), path_list_second)
+    print 'save image path list successfully'
     return path_list_first, path_list_second
 
 
@@ -64,7 +63,7 @@ def first_second_unique_path_extractor(data_folder, img_folder_first, img_folder
     for j in range(len(df_second_unique)):
         moma_img_name = str(df_second_unique.image_id.values[j]) + '.jpg'
         combine_path.append(os.path.join(img_folder_second, moma_img_name))
-    file_name = 'path_combine_' + base_name_first + '_' + base_name_second + '.h5'
+    file_name = 'img_path_' + base_name_first + base_name_second + '.h5'
     dd.io.save(os.path.join(data_folder, file_name), combine_path)
     return combine_path
 
@@ -90,7 +89,7 @@ def path_list_extactor_all(data_folder, rijks, img_folder, base_name):
         rijks_path_list.append(save_rijks_name)
     file_name = 'img_path_list_' + base_name + '.h5'
     dd.io.save(os.path.join(data_folder, file_name), rijks_path_list)
-    print 'path list has saved!'
+    print 'rijks path list has saved!'
     return rijks_path_list
 
 

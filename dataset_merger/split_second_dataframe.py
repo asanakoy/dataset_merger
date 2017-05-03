@@ -32,14 +32,33 @@ def unique_part_second_dataframe(data_folder, moma, duplicates_list, base_name_s
     moma_unique = moma.ix[~moma.image_id.isin(moma_new_dup_list)]
     keep_list = ['Photograph', 'Drawing', 'Illustrated Book', 'Painting', 'Collage']
     moma_unique = moma_unique[moma_unique.classification.isin(keep_list)]
+    moma_dup = moma.ix[moma.image_id.isin(moma_new_dup_list)]
+    moma_dup = moma_dup[moma_dup.classification.isin(keep_list)]
     print moma_unique.classification.value_counts()
     print len(moma_unique)
-    # save moma_unique
-    save_moma_unique_name = base_name_second + '_info_unique' + '.csv'
-    if not os.path.exists(os.path.join(data_folder, save_moma_unique_name)):
-        moma_unique.to_csv(os.path.join(data_folder, save_moma_unique_name), index='image_id')
-        print 'save unique part for csv'
-    return moma_unique
+    # save moma_unique and duplicate list
+    save_moma_unique_name = base_name_second + '_info_unique.csv'
+    save_moma_dup_name = base_name_second + '_info_dup.csv'
+    moma_unique.to_csv(os.path.join(data_folder, save_moma_unique_name), index='image_id')
+    moma_dup.to_csv(os.path.join(data_folder, save_moma_dup_name), index='image_id')
+    print 'save unique and duplicate part of csv'
+    return moma_unique, moma_dup
+
+
+def moma_classification_filter(data_folder, df_moma):
+    """
+    filter moma classification
+    Args:
+        df_moma: moma df
+
+    Returns:moma df after filtering
+
+    """
+    keep_list = ['Photograph', 'Drawing', 'Illustrated Book', 'Painting', 'Collage']
+    df_moma = df_moma[df_moma.Classification.isin(keep_list)]
+    print df_moma.Classification.value_counts()
+    df_moma.to_csv(os.path.join(data_folder, 'moma_info_filter_classification.csv'), index='image_id')
+    return df_moma
 
 
 def merge_first_second_df(data_folder, df_first, df_second_unique, base_name_first, base_name_second):
@@ -57,15 +76,12 @@ def merge_first_second_df(data_folder, df_first, df_second_unique, base_name_fir
     """
     save_name = 'info_' + base_name_first + '_' + base_name_second + '_merged' + '.hdf5'
     save_path = os.path.join(data_folder, save_name)
-    #df_first = pd.read_hdf(df_first)
     df_first['image_id'] = df_first['image_id'].apply(lambda s: s.decode('utf-8') if isinstance(s, str) else s)
-    #df_second_unique = pd.read_csv(df_second_unique, encoding='utf-8', index_col='id')
-    print df_first.columns
-    print df_second_unique.columns
+    #print df_second_unique.classification.value_counts()
     print len(df_first)
     print len(df_second_unique)
     joined = pd.concat([df_first, df_second_unique], ignore_index=False)
-    print joined.columns
+    print joined.classification.value_counts()
     print len(joined)
     joined.to_hdf(save_path, 'image_id', format='fixed')
     return joined
@@ -102,10 +118,12 @@ def get_unique_rijks(data_folder, rijks, duplicates):
 if __name__ == '__main__':
     # test
     data_folder = '/export/home/jli/workspace/readable_code_data/'
-    df_second = pd.read_csv('/export/home/jli/workspace/readable_code_data/moma_info_unique.csv', encoding='utf-8', index_col='id')
+    #df_second = pd.read_csv('/export/home/jli/workspace/readable_code_data/moma_info.csv',index_col='id')
     df_first = pd.read_hdf('/export/home/jli/workspace/readable_code_data/wiki_info_update.hdf5')
-    #duplicates_list = dd.io.load('/export/home/jli/workspace/readable_code_data/split_dup_uniq_info/duplicates_wiki_moma.h5')
+    duplicates_list = dd.io.load('/export/home/jli/workspace/readable_code_data/split_dup_uniq_info/duplicates_wiki_moma.h5')
     #moma_unique = unique_part_second_dataframe(data_folder, df_second, duplicates_list, 'moma')
+    #moma_classification_filter(df_second)
+    df_second = pd.read_csv(os.path.join(data_folder, 'moma_info_unique.csv'))
     merge_first_second_df(data_folder, df_first, df_second, 'wiki', 'moma')
     #rijks = pd.read_hdf(os.path.join(data_folder, 'rijks_info_after_unify_artist_names.hdf5'))
     #duplicates = dd.io.load('/export/home/jli/workspace/readable_code_data/split_info_wikimoma_rijks/duplicates_wikimoma_rijks_after_substr_detect.h5')

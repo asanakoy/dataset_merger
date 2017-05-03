@@ -4,13 +4,13 @@ import pandas as pd
 import deepdish as dd
 import os
 
-def update_wiki(data_folder, wiki, moma, duplicates_list):
+def update_wiki(data_folder, wiki, moma_dup, duplicates_list):
     """
     update wiki df info
     Args:
         data_folder: folder for saving data
         wiki: wiki df
-        moma: moma df
+        moma_dup: moma duplicate df
         duplicates_list: duplicate list for moma
 
     Returns:updated version of wiki df
@@ -23,7 +23,7 @@ def update_wiki(data_folder, wiki, moma, duplicates_list):
     wiki['department'] = "" #np.nan
     wiki['date_acquired'] = "" #np.nan
     wiki['curator_approved'] = "" #np.nan
-    wiki['is_duplicate'] = False # means not duplicates
+    wiki['is_duplicate'] = "" # means not duplicates
     wiki['dimensions'] = wiki['dimensions'].astype(object)
     wiki['credit_line'] = wiki['credit_line'].astype(object)
     wiki['moma_number'] = wiki['moma_number'].astype(object)
@@ -41,24 +41,27 @@ def update_wiki(data_folder, wiki, moma, duplicates_list):
     wiki['department'] = wiki.department.astype(object)
     wiki['date_acquired'] = wiki.date_acquired.astype(object)
     wiki['curator_approved'] = wiki.curator_approved.astype(object)
+    image_id_list =  moma_dup.image_id.values
 
-    num_iters = len(moma)
+    print len(moma_dup)
+    num_iters = len(moma_dup)
+
     # append moma into wiki
     for i in range(num_iters):
-        moma_image_id = moma.index[i] ## common
+        moma_image_id = moma_dup.index[i] ## common
         # if moma is duplicate
-        if str(moma_image_id) in duplicates_list[:,1]:
+        if moma_image_id in image_id_list:
             # then update wiki info with moma
             loc = np.where(duplicates_list[:,1] == str(moma_image_id))
             wiki_id = duplicates_list[loc,0]
             wiki_id = str(wiki_id[0][0])
-            moma_dimensions = moma[moma.index == moma_image_id].Dimensions.values[0]
-            moma_credit_line = moma[moma.index == moma.index[i]].CreditLine.values[0]
-            moma_moma_number = moma[moma.index == moma.index[i]].MoMANumber.values[0]
-            moma_classification = moma[moma.index == moma.index[i]].Classification.values[0]
-            moma_department = moma[moma.index == moma.index[i]].Department.values[0]
-            moma_date_acquired = moma[moma.index == moma.index[i]].DateAcquired.values[0]
-            moma_curator_approved = moma[moma.index == moma.index[i]].CuratorApproved.values[0]
+            moma_dimensions = moma_dup[moma_dup.index == moma_image_id].dimensions.values[0]
+            moma_credit_line = moma_dup[moma_dup.index == moma_dup.index[i]].credit_line.values[0]
+            moma_moma_number = moma_dup[moma_dup.index == moma_dup.index[i]].moma_number.values[0]
+            moma_classification = moma_dup[moma_dup.index == moma_dup.index[i]].classification.values[0]
+            moma_department = moma_dup[moma_dup.index == moma_dup.index[i]].department.values[0]
+            moma_date_acquired = moma_dup[moma_dup.index == moma_dup.index[i]].date_acquired.values[0]
+            moma_curator_approved = moma_dup[moma_dup.index == moma_dup.index[i]].curator_approved.values[0]
             wiki.set_value(wiki_id, 'dimensions', moma_dimensions)
             wiki.set_value(wiki_id, 'credit_line', moma_credit_line)
             wiki.set_value(wiki_id, 'moma_number', moma_moma_number)
@@ -68,9 +71,9 @@ def update_wiki(data_folder, wiki, moma, duplicates_list):
             wiki.set_value(wiki_id, 'curator_approved', moma_curator_approved)
             wiki.set_value(wiki_id, 'is_duplicate', True)
 
-    if not os.path.exists(os.path.join(data_folder, 'wiki_info_update.hdf5')):
-        wiki.to_hdf(os.path.join(data_folder, 'wiki_info_update.hdf5'), 'image_id')
-    print "wiki has updated!"
+    wiki.to_hdf(os.path.join(data_folder, 'wiki_info_update.hdf5'), 'image_id')
+    print "wiki information has updated based on moma information!"
+
     return wiki
 
 
@@ -88,14 +91,8 @@ def update_w_m_based_rijks_dup(data_folder, rijks, wikimoma_merged, duplicates):
     """
     #print wikimoma_merged.columns
     #print duplicates.shape
-    i = 154
-    coverage = rijks[rijks.image_id == duplicates[i][1]].coverage.values[0]
-    #print duplicates[i][0]
-    d = int(duplicates[i][0])
-    #print type(duplicates[i][0])
-    wikimoma_merged['title'] = ""
-    wikimoma_merged.set_value(d, 'coverage', coverage)
-    #print duplicates[i][0].isdigit()
+    print len(duplicates)
+    print len(wikimoma_merged)
     for i in range(len(duplicates)):
         if duplicates[i][0].isdigit():
             coverage = rijks[rijks.image_id == duplicates[i][1]].coverage.values[0]
@@ -117,7 +114,9 @@ def update_w_m_based_rijks_dup(data_folder, rijks, wikimoma_merged, duplicates):
             title = rijks[rijks.image_id == duplicates[i][1]].title.values[0]
             wikimoma_merged.set_value(duplicates[i][0], 'title', title)
             wikimoma_merged.set_value(duplicates[i][0], 'is_duplicate', True)
+    print len(wikimoma_merged)
     wikimoma_merged.to_hdf(os.path.join(data_folder, 'info_wikimoma_after_update_infomation.hdf5'), 'image_id')
+    print 'info wikimoma has updated!'
     return wikimoma_merged
 
 
@@ -138,6 +137,7 @@ def update_same_artist_names(data_folder, wikipedia_list, subname_list, rijks):
     for i in range(len(subname_list)):
         rijks['artist_slug'] = rijks['artist_slug'].replace([subname_list[i][1]], str(subname_list[i][0]))
     rijks.to_hdf(os.path.join(data_folder, 'rijks_info_after_unify_artist_names.hdf5'), 'image_id')
+    print 'rijks has updated after unifying artist names'
     return rijks
 
 
@@ -176,11 +176,20 @@ def filter_genre(data_folder, rijks_unique):
         'kamerscherm', 'beeldmotet', 'promotieprent', 'prentbriefkaart', 'cartografie', 'loterijprent']
     rijks_unique[rijks_unique['genre'].str.contains('prent', na=False)]
     rijks_unique = rijks_unique[rijks_unique['genre'].str.contains('|'.join(list), na=False)]
-    rijks_unique.to_hdf(os.path.join(data_folder, 'rijks_unique_filter_genre.hdf5'), 'image_id')
+    rijks_unique.to_hdf(os.path.join(data_folder, 'rijks_filter_genre.hdf5'), 'image_id')
     return rijks_unique
 
 
-def add_source_column(data_folder, wiki, moma_unique, info):
+def add_source_column(data_folder, wiki, moma_unique,info):
+    """
+    add source column data
+    Args:
+        data_folder: dolder for saving data
+        wiki: df of wiki
+        moma_unique: df of moma_unique part
+        info: df after merging wiki, moma and rijks
+
+    """
     num_wiki = len(wiki)
     num_moma = len(moma_unique)
     num_rijks = len(info) - num_wiki - num_moma
@@ -198,43 +207,8 @@ def add_source_column(data_folder, wiki, moma_unique, info):
 
 if __name__ == '__main__':
     # test
-    data_folder = '/export/home/jli/workspace/readable_code_data/'
-    #rijks_unique_filter = dd.io.load(os.path.join(data_folder, 'rijks_unique_filter_genre.hdf5'))
-    #wikimoma = pd.read_hdf(os.path.join(data_folder, 'info_wikimoma_after_update_infomation.hdf5'))
-    #merge_wikimoma_rijks(data_folder, wikimoma, rijks_unique_filter)
-    wiki = pd.read_hdf(os.path.join(data_folder, 'wiki_info_update.hdf5'))
-    moma_unique = pd.read_csv(os.path.join(data_folder, 'moma_info_unique.csv'), index_col='id')
-    info = pd.read_hdf(os.path.join(data_folder, 'info_wikimoma_rijks.hdf5'))
-    add_source_column(data_folder, wiki, moma_unique, info)
-    ##wikimoma_merged = pd.read_hdf(os.path.join(data_folder, 'info_wiki_moma_merged.hdf5'))
-    ##rijks_duplicates = dd.io.load('/export/home/jli/workspace/readable_code_data/split_info_wikimoma_rijks/duplicates_wikimoma_rijks_after_substr_detect.h5')
-    ##rijks = pd.read_hdf(os.path.join(data_folder, 'rijks_info_after_unify_artist_names.hdf5'))
-    ##update_w_m_based_rijks_dup(data_folder, rijks, wikimoma_merged, rijks_duplicates)
-    '''
-    #filter_genre(data_folder, rijks_unique)
-    #rijks = pd.read_hdf(os.path.join(data_folder, 'rijks_info_after_unify_artist_names.hdf5'))
-    #wikimoma_merged = pd.read_hdf(os.path.join(data_folder, 'info_wiki_moma_merged.hdf5'))
-    #rijks_duplicates = dd.io.load('/export/home/jli/workspace/readable_code_data/split_info_wikimoma_rijks/duplicates_wikimoma_rijks_after_substr_detect.h5')
-    #update_w_m_based_rijks_dup(data_folder, rijks, wikimoma_merged, rijks_duplicates)
-    wikimoma = pd.read_hdf(os.path.join(data_folder, 'info_wikimoma_after_update_infomation.hdf5'))
-    merge_wikimoma_rijks(data_folder, wikimoma, rijks_unique_filter)
-
-    #wiki = pd.read_hdf(os.path.join(data_folder, 'wiki_info_update.hdf5'))
-    #wikipedia_list = dd.io.load(os.path.join(data_folder, 'wikipedia_same_artists_wikimoma_rijks.h5'))
-    #subname_list = dd.io.load(os.path.join(data_folder, 'sub_artist_names_w_r.h5'))
-    #rijks = pd.read_hdf(os.path.join(data_folder, 'rijks_info.hdf5'))
-    #rijks = update_same_artist_names(data_folder, wikipedia_list, subname_list, rijks)
-    rijks_unique = dd.io.load(os.path.join(data_folder, 'rijks_unique_info.hdf5'))
-    rijks_unique = filter_genre(data_folder, rijks_unique)
-    #rijks_unique = pd.read_hdf(os.path.join(data_folder, 'rijks_unique_filter.h5'))
-    #rijks = pd.read_hdf(os.path.join(data_folder, 'rijks_info_after_unify_artist_names.hdf5'))
-    #print len(rijks)
-    #wikimoma_merged = pd.read_hdf(os.path.join(data_folder, 'info_wiki_moma_merged.hdf5'))
-    #rijks_duplicates = dd.io.load('/export/home/jli/workspace/readable_code_data/split_info_wikimoma_rijks/duplicates_wikimoma_rijks_after_substr_detect.h5')
-    #update_w_m_based_rijks_dup(data_folder, rijks, wikimoma_merged, rijks_duplicates)
-    #wikimoma = pd.read_hdf(os.path.join(data_folder, 'info_wikimoma_after_update_infomation.hdf5'))
-    #rijks_unique_filter = dd.io.load(os.path.join(data_folder, 'rijks_unique_filter.h5'))
-    #merge_wikimoma_rijks(data_folder, wikimoma, rijks_unique_filter)
-    #moma_unique = pd.read_csv(os.path.join(data_folder, 'moma_info_unique.csv'), index_col='id')
-    #info = pd.read_hdf(os.path.join(data_folder, 'info_wikimoma_after_update_infomation.hdf5'))
-    #add_source_column(data_folder, wiki, moma_unique, rijks_unique, info)'''
+    data_folder = '/export/home/jli/workspace/data_after_run'
+    rijks = pd.read_hdf(os.path.join(data_folder, 'rijks_info_after_unify_artist_names.hdf5'))
+    wikimoma_merged = pd.read_hdf(os.path.join(data_folder, 'info_wiki_moma_merged.hdf5'))
+    duplicates = dd.io.load('/export/home/jli/workspace/data_after_run/split_info_wikimoma_rijks/duplicates_wikimoma_rijks_after_substr_detect.h5')
+    update_w_m_based_rijks_dup(data_folder, rijks, wikimoma_merged, duplicates)

@@ -115,6 +115,7 @@ def update_artist_names(data_folder, update_artists_list, df_first, df_second, b
     file_name = base_name_second + '_update_artist_names.csv'
     df_second.to_csv(os.path.join(data_folder, file_name))
     print 'update artist names'
+    return df_second
 
 
 def compute_text_distance(data_folder, artists_first, artists_second, base_name_first, base_name_second):
@@ -306,7 +307,7 @@ def del_false_artist_map(artists_list):
     return artists_list
 
 
-def modify_false_neg_artist_list(false_neg_artist_list):
+def modify_false_neg_artist_list(data_folder, false_neg_artist_list):
     """
     check if they are substr for each other
     Args:
@@ -327,15 +328,16 @@ def modify_false_neg_artist_list(false_neg_artist_list):
     for item in same_artists:
         if item not in unique_same_artist_list:
             unique_same_artist_list.append(item)
+    dd.io.save(os.path.join(data_folder, 'unique_same_artist_list_wiki_moma.h5'), unique_same_artist_list)
+    print 'unique_same_artist_list has saved!'
     return unique_same_artist_list
 
 
-def detect_sub_artist_names(false_pos_artists, wikipedia_same_artists_list):
+def detect_sub_artist_names(data_folder, false_pos_artists):
     """
     second method for checking if they are substr for each other
     Args:
         false_pos_artists:false positive artist name list
-        wikipedia_same_artists_list:same artist name list after detecting from wikipedia
 
     Returns: same artist name list
 
@@ -398,7 +400,8 @@ def update_artist_map_df(data_folder, df_first, df_second, same_artists_map_list
     update_artist_map = same_artist_list + same_artists_map_list
     file_name = 'same_artists_map_' + base_name_first + '_' + base_name_second + '.h5'
     dd.io.save(os.path.join(data_folder, file_name), update_artist_map)
-    update_artist_names(data_folder, update_artist_map, df_first, df_second, base_name_second)
+    df_second = update_artist_names(data_folder, update_artist_map, df_first, df_second, base_name_second)
+    return df_second
 
 
 def check_update_artist_names(data_folder, base_name_first, df_first, base_name_second, df_second):
@@ -447,24 +450,13 @@ def check_update_artist_names_sec(data_folder, base_name_first, df_first, base_n
 
 if __name__ == '__main__':
     # test
-    data_folder = '/export/home/jli/workspace/readable_code_data'
-    df_first_name = 'wiki_info.hdf5'
-    df_second_name = 'moma_info.csv'
-    df_first = pd.read_hdf(os.path.join(data_folder, df_first_name))
-    df_second = pd.read_csv(os.path.join(data_folder, df_second_name), index_col='id')
-    #check_update_artist_names(data_folder, 'wiki', df_first, 'moma', df_second)
-    false_neg_artist_list = dd.io.load('/export/home/jli/workspace/readable_code_data/split_dup_uniq_info/false_pos_pairs_artists_wiki_moma.h5')
-    same_artists_map_list = dd.io.load('/export/home/jli/workspace/readable_code_data/same_artists_map_wiki_moma.h5')
-    #same_artist_list = modify_false_neg_artist_list(false_neg_artist_list)
-
-    file_name = 'same_artists_map_wiki_moma.h5'
-    #update_artist_names(data_folder, same_artists_map_list, df_first, df_second, base_name_second)
-    #update_artist_map_df(data_folder, df_first, df_second, same_artists_map_list, same_artist_list, 'wiki', 'moma')
-
-    df_fir_sec = pd.read_hdf(os.path.join(data_folder, 'info_wiki_moma_merged.hdf5'))
-    df_third = pd.read_hdf(os.path.join(data_folder, 'rijks_info.hdf5'))
-    #check_update_artist_names_sec(data_folder, 'wikimoma', df_fir_sec, 'rijks', df_third)
-    false_neg_artist_list = dd.io.load('/export/home/jli/workspace/readable_code_data/split_info_wikimoma_rijks/false_pos_pairs_artists_wikimoma_rijks.h5')
-    wikipedia_same_artists_list = dd.io.load('/export/home/jli/workspace/readable_code_data/wikipedia_same_artists_wikimoma_rijks.h5')
-    detect_sub_artist_names(false_neg_artist_list, wikipedia_same_artists_list)
-    sublist = dd.io.load(os.path.join(data_folder, 'sub_artist_names_w_r.h5'))
+    data_folder = '/export/home/jli/workspace/data_after_run/'
+    false_neg_artist_list = dd.io.load('/export/home/jli/workspace/data_after_run/false_pos_pairs_artists_wiki_moma.h5')
+    modify_false_neg_artist_list(data_folder, false_neg_artist_list)
+    df_first = pd.read_hdf(os.path.join(data_folder, 'wiki_info.hdf5'))
+    df_second = pd.read_csv(os.path.join(data_folder, 'moma_info_filter_classification.csv'), index_col='id')
+    same_artists_map_list = dd.io.load(os.path.join(data_folder, 'unique_same_artist_list_wiki_moma.h5'))
+    same_artist_list = dd.io.load(os.path.join(data_folder, 'same_artists_map_wiki_moma.h5'))
+    base_name_first = 'wiki'
+    base_name_second = 'moma'
+    update_artist_map_df(data_folder, df_first, df_second, same_artists_map_list, same_artist_list, base_name_first, base_name_second)

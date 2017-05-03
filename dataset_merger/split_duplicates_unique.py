@@ -28,15 +28,20 @@ def split_duplicates_unique(data_folder, similarity_matrix, df_first, df_second,
     false_pos_pairs_path_first_second = []
     # find top scoring from similarities
     start = time.time()
-    num_samples = len(similarity_matrix)
-    match_position = []
-    for loc_wiki in range(num_samples):
-        top_scoring = np.max(similarity_matrix[loc_wiki])
-        if top_scoring >= threshold:
-            loc_moma = np.where(similarity_matrix[loc_wiki] == top_scoring)[0][0]
-            # matching positions between wiki and moma
-            match_position.append([loc_wiki, loc_moma])
-
+    num_samples = 137866
+    if not os.path.exists(os.path.join(data_folder, 'match_position_list_wiki_moma.h5')):
+        num_samples = len(similarity_matrix)
+        match_position = []
+        for loc_wiki in range(num_samples):
+            top_scoring = np.max(similarity_matrix[loc_wiki])
+            if top_scoring >= threshold:
+                loc_moma = np.where(similarity_matrix[loc_wiki] == top_scoring)[0][0]
+                # matching positions between wiki and moma
+                match_position.append([loc_wiki, loc_moma])
+        dd.io.save(os.path.join(data_folder, 'match_position_list_wiki_moma.h5'), match_position)
+        print "match_position_list.h5 has saved!"
+    else:
+        match_position = dd.io.load(os.path.join(data_folder, 'match_position_list_wiki_moma.h5'))
     num_pairs = len(match_position)
     sum_error = 0
     for i in range(num_pairs):
@@ -63,37 +68,33 @@ def split_duplicates_unique(data_folder, similarity_matrix, df_first, df_second,
     duplicate_name = 'duplicates_' + base_name_first + '_' + base_name_second + '.h5'
     if not os.path.exists(data_folder):
         os.mkdir(data_folder)
-    if not os.path.exists(os.path.join(data_folder, duplicate_name)):
-        dd.io.save(os.path.join(data_folder, duplicate_name), duplicates_first_second)
+    dd.io.save(os.path.join(data_folder, duplicate_name), duplicates_first_second)
 
     # save error pairs and its paths into h5
     h5_artist_name = 'false_pos_pairs_artists_' + base_name_first + '_' + base_name_second + '.h5'
     h5_path_name = 'false_pos_pairs_path_' + base_name_first + '_' + base_name_second + '.h5'
     false_pos_pairs_artist_list = np.array(false_pos_pairs_artist_list, dtype=str)
     false_pos_pairs_path_first_second = np.array(false_pos_pairs_path_first_second, dtype=str)
-    if not os.path.exists(os.path.join(data_folder, h5_path_name)):
-        dd.io.save(os.path.join(data_folder, h5_path_name), false_pos_pairs_path_first_second)
-    if not os.path.exists(os.path.join(data_folder, h5_artist_name)):
-        dd.io.save(os.path.join(data_folder, h5_artist_name), false_pos_pairs_artist_list)
+    dd.io.save(os.path.join(data_folder, h5_path_name), false_pos_pairs_path_first_second)
+    dd.io.save(os.path.join(data_folder, h5_artist_name), false_pos_pairs_artist_list)
     print "threshold is: " + `threshold`
     print "there are " + `num_pairs-sum_error` + " pos. pairs from " + `num_samples` + " pairs in total."
     print "number of false neg. pairs: " + `sum_error`
     print "error rate: " + `sum_error / num_pairs`
     # save log into txt
     txt_name = 'log_after_unify_name_final_threshold_' + `threshold` + '.txt'
-    if not os.path.exists(os.path.join(data_folder, txt_name)):
-        with open(os.path.join(data_folder, txt_name), "w") as text_file:
-            text_file.write("threshold is: %f\n" %threshold)
-            text_file.write("there are %d pos. pairs from %d pairs in total.\n" % (num_pairs-sum_error, num_samples))
-            text_file.write("number of false neg. pairs: %f\n" % sum_error)
-            text_file.write("false neg. rate: %f\n" % (sum_error / num_pairs))
+    with open(os.path.join(data_folder, txt_name), "w") as text_file:
+        text_file.write("threshold is: %f\n" %threshold)
+        text_file.write("there are %d pos. pairs from %d pairs in total.\n" % (num_pairs-sum_error, num_samples))
+        text_file.write("number of false neg. pairs: %f\n" % sum_error)
+        text_file.write("false neg. rate: %f\n" % (sum_error / num_pairs))
     end_whole = time.time()
     elapsed_whole = end_whole - start
     print "it takes " + `elapsed_whole / 60` + " minutes to finish whole splitting process."
     return false_pos_pairs_path_first_second ,false_pos_pairs_artist_list, duplicates_first_second
 
 
-def split_duplicates_unique_sec(data_folder, similarity_matrix, path_wikimoma, path_rijks, wikimoma, rijks, wiki, base_name_first, base_name_second):
+def split_duplicates_unique_sec(data_folder, similarity_matrix_path, path_wikimoma, path_rijks, wikimoma, rijks, wiki, base_name_first, base_name_second):
     """
     for rijks and wiki_moma, compute top similarity and check if they are from the same artists
     Args:
@@ -110,6 +111,7 @@ def split_duplicates_unique_sec(data_folder, similarity_matrix, path_wikimoma, p
     Returns:false_pos_pairs_path_wikimoma_rijks ,false_pos_pairs_artist_list, duplicates_wikimoma_rijks
 
     """
+    print 'begin'
     final_folder_name = 'split_info_wikimoma_rijks'
     save_folder_path = os.path.join(data_folder, final_folder_name)
     if not os.path.exists(os.path.join(data_folder, save_folder_path)):
@@ -120,9 +122,12 @@ def split_duplicates_unique_sec(data_folder, similarity_matrix, path_wikimoma, p
     false_pos_pairs_artist_list = []
     false_pos_pairs_path_wikimoma_rijks = []
     num_wiki = len(wiki)
-    if not os.path.exists(os.path.join(save_folder_path, 'match_position_list.h5')):
+    print os.path.join(save_folder_path, 'match_position_list_wm_rijks.h5')
+    if not os.path.exists(os.path.join(save_folder_path, 'match_position_list_wm_rijks.h5')):
     # find top scoring from similarities
+        print 'computing'
         start = time.time()
+        similarity_matrix = dd.io.load(similarity_matrix_path)
         end = time.time()
         elapsed = end - start
         print "it takes " + `elapsed / 60` + " minutes to load similarity.h5"
@@ -136,11 +141,13 @@ def split_duplicates_unique_sec(data_folder, similarity_matrix, path_wikimoma, p
                 #print [loc_wiki, loc_moma]
                 match_position.append([loc_wikimoma, loc_rijks])
                 # save this top scoring position
-        #dd.io.save(os.path.join(final_folder_merge, 'match_position_list.h5'), match_position)
+        dd.io.save(os.path.join(save_folder_path, 'match_position_list_wm_rijks.h5'), match_position)
         print "match_position_list.h5 has saved!"
-
-    match_position = dd.io.load(os.path.join(save_folder_path, 'match_position_list.h5'))
-    print 'match_position.h5 has loaded!'
+    else:
+        print 'prepare for loading match_position matrix'
+        match_position = dd.io.load(os.path.join(save_folder_path, 'match_position_list_wm_rijks.h5'))
+        #match_position = dd.io.load('/export/home/jli/workspace/readable_code_data/split_info_wikimoma_rijks/match_position_list.h5')
+        print 'match_position.h5 has loaded!'
     num_pairs = len(match_position)
     sum_error = 0
     for i in range(num_pairs):
@@ -170,19 +177,15 @@ def split_duplicates_unique_sec(data_folder, similarity_matrix, path_wikimoma, p
     print "there are:" + `len(false_pos_pairs_path_wikimoma_rijks)`
     duplicates_wikimoma_rijks = np.array(duplicates_wikimoma_rijks, dtype=unicode)
     duplicate_name = 'duplicates_wikimoma_rijks_after_substr_detect.h5'
-    print duplicate_name
-    if not os.path.exists(os.path.join(save_folder_path, duplicate_name)):
-        dd.io.save(os.path.join(save_folder_path, duplicate_name), duplicates_wikimoma_rijks)
+    dd.io.save(os.path.join(save_folder_path, duplicate_name), duplicates_wikimoma_rijks)
 
     # save error pairs and its paths into h5
     h5_artist_name = 'false_pos_pairs_artists_' + base_name_first + '_' + base_name_second + '.h5'
     h5_path_name = 'false_pos_pairs_path_' + base_name_first + '_' + base_name_second + '.h5'
     false_pos_pairs_artist_list = np.array(false_pos_pairs_artist_list, dtype=unicode)
     false_pos_pairs_path_wikimoma_rijks = np.array(false_pos_pairs_path_wikimoma_rijks, dtype=unicode)
-    if not os.path.exists(os.path.join(save_folder_path, h5_path_name)):
-        dd.io.save(os.path.join(save_folder_path, h5_path_name), false_pos_pairs_path_wikimoma_rijks)
-    if not os.path.exists(os.path.join(save_folder_path, h5_artist_name)):
-        dd.io.save(os.path.join(save_folder_path, h5_artist_name), false_pos_pairs_artist_list)
+    dd.io.save(os.path.join(save_folder_path, h5_path_name), false_pos_pairs_path_wikimoma_rijks)
+    dd.io.save(os.path.join(save_folder_path, h5_artist_name), false_pos_pairs_artist_list)
 
     print "threshold is: " + `threshold`
     print "there are " + `num_pairs-sum_error` + " pos. pairs from " + str(161559) + " pairs in total."
@@ -194,13 +197,12 @@ def split_duplicates_unique_sec(data_folder, similarity_matrix, path_wikimoma, p
         error_rate = 0
     # save log into txt
     txt_name = 'log_wikimoma_rijks_after_substr_detect.txt'
-    if not os.path.exists(os.path.join(save_folder_path, txt_name)):
-        with open(os.path.join(save_folder_path, txt_name), "w") as text_file:
-            text_file.write("threshold is: %f\n" %(threshold))
-            temp = 161559
-            text_file.write("there are %d right pairs from %d pairs in total.\n" % (num_pairs-sum_error, temp))
-            text_file.write("number of false pos. pairs: %f\n" % sum_error)
-            text_file.write("false pos. rate: %f\n" % error_rate)
+    with open(os.path.join(save_folder_path, txt_name), "w") as text_file:
+        text_file.write("threshold is: %f\n" %(threshold))
+        temp = 161559
+        text_file.write("there are %d right pairs from %d pairs in total.\n" % (num_pairs-sum_error, temp))
+        text_file.write("number of false pos. pairs: %f\n" % sum_error)
+        text_file.write("false pos. rate: %f\n" % error_rate)
     return false_pos_pairs_path_wikimoma_rijks ,false_pos_pairs_artist_list, duplicates_wikimoma_rijks
 
 
