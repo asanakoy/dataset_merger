@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg')  # Must be before importing matplotlib.pyplot or pylab!
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import deepdish as dd
@@ -7,6 +9,7 @@ import os
 
 wiki_img_folder_path = '/export/home/asanakoy/workspace/wikiart/images/'
 moma_img_folder_path = '/export/home/asanakoy/workspace/moma/images/1_filtered/'
+
 
 def false_neg_pairs_visualization(first_img_folder_path, second_img_folder_path, sub_visual_folder, false_neg_pairs_name, false_neg_artists):
     """
