@@ -142,7 +142,8 @@ def update_same_artist_names(data_folder, wikipedia_list, subname_list, rijks):
 
 
 def merge_wikimoma_rijks(data_folder, wikimoma, rijks_unique):
-    joined = pd.concat([wikimoma, rijks_unique], ignore_index=False)
+    joined = pd.concat([wikimoma, rijks_unique], axis=0,
+                       ignore_index=False, verify_integrity=True)
     print joined.columns
     print len(rijks_unique)
     print len(wikimoma)
@@ -174,21 +175,20 @@ def filter_genre(data_folder, rijks_unique):
         'papiernegatief', 'aquarel', 'ornamenttekening', 'huwelijksprent', 'muurschildering', 'sits', 'gouache', 'bidprent',
         'decoratiestuk', 'schilderijlijst', 'verdure', 'prenttekening', 'vidimus', 'vingerschildering',
         'kamerscherm', 'beeldmotet', 'promotieprent', 'prentbriefkaart', 'cartografie', 'loterijprent']
-    rijks_unique[rijks_unique['genre'].str.contains('prent', na=False)]
+    rijks_unique = rijks_unique.copy()
     rijks_unique = rijks_unique[rijks_unique['genre'].str.contains('|'.join(list), na=False)]
     rijks_unique.to_hdf(os.path.join(data_folder, 'rijks_filter_genre.hdf5'), 'image_id')
     return rijks_unique
 
 
-def add_source_column(data_folder, wiki, moma_unique,info):
+def add_source_column(wiki, moma_unique, info):
     """
-    add source column data
+    In-lace add source column data
     Args:
         data_folder: dolder for saving data
         wiki: df of wiki
         moma_unique: df of moma_unique part
         info: df after merging wiki, moma and rijks
-
     """
     num_wiki = len(wiki)
     num_moma = len(moma_unique)
@@ -201,8 +201,12 @@ def add_source_column(data_folder, wiki, moma_unique,info):
     print num_moma
     print num_rijks
     source_list = wiki_list + moma_list + rijks_list
+
+    assert set(info.index[:num_wiki].tolist()) == \
+           set(wiki.index.tolist()), 'wiki index is rong'
+    assert set(info.index[num_wiki:num_wiki + num_moma].tolist()) == \
+           set(moma_unique.index.tolist()), 'moma index is wrong'
     info['source'] = source_list
-    info.to_hdf(os.path.join(data_folder, 'info_wiki_moma_rijks_final_result.hdf5'), 'image_id')
 
 
 if __name__ == '__main__':
