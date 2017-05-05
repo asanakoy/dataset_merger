@@ -6,6 +6,7 @@ import time
 import sys
 import os
 
+
 def split_duplicates_unique(data_folder, similarity_matrix, df_first, df_second, img_path_first, img_path_second, base_name_first, base_name_second):
     """
     for wiki and moma, compute top similarity and check if they are from the same artists
@@ -19,18 +20,20 @@ def split_duplicates_unique(data_folder, similarity_matrix, df_first, df_second,
         base_name_first: e.g. 'wiki'
         base_name_second: e.g. 'moma'
 
-    Returns:false_pos_pairs_path_wikimoma_rijks ,false_pos_pairs_artist_list, duplicates_wikimoma_rijks
+    Returns:
+        false_pos_pairs_path_wikimoma_rijks
+        false_pos_pairs_artist_list
+        duplicate_image_names: duplicates (wikimoma, rijks) : list of basenames of duplicate pairs of image
 
     """
     threshold = 0.98
-    duplicates_first_second = []
+    duplicate_image_names = []
     false_pos_pairs_artist_list = []
     false_pos_pairs_path_first_second = []
     # find top scoring from similarities
     start = time.time()
-    num_samples = 137866
+    num_samples = len(similarity_matrix)
     if not os.path.exists(os.path.join(data_folder, 'match_position_list_wiki_moma.h5')):
-        num_samples = len(similarity_matrix)
         match_position = []
         for loc_wiki in range(num_samples):
             top_scoring = np.max(similarity_matrix[loc_wiki])
@@ -53,8 +56,8 @@ def split_duplicates_unique(data_folder, similarity_matrix, df_first, df_second,
         artist_wiki = df_first[df_first.image_id == base_wiki].artist_slug[0]
         artist_moma = df_second[df_second.index == int(base_moma)].Artist.values[0]
         if str(artist_wiki) == artist_moma:
-            duplicates_first_second.append([base_wiki, base_moma])
-        if not str(artist_wiki) == artist_moma:
+            duplicate_image_names.append([base_wiki, base_moma])
+        else:
             sum_error += 1
             # print error pairs
             error_match = [str(artist_wiki), artist_moma]
@@ -63,12 +66,13 @@ def split_duplicates_unique(data_folder, similarity_matrix, df_first, df_second,
             wiki_name = base_wiki + '.jpg'
             moma_name = base_moma + '.jpg'
             false_pos_pairs_path_first_second.append([wiki_name, moma_name])
+    assert sum_error <= num_pairs
 
-    duplicates_first_second = np.array(duplicates_first_second, dtype=str)
+    duplicate_image_names = np.array(duplicate_image_names, dtype=str)
     duplicate_name = 'duplicates_' + base_name_first + '_' + base_name_second + '.h5'
     if not os.path.exists(data_folder):
         os.mkdir(data_folder)
-    dd.io.save(os.path.join(data_folder, duplicate_name), duplicates_first_second)
+    dd.io.save(os.path.join(data_folder, duplicate_name), duplicate_image_names)
 
     # save error pairs and its paths into h5
     h5_artist_name = 'false_pos_pairs_artists_' + base_name_first + '_' + base_name_second + '.h5'
@@ -77,21 +81,21 @@ def split_duplicates_unique(data_folder, similarity_matrix, df_first, df_second,
     false_pos_pairs_path_first_second = np.array(false_pos_pairs_path_first_second, dtype=str)
     dd.io.save(os.path.join(data_folder, h5_path_name), false_pos_pairs_path_first_second)
     dd.io.save(os.path.join(data_folder, h5_artist_name), false_pos_pairs_artist_list)
-    print "threshold is: " + `threshold`
-    print "there are " + `num_pairs-sum_error` + " pos. pairs from " + `num_samples` + " pairs in total."
-    print "number of false neg. pairs: " + `sum_error`
-    print "error rate: " + `sum_error / num_pairs`
+    print "threshold is:", threshold
+    print "there are " + str(num_pairs - sum_error) + " true pos. pairs from " + str(num_samples) + " pairs in total."
+    print "number of false pos pairs: ", sum_error
+    print "error rate:", sum_error / num_pairs if num_pairs else 0
     # save log into txt
-    txt_name = 'log_after_unify_name_final_threshold_' + `threshold` + '.txt'
+    txt_name = 'log_after_unify_name_final_threshold_' + str(threshold) + '.txt'
     with open(os.path.join(data_folder, txt_name), "w") as text_file:
-        text_file.write("threshold is: %f\n" %threshold)
-        text_file.write("there are %d pos. pairs from %d pairs in total.\n" % (num_pairs-sum_error, num_samples))
-        text_file.write("number of false neg. pairs: %f\n" % sum_error)
-        text_file.write("false neg. rate: %f\n" % (sum_error / num_pairs))
+        text_file.write("threshold is: %f\n" % threshold)
+        text_file.write("there are true %d pos. pairs from %d pairs in total.\n" % (num_pairs - sum_error, num_samples))
+        text_file.write("number of false pos pairs: %f\n" % sum_error)
+        text_file.write("false neg. rate: %f\n" % (sum_error / num_pairs if num_pairs else 0))
     end_whole = time.time()
     elapsed_whole = end_whole - start
-    print "it takes " + `elapsed_whole / 60` + " minutes to finish whole splitting process."
-    return false_pos_pairs_path_first_second ,false_pos_pairs_artist_list, duplicates_first_second
+    print "it took {} minutes to finish whole splitting process.".format(elapsed_whole / 60)
+    return false_pos_pairs_path_first_second, false_pos_pairs_artist_list, duplicate_image_names
 
 
 def split_duplicates_unique_sec(data_folder, similarity_matrix_path, path_wikimoma, path_rijks, wikimoma, rijks, wiki, base_name_first, base_name_second):
@@ -124,13 +128,13 @@ def split_duplicates_unique_sec(data_folder, similarity_matrix_path, path_wikimo
     num_wiki = len(wiki)
     print os.path.join(save_folder_path, 'match_position_list_wm_rijks.h5')
     if not os.path.exists(os.path.join(save_folder_path, 'match_position_list_wm_rijks.h5')):
-    # find top scoring from similarities
+        # find top scoring from similarities
         print 'computing'
         start = time.time()
         similarity_matrix = dd.io.load(similarity_matrix_path)
         end = time.time()
         elapsed = end - start
-        print "it takes " + `elapsed / 60` + " minutes to load similarity.h5"
+        print "it took {} minutes to load sim matrix".format(elapsed / 60)
         num_samples = len(similarity_matrix)
         match_position = []
         for loc_wikimoma in range(num_samples):
@@ -174,7 +178,7 @@ def split_duplicates_unique_sec(data_folder, similarity_matrix_path, path_wikimo
             false_pos_pairs_artist_list.append(error_match)
             # save its path
             false_pos_pairs_path_wikimoma_rijks.append([wikimoma_img_full_path, rijks_img_full_path])
-    print "there are:" + `len(false_pos_pairs_path_wikimoma_rijks)`
+    print "there are:", len(false_pos_pairs_path_wikimoma_rijks)
     duplicates_wikimoma_rijks = np.array(duplicates_wikimoma_rijks, dtype=unicode)
     duplicate_name = 'duplicates_wikimoma_rijks_after_substr_detect.h5'
     dd.io.save(os.path.join(save_folder_path, duplicate_name), duplicates_wikimoma_rijks)
@@ -187,23 +191,20 @@ def split_duplicates_unique_sec(data_folder, similarity_matrix_path, path_wikimo
     dd.io.save(os.path.join(save_folder_path, h5_path_name), false_pos_pairs_path_wikimoma_rijks)
     dd.io.save(os.path.join(save_folder_path, h5_artist_name), false_pos_pairs_artist_list)
 
-    print "threshold is: " + `threshold`
-    print "there are " + `num_pairs-sum_error` + " pos. pairs from " + str(161559) + " pairs in total."
-    print "number of false pos. pairs: " + `sum_error`
-    try:
-        error_rate = (sum_error*1.0) / (num_pairs*1.0)
-        print "false pos. rate: " + `error_rate`
-    except ZeroDivisionError:
-        error_rate = 0
+    print "threshold is:", threshold
+    print "there are", num_pairs - sum_error, "pos. pairs from", num_pairs, "pairs in total."
+    print "number of false pos. pairs:", sum_error
+    error_rate = float(sum_error) / num_pairs if num_pairs else 0
+    print "false pos. rate:", error_rate
     # save log into txt
     txt_name = 'log_wikimoma_rijks_after_substr_detect.txt'
     with open(os.path.join(save_folder_path, txt_name), "w") as text_file:
-        text_file.write("threshold is: %f\n" %(threshold))
-        temp = 161559
-        text_file.write("there are %d right pairs from %d pairs in total.\n" % (num_pairs-sum_error, temp))
+        text_file.write("threshold is: %f\n" % threshold)
+        text_file.write("there are %d right pairs from %d pairs in total.\n" %
+                        (num_pairs - sum_error, num_pairs))
         text_file.write("number of false pos. pairs: %f\n" % sum_error)
         text_file.write("false pos. rate: %f\n" % error_rate)
-    return false_pos_pairs_path_wikimoma_rijks ,false_pos_pairs_artist_list, duplicates_wikimoma_rijks
+    return false_pos_pairs_path_wikimoma_rijks, false_pos_pairs_artist_list, duplicates_wikimoma_rijks
 
 
 if __name__ == '__main__':
