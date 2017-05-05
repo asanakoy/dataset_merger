@@ -1,10 +1,13 @@
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics import pairwise_distances
 import deepdish as dd
 import numpy as np
 import time
 import os
+from os.path import join
 
-def compute_similarity(data_folder, first_fea, second_fea, base_name_first, base_name_second):
+
+def compute_similarity(data_folder, first_fea, second_fea, base_name_first, base_name_second,
+                       n_jobs=4):
     """
     compute similarity
     Args:
@@ -17,15 +20,20 @@ def compute_similarity(data_folder, first_fea, second_fea, base_name_first, base
     Returns:similarity matrix
 
     """
-    start = time.time()
-    predictions = cosine_similarity(first_fea, second_fea)
-    end = time.time()
-    elapsed = end - start
-    print "it takes " + `elapsed / 60` + " minutes to compute similarity."
-    # save predictions
-    file_name = 'similarity_' + base_name_first + '_' + base_name_second + '.h5'
-    dd.io.save(os.path.join(data_folder, file_name), predictions)
-    print "saved similarity!"
+
+    print 'Computing sim {} x {}'.format(len(first_fea), len(second_fea))
+    file_path = join(data_folder, 'similarity_{}_{}.h5'.format(base_name_first, base_name_second))
+    if os.path.exists(file_path):
+        print 'Loading cached sim matrix'
+        predictions = dd.io.load(file_path)
+    else:
+        start = time.time()
+        predictions = 1 - pairwise_distances(first_fea, second_fea, metric='cosine', n_jobs=n_jobs)
+        end = time.time()
+        elapsed = end - start
+        print "it took {:.2f} minutes to compute similarity.".format(elapsed / 60.)
+        dd.io.save(file_path, predictions)
+        print "saved similarity!"
     return predictions
 
 
