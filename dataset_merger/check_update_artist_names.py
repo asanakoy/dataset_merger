@@ -8,6 +8,7 @@ import time
 import sys
 import os
 import re
+from tqdm import tqdm
 
 
 def get_artist_names(data_folder, base_name_first, df_first, base_name_second, df_second):
@@ -235,12 +236,8 @@ def search_in_wikipedia(data_folder, rate_matrix, artists_first, artists_second,
 
     num_data = len(match_artists)
     wikipedia_same_artists_list = []
-    count = 0
     start = time.time()
-    for item in match_artists:
-        count += 1
-        sys.stdout.write("\r%d/%d" % (count, num_data))
-        sys.stdout.flush()
+    for item in tqdm(match_artists):
         try:
             #try to load the wikipedia page
             item_first = wikipedia.page(item[0])
@@ -418,16 +415,21 @@ def check_update_artist_names(data_folder, base_name_first, df_first, base_name_
     Returns: different artist names but from the same artists
 
     """
-    artists_first, artists_second = get_artist_names(data_folder, base_name_first, df_first, base_name_second, df_second)
-    substr_artists_list = check_substr(data_folder, artists_first, artists_second, base_name_first, base_name_second)
-    substr_artists_list = del_false_artist_map(substr_artists_list)
-    wikipedia_same_artists_list = check_wikipedia(data_folder, artists_first, artists_second, base_name_first, base_name_second)
-    same_artists_map_list = substr_artists_list + wikipedia_same_artists_list
-    # save same artist names map
     file_name = 'same_artists_map_' + base_name_first + '_' + base_name_second + '.h5'
-    dd.io.save(os.path.join(data_folder, file_name), same_artists_map_list)
-    update_artist_names(data_folder, same_artists_map_list, df_first, df_second, base_name_second)
-    # check this list and find right artist pairs that are from the same artists
+    file_path = os.path.join(data_folder, file_name)
+    if os.path.exists(file_path):
+        print 'Load cached artist map: {}'.format(file_path)
+        same_artists_map_list = dd.io.load(file_path)
+    else:
+        artists_first, artists_second = get_artist_names(data_folder, base_name_first, df_first, base_name_second, df_second)
+        substr_artists_list = check_substr(data_folder, artists_first, artists_second, base_name_first, base_name_second)
+        substr_artists_list = del_false_artist_map(substr_artists_list)
+        wikipedia_same_artists_list = check_wikipedia(data_folder, artists_first, artists_second, base_name_first, base_name_second)
+        same_artists_map_list = substr_artists_list + wikipedia_same_artists_list
+        # save same artist names map
+        dd.io.save(file_path, same_artists_map_list)
+        update_artist_names(data_folder, same_artists_map_list, df_first, df_second, base_name_second)
+        # check this list and find right artist pairs that are from the same artists
     return same_artists_map_list
 
 
