@@ -1,5 +1,9 @@
+*check_matches.csv
+*.npy
 *.pyc
+*checkpoint.ipynb
 .idea
 .DS_Store
+.~*
 out
 
