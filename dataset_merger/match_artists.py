@@ -333,7 +333,7 @@ def get_merged_artists_df(dataset_names, dfs_to_merge, sim_matrix, split_big_com
         artist_obj = dfs_to_merge[dataset_idx].iloc[[artist_idx]].to_dict(orient='records')[0]
         return artist_obj
 
-    manually_checked_matches_path = '{}_manually_corrected_matches.csv'.format(
+    manually_checked_matches_path = 'manually_corrected_matches/{}_manually_corrected_matches.csv'.format(
         '-'.join(dataset_names))
     if os.path.exists(manually_checked_matches_path):
         manually_checked_matches_df = pd.read_csv(manually_checked_matches_path, index_col=0,
