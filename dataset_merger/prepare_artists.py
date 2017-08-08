@@ -5,6 +5,7 @@ import itertools
 from tqdm import tqdm
 import pandas as pd
 import urllib
+from functools import partial
 
 from art_utils.pandas_tools import is_null_object
 import read_datasets
@@ -121,15 +122,15 @@ def get_google_art_artists_df(df, artist_id_field):
     print len(artists_df)
     artists_df.dropna(subset=['years_range'], inplace=True)
     print len(artists_df)
+
+    # add prefix to make artist name unique
+    artists_df['artist_id'] = artists_df['artist_id'].apply(lambda x: 'googleart_{}'.format(x))
+    artists_df.index = artists_df['artist_id']
     artists_df['artist_ids'] = artists_df['artist_id']
 
     artists_df['url_wiki'] = artists_df['url_wiki'].apply(
         lambda x: np.nan if not x or is_null_object(x) else
         urllib.unquote(x.encode('utf8')).decode('utf-8'))
-
-    # TODO: remove crunch after
-    # TODO: use artists_df with fixed wikipedia urls
-    artists_df['url_wiki'] = artists_df['url_wiki'].apply(lambda x: 'https://en.wikipedia.org/wiki/ernest_meissonier' if x == 'http://en.wikipedia.org/wiki/jean-louis-ernest_meissonier' else x)
 
     assert not artists_df.index.has_duplicates
     return artists_df
@@ -189,16 +190,17 @@ def remove_after_somebody_from_names(list_of_names):
         return new_list_of_names
 
 
-def get_artists_df_meisterwerke(df, artist_id_field):
-    artists_df = get_artists_df(df, artist_id_field)
+def get_artists_df_meisterwerke(df, artist_id_field, name_prefix=None):
+    artists_df = get_artists_df(df, artist_id_field, name_prefix=name_prefix)
     assert pd.isnull(artists_df['artist_name']).sum() == 0
+    name_prefix = '' if name_prefix is None else name_prefix + '_'
     mask_to_discard = artists_df['artist_name'].str.startswith('unbekannt') | (artists_df['artist_name'] == u'unknown')
     artists_df = artists_df[~mask_to_discard]
     print 'Discarded {} unknown artists'.format(mask_to_discard.sum())
     return artists_df
 
 
-def get_artists_df(df, artist_id_field, split_group_names_on_ampersand=False):
+def get_artists_df(df, artist_id_field, split_group_names_on_ampersand=False, name_prefix=None):
     unique_ids, unique_indices = np.unique(df[artist_id_field], return_index=True)
 
     years = df.groupby(artist_id_field)['year'].apply(list)
@@ -233,6 +235,12 @@ def get_artists_df(df, artist_id_field, split_group_names_on_ampersand=False):
     print len(artists_df)
     artists_df.dropna(subset=['years_range'], inplace=True)
     print len(artists_df)
+
+    if name_prefix is not None:
+        artists_df.index = pd.Series(artists_df.index).apply(lambda x: name_prefix + '_' + x)
+        artists_df['artist_id'] = artists_df.index
+        artists_df['artist_ids'] = artists_df['artist_id'].apply(lambda x: [x])
+
     return artists_df
 
 
@@ -245,19 +253,23 @@ artist_id_field_map = {
 }
 
 
-get_artist_df_fn = {
-    'wga': get_artists_df,
-    'artuk': lambda a, b: get_artists_df(a, b, split_group_names_on_ampersand=True),
-    'wiki': get_artists_df,
-    'googleart': get_google_art_artists_df,
-    'meisterwerke': get_artists_df_meisterwerke
-}
+def get_artist_df_fn(dataset_name):
+    if dataset_name in ['wga', 'wiki']:
+        return partial(get_artists_df, name_prefix=dataset_name)
+    elif dataset_name == 'meisterwerke':
+        return partial(get_artists_df_meisterwerke, name_prefix=dataset_name)
+    elif dataset_name == 'artuk':
+        return partial(get_artists_df, name_prefix=dataset_name, split_group_names_on_ampersand=True)
+    elif dataset_name == 'googleart':
+        return get_google_art_artists_df
+    else:
+        raise ValueError(dataset_name)
 
 
 def get_artists_with_years(dataset_name, dfs):
     df = dfs[dataset_name]
     artist_id_field = artist_id_field_map.get(dataset_name, 'artist_name')
-    artists_df = get_artist_df_fn[dataset_name](df, artist_id_field)
+    artists_df = get_artist_df_fn(dataset_name)(df, artist_id_field)
     return artists_df
 
 

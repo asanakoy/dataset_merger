@@ -16,8 +16,7 @@ from art_utils.pandas_tools import is_null_object
 from art_utils.joblib_wrapper import ParallelTqdm, delayed
 from art_utils.text_tools import extract_all_years
 import dataset_merger.read_datasets
-import prepare_artists
-
+import combine_objects
 
 # constant to encode values from the second artist dataframe
 # when find connected components in the graph
@@ -48,7 +47,7 @@ def get_years_range_sim(range_a, range_b, is_bio=False):
         delta = float(ranges[1][1] - ranges[0][1])
         assert dist >= 0
         assert delta >= 0
-        # TODO: process if artist is still aive (death > 2017 ~2099)
+        # TODO: process if artist is still alive (death > 2017 ~2099)
         # TODO: if one of the ranges is bio, allow only delta < 10
         if dist <= usual_life_span or delta <= 10:
             sim = 1.0
@@ -282,46 +281,6 @@ def get_big_connected_components(connected_components):
 
 
 def combine_artists(objects_list):
-
-    def take_first(objects_list, key):
-        items = [obj[key] for obj in objects_list if not is_null_object(obj[key])]
-        if items:
-            return items[0]
-        else:
-            return np.nan
-
-    def merge_years_range(objects_list, key, fallback_to_group_works=True):
-        assert len(objects_list)
-        ranges = [obj[key] for obj in objects_list if
-                  not obj['is_group_work'] or is_null_object(obj['is_group_work'])]
-        if not len(ranges) and fallback_to_group_works:
-            ranges = [obj[key] for obj in objects_list]
-
-        years = [x for rng in ranges if not is_null_object(rng) for x in rng]
-        years_range = prepare_artists.create_years_range(years)
-        return years_range
-
-    def take_union(objects_list, key, take_group_works=True):
-        for obj in objects_list:
-            if not is_null_object(obj[key]) and not isinstance(obj[key], list):
-                obj[key] = [obj[key]]
-            assert isinstance(obj[key], list) or is_null_object(obj[key]), obj[key]
-
-        # if years => don't take group works
-        if take_group_works:
-            items = list(set(
-                [x for obj in objects_list if not is_null_object(obj[key]) for x in obj[key]]))
-        else:
-            items = list(set(
-                [x for obj in objects_list if not is_null_object(obj[key]) for x in obj[key]
-                 if not obj['is_group_work'] or is_null_object(obj['is_group_work'])]))
-        items = [x for x in items if not is_null_object(x)]
-        for x in items:
-            assert not is_null_object(x), x
-        if not items:
-            items = np.nan
-        return items
-
     objects_list = map(lambda x: defaultdict(lambda: np.nan, x), objects_list)
     for obj in objects_list:
         if 'artist_ids' not in obj:
@@ -333,24 +292,24 @@ def combine_artists(objects_list):
     new_keys -= {'artist_slug', 'total_items_count', 'artist_id'}
     for key in new_keys:
         if key in ['artist_name', 'url_wiki']:
-            new_object[key] = take_first(objects_list, key)
+            new_object[key] = combine_objects.take_first(objects_list, key)
         elif key in ['years']:
-            new_object[key] = take_union(objects_list, key, take_group_works=False)
+            new_object[key] = combine_objects.take_union(objects_list, key, take_group_works=False)
         elif key in ['names', 'artist_ids', 'page_url']:
-            new_object[key] = take_union(objects_list, key, take_group_works=True)
+            new_object[key] = combine_objects.take_union(objects_list, key, take_group_works=True)
         elif key in ['years_work', 'years_bio', 'years_range']:
-            new_object[key] = merge_years_range(objects_list, key,
+            new_object[key] = combine_objects.merge_years_range(objects_list, key,
                                                 fallback_to_group_works=True)
         elif key == 'is_group_work':
-            new_object[key] = np.all(take_union(objects_list, key, take_group_works=True))
+            new_object[key] = np.all(combine_objects.take_union(objects_list, key, take_group_works=True))
         elif key == 'works_count':
             new_object[key] = np.sum([obj[key] for obj in objects_list])
         else:
-            new_object[key] = take_first(objects_list, key)
+            new_object[key] = combine_objects.take_first(objects_list, key)
     return new_object
 
 
-def get_merged_artists_df(dataset_names, dfs_to_merge, sim_matrix, split_big_components=False):
+def get_merged_artists_df(dataset_names, dfs_to_merge, sim_matrix, split_big_components=False, allow_big_components=False):
     """
 
     Args:
@@ -362,6 +321,7 @@ def get_merged_artists_df(dataset_names, dfs_to_merge, sim_matrix, split_big_com
     Returns:
 
     """
+    assert not (split_big_components and allow_big_components)
     if len(dfs_to_merge) != 2:
         raise ValueError('I can merge only 2 dataframes')
     assert len(dataset_names) == len(dfs_to_merge)
@@ -385,11 +345,13 @@ def get_merged_artists_df(dataset_names, dfs_to_merge, sim_matrix, split_big_com
 
     connected_components = find_connected_components(sim_matrix, min_sim=100)
     big_components = [x for x in connected_components if len(x) > 2]
+    print 'big_components number:', len(big_components)
     if split_big_components:
         small_comp = [x for x in connected_components if len(x) <= 2]
         connected_components = small_comp + [{el} for x in big_components for el in x]
         big_components = [x for x in connected_components if len(x) > 2]
-    assert len(big_components) == 0, len(big_components)
+    if not allow_big_components and len(big_components) != 0:
+        raise ValueError('big components are not allowed: ({})'.format(len(big_components)))
 
     merged_artist_objects = list()
     for component in tqdm(connected_components):
