@@ -18,8 +18,9 @@ from eval.feature_extractor_tf import FeatureExtractorTf
 
 warnings.filterwarnings('ignore', category=pd.io.pytables.PerformanceWarning)
 
-
-output_dir = '/export/home/asanakoy/tmp/dataset_merger_res_test'
+ARTISTS_VERSION = '0.92'
+VERSION = '0.92'
+output_dir = '/export/home/asanakoy/workspace/dataset_merger/aggregated/info'
 
 
 def get_duplicate_groups(image_handles, dist_matrix):
@@ -62,7 +63,7 @@ def get_unique_images(image_handles, artist_id, snapshot_path=None, extractor=No
         image_paths.append(join(art_datasets.read.crops_dir[dataset_name],
                                 image_id + u'.{}'.format(art_datasets.read.image_ext(dataset_name))))
 
-    net_args = {'gpu_memory_fraction': 0.96,
+    net_args = {'gpu_memory_fraction': 0.75,
                 'conv5': 'conv5/conv:0', 'fc6':
                     'fc6/fc:0', 'fc7': 'fc7/fc:0'}
     layers = ['fc7']
@@ -89,7 +90,19 @@ def get_unique_images(image_handles, artist_id, snapshot_path=None, extractor=No
 
 
 def group_duplicates(dfs, artists_df, snapshot_path, output_dir):
-    save_path = join(output_dir, 'unique_images_per_artist.h5')
+    """
+    Group duplicate artworks
+    Args:
+        dfs:
+        artists_df:
+        snapshot_path:
+        output_dir:
+
+    Returns:
+        dictionary artist_id: (list of groups of duplicate works)
+
+    """
+    save_path = join(output_dir, 'unique_images_per_artist_v{}.h5'.format(VERSION))
     if os.path.exists(save_path):
         unique_image_handles = dd.io.load(save_path)
         return unique_image_handles
@@ -164,6 +177,11 @@ def create_artworks_df(dfs, artists_df, unique_image_handles, output_dir):
             new_object['years_range'] = artists_df.loc[artist_id, 'years_range']
             new_object['image_id'] = group[0][1]
             new_object['source'] = group[0][0]
+            if new_object['source'] == 'wga' and len(group) > 1:
+                new_object['image_id'] = group[1][1]
+                new_object['source'] = group[1][0]
+            new_object['duplicate_ids'] = map(lambda x: x[0] + '_' + x[1], group)
+
             new_artwork_objects.append(new_object)
     unique_artworks_df = pd.DataFrame.from_dict(new_artwork_objects)
     unique_artworks_df.index = unique_artworks_df['image_id']
@@ -179,9 +197,10 @@ def main():
         os.makedirs(output_dir)
 
     dataset_name = 'wiki+googleart+wga+meisterwerke'
+    # artists_df can be generated with match_artists.ipynb
     artists_df = pd.read_hdf(
-        '/export/home/asanakoy/workspace/dataset_merger/aggregated/artists_{}_v0.9.hdf5'.format(
-            dataset_name))
+        '/export/home/asanakoy/workspace/dataset_merger/aggregated/info/artists_{}_v{}.hdf5'.format(
+            dataset_name, ARTISTS_VERSION))
 
     datasets = ['wiki', 'googleart', 'wga', 'meisterwerke']
     dfs = read_datasets(datasets)
@@ -194,7 +213,9 @@ def main():
 
     unique_image_handles = group_duplicates(dfs, artists_df, snapshot_path, output_dir)
     unique_artworks_df = create_artworks_df(dfs, artists_df, unique_image_handles, output_dir)
-    unique_artworks_df.to_hdf(join(output_dir, 'artworks_{}_v0.9.hdf5'.format(dataset_name)),
+    assert not unique_artworks_df.index.has_duplicates
+    unique_artworks_df.to_hdf(join(output_dir, 'artworks_{}_v{}.hdf5'.format(dataset_name,
+                                                                             VERSION)),
                               'df', mode='w')
 
     print 'Elapsed time: {:.2f} sec'.format(time.time() - time_start)

@@ -109,7 +109,7 @@ def get_google_art_artists_df(df, artist_id_field):
     # do not use artists_info_from_works['artist_name_extra'] as it can contain group names
     artists_df['names'] = artists_df['names'].apply(remove_after_somebody_from_names)
 
-    artists_df['url_wiki'] = artists_df['url_wiki'].str.lower()
+    # artists_df['url_wiki'] = artists_df['url_wiki'].str.lower()
 
     artists_df['years'] = artists_info_from_works['years']
     artists_df['works_count'] = artists_df['years'].apply(len)
@@ -230,7 +230,7 @@ def get_artists_df(df, artist_id_field, split_group_names_on_ampersand=False, na
 
     if 'artist_url_wiki' in df.columns:
         # .lower() because I downloaded in lower for wikiart
-        artists_df['url_wiki'] = df['artist_url_wiki'].iloc[unique_indices].str.lower().values
+        artists_df['url_wiki'] = df['artist_url_wiki'].iloc[unique_indices].values
 
     print len(artists_df)
     artists_df.dropna(subset=['years_range'], inplace=True)
