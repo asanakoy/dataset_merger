@@ -4,8 +4,8 @@ import sklearn.preprocessing
 import tensorflow as tf
 
 #from tfproj
-import eval.features
-import eval.image_getter
+import tfeval.features
+import tfeval.image_getter
 import sys
 print sys.path
 #debug
@@ -38,7 +38,7 @@ class FeatureExtractorTf(object):
         if mean_path is not None:
             assert mean_path.endswith('.npy')
             self.mean = np.load(mean_path)
-        self.net = eval.features.load_net_with_graph(snapshot_path, **net_args)
+        self.net = tfeval.features.load_net_with_graph(snapshot_path, **net_args)
         self.rgb_batch = False
 
     def extract_one(self, image_path, layer_name, flipped=False):
@@ -49,11 +49,11 @@ class FeatureExtractorTf(object):
             raise TypeError('image_path must be a string!')
         if len(self.feature_norm_method) > 1:
             raise NotImplementedError()
-        image_getter = eval.image_getter.ImageGetterFromPaths([image_path],
+        image_getter = tfeval.image_getter.ImageGetterFromPaths([image_path],
                                                               im_shape=self.img_resize_shape,
                                                               rgb_batch=self.rgb_batch)
 
-        feature_dict = eval.features.extract_features(flipped, self.net,
+        feature_dict = tfeval.features.extract_features(flipped, self.net,
                                                       layer_names=[layer_name],
                                                       image_getter=image_getter,
                                                       mean=self.mean,
@@ -80,11 +80,11 @@ class FeatureExtractorTf(object):
         if not isinstance(layer_names, list):
             layer_names = [layer_names]
 
-        image_getter = eval.image_getter.ImageGetterFromPaths(image_paths,
+        image_getter = tfeval.image_getter.ImageGetterFromPaths(image_paths,
                                                               im_shape=self.img_resize_shape,
                                                               rgb_batch=self.rgb_batch)
 
-        feature_dict = eval.features.extract_features(flipped, self.net,
+        feature_dict = tfeval.features.extract_features(flipped, self.net,
                                                       layer_names=layer_names,
                                                       image_getter=image_getter,
                                                       mean=self.mean,
@@ -110,11 +110,11 @@ class BilinearFeatureExtractorTf(FeatureExtractorTf):
         if len(layer_names) > 1:
             raise NotImplementedError
 
-        image_getter = eval.image_getter.ImageGetterFromPaths(image_paths,
+        image_getter = tfeval.image_getter.ImageGetterFromPaths(image_paths,
                                                               im_shape=self.img_resize_shape,
                                                               rgb_batch=self.rgb_batch)
 
-        feature_dict = eval.features.extract_features(flipped, self.net,
+        feature_dict = tfeval.features.extract_features(flipped, self.net,
                                                       layer_names=layer_names,
                                                       image_getter=image_getter,
                                                       mean=self.mean,
