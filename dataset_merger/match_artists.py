@@ -23,7 +23,9 @@ import combine_objects
 SECOND_ARTIST_ENCODE_MULTIPLIER = int(1e6)
 
 
-def get_years_range_sim(range_a, range_b, is_bio=False):
+def get_years_range_sim(range_a, range_b, is_bio=False, max_dist=85.0, max_delta=10,
+                        allow_include=True,
+                        allow_second_range_with_nan=False, bio_range=None):
     """
 
     Args:
@@ -34,28 +36,50 @@ def get_years_range_sim(range_a, range_b, is_bio=False):
     Returns: similarity score from 0 to 1.0
 
     """
+    if allow_second_range_with_nan:
+        if np.isnan(range_b[0]):
+            assert not np.isnan(range_b[1]), 'one of the dates must be not none!'
+            range_b[0] = range_a[0]
+            if range_b[0] > range_b[1] + 3:
+                return 0
+            max_dist = 0
+        elif np.isnan(range_b[1]):
+            assert not np.isnan(range_b[0]), 'one of the dates must be not none!'
+            range_b[1] = range_a[1]
+            if range_b[1] < range_b[0] - 3:
+                return 0
+            max_dist = 0
+
     ranges = [range_a, range_b]
     ranges.sort()
     for i in xrange(2):
         ranges[i] = np.asarray(ranges[i], dtype=float)
-    if ranges[0][0] <= ranges[1][0] and ranges[0][1] >= ranges[1][1]:
+
+    if bio_range is not None:
+        max_dist = 0  # disable if we have bio
+        if allow_include and not np.isnan(bio_range[0]) and (ranges[0][0] < bio_range[0] - 1):
+            allow_include = False
+        if allow_include and not np.isnan(bio_range[1]) and (bio_range[1] + 1 < max(ranges[0][1], ranges[1][1])):
+            allow_include = False
+
+    if allow_include and ((ranges[0][0] <= ranges[1][0] and ranges[1][1] <= ranges[0][1]) or
+                          (ranges[1][0] <= ranges[0][0] and ranges[0][1] <= ranges[1][1])):
         # one is subset of another
         sim = 1.0
     else:
-        usual_life_span = 85.0
-        dist = float(ranges[1][1] - ranges[0][0])
-        delta = float(ranges[1][1] - ranges[0][1])
-        assert dist >= 0
-        assert delta >= 0
+        dist = abs(ranges[1][1] - ranges[0][0])
+        delta = max(abs(ranges[1][1] - ranges[0][1]), abs(ranges[1][0] - ranges[0][0]))
+        assert dist >= 0, ranges
+        assert delta >= 0, ranges
         # TODO: process if artist is still alive (death > 2017 ~2099)
         # TODO: if one of the ranges is bio, allow only delta < 10
-        if dist <= usual_life_span or delta <= 10:
+        if dist <= max_dist or delta <= max_delta:
             sim = 1.0
         else:
-            if delta <= 20:
-                sim = 1 - (min((delta - 10), 10) / 10.0) ** 2
+            if delta <= max_delta + 10:
+                sim = 1 - (min((delta - max_delta), 10) / 10.0) ** 2
             else:
-                sim = 1 - np.sqrt(min((dist - usual_life_span), 35) / 35.0)
+                sim = 1 - np.sqrt(min((dist - max_dist), 35) / 35.0)
     return sim
 
 
