@@ -113,7 +113,10 @@ def get_sim_urls_wiki(url_a, url_b):
 
 
 def compute_sim_for_row(row_a, ns, num_cols):
-    artists_df_b = ns.df
+    if hasattr(ns, 'df'):
+        artists_df_b = ns.df
+    else:
+        artists_df_b = ns
     cur_sim = np.zeros(num_cols)
     names_a = row_a.names
     years_range_a = row_a.years_range
@@ -134,8 +137,8 @@ def compute_sim_for_row(row_a, ns, num_cols):
 
 def compute_sim_matrix(keys, artists_with_years_dict, n_jobs=1):
     assert len(keys) == 2, keys
-    num_cols = len(artists_with_years_dict[keys[1]])
     second_df = artists_with_years_dict[keys[1]].copy()
+    num_cols = len(second_df)
     if 'url_wiki' not in second_df:
         second_df['url_wiki'] = np.nan
     second_df = second_df[['names', 'years_range', 'url_wiki']]
