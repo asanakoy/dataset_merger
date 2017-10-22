@@ -175,13 +175,19 @@ def fix_sim_matrix(dataset_names, dfs_to_merge, sim_matrix, manually_checked_df)
         indices = [None] * 2
         for i in xrange(2):
             # print u'{}: :{}:'.format(dataset_names[i], ids[i])
-            found = np.nonzero(dfs_to_merge[i].index.values == ids[i])[0]
-            assert len(found), u'{}: :{}:'.format(dataset_names[i], ids[i])
-            indices[i] = found[0]
-        new_sim_value = row['is_same'] * (101 + int(row['score'] >= 100))
-        sim_matrix[indices[0], indices[1]] = new_sim_value
-        if row['score'] == 107:
-            assert new_sim_value > 100, '{}: {}'.format(new_sim_value, row)
+
+            found = np.nonzero(dfs_to_merge[i]['artist_ids'].apply(lambda x: ids[i] in x))[0]
+            if len(found):
+                assert len(found), u'{}: :{}:'.format(dataset_names[i], ids[i])
+                indices[i] = found[0]
+            else:
+                indices[i] = None
+                print u'Not found {}: :{}:'.format(dataset_names[i], ids[i])
+        if indices[0] is not None and indices[1] is not None:
+            new_sim_value = row['is_same'] * (101 + int(row['score'] >= 100))
+            sim_matrix[indices[0], indices[1]] = new_sim_value
+            if row['score'] == 107:
+                assert new_sim_value > 100, '{}: {}'.format(new_sim_value, row)
     return sim_matrix
 
 
