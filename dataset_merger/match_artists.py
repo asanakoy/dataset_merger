@@ -36,6 +36,11 @@ def get_years_range_sim(range_a, range_b, is_bio=False, max_dist=85.0, max_delta
     Returns: similarity score from 0 to 1.0
 
     """
+    range_a, range_b = list(range_a), list(range_b)
+    if (np.isnan(range_a[0]) or np.isnan(range_b[0])) and \
+            (np.isnan(range_a[1]) or np.isnan(range_b[1])):
+        raise ValueError('Cannot compare 2 ranges with nans: {}, {}'.format(range_a, range_b))
+
     if allow_second_range_with_nan:
         if np.isnan(range_b[0]):
             assert not np.isnan(range_b[1]), 'one of the dates must be not none!'
@@ -118,7 +123,7 @@ def compute_sim_for_row(row_a, ns, num_cols):
     else:
         artists_df_b = ns
     cur_sim = np.zeros(num_cols)
-    names_a = row_a.names
+    names_a = row_a.artist_names
     years_range_a = row_a.years_range
     for j, row_b in enumerate(artists_df_b.itertuples()):
         if hasattr(row_a, 'url_wiki') and hasattr(row_b, 'url_wiki') and \
@@ -127,7 +132,7 @@ def compute_sim_for_row(row_a, ns, num_cols):
                 'wikipedia.org' in row_b.url_wiki:
             cur_sim[j] = get_sim_urls_wiki(row_a.url_wiki, row_b.url_wiki)
         else:
-            names_b = row_b.names
+            names_b = row_b.artist_names
             years_range_b = row_b.years_range
             years_sim = get_years_range_sim(years_range_a, years_range_b)
             names_sim = get_names_sim(names_a, names_b)
@@ -141,7 +146,7 @@ def compute_sim_matrix(keys, artists_with_years_dict, n_jobs=1):
     num_cols = len(second_df)
     if 'url_wiki' not in second_df:
         second_df['url_wiki'] = np.nan
-    second_df = second_df[['names', 'years_range', 'url_wiki']]
+    second_df = second_df[['artist_names', 'years_range', 'url_wiki']]
 
     # create a manager to share dataframe across the processes
     mgr = multiprocessing.Manager()
@@ -234,10 +239,10 @@ def generate_matches_for_manual_check(dataset_names, dfs_to_merge, sim, min_sim=
                 if min_sim <= sim[i, j] < max_sim:
                     obj = {
                         'score': sim[i, j],
-                        'names_' + dataset_names[0]: dfs_to_merge[0].iloc[i].at['names'],
+                        'names_' + dataset_names[0]: dfs_to_merge[0].iloc[i].at['artist_names'],
                         'dates_' + dataset_names[0]: dfs_to_merge[0].iloc[i].at['years_range'],
                         'artist_id_' + dataset_names[0]: dfs_to_merge[0].index[i],
-                        'names_' + dataset_names[1]: dfs_to_merge[1].iloc[j].at['names'],
+                        'names_' + dataset_names[1]: dfs_to_merge[1].iloc[j].at['artist_names'],
                         'dates_' + dataset_names[1]: dfs_to_merge[1].iloc[j].at['years_range'],
                         'artist_id_' + dataset_names[1]: dfs_to_merge[1].index[j],
                         'is_same': sim[i, j] >= 100,
@@ -252,9 +257,9 @@ def generate_matches_for_manual_check(dataset_names, dfs_to_merge, sim, min_sim=
                     else:
                         objects_to_check.append(obj)
                     # print u'{} {} ({}) = {} ({})'.format(sim[i, j],
-                    #                                      dfs_to_merge[0].iloc[i].at['names'],
+                    #                                      dfs_to_merge[0].iloc[i].at['artist_names'],
                     #                                      dfs_to_merge[0].iloc[i].at['years_range'],
-                    #                                      dfs_to_merge[1].iloc[j].at['names'],
+                    #                                      dfs_to_merge[1].iloc[j].at['artist_names'],
                     #                                      dfs_to_merge[1].iloc[j].at['years_range'])
     df_for_sabine = pd.DataFrame.from_dict(objects_to_check)
     print 'count:', len(df_for_sabine)
@@ -328,7 +333,7 @@ def combine_artists(objects_list):
             new_object[key] = combine_objects.take_first(objects_list, key)
         elif key in ['years']:
             new_object[key] = combine_objects.take_union(objects_list, key, take_group_works=False)
-        elif key in ['names', 'artist_ids', 'page_url']:
+        elif key in ['artist_names', 'artist_ids', 'page_url']:
             new_object[key] = combine_objects.take_union(objects_list, key, take_group_works=True)
         elif key in ['years_work', 'years_bio', 'years_range']:
             new_object[key] = combine_objects.merge_years_range(objects_list, key,
