@@ -134,7 +134,7 @@ def compute_sim_for_row(row_a, ns, num_cols):
         else:
             names_b = row_b.artist_names
             years_range_b = row_b.years_range
-            years_sim = get_years_range_sim(years_range_a, years_range_b)
+            years_sim = get_years_range_sim(years_range_a, years_range_b, max_dist=0)
             names_sim = get_names_sim(names_a, names_b)
             cur_sim[j] = years_sim * names_sim
     return cur_sim
