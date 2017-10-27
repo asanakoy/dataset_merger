@@ -1,366 +1,706 @@
-,score,names_wiki+googleart,dates_wiki+googleart,names_wga,dates_wga,is_same,artist_id_wiki+googleart,artist_id_wga,idx
-0.0,100.0,"[caravaggio, michelangelo merisi da caravaggio]","[1571, 1610]",[cecco del caravaggio],"[1610.0, 1650.0]",0,googleart_m020bg,"wga_cecco del caravaggio, (1610-1610)","(300, 721)"
-1.0,100.0,"[ambrosius bosschaert, ambrosius bosschaerts the elder]","[1573, 1621]","[bosschaert, ambrosius the younger]","[1609, 1645]",0,googleart_m0zxv,"wga_bosschaert, ambrosius the younger, (1609-1645)","(5062, 440)"
-2.0,100.0,[corrado giaquinto],"[1703, 1765]","[giaquinto, corrado]","[1703, 1766]",1,googleart_m059k72,"wga_giaquinto, corrado, (1703-1766)","(3527, 1410)"
-3.0,100.0,[joos van cleve],"[1485, 1541]","[cleve, joos van]","[1485, 1540]",1,googleart_m0gp54j,"wga_cleve, joos van, (1485-1540)","(4500, 791)"
-4.0,100.0,[carlo dolci],"[1616, 1686]","[dolci, carlo]","[1616, 1687]",1,googleart_m01gb6v,"wga_dolci, carlo, (1616-1687)","(2446, 1049)"
-5.0,100.0,"[joseph duplessis, joseph siffred duplessis]","[1725, 1801]","[duplessis, joseph-siffred]","[1725, 1802]",1,googleart_m0g4z6c,"wga_duplessis, joseph-siffred, (1725-1802)","(4455, 1104)"
-6.0,100.0,[carle vernet],"[1758, 1835]","[vernet, carle]","[1758, 1836]",1,googleart_m03_p94,"wga_vernet, carle, (1758-1836)","(2955, 4504)"
-7.0,100.0,"[jean (jehan) fouquet, jean fouquet]","[1420, 1481]","[fouquet, jean]","[1420, 1480]",1,wiki_jean-fouquet,"wga_fouquet, jean, (1420-1480)","(1076, 1265)"
-8.0,100.0,[biagio d'antonio],"[1446, 1516]",[biagio d'antonio],"[1446, 1515]",1,googleart_m03cs7fm,"wga_biagio d'antonio, (1446-1515)","(3021, 327)"
-9.0,100.0,[catharina van hemessen],"[1528, 1588]","[hemessen, catharina van]","[1528, 1587]",1,googleart_m0928s2,"wga_hemessen, catharina van, (1528-1587)","(4040, 1686)"
-10.0,100.0,"[ștefan luchian, stefan luchian]","[1868, 1917]","[luchian, ªtefan]","[1868, 1916]",1,wiki_stefan-luchian,"wga_luchian, ªtefan, (1868-1916)","(2018, 2159)"
-11.0,100.0,"[piero di cosimo, piero di cosimo (piero di lorenzo)]","[1462, 1522]",[piero di cosimo],"[1462, 1521]",1,wiki_piero-di-cosimo,"wga_piero di cosimo, (1462-1521)","(1776, 3259)"
-12.0,100.0,[jacob gerritsz. cuyp],"[1594, 1652]","[cuyp, jacob gerritsz.]","[1594, 1651]",1,googleart_m08ff2n,"wga_cuyp, jacob gerritsz., (1594-1651)","(3993, 946)"
-13.0,100.0,"[johann heinrich schönfeld, heinrich schonfeld]","[1609, 1684]","[schönfeld, johann heinrich]","[1609, 1683]",1,googleart_m09v8z7q,"wga_schönfeld, johann heinrich, (1609-1683)","(879, 3775)"
-14.0,100.0,[david vinckboons],"[1576, 1632]","[vinckboons, david]","[1576, 1633]",1,googleart_m08b45y,"wga_vinckboons, david, (1576-1633)","(3969, 4545)"
-15.0,100.0,"[jan peeters i, gaspar bouttats, jan peeters (i)]","[1624, 1677]","[peeters, jan]","[1624, 1678]",1,googleart_m07s3lk7,"wga_peeters, jan, (1624-1678)","(3891, 3200)"
-16.0,100.0,"[attributed to corneille de lyon, corneille de lyon]","[1500, 1575]",[corneille de lyon],"[1500, 1574]",1,googleart_m065wtb,"wga_corneille de lyon, (1500-1574)","(3702, 858)"
-17.0,100.0,[petrus christus],"[1410, 1476]","[christus, petrus]","[1410, 1475]",1,wiki_petrus-christus,"wga_christus, petrus, (1410-1475)","(1766, 757)"
-18.0,100.0,[baldassare peruzzi],"[1481, 1537]","[peruzzi, baldassare]","[1481, 1536]",1,googleart_m05xd6n,"wga_peruzzi, baldassare, (1481-1536)","(3649, 3225)"
-19.0,100.0,"[jan both, andries both]","[1612, 1642]","[both, andries]","[1612, 1641]",1,googleart_m051yg8,"wga_both, andries, (1612-1641)","(3483, 446)"
-20.0,100.0,"[bartolomé bermejo, bartolomé de cárdenas, bartolome bermejo]","[1440, 1501]","[bermejo, bartolomé]","[1440, 1500]",1,wiki_bartolome-bermejo,"wga_bermejo, bartolomé, (1440-1500)","(231, 302)"
-21.0,100.0,[nicolas tournier],"[1590, 1639]","[tournier, nicolas]","[1590, 1638]",1,wiki_nicolas-tournier,"wga_tournier, nicolas, (1590-1638)","(1634, 4053)"
-22.0,100.0,"[andrea solario (solari), andrea solario]","[1460, 1524]","[solario, andrea]","[1460, 1525]",1,wiki_andrea-solario,"wga_solario, andrea, (1460-1525)","(135, 3853)"
-23.0,100.0,[lorenzo lotto],"[1480, 1557]","[lotto, lorenzo]","[1480, 1556]",1,googleart_m01wr8s,"wga_lotto, lorenzo, (1480-1556)","(1386, 2151)"
-24.0,100.0,[jan baptist weenix],"[1621, 1659]","[weenix, jan baptist]","[1621, 1660]",1,googleart_m03fzgj,"wga_weenix, jan baptist, (1621-1660)","(3095, 4627)"
-25.0,100.0,[joos de momper],"[1564, 1635]","[momper, joos de]","[1564, 1634]",1,googleart_m027whwf,"wga_momper, joos de, (1564-1634)","(2655, 2901)"
-26.0,100.0,[pieter brueghel the younger],"[1564, 1636]","[brueghel, pieter the younger]","[1564, 1638]",1,googleart_m0h6m9,"wga_brueghel, pieter the younger, (1564-1638)","(4565, 544)"
-27.0,100.0,[hans leonhard schäufelein],"[1480, 1540]","[schäufelein, hans leonhard]","[1480, 1538]",1,googleart_m0fg5zr,"wga_schäufelein, hans leonhard, (1480-1538)","(4417, 3771)"
-28.0,100.0,"[matthias stomer, matthias stom]","[1600, 1652]","[stom, matthias]","[1600, 1650]",1,wiki_matthias-stom,"wga_stom, matthias, (1600-1650)","(1515, 3913)"
-29.0,100.0,"[nicolaes eliasz. pickenoy, nicolaes pickenoy]","[1588, 1656]","[pickenoy, nicolaes eliasz.]","[1588, 1654]",1,googleart_m02x3z7k,"wga_pickenoy, nicolaes eliasz., (1588-1654)","(2890, 3252)"
-30.0,100.0,[adam van breen],"[1585, 1640]","[breen, adam van]","[1585, 1642]",1,googleart_m0t50c06,"wga_breen, adam van, (1585-1642)","(4742, 503)"
-31.0,100.0,[pieter van der heyden],"[1530, 1572]","[heyden, pieter van der]","[1530, 1575]",1,googleart_m0vnpmxg,"wga_heyden, pieter van der, (1530-1575)","(4952, 1707)"
-32.0,100.0,"[hendrick van cleve iii, hendrick van cleve]","[1525, 1589]","[cleve, hendrick van iii]","[1525, 1592]",1,googleart_m0g9yt1v,"wga_cleve, hendrick van iii, (1525-1592)","(4473, 790)"
-33.0,100.0,"[artemisia gentileschi, artemesia gentileschi]","[1593, 1656]","[gentileschi, artemisia]","[1593, 1653]",1,googleart_m03bgcm,"wga_gentileschi, artemisia, (1593-1653)","(189, 1382)"
-34.0,100.0,[gherardo starnina],"[1354, 1413]","[starnina, gherardo di jacopo]","[1354, 1409]",1,googleart_m02pqj5_,"wga_starnina, gherardo di jacopo, (1354-1409)","(2719, 3890)"
-35.0,100.0,"[jean baptiste greuze, jean-baptiste greuze]","[1725, 1809]","[greuze, jean-baptiste]","[1725, 1805]",1,googleart_m02yd1s,"wga_greuze, jean-baptiste, (1725-1805)","(1063, 1556)"
-36.0,100.0,[paolo veneziano],"[1300, 1365]",[paolo veneziano],"[1300, 1360]",1,googleart_m02r4wth,"wga_paolo veneziano, (1300-1360)","(2802, 3163)"
-37.0,100.0,"[jan van noordt, joan van noort]","[1623, 1681]","[noordt, jan van]","[1623, 1676]",1,googleart_m0hgmwt4,"wga_noordt, jan van, (1623-1676)","(4577, 3070)"
-38.0,100.0,[nardo di cione],"[1350.0, 1357.0]",[nardo di cione],"[1350.0, 1363.0]",1,googleart_m02wc53d,"wga_nardo di cione, (1343-1343)","(2872, 3014)"
-39.0,100.0,[pieter coecke van aelst],"[1502, 1550]","[coecke van aelst, pieter]","[1502, 1550]",1,googleart_m08lgcf,"wga_coecke van aelst, pieter, (1502-1550)","(4008, 811)"
-40.0,100.0,[jan miel],"[1599, 1656]","[miel, jan]","[1599, 1663]",1,googleart_m027gz_3,"wga_miel, jan, (1599-1663)","(2631, 2473)"
-41.0,100.0,[annibale carracci],"[1560, 1609]","[carracci, annibale]","[1560, 1609]",1,googleart_m017t6m,"wga_carracci, annibale, (1560-1609)","(151, 670)"
-42.0,100.0,[girolamo savoldo],"[1480, 1540]","[savoldo, giovanni girolamo]","[1480, 1548]",1,googleart_m098yxx,"wga_savoldo, giovanni girolamo, (1480-1548)","(4058, 3724)"
-43.0,100.0,"[cornelius norbertus gijsbrechts, cornelis norbertus gysbrechts (cornelius gijsbrechts), cornelis norbertus gysbrechts]","[1630, 1683]","[gijsbrechts, cornelis norbertus]","[1630, 1675]",1,googleart_m026hr8f,"wga_gijsbrechts, cornelis norbertus, (1630-1675)","(407, 1415)"
-44.0,100.0,[robert salmon],"[1775, 1858]","[salmon, robert]","[1775, 1848]",1,googleart_m02pmxfl,"wga_salmon, robert, (1775-1848)","(2716, 3682)"
-45.0,100.0,"[jan sanders van hemessen, jan van hemessen, jan van hemessen (hemiksem ca. 1500 –]","[1500, 1566]","[hemessen, jan sanders van]","[1500, 1556]",1,wiki_jan-van-hemessen,"wga_hemessen, jan sanders van, (1500-1556)","(1049, 1687)"
-46.0,100.0,[sebald beham],"[1500, 1550]","[beham, hans sebald]","[1500, 1540]",1,googleart_m09mstn,"wga_beham, hans sebald, (1500-1540)","(4108, 245)"
-47.0,100.0,[pierre-jacques volaire],"[1729, 1802]","[volaire, pierre-jacques]","[1729, 1790]",1,googleart_m010ry66w,"wga_volaire, pierre-jacques, (1729-1790)","(2359, 4578)"
-48.0,100.0,"[gillis peeters (i), joannes meyssens, joannes meyssens]","[1612, 1670]","[peeters, gillis i]","[1612, 1653]",1,googleart_m0bx_hj6,"wga_peeters, gillis i, (1612-1653)","(4255, 3199)"
-49.0,100.0,"[hendrik goudt, hendrick goudt]","[1583, 1630]","[goudt, hendrick]","[1583, 1648]",1,googleart_m09k606s,"wga_goudt, hendrick, (1583-1648)","(4097, 1525)"
-50.0,100.0,"[guido cagnacci, called guido canlassi, guido cagnacci]","[1601, 1663]","[cagnacci, guido]","[1601, 1682]",1,googleart_m08z_b6,"wga_cagnacci, guido, (1601-1682)","(4036, 596)"
-51.0,100.0,[marinus van reymerswaele],"[1490, 1546]","[reymerswaele, marinus van]","[1490, 1567]",1,googleart_m0d37b4,"wga_reymerswaele, marinus van, (1490-1567)","(4350, 3463)"
-52.0,98.0,[baldassare franceschini],"[1611, 1689]","[franceschini, baldassarre]","[1611, 1690]",1,googleart_m073kfr,"wga_franceschini, baldassarre, (1611-1690)","(3796, 1272)"
-53.0,94.0,"[john frederick herring, sr.]","[1795, 1865]","[herring, john frederick the elder]","[1795, 1863]",1,googleart_m02644ly,"wga_herring, john frederick the elder, (1795-1863)","(2534, 1698)"
-54.0,96.0,[reinier nooms],"[1623, 1667]","[nooms, reiner]","[1623, 1664]",1,googleart_m0h6pg0,"wga_nooms, reiner, (1623-1664)","(4571, 3069)"
-55.0,94.0,[bonifazio veronese],"[1487, 1553]",[bonifacio veronese],"[1487, 1557]",1,googleart_m07pw80,"wga_bonifacio veronese, (1487-1557)","(3888, 409)"
-56.0,90.0,[cornelis massijs],"[1510, 1562]","[massys, cornelis]","[1510, 1556]",1,googleart_m0t5fw8n,"wga_massys, cornelis, (1510-1556)","(4896, 2274)"
-57.0,100.0,[lambert sustris],"[1515, 1584]","[sustris, lambert]","[1515, 1560]",1,googleart_m0273xfq,"wga_sustris, lambert, (1515-1560)","(2613, 3947)"
-58.0,100.0,[loyset liédet],"[1420, 1420]","[liédet, loyset]","[1420, 1479]",1,googleart_m0k87vbk,"wga_liédet, loyset, (1420-1479)","(4612, 2114)"
-59.0,92.0,[carl blechen],"[1798, 1840]","[blechen, karl]","[1797, 1840]",1,googleart_m02qly32,"wga_blechen, karl, (1797-1840)","(2770, 358)"
-60.0,90.0,[jan matsys],"[1509, 1575]","[massys, jan]","[1510, 1575]",1,googleart_m02r0dtt,"wga_massys, jan, (1510-1575)","(2789, 2275)"
-61.0,100.0,[lazzaro baldi],"[1624, 1703]","[baldi, lazzaro]","[1622, 1703]",1,googleart_m02qs928,"wga_baldi, lazzaro, (1622-1703)","(2779, 156)"
-62.0,100.0,[william dobson],"[1611, 1646]","[dobson, william]","[1610, 1646]",1,googleart_m0j555,"wga_dobson, william, (1610-1646)","(4599, 1047)"
-63.0,100.0,[jacob marrel],"[1614, 1681]","[marrel, jacob]","[1613, 1681]",1,googleart_m07k7rkf,"wga_marrel, jacob, (1613-1681)","(3864, 2250)"
-64.0,100.0,[frans geffels],"[1625, 1694]","[geffels, frans]","[1624, 1694]",1,googleart_m0j2750r,"wga_geffels, frans, (1624-1694)","(4594, 1371)"
-65.0,100.0,"[maurice brazil prendergast, maurice prendergast]","[1858, 1924]","[prendergast, maurice brazil]","[1859, 1924]",1,googleart_m039zxc,"wga_prendergast, maurice brazil, (1859-1924)","(1523, 3345)"
-66.0,97.0,[gerard de lairesse],"[1640, 1711]","[lairesse, gérard de]","[1641, 1711]",1,googleart_m027st_3,"wga_lairesse, gérard de, (1641-1711)","(2649, 1967)"
-67.0,100.0,"[pietro falca, pietro longhi]","[1701, 1785]","[longhi, pietro]","[1702, 1785]",1,googleart_m04h26q,"wga_longhi, pietro, (1702-1785)","(1800, 2129)"
-68.0,88.0,[paul van somer i],"[1577, 1621]","[somer, paulus van]","[1576, 1621]",1,googleart_m02r4t4l,"wga_somer, paulus van, (1576-1621)","(2802, 3859)"
-69.0,100.0,[dirck van delen],"[1605, 1671]","[delen, dirck van]","[1604, 1671]",1,googleart_m07s7sps,"wga_delen, dirck van, (1604-1671)","(3901, 999)"
-70.0,100.0,"[suor plautilla nelli (pulisena margherita nelli), plautilla nelli]","[1524, 1588]","[nelli, plautilla]","[1523, 1588]",1,wiki_plautilla-nelli,"wga_nelli, plautilla, (1523-1588)","(1806, 3033)"
-71.0,100.0,"[rogier de le pasture, rogier van der weyden]","[1399, 1464]","[weyden, rogier van der]","[1400, 1464]",1,googleart_m01bbhx,"wga_weyden, rogier van der, (1400-1464)","(1915, 4645)"
-72.0,100.0,"[alessandro di mariano di vanni filipepi, sandro botticelli]","[1445, 1510]","[botticelli, sandro]","[1444, 1510]",1,wiki_sandro-botticelli,"wga_botticelli, sandro, (1444-1510)","(1961, 450)"
-73.0,100.0,[jan jansz van de velde],"[1620, 1662]","[velde, jan jansz. van de]","[1619, 1662]",1,googleart_m0g59kwv,"wga_velde, jan jansz. van de, (1619-1662)","(4466, 4462)"
-74.0,100.0,[louis rolland trinquesse],"[1746, 1800]","[trinquesse, louis-rolland]","[1745, 1800]",1,googleart_m05f7v6k,"wga_trinquesse, louis-rolland, (1745-1800)","(3570, 4065)"
-75.0,100.0,[massimo stanzione],"[1586, 1656]","[stanzione, massimo]","[1585, 1656]",1,googleart_m026qknc,"wga_stanzione, massimo, (1585-1656)","(2579, 3889)"
-76.0,97.0,[juan sánchez cotán],"[1560, 1627]","[sanchez cotán, juan]","[1561, 1627]",1,googleart_m026dnfj,"wga_sanchez cotán, juan, (1561-1627)","(2551, 3693)"
-77.0,100.0,[jacob adriaensz backer],"[1609, 1651]","[backer, jacob adriaensz.]","[1608, 1651]",1,googleart_m0261pvk,"wga_backer, jacob adriaensz., (1608-1651)","(2527, 139)"
-78.0,100.0,[govert dircksz camphuysen],"[1624, 1672]","[camphuysen, govert dircksz.]","[1623, 1672]",1,googleart_m0fpjmdn,"wga_camphuysen, govert dircksz., (1623-1672)","(4429, 619)"
-79.0,100.0,[jean charles cazin],"[1840, 1901]","[cazin, jean-charles]","[1841, 1901]",1,googleart_m01dqr6,"wga_cazin, jean-charles, (1841-1901)","(2437, 718)"
-80.0,100.0,[lazzaro bastiani],"[1429, 1512]","[bastiani, lazzaro]","[1449, 1512]",1,googleart_m02rlr91,"wga_bastiani, lazzaro, (1449-1512)","(2823, 208)"
-81.0,100.0,[pieter jansz quast],"[1606, 1647]","[quast, pieter jansz.]","[1605, 1647]",1,googleart_m0bwk9cs,"wga_quast, pieter jansz., (1605-1647)","(4255, 3383)"
-82.0,88.0,[friedrich wilhelm schadow],"[1789, 1862]","[schadow, wilhelm von]","[1788, 1862]",1,googleart_m03jsw8,"wga_schadow, wilhelm von, (1788-1862)","(3144, 3732)"
-83.0,100.0,[frans floris],"[1517, 1570]","[floris, frans]","[1516, 1570]",1,googleart_m03hg_g,"wga_floris, frans, (1516-1570)","(3119, 1242)"
-84.0,100.0,"[benozzo di lese, benozzo gozzoli]","[1421, 1497]","[gozzoli, benozzo]","[1420, 1497]",1,wiki_benozzo-gozzoli,"wga_gozzoli, benozzo, (1420-1497)","(249, 1531)"
-85.0,100.0,"[bernardo bellotto, bernardo francesco paolo ernesto bellotto]","[1721, 1780]","[bellotto, bernardo]","[1720, 1780]",1,googleart_m04_nhc9,"wga_bellotto, bernardo, (1720-1780)","(255, 264)"
-86.0,100.0,[bernhard strigel],"[1461, 1528]","[strigel, bernhard]","[1460, 1528]",1,wiki_bernhard-strigel,"wga_strigel, bernhard, (1460-1528)","(259, 3925)"
-87.0,100.0,[caesar van everdingen],"[1616, 1678]","[everdingen, caesar van]","[1617, 1678]",1,googleart_m03fzny,"wga_everdingen, caesar van, (1617-1678)","(3100, 1162)"
-88.0,100.0,[carl rottmann],"[1797, 1850]","[rottmann, carl]","[1798, 1850]",1,googleart_m07g6xv,"wga_rottmann, carl, (1798-1850)","(3844, 3620)"
-89.0,100.0,[carel de moor],"[1655, 1738]","[moor, carel de ii]","[1656, 1738]",1,googleart_m03frpb,"wga_moor, carel de ii, (1656-1738)","(3086, 2919)"
-90.0,100.0,"[correggio, antonio allegri da correggio, antonio da correggio]","[1489, 1534]",[correggio],"[1490, 1534]",1,wiki_correggio,"wga_correggio, (1490-1534)","(412, 867)"
-91.0,93.0,[quentin matsys],"[1466, 1530]","[massys, quentin]","[1465, 1530]",1,googleart_m0mf02,"wga_massys, quentin, (1465-1530)","(4629, 2276)"
-92.0,100.0,[francesco bacchiacca],"[1495, 1557]",[bacchiacca],"[1494, 1557]",1,googleart_m0ksykv,"wga_bacchiacca, (1494-1557)","(4620, 137)"
-93.0,100.0,[jan porcellis],"[1583, 1632]","[porcellis, jan]","[1584, 1632]",1,googleart_m03czwjg,"wga_porcellis, jan, (1584-1632)","(3047, 3321)"
-94.0,100.0,[jacob savery],"[1566, 1603]","[savery, jacob i]","[1565, 1603]",1,googleart_m0bxzcy4,"wga_savery, jacob i, (1565-1603)","(4261, 3720)"
-95.0,100.0,[marco palmezzano],"[1460, 1539]","[palmezzano, marco]","[1459, 1539]",1,googleart_m0b4p0z,"wga_palmezzano, marco, (1459-1539)","(4178, 3152)"
-96.0,100.0,[franz richard unterberger],"[1837, 1902]","[unterberger, franz-richard]","[1838, 1902]",1,wiki_franz-richard-unterberger,"wga_unterberger, franz-richard, (1838-1902)","(660, 4411)"
-97.0,100.0,"[fyodor rokotov, фёдор рокотов]","[1736, 1808]","[rokotov, fyodor]","[1735, 1808]",1,wiki_fyodor-rokotov,"wga_rokotov, fyodor, (1735-1808)","(690, 3523)"
-98.0,100.0,"[giotto, giotto di bondone]","[1266, 1337]",[giotto di bondone],"[1267, 1337]",1,googleart_m0kp91,"wga_giotto di bondone, (1267-1337)","(778, 1433)"
-99.0,100.0,[giovanni antonio boltraffio],"[1466, 1516]","[boltraffio, giovanni antonio]","[1467, 1516]",1,wiki_giovanni-antonio-boltraffio,"wga_boltraffio, giovanni antonio, (1467-1516)","(780, 400)"
-100.0,96.0,[michael sittow],"[1469, 1525]","[sittow, michel]","[1468, 1525]",1,googleart_m03cvclv,"wga_sittow, michel, (1468-1525)","(3030, 3835)"
-101.0,100.0,[giuseppe arcimboldo],"[1527, 1593]","[arcimboldo, giuseppe]","[1526, 1593]",1,wiki_giuseppe-arcimboldo,"wga_arcimboldo, giuseppe, (1526-1593)","(792, 103)"
-102.0,100.0,[balthasar van der ast],"[1593, 1657]","[ast, balthasar van der]","[1594, 1657]",1,googleart_m04lj90w,"wga_ast, balthasar van der, (1594-1657)","(3397, 119)"
-103.0,94.0,[claes corneliszoon moeyaert],"[1592, 1655]","[moeyaert, claes cornelisz.]","[1591, 1655]",1,googleart_m02x04r3,"wga_moeyaert, claes cornelisz., (1591-1655)","(2885, 2885)"
-104.0,100.0,"[hercules pieterszoon seghers, hercules seghers]","[1589, 1638]","[seghers, hercules]","[1590, 1638]",1,wiki_hercules-seghers,"wga_seghers, hercules, (1590-1638)","(914, 3791)"
-105.0,100.0,[james thornhill],"[1675, 1734]","[thornhill, sir james]","[1676, 1734]",1,googleart_m01b4dg,"wga_thornhill, sir james, (1676-1734)","(2424, 4006)"
-106.0,94.0,[willem pieterszoon buytewech],"[1592, 1624]","[buytewech, willem pietersz.]","[1591, 1625]",1,googleart_m0d57r8,"wga_buytewech, willem pietersz., (1591-1625)","(4359, 578)"
-107.0,100.0,[michel dorigny],"[1617, 1663]","[dorigny, michel]","[1616, 1665]",1,googleart_m0gyrqrk,"wga_dorigny, michel, (1616-1665)","(4542, 1065)"
-108.0,100.0,"[pietro falca, pietro longhi]","[1701, 1785]","[longhi, pietro]","[1702, 1785]",1,googleart_m04h26q,"wga_longhi, pietro, (1702-1785)","(1800, 2128)"
-109.0,100.0,[maso di banco],"[1336.0, 1353.0]",[maso di banco],"[1335.0, 1350.0]",1,googleart_m02qrlt5,"wga_maso di banco, (1320-1320)","(2777, 2271)"
-110.0,100.0,[romanino],"[1485, 1566]","[romanino, girolamo]","[1484, 1559]",1,googleart_m09932z,"wga_romanino, girolamo, (1484-1559)","(4064, 3588)"
-111.0,85.0,[giovanni battista paggi],"[1554, 1627]","[trotti, giovanni battista]","[1555, 1619]",0,googleart_m02759zl,"wga_trotti, giovanni battista, (1555-1619)","(2618, 4070)"
-112.0,100.0,[pieter cornelisz van rijck],"[1567, 1637]","[rijck, pieter cornelisz van]","[1568, 1628]",1,googleart_m0g53kf0,"wga_rijck, pieter cornelisz van, (1568-1628)","(4460, 3485)"
-113.0,100.0,[melchior lorck],"[1527, 1588]","[lorck, melchior]","[1526, 1598]",1,googleart_m09g9jck,"wga_lorck, melchior, (1526-1598)","(4083, 2139)"
-114.0,100.0,[pieter feddes van harlingen],"[1586, 1623]","[feddes, pieter]","[1585, 1634]",1,googleart_m0ds41dy,"wga_feddes, pieter, (1585-1634)","(4397, 1195)"
-115.0,100.0,"[le nain brothers, antoine le nain, louis le nain, mathieu le nain]","[1599, 1648]",[le nain brothers],"[1598, 1677]",1,wiki_le-nain-brothers,"wga_le nain brothers, (1598-1677)","(1343, 2012)"
-116.0,100.0,[jacob cornelisz van oostsanen],"[1470, 1533]","[cornelisz van oostsanen, jacob]","[1472, 1533]",1,googleart_m02r4qbw,"wga_cornelisz van oostsanen, jacob, (1472-1533)","(2801, 862)"
-117.0,100.0,[sofonisba anguissola],"[1532, 1625]","[anguissola, sofonisba]","[1530, 1625]",1,wiki_sofonisba-anguissola,"wga_anguissola, sofonisba, (1530-1625)","(2000, 79)"
-118.0,100.0,[jan weenix],"[1640, 1719]","[weenix, jan]","[1642, 1719]",1,googleart_m03fzgx,"wga_weenix, jan, (1642-1719)","(3098, 4628)"
-119.0,100.0,[jean nocret],"[1615, 1672]","[nocret, jean]","[1617, 1672]",1,googleart_m0gydv63,"wga_nocret, jean, (1617-1672)","(4540, 3062)"
-120.0,100.0,[rosalba carriera],"[1673, 1757]","[carriera, rosalba]","[1675, 1757]",1,wiki_rosalba-carriera,"wga_carriera, rosalba, (1675-1757)","(1930, 676)"
-121.0,100.0,[federico barocci],"[1528, 1612]","[barocci, federico fiori]","[1526, 1612]",1,googleart_m03hh23,"wga_barocci, federico fiori, (1526-1612)","(3125, 179)"
-122.0,100.0,[abraham bloemaert],"[1564, 1651]","[bloemaert, abraham]","[1566, 1651]",1,googleart_m03fz_9,"wga_bloemaert, abraham, (1566-1651)","(3094, 366)"
-123.0,100.0,[jules joseph lefebvre],"[1836, 1911]","[lefebvre, jules-joseph]","[1834, 1911]",1,wiki_jules-joseph-lefebvre,"wga_lefebvre, jules-joseph, (1834-1911)","(1236, 2031)"
-124.0,100.0,[lazzaro baldi],"[1624, 1703]","[baldi, lazzaro]","[1622, 1703]",1,googleart_m02qs928,"wga_baldi, lazzaro, (1622-1703)","(2779, 155)"
-125.0,97.0,[gaspar de crayer],"[1582, 1669]","[crayer, gaspard de]","[1584, 1669]",1,googleart_m072hvc,"wga_crayer, gaspard de, (1584-1669)","(3789, 917)"
-126.0,87.0,[jan wijnants],"[1632, 1684]","[wynants, jan]","[1630, 1684]",1,googleart_m03gzxbq,"wga_wynants, jan, (1630-1684)","(3115, 4699)"
-127.0,100.0,[giovanni battista crespi],"[1573, 1632]","[crespi, giovanni battista]","[1575, 1632]",1,googleart_m07rn1b,"wga_crespi, giovanni battista, (1575-1632)","(3893, 920)"
-128.0,100.0,[anton von maron],"[1731, 1808]","[maron, anton von]","[1733, 1808]",1,googleart_m04jch4r,"wga_maron, anton von, (1733-1808)","(3370, 2247)"
-129.0,100.0,[jan van de cappelle],"[1624, 1679]","[cappelle, jan van de]","[1626, 1679]",1,googleart_m04ykwwj,"wga_cappelle, jan van de, (1626-1679)","(3459, 643)"
-130.0,100.0,[lorenzo di niccolò],"[1390.0, 1412.0]",[lorenzo di niccolò di martino],"[1392, 1412]",1,googleart_m02plrsk,"wga_lorenzo di niccolò di martino, (1392-1412)","(2715, 2146)"
-131.0,90.0,[gerard van honthorst],"[1592, 1656]","[honthorst, gerrit van]","[1590, 1656]",1,googleart_m03f_3c,"wga_honthorst, gerrit van, (1590-1656)","(3080, 1747)"
-132.0,100.0,[francesco melzi],"[1491, 1570]","[melzi, francesco]","[1493, 1570]",1,googleart_m05n4hz,"wga_melzi, francesco, (1493-1570)","(3617, 2431)"
-133.0,98.0,[juan bautista martínez del mazo],"[1612, 1667]","[mazo, juan bautista martinez del]","[1610, 1667]",1,googleart_m026dp4m,"wga_mazo, juan bautista martinez del, (1610-1667)","(2552, 2404)"
-134.0,100.0,[thomas jones barker],"[1815, 1882]","[barker, thomas jones]","[1813, 1882]",1,wiki_thomas-jones-barker,"wga_barker, thomas jones, (1813-1882)","(2082, 175)"
-135.0,100.0,[adam pynacker],"[1622, 1673]","[pynacker, adam]","[1620, 1673]",1,googleart_m04ykwvw,"wga_pynacker, adam, (1620-1673)","(3458, 3372)"
-136.0,100.0,[carl wilhelm kolbe],"[1757, 1835]","[kolbe, carl wilhelm]","[1759, 1835]",1,googleart_g122cz0ds,"wga_kolbe, carl wilhelm, (1759-1835)","(2316, 1925)"
-137.0,100.0,[antonio palomino],"[1653, 1726]","[palomino, acislo antonio]","[1655, 1726]",1,googleart_m06lm3y,"wga_palomino, acislo antonio, (1655-1726)","(3744, 3153)"
-138.0,100.0,[bernardino luini],"[1482, 1532]","[luini, bernardino]","[1480, 1532]",1,googleart_m04qf6w,"wga_luini, bernardino, (1480-1532)","(3427, 2161)"
-139.0,100.0,[johann michael rottmayr],"[1656, 1730]","[rottmayr, johann michael]","[1654, 1730]",1,googleart_m065z6w,"wga_rottmayr, johann michael, (1654-1730)","(3706, 3621)"
-140.0,100.0,[abraham bosse],"[1604, 1676]","[bosse, abraham]","[1602, 1676]",1,googleart_m032jjq,"wga_bosse, abraham, (1602-1676)","(2928, 445)"
-141.0,100.0,"[george barret, sr.]","[1730, 1784]","[barret, george]","[1728, 1784]",1,googleart_m0b3ftg,"wga_barret, george, (1728-1784)","(4174, 186)"
-142.0,98.0,[antonio del pollaiolo],"[1433, 1498]","[pollaiuolo, antonio del]","[1431, 1498]",1,googleart_m01hxsn,"wga_pollaiuolo, antonio del, (1431-1498)","(2457, 3309)"
-143.0,97.0,[piero del pollaiolo],"[1443, 1496]","[pollaiuolo, piero del]","[1441, 1496]",1,googleart_m01hxtl,"wga_pollaiuolo, piero del, (1441-1496)","(2458, 3310)"
-144.0,97.0,"[tiziano vecelli, titian]","[1488, 1578.0]",[tiziano vecellio],"[1490, 1576]",1,googleart_m0144mv,"wga_tiziano vecellio, (1490-1576)","(2094, 4031)"
-145.0,100.0,[carlos de haes],"[1829, 1898]","[haes, carlos de]","[1826, 1898]",1,googleart_m0n52vn0,"wga_haes, carlos de, (1826-1898)","(4632, 1624)"
-146.0,100.0,[joachim von sandrart],"[1606, 1688]","[sandrart, joachim von]","[1609, 1688]",1,googleart_m03f_4x,"wga_sandrart, joachim von, (1609-1688)","(3081, 3696)"
-147.0,96.0,[jan provoost],"[1462, 1529]","[provost, jan]","[1465, 1529]",1,googleart_m07pwql,"wga_provost, jan, (1465-1529)","(1043, 3356)"
-148.0,91.0,[johannes cornelisz verspronck],"[1600, 1662]","[verspronck, jan cornelisz]","[1603, 1662]",1,googleart_m02ww2mr,"wga_verspronck, jan cornelisz, (1603-1662)","(2881, 4511)"
-149.0,100.0,[juste-aurèle meissonnier],"[1695, 1750]","[meissonnier, juste-aurèle]","[1698, 1750]",1,googleart_m0506cv,"wga_meissonnier, juste-aurèle, (1698-1750)","(3470, 2424)"
-150.0,100.0,[bartolomeo biscaino],"[1632, 1657]","[biscaino, bartolomeo]","[1629, 1657]",1,googleart_m02q7974,"wga_biscaino, bartolomeo, (1629-1657)","(2750, 346)"
-151.0,100.0,[joachim beuckelaer],"[1533, 1574]","[beuckelaer, joachim]","[1530, 1574]",1,googleart_m04ltq2,"wga_beuckelaer, joachim, (1530-1574)","(3402, 320)"
-152.0,100.0,[vincenzo foppa],"[1430, 1515]","[foppa, vincenzo]","[1427, 1515]",1,googleart_m0739w1,"wga_foppa, vincenzo, (1427-1515)","(3795, 1256)"
-153.0,100.0,[francesco furini],"[1600, 1646]","[furini, francesco]","[1603, 1646]",1,googleart_m0bcll2,"wga_furini, francesco, (1603-1646)","(4212, 1316)"
-154.0,100.0,[niccolò dell'abbate],"[1512, 1571]","[abbate, niccolò dell']","[1509, 1571]",1,googleart_m03l1hs,"wga_abbate, niccolò dell', (1509-1571)","(3149, 3)"
-155.0,100.0,[jaume huguet],"[1412, 1492]","[huguet, jaume]","[1415, 1492]",1,googleart_m05sxdkl,"wga_huguet, jaume, (1415-1492)","(3646, 1774)"
-156.0,100.0,[cornelis claesz van wieringen],"[1577, 1633]","[wieringen, cornelis claesz van]","[1580, 1633]",1,googleart_m03qh0_k,"wga_wieringen, cornelis claesz van, (1580-1633)","(3208, 4650)"
-157.0,100.0,[herman van swanevelt],"[1603, 1655]","[swanevelt, herman van]","[1600, 1655]",1,googleart_m026m_lb,"wga_swanevelt, herman van, (1600-1655)","(2568, 3954)"
-158.0,100.0,[isaac oliver],"[1565, 1617]","[oliver, isaac]","[1568, 1617]",1,googleart_m05kclq,"wga_oliver, isaac, (1568-1617)","(3597, 3093)"
-159.0,100.0,[lorenzo veneziano],"[1359, 1371]",[lorenzo veneziano],"[1356, 1372]",1,googleart_m03d1ddv,"wga_lorenzo veneziano, (1356-1372)","(3052, 2148)"
-160.0,100.0,[andrea di bonaiuto da firenze],"[1346, 1379]",[andrea da firenze],"[1343, 1377]",1,googleart_m0t5fn9w,"wga_andrea da firenze, (1343-1377)","(4831, 59)"
-161.0,100.0,[marco d'oggiono],"[1470, 1549]","[oggiono, marco d']","[1467, 1524]",1,googleart_m02630t2,"wga_oggiono, marco d', (1467-1524)","(2531, 3091)"
-162.0,100.0,[giovanni bellini],"[1430, 1516]","[bellini, giovanni]","[1426, 1516]",1,wiki_giovanni-bellini,"wga_bellini, giovanni, (1426-1516)","(784, 258)"
-163.0,100.0,"[hans baldung grien (grün), hans baldung]","[1480, 1545]","[baldung grien, hans]","[1484, 1545]",1,wiki_hans-baldung,"wga_baldung grien, hans, (1484-1545)","(857, 162)"
-164.0,100.0,[palma il giovane],"[1544, 1628]",[palma giovane],"[1548, 1628]",1,googleart_m0gjxb9,"wga_palma giovane, (1548-1628)","(4497, 3147)"
-165.0,100.0,[hendrick cornelisz vroom],"[1562, 1640]","[vroom, hendrick cornelisz.]","[1566, 1640]",1,wiki_hendrick-cornelisz-vroom,"wga_vroom, hendrick cornelisz., (1566-1640)","(888, 4601)"
-166.0,100.0,[lippo vanni],"[1344, 1375]","[vanni, lippo]","[1340, 1375]",1,googleart_m03d4s6p,"wga_vanni, lippo, (1340-1375)","(3067, 4443)"
-167.0,100.0,[paulus bor],"[1601, 1669]","[bor, paulus]","[1605, 1669]",1,googleart_m02w7jfq,"wga_bor, paulus, (1605-1669)","(2867, 417)"
-168.0,100.0,[andrea vaccaro],"[1600, 1670]","[vaccaro, andrea]","[1604, 1670]",1,googleart_m02pjbbg,"wga_vaccaro, andrea, (1604-1670)","(2713, 4422)"
-169.0,100.0,"[claude gellée, claude lorrain]","[1600, 1682]",[claude lorrain],"[1604, 1682]",1,googleart_m0l057,"wga_claude lorrain, (1604-1682)","(381, 785)"
-170.0,100.0,[bernardo zenale],"[1460, 1526]","[zenale, bernardo]","[1464, 1526]",1,googleart_m026kjd0,"wga_zenale, bernardo, (1464-1526)","(2566, 4719)"
-171.0,100.0,[wolf traut],"[1481, 1520]","[traut, wolf]","[1485, 1520]",1,googleart_g1q2xhknh6,"wga_traut, wolf, (1485-1520)","(2346, 4060)"
-172.0,100.0,[simone martini],"[1284, 1344]",[simone martini],"[1280, 1344]",1,googleart_m01fshq,"wga_simone martini, (1280-1344)","(1997, 3829)"
-173.0,100.0,[giovanni di paolo],"[1395, 1482]",[giovanni di paolo],"[1399, 1482]",1,googleart_m08rv2l,"wga_giovanni di paolo, (1399-1482)","(4025, 1451)"
-174.0,100.0,[piero della francesca],"[1412, 1492]",[piero della francesca],"[1416, 1492]",1,googleart_m01fd65,"wga_piero della francesca, (1416-1492)","(1775, 3258)"
-175.0,100.0,[camillo procaccini],"[1551, 1629]","[procaccini, camillo]","[1555, 1629]",1,googleart_m026md58,"wga_procaccini, camillo, (1555-1629)","(2569, 3351)"
-176.0,100.0,"[pietro perugino, pietro vannucci]","[1446, 1524]","[perugino, pietro]","[1450, 1523]",1,googleart_m03k9yt,"wga_perugino, pietro, (1450-1523)","(1801, 3224)"
-177.0,91.0,[bernard van orley],"[1487, 1541]","[orley, bernaert van]","[1491, 1542]",1,googleart_m038zl9,"wga_orley, bernaert van, (1491-1542)","(2948, 3106)"
-178.0,100.0,[cornelis bos],"[1510, 1566]","[bos, cornelis]","[1506, 1556]",1,googleart_m0dgrgtn,"wga_bos, cornelis, (1506-1556)","(4379, 433)"
-179.0,100.0,[colijn de coter],"[1450, 1540]","[coter, colijn de]","[1446, 1538]",1,googleart_m0b73vmp,"wga_coter, colijn de, (1446-1538)","(4191, 884)"
-180.0,100.0,[marco pino],"[1521, 1583]","[pino, marco]","[1525, 1587]",1,googleart_m02qsxjv,"wga_pino, marco, (1525-1587)","(2782, 3278)"
-181.0,100.0,[hans von kulmbach],"[1476, 1528]","[kulmbach, hans süss von]","[1480, 1522]",1,googleart_m0dnh1,"wga_kulmbach, hans süss von, (1480-1522)","(4394, 1945)"
-182.0,100.0,[master of alkmaar],"[1504.0, 1535.0]",[master of alkmaar],"[1500, 1515]",1,googleart_m0462_8d,"wga_master of alkmaar, (1500-1515)","(3272, 2293)"
-183.0,100.0,[sisto badalocchio],"[1581, 1647]","[badalocchio, sisto]","[1585, 1619]",1,googleart_m0f_9s,"wga_badalocchio, sisto, (1585-1619)","(4417, 142)"
-184.0,85.0,[giovanni battista gaulli],"[1639, 1709]","[falda, giovanni battista]","[1643, 1678]",0,googleart_m06vspx,"wga_falda, giovanni battista, (1643-1678)","(3761, 1182)"
-185.0,100.0,[spinello aretino],"[1350, 1410]",[spinello aretino],"[1345, 1410]",1,googleart_m03xy71,"wga_spinello aretino, (1345-1410)","(3236, 3879)"
-186.0,100.0,[polidoro da caravaggio],"[1492, 1543]",[polidoro da caravaggio],"[1497, 1543]",1,googleart_m03hh0m,"wga_polidoro da caravaggio, (1497-1543)","(3124, 3307)"
-187.0,100.0,[carlo crivelli],"[1435, 1495]","[crivelli, carlo]","[1430, 1495]",1,googleart_m03kbd5,"wga_crivelli, carlo, (1430-1495)","(309, 925)"
-188.0,100.0,[ippolito caffi],"[1814, 1866]","[caffi, ippolito]","[1809, 1866]",1,googleart_m03cz9zt,"wga_caffi, ippolito, (1809-1866)","(3046, 594)"
-189.0,100.0,"[fra angelico, fra giovanni da fiesole (guido di pietro)]","[1395, 1455]","[angelico, fra]","[1400, 1455]",1,googleart_m031b2,"wga_angelico, fra, (1400-1455)","(627, 72)"
-190.0,100.0,[jean clouet],"[1480, 1541]","[clouet, jean]","[1485, 1541]",1,googleart_m03vd__,"wga_clouet, jean, (1485-1541)","(3222, 799)"
-191.0,97.0,[claude lefèbvre],"[1632, 1675]","[lefebvre, claude]","[1637, 1675]",1,googleart_m03nt96t,"wga_lefebvre, claude, (1637-1675)","(3191, 2030)"
-192.0,100.0,"[jean hey, master of moulins]","[1475, 1500]",[master of moulins],"[1480, 1500]",1,wiki_jean-hey,"wga_master of moulins, (1480-1500)","(1080, 2313)"
-193.0,100.0,[jacopo de' barbari],"[1450, 1516]","[barbari, jacopo de']","[1445, 1516]",1,googleart_m026xbyt,"wga_barbari, jacopo de', (1445-1516)","(2595, 170)"
-194.0,100.0,[lucas van valckenborch],"[1535, 1597]","[valckenborch, lucas van]","[1530, 1597]",1,googleart_m02qvvlb,"wga_valckenborch, lucas van, (1530-1597)","(2785, 4428)"
-195.0,100.0,"[luca d'egidio di ventura, luca signorelli]","[1445, 1523]","[signorelli, luca]","[1450, 1523]",1,wiki_luca-signorelli,"wga_signorelli, luca, (1450-1523)","(1408, 3821)"
-196.0,100.0,[paul de vos],"[1591, 1678]","[vos, paul de]","[1596, 1678]",1,googleart_m03cshty,"wga_vos, paul de, (1596-1678)","(3026, 4588)"
-197.0,100.0,[israhel van meckenem],"[1445, 1503]","[meckenem, israhel van the younger]","[1440, 1503]",1,googleart_m026pz6n,"wga_meckenem, israhel van the younger, (1440-1503)","(2578, 2416)"
-198.0,100.0,[ercole de' roberti],"[1451, 1496]","[roberti, ercole de']","[1456, 1496]",1,googleart_m02r7htx,"wga_roberti, ercole de', (1456-1496)","(2814, 3504)"
-199.0,100.0,[hans holbein the elder],"[1465, 1524]","[holbein, hans the elder]","[1460, 1524]",1,googleart_m0cy7g,"wga_holbein, hans the elder, (1460-1524)","(4344, 1733)"
-200.0,100.0,"[jan van eyck, johannes de eyck]","[1390, 1441]","[eyck, jan van]","[1395, 1441]",1,wiki_jan-van-eyck,"wga_eyck, jan van, (1395-1441)","(1048, 1168)"
-201.0,100.0,[simon marmion],"[1425, 1489]","[marmion, simon]","[1420, 1489]",1,googleart_m0g3ny2,"wga_marmion, simon, (1420-1489)","(4453, 2245)"
-202.0,100.0,[wolf huber],"[1485, 1553]","[huber, wolf]","[1490, 1553]",1,googleart_m026hc11,"wga_huber, wolf, (1490-1553)","(2560, 1766)"
-203.0,100.0,[boetius à bolswert],"[1585, 1633]","[bolswert, boetius adamsz.]","[1580, 1633]",1,googleart_m06w86h2,"wga_bolswert, boetius adamsz., (1580-1633)","(3763, 398)"
-204.0,100.0,[jacopo bassano],"[1510, 1592]","[bassano, jacopo]","[1515, 1592]",1,wiki_jacopo-bassano,"wga_bassano, jacopo, (1515-1592)","(1011, 203)"
-205.0,100.0,[werner van den valckert],"[1585, 1627]","[valckert, werner jacobsz. van den]","[1580, 1627]",1,googleart_m07scbqp,"wga_valckert, werner jacobsz. van den, (1580-1627)","(3904, 4430)"
-206.0,100.0,[francis swaine],"[1725, 1782]","[swaine, francis]","[1720, 1782]",1,googleart_m0gk7w6,"wga_swaine, francis, (1720-1782)","(4498, 3950)"
-207.0,100.0,[francesco maffei],"[1605, 1660]","[maffei, francesco]","[1600, 1660]",1,googleart_m026gtv7,"wga_maffei, francesco, (1600-1660)","(2559, 2188)"
-208.0,100.0,[giovanni battista moroni],"[1520, 1578]","[moroni, giovanni battista]","[1525, 1578]",1,googleart_m02kb23,"wga_moroni, giovanni battista, (1525-1578)","(2707, 2941)"
-209.0,100.0,[ercole de' roberti],"[1451, 1496]","[roberti, ercole de']","[1456, 1496]",1,googleart_m02r7htx,"wga_roberti, ercole de', (1456-1496)","(2814, 3503)"
-210.0,100.0,[geertgen tot sint jans],"[1465, 1495]",[geertgen tot sint jans],"[1460, 1490]",1,googleart_m03z6sl,"wga_geertgen tot sint jans, (1460-1490)","(3243, 1370)"
-211.0,100.0,"[duccio, duccio di buoninsegna]","[1250.0, 1330.0]",[duccio di buoninsegna],"[1255, 1319]",1,wiki_duccio,"wga_duccio di buoninsegna, (1255-1319)","(489, 1091)"
-212.0,100.0,[scipione pulzone],"[1550, 1598]","[pulzone, scipione]","[1544, 1598]",1,googleart_m025zbyv,"wga_pulzone, scipione, (1544-1598)","(2518, 3370)"
-213.0,100.0,[augustus charles pugin],"[1762, 1832]","[pugin, augustus charles]","[1768, 1832]",1,googleart_m086zrw,"wga_pugin, augustus charles, (1768-1832)","(3955, 3368)"
-214.0,100.0,[francisco rizi],"[1608, 1685]","[rizi, francisco]","[1614, 1685]",1,googleart_m03c5y7v,"wga_rizi, francisco, (1614-1685)","(2977, 3500)"
-215.0,100.0,[marietta robusti],"[1560, 1590]","[robusti, marietta]","[1554, 1590]",1,wiki_marietta-robusti,"wga_robusti, marietta, (1554-1590)","(1470, 3510)"
-216.0,100.0,[giuseppe zocchi],"[1711, 1767]","[zocchi, giuseppe]","[1717, 1767]",1,googleart_m02vqf8x,"wga_zocchi, giuseppe, (1717-1767)","(2843, 4727)"
-217.0,100.0,[paul sandby],"[1731, 1809]","[sandby, paul]","[1725, 1809]",1,googleart_m037w39,"wga_sandby, paul, (1725-1809)","(2941, 3695)"
-218.0,100.0,[jacob van der ulft],"[1621, 1689]","[ulft, jacob van der]","[1627, 1689]",1,googleart_m0bmj2m8,"wga_ulft, jacob van der, (1627-1689)","(4235, 4099)"
-219.0,100.0,[giulio campi],"[1502, 1572]","[campi, giulio]","[1508, 1572]",1,googleart_m07d56k,"wga_campi, giulio, (1508-1572)","(3834, 622)"
-220.0,100.0,[abraham janssens],"[1567, 1632]","[janssens, abraham]","[1573, 1632]",1,googleart_m0593ly,"wga_janssens, abraham, (1573-1632)","(3526, 1826)"
-221.0,100.0,[lippo memmi],"[1291, 1356]","[memmi, lippo]","[1285, 1361]",1,googleart_m02r3h90,"wga_memmi, lippo, (1285-1361)","(2799, 2435)"
-222.0,100.0,[barnaba da modena],"[1367.0, 1375.0]",[barnaba da modena],"[1361, 1383]",1,googleart_m02qkd1t,"wga_barnaba da modena, (1361-1383)","(2765, 178)"
-223.0,100.0,[luca di tommè],"[1350.0, 1365.0]",[luca di tommè],"[1356, 1389]",1,googleart_m03d8z95,"wga_luca di tommè, (1356-1389)","(3075, 2155)"
-224.0,100.0,[pieter van laer],"[1599, 1642]","[laer, pieter van]","[1592, 1642]",1,googleart_m07yxc9,"wga_laer, pieter van, (1592-1642)","(3931, 1962)"
-225.0,100.0,[johann liss],"[1597, 1631]","[liss, johann]","[1590, 1631]",1,googleart_m06dhm2,"wga_liss, johann, (1590-1631)","(3729, 2112)"
-226.0,100.0,[eugenio lucas velázquez],"[1817, 1870]","[lucas velázquez, eugenio]","[1824, 1870]",1,googleart_m0vsb5g5,"wga_lucas velázquez, eugenio, (1824-1870)","(5025, 2156)"
-227.0,100.0,[john crome],"[1761, 1821]","[crome, john]","[1768, 1821]",1,googleart_m0ps33,"wga_crome, john, (1768-1821)","(1152, 928)"
-228.0,100.0,[marco dente],"[1493, 1527]","[dente da ravenna, marco]","[1486, 1527]",1,googleart_m03d802j,"wga_dente da ravenna, marco, (1486-1527)","(3070, 1009)"
-229.0,100.0,[jan griffier],"[1652, 1718]","[griffier, jan i]","[1645, 1718]",1,googleart_m03c9802,"wga_griffier, jan i, (1645-1718)","(2986, 1559)"
-230.0,100.0,[vittore carpaccio],"[1465, 1526]","[carpaccio, vittore]","[1472, 1526]",1,wiki_vittore-carpaccio,"wga_carpaccio, vittore, (1472-1526)","(2172, 666)"
-231.0,100.0,"[vasily vereshchagin, василий верещагин]","[1842, 1904]","[vereshchagin, vasily petrovich]","[1835, 1909]",0,wiki_vasily-vereshchagin,"wga_vereshchagin, vasily petrovich, (1835-1909)","(2148, 4488)"
-232.0,88.0,[giovanni battista cipriani],"[1727, 1785]","[piranesi, giovanni battista]","[1720, 1778]",0,googleart_m01g71_,"wga_piranesi, giovanni battista, (1720-1778)","(2443, 3282)"
-233.0,85.0,[giovanni battista paggi],"[1554, 1627]","[castello, giovanni battista]","[1547, 1637]",0,googleart_m02759zl,"wga_castello, giovanni battista, (1547-1637)","(2618, 693)"
-234.0,100.0,[hieronymus cock],"[1518, 1570]","[cock, hieronymus]","[1510, 1570]",1,googleart_m026r975,"wga_cock, hieronymus, (1510-1570)","(2580, 804)"
-235.0,100.0,[bartolomeo vivarini],"[1432, 1499]","[vivarini, bartolomeo]","[1440, 1499]",1,googleart_m05cdfk,"wga_vivarini, bartolomeo, (1440-1499)","(3557, 4563)"
-236.0,100.0,[francesco granacci],"[1469, 1543]","[granacci, francesco]","[1477, 1543]",1,googleart_m0274fyt,"wga_granacci, francesco, (1477-1543)","(2615, 1537)"
-237.0,100.0,[harald sohlberg],"[1869, 1935]","[sohlberg, harald]","[1877, 1935]",1,googleart_m0bqy3b,"wga_sohlberg, harald, (1877-1935)","(4242, 3851)"
-238.0,100.0,[jan dirksz both],"[1610, 1652]","[both, jan]","[1618, 1652]",1,googleart_m07_m2d,"wga_both, jan, (1618-1652)","(3829, 447)"
-239.0,100.0,[abraham janssens],"[1567, 1632]","[janssens, abraham]","[1573, 1632]",1,googleart_m0593ly,"wga_janssens, abraham, (1573-1632)","(3526, 1827)"
-240.0,100.0,[jan wyck],"[1652, 1702]","[wyck, jan]","[1644, 1700]",1,googleart_m05313rc,"wga_wyck, jan, (1644-1700)","(3495, 4697)"
-241.0,86.0,[giovanni battista bertani],"[1516, 1576]","[moroni, giovanni battista]","[1525, 1578]",0,googleart_m02vvgcc,"wga_moroni, giovanni battista, (1525-1578)","(2848, 2941)"
-242.0,85.0,[jean baptiste vanmour],"[1671, 1737]","[morel, jean-baptiste]","[1662, 1732]",0,googleart_m09df4w,"wga_morel, jean-baptiste, (1662-1732)","(4073, 2929)"
-243.0,100.0,[vincenzo catena],"[1470, 1531]","[catena, vincenzo]","[1480, 1531]",1,googleart_m0287_g_,"wga_catena, vincenzo, (1480-1531)","(2678, 703)"
-244.0,100.0,[hans memling],"[1430, 1494]","[memling, hans]","[1440, 1494]",1,wiki_hans-memling,"wga_memling, hans, (1440-1494)","(864, 2434)"
-245.0,97.0,[adriaen isenbrandt],"[1480, 1551]","[isenbrant, adriaen]","[1490, 1551]",1,googleart_m031d58,"wga_isenbrant, adriaen, (1490-1551)","(2925, 1800)"
-246.0,100.0,[giuseppe bernardino bison],"[1762, 1844]","[bison, giuseppe bernardino]","[1762, 1844]",1,googleart_m026n1fh,"wga_bison, giuseppe bernardino, (1762-1844)","(2573, 348)"
-247.0,96.0,[giovan battista langetti],"[1625, 1676]","[langetti, giovanni battista]","[1635, 1676]",1,googleart_m026gtmq,"wga_langetti, giovanni battista, (1635-1676)","(2558, 1987)"
-248.0,100.0,[walter leistikow],"[1865, 1908]","[leistikow, walter]","[1855, 1908]",1,googleart_m0268css,"wga_leistikow, walter, (1855-1908)","(2544, 2039)"
-249.0,100.0,[taddeo gaddi],"[1290, 1366]","[gaddi, taddeo]","[1300, 1366]",1,googleart_m01wqmw,"wga_gaddi, taddeo, (1300-1366)","(2489, 1326)"
-250.0,100.0,[clara peeters],"[1594, 1657]","[peeters, clara]","[1594, 1657]",1,googleart_m0266vrh,"wga_peeters, clara, (1594-1657)","(376, 3197)"
-251.0,100.0,[ottavio leoni],"[1568, 1630]","[leoni, ottavio]","[1578, 1630]",1,googleart_m0b0nr5,"wga_leoni, ottavio, (1578-1630)","(4163, 2055)"
-252.0,88.0,[dirck van santvoort],"[1610, 1680]","[santvoort, dirck dircksz.]","[1600, 1680]",1,googleart_m0h64vxf,"wga_santvoort, dirck dircksz., (1600-1680)","(4566, 3707)"
-253.0,100.0,[bernat martorell],"[1390, 1452]","[martorell, bernat]","[1400, 1452]",1,googleart_m0cnz9j,"wga_martorell, bernat, (1400-1452)","(4321, 2262)"
-254.0,100.0,"[ivan nikitin, иван никитин]","[1690, 1741]","[nikitin, ivan nikitich]","[1680, 1742]",1,wiki_ivan-nikitin,"wga_nikitin, ivan nikitich, (1680-1742)","(991, 3060)"
-255.0,100.0,[jan wellens de cock],"[1480, 1527]","[cock, jan wellens de]","[1490, 1529]",1,googleart_m047q750,"wga_cock, jan wellens de, (1490-1529)","(3290, 805)"
-256.0,100.0,[master of saint veronica],"[1410.0, 1410.0]",[master of saint veronica],"[1400, 1420]",1,googleart_m010glghg,"wga_master of saint veronica, (1400-1420)","(2356, 2317)"
-257.0,100.0,[william morris hunt],"[1824, 1879]","[morris, william]","[1834, 1896]",0,googleart_m04td2w,"wga_morris, william, (1834-1896)","(3435, 2943)"
-258.0,100.0,[william morris],"[1834, 1896]","[hunt, william morris]","[1824, 1879]",0,googleart_m08304,"wga_hunt, william morris, (1824-1879)","(2222, 1780)"
-259.0,100.0,[john hamilton mortimer],"[1740, 1779]","[hamilton, john]","[1750, 1750]",1,googleart_m02z86d4,"wga_hamilton, john, (1750-1750)","(2913, 1641)"
-260.0,100.0,[girolamo da treviso],"[1508, 1544]",[girolamo da treviso the younger],"[1497, 1544]",1,googleart_m02r22z7,"wga_girolamo da treviso the younger, (1497-1544)","(2797, 1458)"
-261.0,100.0,[luis de morales],"[1509, 1586]","[morales, luis de]","[1520, 1586]",1,googleart_m03frxr,"wga_morales, luis de, (1520-1586)","(3087, 2921)"
-262.0,100.0,[cornelis pietersz bega],"[1620, 1664]","[bega, cornelis]","[1631, 1664]",1,googleart_m07kj1sx,"wga_bega, cornelis, (1631-1664)","(3873, 241)"
-263.0,100.0,[juan de las roelas],"[1558, 1625]","[roelas, juan de las]","[1570, 1625]",1,googleart_m03c363f,"wga_roelas, juan de las, (1570-1625)","(2971, 3517)"
-264.0,100.0,[giulio bonasone],"[1498, 1574]","[bonasone, giulio]","[1510, 1576]",1,googleart_m03cxmp2,"wga_bonasone, giulio, (1510-1576)","(3043, 402)"
-265.0,85.0,[george baxter],"[1804, 1867]","[hayter, george]","[1792, 1871]",0,googleart_m04glpv5,"wga_hayter, george, (1792-1871)","(3361, 1664)"
-266.0,100.0,[francisco herrera the elder],"[1576, 1656]","[herrera, francisco de, the elder]","[1590, 1656]",1,googleart_m05_wb7,"wga_herrera, francisco de, the elder, (1590-1656)","(3537, 1693)"
-267.0,100.0,[pirro ligorio],"[1514, 1583]","[ligorio, pirro]","[1500, 1583]",1,googleart_m04k9xf,"wga_ligorio, pirro, (1500-1583)","(3385, 2088)"
-268.0,99.0,[william turner],"[1789, 1862]","[turner, joseph mallord william]","[1775, 1851]",0,googleart_m0285ph2,"wga_turner, joseph mallord william, (1775-1851)","(2674, 4085)"
-269.0,88.0,"[cristóvão de figueiredo, cristovao de figueiredo]","[1500, 1543]","[figueiredo, cristóvano]","[1515, 1543]",1,wiki_cristovao-de-figueiredo,"wga_figueiredo, cristóvano, (1515-1543)","(416, 1223)"
-270.0,100.0,"[gebroeders van limburg (herman, paul, and johan), limbourg brothers]","[1385, 1416]",[limbourg brothers],"[1370, 1416]",1,wiki_limbourg-brothers,"wga_limbourg brothers, (1370-1416)","(1381, 2090)"
-271.0,100.0,[john smart i of ipswich],"[1756, 1813]","[smart, john]","[1741, 1811]",0,googleart_m0t504pj,"wga_smart, john, (1741-1811)","(4686, 3842)"
-272.0,100.0,[master of the dresden prayer book],"[1480.0, 1520.0]",[master of the dresden prayer book],"[1465, 1515]",1,googleart_m0t5fvn2,"wga_master of the dresden prayer book, (1465-1515)","(4890, 2342)"
-273.0,85.0,[jean baptiste vanmour],"[1671, 1737]","[oudry, jean-baptiste]","[1686, 1755]",0,googleart_m09df4w,"wga_oudry, jean-baptiste, (1686-1755)","(4073, 3121)"
-274.0,100.0,[master of the virgo inter virgines],"[1487.0, 1500.0]",[master of the virgo inter virgines],"[1470, 1500]",1,googleart_m047rps6,"wga_master of the virgo inter virgines, (1470-1500)","(3293, 2379)"
-275.0,100.0,"[michelangelo, michelangelo di lodovico buonarroti simoni]","[1475, 1564]","[anselmi, michelangelo]","[1492, 1556]",0,wiki_michelangelo,"wga_anselmi, michelangelo, (1492-1556)","(1563, 82)"
-276.0,86.0,[jean-charles françois],"[1717, 1769]","[lacroix, charles-françois]","[1700, 1782]",0,googleart_m0m0jrvp,"wga_lacroix, charles-françois, (1700-1782)","(4627, 1960)"
-277.0,100.0,[adriaen coorte],"[1665, 1707]","[coorte, adriaen]","[1683, 1707]",1,googleart_m05cfqkj,"wga_coorte, adriaen, (1683-1707)","(3558, 851)"
-278.0,100.0,[martin schongauer],"[1448, 1491]","[schongauer, martin]","[1430, 1491]",1,wiki_martin-schongauer,"wga_schongauer, martin, (1430-1491)","(1503, 3756)"
-279.0,100.0,[andrea andreani],"[1540, 1623]","[andreani, andrea]","[1558, 1629]",1,googleart_m0sw1,"wga_andreani, andrea, (1558-1629)","(4653, 66)"
-280.0,88.0,[george beare],"[1746.0, 1749.0]","[barret, george]","[1728, 1784]",0,googleart_m05w46ql,"wga_barret, george, (1728-1784)","(3649, 186)"
-281.0,100.0,[lazzaro bastiani],"[1429, 1512]","[bastiani, lazzaro]","[1449, 1512]",1,googleart_m02rlr91,"wga_bastiani, lazzaro, (1449-1512)","(2823, 209)"
-282.0,100.0,"[aelbert jacobsz cuyp, aelbert cuyp]","[1620, 1691]","[cuyp, aelbert]","[1620, 1691]",1,googleart_m010z6,"wga_cuyp, aelbert, (1620-1691)","(25, 944)"
-283.0,100.0,[françois marius granet],"[1775, 1849]","[granet, françois-marius]","[1755, 1849]",1,googleart_m04rp5h,"wga_granet, françois-marius, (1755-1849)","(3429, 1539)"
-284.0,96.0,[juan rexach],"[1411, 1486]","[reixach, juan]","[1431, 1484]",1,googleart_m0t5fjk2,"wga_reixach, juan, (1431-1484)","(4798, 3441)"
-285.0,85.0,[giovanni battista paggi],"[1554, 1627]","[crespi, giovanni battista]","[1575, 1632]",0,googleart_m02759zl,"wga_crespi, giovanni battista, (1575-1632)","(2618, 920)"
-286.0,100.0,[bartolomeo veneto],"[1480, 1550.0]",[bartolomeo veneto],"[1502, 1531]",1,googleart_m05zj8z3,"wga_bartolomeo veneto, (1502-1531)","(233, 193)"
-287.0,100.0,"[andrea di bartolo, andrea del castagno, andrea di bartolo di bargilla]","[1400.0, 1457]",[andrea del castagno],"[1423, 1457]",1,wiki_andrea-del-castagno,"wga_andrea del castagno, (1423-1457)","(131, 61)"
-288.0,85.0,[giovanni battista paggi],"[1554, 1627]","[crescenzi, giovanni battista]","[1577, 1635]",0,googleart_m02759zl,"wga_crescenzi, giovanni battista, (1577-1635)","(2618, 918)"
-289.0,85.0,[giovanni battista paggi],"[1554, 1627]","[caracciolo, giovanni battista]","[1578, 1635]",0,googleart_m02759zl,"wga_caracciolo, giovanni battista, (1578-1635)","(2618, 645)"
-290.0,100.0,[jan van de velde],"[1593, 1641]","[velde, jan van de, i]","[1569, 1623]",0,googleart_m04f57y5,"wga_velde, jan van de, i, (1569-1623)","(3347, 4463)"
-291.0,100.0,[guglielmo giraldi],"[1469.0, 1469.0]","[giraldi, guglielmo]","[1445, 1489]",1,googleart_m0t50c85,"wga_giraldi, guglielmo, (1445-1489)","(4750, 1455)"
-292.0,85.0,[giovanni battista galestruzzi],"[1618, 1677]","[falda, giovanni battista]","[1643, 1678]",0,googleart_m02rbv2y,"wga_falda, giovanni battista, (1643-1678)","(2817, 1182)"
-293.0,100.0,[niccolò boldrini],"[1525.0, 1566.0]","[boldrini, niccolò]","[1500, 1570]",1,googleart_m03cxm93,"wga_boldrini, niccolò, (1500-1570)","(3042, 395)"
-294.0,100.0,[defendente ferrari],"[1510.0, 1528.0]","[ferrari, defendente]","[1485, 1540]",1,googleart_m02qnzgz,"wga_ferrari, defendente, (1485-1540)","(2773, 1206)"
-295.0,88.0,[adolf von becker],"[1831, 1909]","[meckel, adolf von]","[1856, 1893]",0,googleart_m03mby_l,"wga_meckel, adolf von, (1856-1893)","(3168, 2415)"
-296.0,100.0,[giampietrino],"[1495, 1521]",[giampietrino],"[1520.0, 1550.0]",1,googleart_m02w7slf,"wga_giampietrino, (1520-1520)","(2869, 1407)"
-297.0,92.07,[antonio maria zanetti],"[1680, 1767]","[zanetti, anton maria ii]","[1706, 1778]",0,googleart_m07s8jgf,"wga_zanetti, anton maria ii, (1706-1778)","(3902, 4710)"
-298.0,100.0,[jan van de velde],"[1593, 1641]","[velde, jan jansz. van de]","[1619, 1662]",0,googleart_m04f57y5,"wga_velde, jan jansz. van de, (1619-1662)","(3347, 4462)"
-299.0,100.0,[jacob savery],"[1566, 1603]","[savery, jacob ii]","[1592, 1651]",0,googleart_m0bxzcy4,"wga_savery, jacob ii, (1592-1651)","(4261, 3721)"
-300.0,100.0,[antonio fantuzzi],"[1510, 1550]","[fantuzzi, antonio]","[1537, 1550]",1,googleart_m0gtt12q,"wga_fantuzzi, antonio, (1537-1550)","(4515, 1185)"
-301.0,85.0,[giovanni battista galestruzzi],"[1618, 1677]","[magno, giovanni battista]","[1591, 1674]",0,googleart_m02rbv2y,"wga_magno, giovanni battista, (1591-1674)","(2817, 2194)"
-302.0,85.0,[giuseppe antonio landi],"[1713, 1791]","[fabbrini, giuseppe antonio]","[1740, 1795]",0,googleart_m03bzqf2,"wga_fabbrini, giuseppe antonio, (1740-1795)","(2961, 1169)"
-303.0,94.0,[quirijn van brekelenkam],"[1650.0, 1667.0]","[brekelenkam, quiringh van]","[1622, 1669]",1,googleart_m03y0cqm,"wga_brekelenkam, quiringh van, (1622-1669)","(3237, 507)"
-304.0,100.0,[agnolo gaddi],"[1350, 1396]","[gaddi, agnolo]","[1380.0, 1400.0]",1,googleart_m01wqnn,"wga_gaddi, agnolo, (1369-1369)","(2490, 1324)"
-305.0,100.0,[andrea schiavone],"[1540.0, 1573.0]","[schiavone, andrea]","[1510, 1563]",1,googleart_m026vqy0,"wga_schiavone, andrea, (1510-1563)","(2591, 3745)"
-306.0,100.0,[jacobello del fiore],"[1400.0, 1450.0]",[jacobello del fiore],"[1370, 1439]",1,googleart_m02qdxkk,"wga_jacobello del fiore, (1370-1439)","(2756, 1809)"
-307.0,100.0,[melchior broederlam],"[1350, 1409]","[broederlam, melchior]","[1381, 1409]",1,wiki_melchior-broederlam,"wga_broederlam, melchior, (1381-1409)","(1549, 525)"
-308.0,97.0,[jacob de gheyn iii],"[1596, 1641]","[gheyn, jacob de ii]","[1565, 1629]",0,googleart_m0gr0dc,"wga_gheyn, jacob de ii, (1565-1629)","(4509, 1395)"
-309.0,86.0,[dirk van hoogstraten],"[1596, 1640]","[hoogstraten, samuel van]","[1627, 1678]",0,googleart_m080nqgm,"wga_hoogstraten, samuel van, (1627-1678)","(3940, 1751)"
-310.0,100.0,[hans hoffmann],"[1578.0, 1585.0]","[hoffmann, hans]","[1545, 1591]",1,googleart_m0j26v0f,"wga_hoffmann, hans, (1545-1591)","(4593, 1728)"
-311.0,100.0,[henri victor regnault],"[1810, 1878]","[regnault, henri]","[1843, 1871]",0,googleart_m01s2qv,"wga_regnault, henri, (1843-1871)","(2475, 3430)"
-312.0,100.0,"[dieric bouts, dirk bouts]","[1415, 1475]","[bouts, dieric the younger]","[1448, 1491]",0,googleart_m07z_y1,"wga_bouts, dieric the younger, (1448-1491)","(469, 475)"
-313.0,100.0,[petrus christus],"[1410, 1476]","[christus, petrus]","[1410, 1475]",1,wiki_petrus-christus,"wga_christus, petrus, (1410-1475)","(1766, 758)"
-314.0,100.0,[frans hals],"[1580, 1666]","[hals, frans ii]","[1618, 1669]",0,googleart_m0ch5l,"wga_hals, frans ii, (1618-1669)","(655, 1633)"
-315.0,100.0,[hendrick cornelisz. van vliet],"[1650.0, 1686.0]","[vliet, hendrick cornelisz. van]","[1611, 1675]",1,googleart_m03b_gbk,"wga_vliet, hendrick cornelisz. van, (1611-1675)","(2959, 4567)"
-316.0,100.0,[battista franco veneziano],"[1550.0, 1561.0]","[franco, battista]","[1510, 1561]",1,googleart_m027h6zr,"wga_franco, battista, (1510-1561)","(2634, 1293)"
-317.0,89.0,[master of the cini madonna],"[1310, 1330]",[master of the palazzo venezia madonna],"[1350, 1350]",0,googleart_m0t5fpd_,"wga_master of the palazzo venezia madonna, (1350-1350)","(4843, 2364)"
-318.0,96.0,[jan provoost],"[1505.0, 1550.0]","[provost, jan]","[1465, 1529]",1,googleart_m07pwql,"wga_provost, jan, (1465-1529)","(3889, 3356)"
-319.0,100.0,[silvestro lega],"[1868.0, 1868.0]","[lega, silvestro]","[1826, 1895]",1,wiki_silvestro-lega,"wga_lega, silvestro, (1826-1895)","(1994, 2033)"
-320.0,100.0,[giovanni antonio da brescia],"[1503, 1509]",[giovanni antonio da brescia],"[1460, 1523]",1,googleart_m03cv8s9,"wga_giovanni antonio da brescia, (1460-1523)","(3029, 1437)"
-321.0,100.0,[il pordenone],"[1528.0, 1530.0]",[pordenone],"[1484, 1539]",1,googleart_m08qf_8,"wga_pordenone, (1484-1539)","(4021, 3323)"
-322.0,100.0,[augustus pugin],"[1812, 1852]","[pugin, augustus charles]","[1768, 1832]",0,googleart_m0q1js,"wga_pugin, augustus charles, (1768-1832)","(4645, 3368)"
-323.0,100.0,[tanzio da varallo],"[1625.0, 1630.0]",[tanzio da varallo],"[1580, 1632]",1,googleart_m027s022,"wga_tanzio da varallo, (1580-1632)","(2641, 3965)"
-324.0,100.0,[antonio maria viani],"[1603.0, 1629.0]","[viani, antonio maria]","[1555, 1635]",1,googleart_m03d1ccq,"wga_viani, antonio maria, (1555-1635)","(3051, 4522)"
-325.0,90.0,[master of the lee hours],"[1455.0, 1455.0]",[master of the hours of maréchal de boucicaut],"[1405, 1420]",0,googleart_m0t50c8q,"wga_master of the hours of maréchal de boucicaut, (1405-1420)","(4751, 2349)"
-326.0,100.0,[pieter claesz],"[1597, 1660]","[claesz., pieter]","[1597, 1661]",1,googleart_m06zmm3,"wga_claesz., pieter, (1597-1661)","(1794, 783)"
-327.0,100.0,[johann heinrich schönfeld],"[1609, 1684]","[schönfeld, johann heinrich]","[1609, 1683]",1,googleart_m09v8z7q,"wga_schönfeld, johann heinrich, (1609-1683)","(4266, 3774)"
-328.0,100.0,[giotto],"[1266, 1337]",[giotto di bondone],"[1267, 1337]",1,googleart_m0kp91,"wga_giotto di bondone, (1267-1337)","(4772, 1433)"
-329.0,100.0,[andrea di bartolo],"[1400.0, 1405.0]",[andrea di bartolo],"[1360, 1428]",1,googleart_m0czdrnx,"wga_andrea di bartolo, (1360-1428)","(4487, 63)"
-330.0,86.0,[jacob van campen],"[1596, 1657]","[es, jacob van]","[1596, 1666]",0,googleart_m042yfm,"wga_es, jacob van, (1596-1666)","(1152, 3335)"
-331.0,85.0,[jan van de velde],"[1593, 1641]","[venne, jan van der]","[1592, 1651]",0,googleart_m04f57y5,"wga_venne, jan van der, (1592-1651)","(4472, 3428)"
-332.0,86.0,[pieter jansz quast],"[1606, 1647]","[post, pieter jansz]","[1608, 1669]",0,googleart_m0bwk9cs,"wga_post, pieter jansz, (1608-1669)","(3327, 4385)"
-333.0,89.0,[willem van de velde the elder],"[1611, 1693]","[herp, willem van, the elder]","[1614, 1677]",0,googleart_m03lk97,"wga_herp, willem van, the elder, (1614-1677)","(1692, 3223)"
-334.0,90.0,[giovanni battista crespi],"[1573, 1632]","[crescenzi, giovanni battista]","[1577, 1635]",0,googleart_m07rn1b,"wga_crescenzi, giovanni battista, (1577-1635)","(918, 4007)"
-335.0,85.0,[pier francesco mola],"[1612, 1666]","[cittadini, pier francesco]","[1616, 1681]",0,googleart_m0c2qzf,"wga_cittadini, pier francesco, (1616-1681)","(777, 4409)"
-336.0,85.0,[jacob gerritsz. cuyp],"[1594, 1652]","[hasselt, jacob gerritsz. van]","[1598, 1674]",0,googleart_m08ff2n,"wga_hasselt, jacob gerritsz. van, (1598-1674)","(1656, 4111)"
-337.0,88.0,"[pierre-auguste renoir, pierre auguste renoir]","[1841, 1919]","[cot, pierre-auguste]","[1837, 1883]",0,wiki_pierre-auguste-renoir,"wga_cot, pierre-auguste, (1837-1883)","(882, 1780)"
-338.0,85.0,"[nicolaes maes, nicolaes maas]","[1634, 1693]","[hals, nicolaes]","[1628, 1686]",0,wiki_nicolaes-maes,"wga_hals, nicolaes, (1628-1686)","(1636, 1629)"
-339.0,89.0,[hans holbein the younger],"[1497, 1543]","[leu, hans the younger]","[1490, 1531]",0,googleart_m0cy9m,"wga_leu, hans the younger, (1490-1531)","(2062, 862)"
-340.0,90.0,[antonio zanchi],"[1631, 1722]","[franchi, antonio]","[1638, 1709]",0,googleart_m02q2_92,"wga_franchi, antonio, (1638-1709)","(1282, 2778)"
-341.0,88.0,[bernardino luini],"[1482, 1532]","[licinio, bernardino]","[1489, 1565]",0,googleart_m04qf6w,"wga_licinio, bernardino, (1489-1565)","(2080, 3512)"
-342.0,97.0,[jan van den hoecke],"[1611, 1651]","[hecke, jan van den]","[1619, 1684]",0,googleart_m02rt157,"wga_hecke, jan van den, (1619-1684)","(1666, 2869)"
-343.0,85.0,[cornelis de man],"[1621, 1706]","[heem, cornelis de]","[1631, 1695]",0,googleart_m07k9997,"wga_heem, cornelis de, (1631-1695)","(1668, 3979)"
-344.0,93.0,"[domenico veneziano, domenico di bartolomeo]","[1410, 1461]",[domenico di bartolo],"[1400, 1447]",0,wiki_domenico-veneziano,"wga_domenico di bartolo, (1400-1447)","(1054, 475)"
-345.0,85.0,[francesco furini],"[1600, 1646]","[guarino, francesco]","[1611, 1654]",0,googleart_m0bcll2,"wga_guarino, francesco, (1611-1654)","(1586, 4341)"
-346.0,85.0,"[francisco bayeu y subías, francisco bayeu y subias]","[1734, 1795]","[bayeu y subias, ramón]","[1746, 1793]",0,googleart_m08w6kw,"wga_bayeu y subias, ramón, (1746-1793)","(217, 636)"
-347.0,89.0,"[antonello di giovanni di antonio, antonello da messina]","[1430, 1479]",[giovanni angelo d'antonio],"[1443, 1476]",0,wiki_antonello-da-messina,"wga_giovanni angelo d'antonio, (1443-1476)","(1436, 160)"
-348.0,86.0,[jacob van hulsdonck],"[1582, 1647]","[es, jacob van]","[1596, 1666]",0,googleart_m0hhvd5q,"wga_es, jacob van, (1596-1666)","(1152, 4740)"
-349.0,88.0,[francesco furini],"[1600, 1646]","[susini, francesco]","[1585, 1653]",0,googleart_m0bcll2,"wga_susini, francesco, (1585-1653)","(3943, 4341)"
-350.0,90.0,[jean-baptiste pater],"[1695, 1736]","[nattier, jean-baptiste]","[1678, 1726]",0,googleart_m0bx6qs,"wga_nattier, jean-baptiste, (1678-1726)","(3020, 4387)"
-351.0,85.0,[lorenzo di niccolò],"[1390.0, 1412.0]",[bicci di lorenzo],"[1373, 1452]",0,googleart_m02plrsk,"wga_bicci di lorenzo, (1373-1452)","(330, 2751)"
-352.0,86.0,[jacob van loo],"[1614, 1670]","[es, jacob van]","[1596, 1666]",0,googleart_m05h252h,"wga_es, jacob van, (1596-1666)","(1152, 3679)"
-353.0,85.0,[frans pourbus the younger],"[1569, 1622]","[pourbus, frans the elder]","[1545, 1581]",0,googleart_m01h5y9,"wga_pourbus, frans the elder, (1545-1581)","(3333, 2469)"
-354.0,88.0,[hendrick bloemaert],"[1601, 1672]","[bogaert, hendrick]","[1626, 1674]",0,googleart_m0bbxr47,"wga_bogaert, hendrick, (1626-1674)","(387, 4339)"
-355.0,88.0,[pieter brueghel the younger],"[1564, 1636]","[brueghel, pieter iii]","[1589, 1608]",0,googleart_m0h6m9,"wga_brueghel, pieter iii, (1589-1608)","(543, 4723)"
-356.0,86.0,[cornelis galle the elder],"[1576, 1650]","[danckerts, cornelis the elder]","[1603, 1656]",0,googleart_m04ykwh0,"wga_danckerts, cornelis the elder, (1603-1656)","(965, 3543)"
-357.0,87.0,"[giovanni battista cima, cima da conegliano]","[1459, 1517]","[cavaletto, giovanni battista]","[1486, 1523]",0,wiki_cima-da-conegliano,"wga_cavaletto, giovanni battista, (1486-1523)","(709, 374)"
-358.0,85.0,[giovanni battista salvi da sassoferrato],"[1609, 1685]","[falda, giovanni battista]","[1643, 1678]",0,googleart_m04zl6z,"wga_falda, giovanni battista, (1643-1678)","(1182, 3555)"
-359.0,88.0,[alexandre-jean noël],"[1752, 1834]","[dubois-drahonet, alexandre-jean]","[1791, 1829]",0,googleart_g1232phh9,"wga_dubois-drahonet, alexandre-jean, (1791-1829)","(1084, 2330)"
-360.0,85.0,[lorenzo di niccolò],"[1390.0, 1412.0]","[bicci, lorenzo di]","[1350, 1427]",0,googleart_m02plrsk,"wga_bicci, lorenzo di, (1350-1427)","(332, 2751)"
-361.0,88.0,[jean-baptiste pater],"[1695, 1736]","[santerre, jean-baptiste]","[1651, 1717]",0,googleart_m0bx6qs,"wga_santerre, jean-baptiste, (1651-1717)","(3704, 4387)"
-362.0,88.0,"[pieter brueghel de oude, pieter bruegel the elder]","[1525, 1569]","[brueghel, pieter iii]","[1589, 1608]",0,wiki_pieter-bruegel-the-elder,"wga_brueghel, pieter iii, (1589-1608)","(543, 1793)"
-,102.0,"[vasily vereshchagin, василий верещагин]","[1842, 1904]","[vereshchagin, vasily petrovich]","[1835, 1909]",0,wiki_vasily-vereshchagin,"wga_vereshchagin, vasily petrovich, (1835-1909)","(2147, 4487)"
-,100.0,"[vasily vereshchagin, василий верещагин]","[1842, 1904]","[vereshchagin, vasily vasilyevich]","[1842, 1904]",1,wiki_vasily-vereshchagin,"wga_vereshchagin, vasily vasilyevich, (1842-1904)","(2147, 4488)"
+,"score","names_wiki+googleart","dates_wiki+googleart","names_wga","dates_wga","is_same","artist_id_wiki+googleart","artist_id_wga","idx",
+0,100,"[caravaggio, michelangelo merisi da caravaggio]","[1571, 1610]","[cecco del caravaggio]","[1610.0, 1650.0]",0,"googleart_m020bg","wga_cecco del caravaggio, (1610-1610)","(300, 721)",
+1,100,"[ambrosius bosschaert, ambrosius bosschaerts the elder]","[1573, 1621]","[bosschaert, ambrosius the younger]","[1609, 1645]",0,"googleart_m0zxv","wga_bosschaert, ambrosius the younger, (1609-1645)","(5062, 440)",
+2,100,"[corrado giaquinto]","[1703, 1765]","[giaquinto, corrado]","[1703, 1766]",1,"googleart_m059k72","wga_giaquinto, corrado, (1703-1766)","(3527, 1410)",
+3,100,"[joos van cleve]","[1485, 1541]","[cleve, joos van]","[1485, 1540]",1,"googleart_m0gp54j","wga_cleve, joos van, (1485-1540)","(4500, 791)",
+4,100,"[carlo dolci]","[1616, 1686]","[dolci, carlo]","[1616, 1687]",1,"googleart_m01gb6v","wga_dolci, carlo, (1616-1687)","(2446, 1049)",
+5,100,"[joseph duplessis, joseph siffred duplessis]","[1725, 1801]","[duplessis, joseph-siffred]","[1725, 1802]",1,"googleart_m0g4z6c","wga_duplessis, joseph-siffred, (1725-1802)","(4455, 1104)",
+6,100,"[carle vernet]","[1758, 1835]","[vernet, carle]","[1758, 1836]",1,"googleart_m03_p94","wga_vernet, carle, (1758-1836)","(2955, 4504)",
+7,100,"[jean (jehan) fouquet, jean fouquet]","[1420, 1481]","[fouquet, jean]","[1420, 1480]",1,"wiki_jean-fouquet","wga_fouquet, jean, (1420-1480)","(1076, 1265)",
+8,100,"[biagio d'antonio]","[1446, 1516]","[biagio d'antonio]","[1446, 1515]",1,"googleart_m03cs7fm","wga_biagio d'antonio, (1446-1515)","(3021, 327)",
+9,100,"[catharina van hemessen]","[1528, 1588]","[hemessen, catharina van]","[1528, 1587]",1,"googleart_m0928s2","wga_hemessen, catharina van, (1528-1587)","(4040, 1686)",
+10,100,"[ștefan luchian, stefan luchian]","[1868, 1917]","[luchian, ªtefan]","[1868, 1916]",1,"wiki_stefan-luchian","wga_luchian, ªtefan, (1868-1916)","(2018, 2159)",
+11,100,"[piero di cosimo, piero di cosimo (piero di lorenzo)]","[1462, 1522]","[piero di cosimo]","[1462, 1521]",1,"wiki_piero-di-cosimo","wga_piero di cosimo, (1462-1521)","(1776, 3259)",
+12,100,"[jacob gerritsz. cuyp]","[1594, 1652]","[cuyp, jacob gerritsz.]","[1594, 1651]",1,"googleart_m08ff2n","wga_cuyp, jacob gerritsz., (1594-1651)","(3993, 946)",
+13,100,"[johann heinrich schönfeld, heinrich schonfeld]","[1609, 1684]","[schönfeld, johann heinrich]","[1609, 1683]",1,"googleart_m09v8z7q","wga_schönfeld, johann heinrich, (1609-1683)","(879, 3775)",
+14,100,"[david vinckboons]","[1576, 1632]","[vinckboons, david]","[1576, 1633]",1,"googleart_m08b45y","wga_vinckboons, david, (1576-1633)","(3969, 4545)",
+15,100,"[jan peeters i, gaspar bouttats, jan peeters (i)]","[1624, 1677]","[peeters, jan]","[1624, 1678]",1,"googleart_m07s3lk7","wga_peeters, jan, (1624-1678)","(3891, 3200)",
+16,100,"[attributed to corneille de lyon, corneille de lyon]","[1500, 1575]","[corneille de lyon]","[1500, 1574]",1,"googleart_m065wtb","wga_corneille de lyon, (1500-1574)","(3702, 858)",
+17,100,"[petrus christus]","[1410, 1476]","[christus, petrus]","[1410, 1475]",1,"wiki_petrus-christus","wga_christus, petrus, (1410-1475)","(1766, 757)",
+18,100,"[baldassare peruzzi]","[1481, 1537]","[peruzzi, baldassare]","[1481, 1536]",1,"googleart_m05xd6n","wga_peruzzi, baldassare, (1481-1536)","(3649, 3225)",
+19,100,"[jan both, andries both]","[1612, 1642]","[both, andries]","[1612, 1641]",1,"googleart_m051yg8","wga_both, andries, (1612-1641)","(3483, 446)",
+20,100,"[bartolomé bermejo, bartolomé de cárdenas, bartolome bermejo]","[1440, 1501]","[bermejo, bartolomé]","[1440, 1500]",1,"wiki_bartolome-bermejo","wga_bermejo, bartolomé, (1440-1500)","(231, 302)",
+21,100,"[nicolas tournier]","[1590, 1639]","[tournier, nicolas]","[1590, 1638]",1,"wiki_nicolas-tournier","wga_tournier, nicolas, (1590-1638)","(1634, 4053)",
+22,100,"[andrea solario (solari), andrea solario]","[1460, 1524]","[solario, andrea]","[1460, 1525]",1,"wiki_andrea-solario","wga_solario, andrea, (1460-1525)","(135, 3853)",
+23,100,"[lorenzo lotto]","[1480, 1557]","[lotto, lorenzo]","[1480, 1556]",1,"googleart_m01wr8s","wga_lotto, lorenzo, (1480-1556)","(1386, 2151)",
+24,100,"[jan baptist weenix]","[1621, 1659]","[weenix, jan baptist]","[1621, 1660]",1,"googleart_m03fzgj","wga_weenix, jan baptist, (1621-1660)","(3095, 4627)",
+25,100,"[joos de momper]","[1564, 1635]","[momper, joos de]","[1564, 1634]",1,"googleart_m027whwf","wga_momper, joos de, (1564-1634)","(2655, 2901)",
+26,100,"[pieter brueghel the younger]","[1564, 1636]","[brueghel, pieter the younger]","[1564, 1638]",1,"googleart_m0h6m9","wga_brueghel, pieter the younger, (1564-1638)","(4565, 544)",
+27,100,"[hans leonhard schäufelein]","[1480, 1540]","[schäufelein, hans leonhard]","[1480, 1538]",1,"googleart_m0fg5zr","wga_schäufelein, hans leonhard, (1480-1538)","(4417, 3771)",
+28,100,"[matthias stomer, matthias stom]","[1600, 1652]","[stom, matthias]","[1600, 1650]",1,"wiki_matthias-stom","wga_stom, matthias, (1600-1650)","(1515, 3913)",
+29,100,"[nicolaes eliasz. pickenoy, nicolaes pickenoy]","[1588, 1656]","[pickenoy, nicolaes eliasz.]","[1588, 1654]",1,"googleart_m02x3z7k","wga_pickenoy, nicolaes eliasz., (1588-1654)","(2890, 3252)",
+30,100,"[adam van breen]","[1585, 1640]","[breen, adam van]","[1585, 1642]",1,"googleart_m0t50c06","wga_breen, adam van, (1585-1642)","(4742, 503)",
+31,100,"[pieter van der heyden]","[1530, 1572]","[heyden, pieter van der]","[1530, 1575]",1,"googleart_m0vnpmxg","wga_heyden, pieter van der, (1530-1575)","(4952, 1707)",
+32,100,"[hendrick van cleve iii, hendrick van cleve]","[1525, 1589]","[cleve, hendrick van iii]","[1525, 1592]",1,"googleart_m0g9yt1v","wga_cleve, hendrick van iii, (1525-1592)","(4473, 790)",
+33,100,"[artemisia gentileschi, artemesia gentileschi]","[1593, 1656]","[gentileschi, artemisia]","[1593, 1653]",1,"googleart_m03bgcm","wga_gentileschi, artemisia, (1593-1653)","(189, 1382)",
+34,100,"[gherardo starnina]","[1354, 1413]","[starnina, gherardo di jacopo]","[1354, 1409]",1,"googleart_m02pqj5_","wga_starnina, gherardo di jacopo, (1354-1409)","(2719, 3890)",
+35,100,"[jean baptiste greuze, jean-baptiste greuze]","[1725, 1809]","[greuze, jean-baptiste]","[1725, 1805]",1,"googleart_m02yd1s","wga_greuze, jean-baptiste, (1725-1805)","(1063, 1556)",
+36,100,"[paolo veneziano]","[1300, 1365]","[paolo veneziano]","[1300, 1360]",1,"googleart_m02r4wth","wga_paolo veneziano, (1300-1360)","(2802, 3163)",
+37,100,"[jan van noordt, joan van noort]","[1623, 1681]","[noordt, jan van]","[1623, 1676]",1,"googleart_m0hgmwt4","wga_noordt, jan van, (1623-1676)","(4577, 3070)",
+38,100,"[nardo di cione]","[1350.0, 1357.0]","[nardo di cione]","[1350.0, 1363.0]",1,"googleart_m02wc53d","wga_nardo di cione, (1343-1343)","(2872, 3014)",
+39,100,"[pieter coecke van aelst]","[1502, 1550]","[coecke van aelst, pieter]","[1502, 1550]",1,"googleart_m08lgcf","wga_coecke van aelst, pieter, (1502-1550)","(4008, 811)",
+40,100,"[jan miel]","[1599, 1656]","[miel, jan]","[1599, 1663]",1,"googleart_m027gz_3","wga_miel, jan, (1599-1663)","(2631, 2473)",
+41,100,"[annibale carracci]","[1560, 1609]","[carracci, annibale]","[1560, 1609]",1,"googleart_m017t6m","wga_carracci, annibale, (1560-1609)","(151, 670)",
+42,100,"[girolamo savoldo]","[1480, 1540]","[savoldo, giovanni girolamo]","[1480, 1548]",1,"googleart_m098yxx","wga_savoldo, giovanni girolamo, (1480-1548)","(4058, 3724)",
+43,100,"[cornelius norbertus gijsbrechts, cornelis norbertus gysbrechts (cornelius gijsbrechts), cornelis norbertus gysbrechts]","[1630, 1683]","[gijsbrechts, cornelis norbertus]","[1630, 1675]",1,"googleart_m026hr8f","wga_gijsbrechts, cornelis norbertus, (1630-1675)","(407, 1415)",
+44,100,"[robert salmon]","[1775, 1858]","[salmon, robert]","[1775, 1848]",1,"googleart_m02pmxfl","wga_salmon, robert, (1775-1848)","(2716, 3682)",
+45,100,"[jan sanders van hemessen, jan van hemessen, jan van hemessen (hemiksem ca. 1500 –]","[1500, 1566]","[hemessen, jan sanders van]","[1500, 1556]",1,"wiki_jan-van-hemessen","wga_hemessen, jan sanders van, (1500-1556)","(1049, 1687)",
+46,100,"[sebald beham]","[1500, 1550]","[beham, hans sebald]","[1500, 1540]",1,"googleart_m09mstn","wga_beham, hans sebald, (1500-1540)","(4108, 245)",
+47,100,"[pierre-jacques volaire]","[1729, 1802]","[volaire, pierre-jacques]","[1729, 1790]",1,"googleart_m010ry66w","wga_volaire, pierre-jacques, (1729-1790)","(2359, 4578)",
+48,100,"[gillis peeters (i), joannes meyssens, joannes meyssens]","[1612, 1670]","[peeters, gillis i]","[1612, 1653]",1,"googleart_m0bx_hj6","wga_peeters, gillis i, (1612-1653)","(4255, 3199)",
+49,100,"[hendrik goudt, hendrick goudt]","[1583, 1630]","[goudt, hendrick]","[1583, 1648]",1,"googleart_m09k606s","wga_goudt, hendrick, (1583-1648)","(4097, 1525)",
+50,100,"[guido cagnacci, called guido canlassi, guido cagnacci]","[1601, 1663]","[cagnacci, guido]","[1601, 1682]",1,"googleart_m08z_b6","wga_cagnacci, guido, (1601-1682)","(4036, 596)",
+51,100,"[marinus van reymerswaele]","[1490, 1546]","[reymerswaele, marinus van]","[1490, 1567]",1,"googleart_m0d37b4","wga_reymerswaele, marinus van, (1490-1567)","(4350, 3463)",
+52,98,"[baldassare franceschini]","[1611, 1689]","[franceschini, baldassarre]","[1611, 1690]",1,"googleart_m073kfr","wga_franceschini, baldassarre, (1611-1690)","(3796, 1272)",
+53,94,"[john frederick herring, sr.]","[1795, 1865]","[herring, john frederick the elder]","[1795, 1863]",1,"googleart_m02644ly","wga_herring, john frederick the elder, (1795-1863)","(2534, 1698)",
+54,96,"[reinier nooms]","[1623, 1667]","[nooms, reiner]","[1623, 1664]",1,"googleart_m0h6pg0","wga_nooms, reiner, (1623-1664)","(4571, 3069)",
+55,94,"[bonifazio veronese]","[1487, 1553]","[bonifacio veronese]","[1487, 1557]",1,"googleart_m07pw80","wga_bonifacio veronese, (1487-1557)","(3888, 409)",
+56,90,"[cornelis massijs]","[1510, 1562]","[massys, cornelis]","[1510, 1556]",1,"googleart_m0t5fw8n","wga_massys, cornelis, (1510-1556)","(4896, 2274)",
+57,100,"[lambert sustris]","[1515, 1584]","[sustris, lambert]","[1515, 1560]",1,"googleart_m0273xfq","wga_sustris, lambert, (1515-1560)","(2613, 3947)",
+58,100,"[loyset liédet]","[1420, 1420]","[liédet, loyset]","[1420, 1479]",1,"googleart_m0k87vbk","wga_liédet, loyset, (1420-1479)","(4612, 2114)",
+59,92,"[carl blechen]","[1798, 1840]","[blechen, karl]","[1797, 1840]",1,"googleart_m02qly32","wga_blechen, karl, (1797-1840)","(2770, 358)",
+60,90,"[jan matsys]","[1509, 1575]","[massys, jan]","[1510, 1575]",1,"googleart_m02r0dtt","wga_massys, jan, (1510-1575)","(2789, 2275)",
+61,100,"[lazzaro baldi]","[1624, 1703]","[baldi, lazzaro]","[1622, 1703]",1,"googleart_m02qs928","wga_baldi, lazzaro, (1622-1703)","(2779, 156)",
+62,100,"[william dobson]","[1611, 1646]","[dobson, william]","[1610, 1646]",1,"googleart_m0j555","wga_dobson, william, (1610-1646)","(4599, 1047)",
+63,100,"[jacob marrel]","[1614, 1681]","[marrel, jacob]","[1613, 1681]",1,"googleart_m07k7rkf","wga_marrel, jacob, (1613-1681)","(3864, 2250)",
+64,100,"[frans geffels]","[1625, 1694]","[geffels, frans]","[1624, 1694]",1,"googleart_m0j2750r","wga_geffels, frans, (1624-1694)","(4594, 1371)",
+65,100,"[maurice brazil prendergast, maurice prendergast]","[1858, 1924]","[prendergast, maurice brazil]","[1859, 1924]",1,"googleart_m039zxc","wga_prendergast, maurice brazil, (1859-1924)","(1523, 3345)",
+66,97,"[gerard de lairesse]","[1640, 1711]","[lairesse, gérard de]","[1641, 1711]",1,"googleart_m027st_3","wga_lairesse, gérard de, (1641-1711)","(2649, 1967)",
+67,100,"[pietro falca, pietro longhi]","[1701, 1785]","[longhi, pietro]","[1702, 1785]",1,"googleart_m04h26q","wga_longhi, pietro, (1702-1785)","(1800, 2129)",
+68,88,"[paul van somer i]","[1577, 1621]","[somer, paulus van]","[1576, 1621]",1,"googleart_m02r4t4l","wga_somer, paulus van, (1576-1621)","(2802, 3859)",
+69,100,"[dirck van delen]","[1605, 1671]","[delen, dirck van]","[1604, 1671]",1,"googleart_m07s7sps","wga_delen, dirck van, (1604-1671)","(3901, 999)",
+70,100,"[suor plautilla nelli (pulisena margherita nelli), plautilla nelli]","[1524, 1588]","[nelli, plautilla]","[1523, 1588]",1,"wiki_plautilla-nelli","wga_nelli, plautilla, (1523-1588)","(1806, 3033)",
+71,100,"[rogier de le pasture, rogier van der weyden]","[1399, 1464]","[weyden, rogier van der]","[1400, 1464]",1,"googleart_m01bbhx","wga_weyden, rogier van der, (1400-1464)","(1915, 4645)",
+72,100,"[alessandro di mariano di vanni filipepi, sandro botticelli]","[1445, 1510]","[botticelli, sandro]","[1444, 1510]",1,"wiki_sandro-botticelli","wga_botticelli, sandro, (1444-1510)","(1961, 450)",
+73,100,"[jan jansz van de velde]","[1620, 1662]","[velde, jan jansz. van de]","[1619, 1662]",1,"googleart_m0g59kwv","wga_velde, jan jansz. van de, (1619-1662)","(4466, 4462)",
+74,100,"[louis rolland trinquesse]","[1746, 1800]","[trinquesse, louis-rolland]","[1745, 1800]",1,"googleart_m05f7v6k","wga_trinquesse, louis-rolland, (1745-1800)","(3570, 4065)",
+75,100,"[massimo stanzione]","[1586, 1656]","[stanzione, massimo]","[1585, 1656]",1,"googleart_m026qknc","wga_stanzione, massimo, (1585-1656)","(2579, 3889)",
+76,97,"[juan sánchez cotán]","[1560, 1627]","[sanchez cotán, juan]","[1561, 1627]",1,"googleart_m026dnfj","wga_sanchez cotán, juan, (1561-1627)","(2551, 3693)",
+77,100,"[jacob adriaensz backer]","[1609, 1651]","[backer, jacob adriaensz.]","[1608, 1651]",1,"googleart_m0261pvk","wga_backer, jacob adriaensz., (1608-1651)","(2527, 139)",
+78,100,"[govert dircksz camphuysen]","[1624, 1672]","[camphuysen, govert dircksz.]","[1623, 1672]",1,"googleart_m0fpjmdn","wga_camphuysen, govert dircksz., (1623-1672)","(4429, 619)",
+79,100,"[jean charles cazin]","[1840, 1901]","[cazin, jean-charles]","[1841, 1901]",1,"googleart_m01dqr6","wga_cazin, jean-charles, (1841-1901)","(2437, 718)",
+80,100,"[lazzaro bastiani]","[1429, 1512]","[bastiani, lazzaro]","[1449, 1512]",1,"googleart_m02rlr91","wga_bastiani, lazzaro, (1449-1512)","(2823, 208)",
+81,100,"[pieter jansz quast]","[1606, 1647]","[quast, pieter jansz.]","[1605, 1647]",1,"googleart_m0bwk9cs","wga_quast, pieter jansz., (1605-1647)","(4255, 3383)",
+82,88,"[friedrich wilhelm schadow]","[1789, 1862]","[schadow, wilhelm von]","[1788, 1862]",1,"googleart_m03jsw8","wga_schadow, wilhelm von, (1788-1862)","(3144, 3732)",
+83,100,"[frans floris]","[1517, 1570]","[floris, frans]","[1516, 1570]",1,"googleart_m03hg_g","wga_floris, frans, (1516-1570)","(3119, 1242)",
+84,100,"[benozzo di lese, benozzo gozzoli]","[1421, 1497]","[gozzoli, benozzo]","[1420, 1497]",1,"wiki_benozzo-gozzoli","wga_gozzoli, benozzo, (1420-1497)","(249, 1531)",
+85,100,"[bernardo bellotto, bernardo francesco paolo ernesto bellotto]","[1721, 1780]","[bellotto, bernardo]","[1720, 1780]",1,"googleart_m04_nhc9","wga_bellotto, bernardo, (1720-1780)","(255, 264)",
+86,100,"[bernhard strigel]","[1461, 1528]","[strigel, bernhard]","[1460, 1528]",1,"wiki_bernhard-strigel","wga_strigel, bernhard, (1460-1528)","(259, 3925)",
+87,100,"[caesar van everdingen]","[1616, 1678]","[everdingen, caesar van]","[1617, 1678]",1,"googleart_m03fzny","wga_everdingen, caesar van, (1617-1678)","(3100, 1162)",
+88,100,"[carl rottmann]","[1797, 1850]","[rottmann, carl]","[1798, 1850]",1,"googleart_m07g6xv","wga_rottmann, carl, (1798-1850)","(3844, 3620)",
+89,100,"[carel de moor]","[1655, 1738]","[moor, carel de ii]","[1656, 1738]",1,"googleart_m03frpb","wga_moor, carel de ii, (1656-1738)","(3086, 2919)",
+90,100,"[correggio, antonio allegri da correggio, antonio da correggio]","[1489, 1534]","[correggio]","[1490, 1534]",1,"wiki_correggio","wga_correggio, (1490-1534)","(412, 867)",
+91,93,"[quentin matsys]","[1466, 1530]","[massys, quentin]","[1465, 1530]",1,"googleart_m0mf02","wga_massys, quentin, (1465-1530)","(4629, 2276)",
+92,100,"[francesco bacchiacca]","[1495, 1557]","[bacchiacca]","[1494, 1557]",1,"googleart_m0ksykv","wga_bacchiacca, (1494-1557)","(4620, 137)",
+93,100,"[jan porcellis]","[1583, 1632]","[porcellis, jan]","[1584, 1632]",1,"googleart_m03czwjg","wga_porcellis, jan, (1584-1632)","(3047, 3321)",
+94,100,"[jacob savery]","[1566, 1603]","[savery, jacob i]","[1565, 1603]",1,"googleart_m0bxzcy4","wga_savery, jacob i, (1565-1603)","(4261, 3720)",
+95,100,"[marco palmezzano]","[1460, 1539]","[palmezzano, marco]","[1459, 1539]",1,"googleart_m0b4p0z","wga_palmezzano, marco, (1459-1539)","(4178, 3152)",
+96,100,"[franz richard unterberger]","[1837, 1902]","[unterberger, franz-richard]","[1838, 1902]",1,"wiki_franz-richard-unterberger","wga_unterberger, franz-richard, (1838-1902)","(660, 4411)",
+97,100,"[fyodor rokotov, фёдор рокотов]","[1736, 1808]","[rokotov, fyodor]","[1735, 1808]",1,"wiki_fyodor-rokotov","wga_rokotov, fyodor, (1735-1808)","(690, 3523)",
+98,100,"[giotto, giotto di bondone]","[1266, 1337]","[giotto di bondone]","[1267, 1337]",1,"googleart_m0kp91","wga_giotto di bondone, (1267-1337)","(778, 1433)",
+99,100,"[giovanni antonio boltraffio]","[1466, 1516]","[boltraffio, giovanni antonio]","[1467, 1516]",1,"wiki_giovanni-antonio-boltraffio","wga_boltraffio, giovanni antonio, (1467-1516)","(780, 400)",
+100,96,"[michael sittow]","[1469, 1525]","[sittow, michel]","[1468, 1525]",1,"googleart_m03cvclv","wga_sittow, michel, (1468-1525)","(3030, 3835)",
+101,100,"[giuseppe arcimboldo]","[1527, 1593]","[arcimboldo, giuseppe]","[1526, 1593]",1,"wiki_giuseppe-arcimboldo","wga_arcimboldo, giuseppe, (1526-1593)","(792, 103)",
+102,100,"[balthasar van der ast]","[1593, 1657]","[ast, balthasar van der]","[1594, 1657]",1,"googleart_m04lj90w","wga_ast, balthasar van der, (1594-1657)","(3397, 119)",
+103,94,"[claes corneliszoon moeyaert]","[1592, 1655]","[moeyaert, claes cornelisz.]","[1591, 1655]",1,"googleart_m02x04r3","wga_moeyaert, claes cornelisz., (1591-1655)","(2885, 2885)",
+104,100,"[hercules pieterszoon seghers, hercules seghers]","[1589, 1638]","[seghers, hercules]","[1590, 1638]",1,"wiki_hercules-seghers","wga_seghers, hercules, (1590-1638)","(914, 3791)",
+105,100,"[james thornhill]","[1675, 1734]","[thornhill, sir james]","[1676, 1734]",1,"googleart_m01b4dg","wga_thornhill, sir james, (1676-1734)","(2424, 4006)",
+106,94,"[willem pieterszoon buytewech]","[1592, 1624]","[buytewech, willem pietersz.]","[1591, 1625]",1,"googleart_m0d57r8","wga_buytewech, willem pietersz., (1591-1625)","(4359, 578)",
+107,100,"[michel dorigny]","[1617, 1663]","[dorigny, michel]","[1616, 1665]",1,"googleart_m0gyrqrk","wga_dorigny, michel, (1616-1665)","(4542, 1065)",
+108,100,"[pietro falca, pietro longhi]","[1701, 1785]","[longhi, pietro]","[1702, 1785]",1,"googleart_m04h26q","wga_longhi, pietro, (1702-1785)","(1800, 2128)",
+109,100,"[maso di banco]","[1336.0, 1353.0]","[maso di banco]","[1335.0, 1350.0]",1,"googleart_m02qrlt5","wga_maso di banco, (1320-1320)","(2777, 2271)",
+110,100,"[romanino]","[1485, 1566]","[romanino, girolamo]","[1484, 1559]",1,"googleart_m09932z","wga_romanino, girolamo, (1484-1559)","(4064, 3588)",
+111,85,"[giovanni battista paggi]","[1554, 1627]","[trotti, giovanni battista]","[1555, 1619]",0,"googleart_m02759zl","wga_trotti, giovanni battista, (1555-1619)","(2618, 4070)",
+112,100,"[pieter cornelisz van rijck]","[1567, 1637]","[rijck, pieter cornelisz van]","[1568, 1628]",1,"googleart_m0g53kf0","wga_rijck, pieter cornelisz van, (1568-1628)","(4460, 3485)",
+113,100,"[melchior lorck]","[1527, 1588]","[lorck, melchior]","[1526, 1598]",1,"googleart_m09g9jck","wga_lorck, melchior, (1526-1598)","(4083, 2139)",
+114,100,"[pieter feddes van harlingen]","[1586, 1623]","[feddes, pieter]","[1585, 1634]",1,"googleart_m0ds41dy","wga_feddes, pieter, (1585-1634)","(4397, 1195)",
+115,100,"[le nain brothers, antoine le nain, louis le nain, mathieu le nain]","[1599, 1648]","[le nain brothers]","[1598, 1677]",1,"wiki_le-nain-brothers","wga_le nain brothers, (1598-1677)","(1343, 2012)",
+116,100,"[jacob cornelisz van oostsanen]","[1470, 1533]","[cornelisz van oostsanen, jacob]","[1472, 1533]",1,"googleart_m02r4qbw","wga_cornelisz van oostsanen, jacob, (1472-1533)","(2801, 862)",
+117,100,"[sofonisba anguissola]","[1532, 1625]","[anguissola, sofonisba]","[1530, 1625]",1,"wiki_sofonisba-anguissola","wga_anguissola, sofonisba, (1530-1625)","(2000, 79)",
+118,100,"[jan weenix]","[1640, 1719]","[weenix, jan]","[1642, 1719]",1,"googleart_m03fzgx","wga_weenix, jan, (1642-1719)","(3098, 4628)",
+119,100,"[jean nocret]","[1615, 1672]","[nocret, jean]","[1617, 1672]",1,"googleart_m0gydv63","wga_nocret, jean, (1617-1672)","(4540, 3062)",
+120,100,"[rosalba carriera]","[1673, 1757]","[carriera, rosalba]","[1675, 1757]",1,"wiki_rosalba-carriera","wga_carriera, rosalba, (1675-1757)","(1930, 676)",
+121,100,"[federico barocci]","[1528, 1612]","[barocci, federico fiori]","[1526, 1612]",1,"googleart_m03hh23","wga_barocci, federico fiori, (1526-1612)","(3125, 179)",
+122,100,"[abraham bloemaert]","[1564, 1651]","[bloemaert, abraham]","[1566, 1651]",1,"googleart_m03fz_9","wga_bloemaert, abraham, (1566-1651)","(3094, 366)",
+123,100,"[jules joseph lefebvre]","[1836, 1911]","[lefebvre, jules-joseph]","[1834, 1911]",1,"wiki_jules-joseph-lefebvre","wga_lefebvre, jules-joseph, (1834-1911)","(1236, 2031)",
+124,100,"[lazzaro baldi]","[1624, 1703]","[baldi, lazzaro]","[1622, 1703]",1,"googleart_m02qs928","wga_baldi, lazzaro, (1622-1703)","(2779, 155)",
+125,97,"[gaspar de crayer]","[1582, 1669]","[crayer, gaspard de]","[1584, 1669]",1,"googleart_m072hvc","wga_crayer, gaspard de, (1584-1669)","(3789, 917)",
+126,87,"[jan wijnants]","[1632, 1684]","[wynants, jan]","[1630, 1684]",1,"googleart_m03gzxbq","wga_wynants, jan, (1630-1684)","(3115, 4699)",
+127,100,"[giovanni battista crespi]","[1573, 1632]","[crespi, giovanni battista]","[1575, 1632]",1,"googleart_m07rn1b","wga_crespi, giovanni battista, (1575-1632)","(3893, 920)",
+128,100,"[anton von maron]","[1731, 1808]","[maron, anton von]","[1733, 1808]",1,"googleart_m04jch4r","wga_maron, anton von, (1733-1808)","(3370, 2247)",
+129,100,"[jan van de cappelle]","[1624, 1679]","[cappelle, jan van de]","[1626, 1679]",1,"googleart_m04ykwwj","wga_cappelle, jan van de, (1626-1679)","(3459, 643)",
+130,100,"[lorenzo di niccolò]","[1390.0, 1412.0]","[lorenzo di niccolò di martino]","[1392, 1412]",1,"googleart_m02plrsk","wga_lorenzo di niccolò di martino, (1392-1412)","(2715, 2146)",
+131,90,"[gerard van honthorst]","[1592, 1656]","[honthorst, gerrit van]","[1590, 1656]",1,"googleart_m03f_3c","wga_honthorst, gerrit van, (1590-1656)","(3080, 1747)",
+132,100,"[francesco melzi]","[1491, 1570]","[melzi, francesco]","[1493, 1570]",1,"googleart_m05n4hz","wga_melzi, francesco, (1493-1570)","(3617, 2431)",
+133,98,"[juan bautista martínez del mazo]","[1612, 1667]","[mazo, juan bautista martinez del]","[1610, 1667]",1,"googleart_m026dp4m","wga_mazo, juan bautista martinez del, (1610-1667)","(2552, 2404)",
+134,100,"[thomas jones barker]","[1815, 1882]","[barker, thomas jones]","[1813, 1882]",1,"wiki_thomas-jones-barker","wga_barker, thomas jones, (1813-1882)","(2082, 175)",
+135,100,"[adam pynacker]","[1622, 1673]","[pynacker, adam]","[1620, 1673]",1,"googleart_m04ykwvw","wga_pynacker, adam, (1620-1673)","(3458, 3372)",
+136,100,"[carl wilhelm kolbe]","[1757, 1835]","[kolbe, carl wilhelm]","[1759, 1835]",1,"googleart_g122cz0ds","wga_kolbe, carl wilhelm, (1759-1835)","(2316, 1925)",
+137,100,"[antonio palomino]","[1653, 1726]","[palomino, acislo antonio]","[1655, 1726]",1,"googleart_m06lm3y","wga_palomino, acislo antonio, (1655-1726)","(3744, 3153)",
+138,100,"[bernardino luini]","[1482, 1532]","[luini, bernardino]","[1480, 1532]",1,"googleart_m04qf6w","wga_luini, bernardino, (1480-1532)","(3427, 2161)",
+139,100,"[johann michael rottmayr]","[1656, 1730]","[rottmayr, johann michael]","[1654, 1730]",1,"googleart_m065z6w","wga_rottmayr, johann michael, (1654-1730)","(3706, 3621)",
+140,100,"[abraham bosse]","[1604, 1676]","[bosse, abraham]","[1602, 1676]",1,"googleart_m032jjq","wga_bosse, abraham, (1602-1676)","(2928, 445)",
+141,100,"[george barret, sr.]","[1730, 1784]","[barret, george]","[1728, 1784]",1,"googleart_m0b3ftg","wga_barret, george, (1728-1784)","(4174, 186)",
+142,98,"[antonio del pollaiolo]","[1433, 1498]","[pollaiuolo, antonio del]","[1431, 1498]",1,"googleart_m01hxsn","wga_pollaiuolo, antonio del, (1431-1498)","(2457, 3309)",
+143,97,"[piero del pollaiolo]","[1443, 1496]","[pollaiuolo, piero del]","[1441, 1496]",1,"googleart_m01hxtl","wga_pollaiuolo, piero del, (1441-1496)","(2458, 3310)",
+144,97,"[tiziano vecelli, titian]","[1488, 1578.0]","[tiziano vecellio]","[1490, 1576]",1,"googleart_m0144mv","wga_tiziano vecellio, (1490-1576)","(2094, 4031)",
+145,100,"[carlos de haes]","[1829, 1898]","[haes, carlos de]","[1826, 1898]",1,"googleart_m0n52vn0","wga_haes, carlos de, (1826-1898)","(4632, 1624)",
+146,100,"[joachim von sandrart]","[1606, 1688]","[sandrart, joachim von]","[1609, 1688]",1,"googleart_m03f_4x","wga_sandrart, joachim von, (1609-1688)","(3081, 3696)",
+147,96,"[jan provoost]","[1462, 1529]","[provost, jan]","[1465, 1529]",1,"googleart_m07pwql","wga_provost, jan, (1465-1529)","(1043, 3356)",
+148,91,"[johannes cornelisz verspronck]","[1600, 1662]","[verspronck, jan cornelisz]","[1603, 1662]",1,"googleart_m02ww2mr","wga_verspronck, jan cornelisz, (1603-1662)","(2881, 4511)",
+149,100,"[juste-aurèle meissonnier]","[1695, 1750]","[meissonnier, juste-aurèle]","[1698, 1750]",1,"googleart_m0506cv","wga_meissonnier, juste-aurèle, (1698-1750)","(3470, 2424)",
+150,100,"[bartolomeo biscaino]","[1632, 1657]","[biscaino, bartolomeo]","[1629, 1657]",1,"googleart_m02q7974","wga_biscaino, bartolomeo, (1629-1657)","(2750, 346)",
+151,100,"[joachim beuckelaer]","[1533, 1574]","[beuckelaer, joachim]","[1530, 1574]",1,"googleart_m04ltq2","wga_beuckelaer, joachim, (1530-1574)","(3402, 320)",
+152,100,"[vincenzo foppa]","[1430, 1515]","[foppa, vincenzo]","[1427, 1515]",1,"googleart_m0739w1","wga_foppa, vincenzo, (1427-1515)","(3795, 1256)",
+153,100,"[francesco furini]","[1600, 1646]","[furini, francesco]","[1603, 1646]",1,"googleart_m0bcll2","wga_furini, francesco, (1603-1646)","(4212, 1316)",
+154,100,"[niccolò dell'abbate]","[1512, 1571]","[abbate, niccolò dell']","[1509, 1571]",1,"googleart_m03l1hs","wga_abbate, niccolò dell', (1509-1571)","(3149, 3)",
+155,100,"[jaume huguet]","[1412, 1492]","[huguet, jaume]","[1415, 1492]",1,"googleart_m05sxdkl","wga_huguet, jaume, (1415-1492)","(3646, 1774)",
+156,100,"[cornelis claesz van wieringen]","[1577, 1633]","[wieringen, cornelis claesz van]","[1580, 1633]",1,"googleart_m03qh0_k","wga_wieringen, cornelis claesz van, (1580-1633)","(3208, 4650)",
+157,100,"[herman van swanevelt]","[1603, 1655]","[swanevelt, herman van]","[1600, 1655]",1,"googleart_m026m_lb","wga_swanevelt, herman van, (1600-1655)","(2568, 3954)",
+158,100,"[isaac oliver]","[1565, 1617]","[oliver, isaac]","[1568, 1617]",1,"googleart_m05kclq","wga_oliver, isaac, (1568-1617)","(3597, 3093)",
+159,100,"[lorenzo veneziano]","[1359, 1371]","[lorenzo veneziano]","[1356, 1372]",1,"googleart_m03d1ddv","wga_lorenzo veneziano, (1356-1372)","(3052, 2148)",
+160,100,"[andrea di bonaiuto da firenze]","[1346, 1379]","[andrea da firenze]","[1343, 1377]",1,"googleart_m0t5fn9w","wga_andrea da firenze, (1343-1377)","(4831, 59)",
+161,100,"[marco d'oggiono]","[1470, 1549]","[oggiono, marco d']","[1467, 1524]",1,"googleart_m02630t2","wga_oggiono, marco d', (1467-1524)","(2531, 3091)",
+162,100,"[giovanni bellini]","[1430, 1516]","[bellini, giovanni]","[1426, 1516]",1,"wiki_giovanni-bellini","wga_bellini, giovanni, (1426-1516)","(784, 258)",
+163,100,"[hans baldung grien (grün), hans baldung]","[1480, 1545]","[baldung grien, hans]","[1484, 1545]",1,"wiki_hans-baldung","wga_baldung grien, hans, (1484-1545)","(857, 162)",
+164,100,"[palma il giovane]","[1544, 1628]","[palma giovane]","[1548, 1628]",1,"googleart_m0gjxb9","wga_palma giovane, (1548-1628)","(4497, 3147)",
+165,100,"[hendrick cornelisz vroom]","[1562, 1640]","[vroom, hendrick cornelisz.]","[1566, 1640]",1,"wiki_hendrick-cornelisz-vroom","wga_vroom, hendrick cornelisz., (1566-1640)","(888, 4601)",
+166,100,"[lippo vanni]","[1344, 1375]","[vanni, lippo]","[1340, 1375]",1,"googleart_m03d4s6p","wga_vanni, lippo, (1340-1375)","(3067, 4443)",
+167,100,"[paulus bor]","[1601, 1669]","[bor, paulus]","[1605, 1669]",1,"googleart_m02w7jfq","wga_bor, paulus, (1605-1669)","(2867, 417)",
+168,100,"[andrea vaccaro]","[1600, 1670]","[vaccaro, andrea]","[1604, 1670]",1,"googleart_m02pjbbg","wga_vaccaro, andrea, (1604-1670)","(2713, 4422)",
+169,100,"[claude gellée, claude lorrain]","[1600, 1682]","[claude lorrain]","[1604, 1682]",1,"googleart_m0l057","wga_claude lorrain, (1604-1682)","(381, 785)",
+170,100,"[bernardo zenale]","[1460, 1526]","[zenale, bernardo]","[1464, 1526]",1,"googleart_m026kjd0","wga_zenale, bernardo, (1464-1526)","(2566, 4719)",
+171,100,"[wolf traut]","[1481, 1520]","[traut, wolf]","[1485, 1520]",1,"googleart_g1q2xhknh6","wga_traut, wolf, (1485-1520)","(2346, 4060)",
+172,100,"[simone martini]","[1284, 1344]","[simone martini]","[1280, 1344]",1,"googleart_m01fshq","wga_simone martini, (1280-1344)","(1997, 3829)",
+173,100,"[giovanni di paolo]","[1395, 1482]","[giovanni di paolo]","[1399, 1482]",1,"googleart_m08rv2l","wga_giovanni di paolo, (1399-1482)","(4025, 1451)",
+174,100,"[piero della francesca]","[1412, 1492]","[piero della francesca]","[1416, 1492]",1,"googleart_m01fd65","wga_piero della francesca, (1416-1492)","(1775, 3258)",
+175,100,"[camillo procaccini]","[1551, 1629]","[procaccini, camillo]","[1555, 1629]",1,"googleart_m026md58","wga_procaccini, camillo, (1555-1629)","(2569, 3351)",
+176,100,"[pietro perugino, pietro vannucci]","[1446, 1524]","[perugino, pietro]","[1450, 1523]",1,"googleart_m03k9yt","wga_perugino, pietro, (1450-1523)","(1801, 3224)",
+177,91,"[bernard van orley]","[1487, 1541]","[orley, bernaert van]","[1491, 1542]",1,"googleart_m038zl9","wga_orley, bernaert van, (1491-1542)","(2948, 3106)",
+178,100,"[cornelis bos]","[1510, 1566]","[bos, cornelis]","[1506, 1556]",1,"googleart_m0dgrgtn","wga_bos, cornelis, (1506-1556)","(4379, 433)",
+179,100,"[colijn de coter]","[1450, 1540]","[coter, colijn de]","[1446, 1538]",1,"googleart_m0b73vmp","wga_coter, colijn de, (1446-1538)","(4191, 884)",
+180,100,"[marco pino]","[1521, 1583]","[pino, marco]","[1525, 1587]",1,"googleart_m02qsxjv","wga_pino, marco, (1525-1587)","(2782, 3278)",
+181,100,"[hans von kulmbach]","[1476, 1528]","[kulmbach, hans süss von]","[1480, 1522]",1,"googleart_m0dnh1","wga_kulmbach, hans süss von, (1480-1522)","(4394, 1945)",
+182,100,"[master of alkmaar]","[1504.0, 1535.0]","[master of alkmaar]","[1500, 1515]",1,"googleart_m0462_8d","wga_master of alkmaar, (1500-1515)","(3272, 2293)",
+183,100,"[sisto badalocchio]","[1581, 1647]","[badalocchio, sisto]","[1585, 1619]",1,"googleart_m0f_9s","wga_badalocchio, sisto, (1585-1619)","(4417, 142)",
+184,85,"[giovanni battista gaulli]","[1639, 1709]","[falda, giovanni battista]","[1643, 1678]",0,"googleart_m06vspx","wga_falda, giovanni battista, (1643-1678)","(3761, 1182)",
+185,100,"[spinello aretino]","[1350, 1410]","[spinello aretino]","[1345, 1410]",1,"googleart_m03xy71","wga_spinello aretino, (1345-1410)","(3236, 3879)",
+186,100,"[polidoro da caravaggio]","[1492, 1543]","[polidoro da caravaggio]","[1497, 1543]",1,"googleart_m03hh0m","wga_polidoro da caravaggio, (1497-1543)","(3124, 3307)",
+187,100,"[carlo crivelli]","[1435, 1495]","[crivelli, carlo]","[1430, 1495]",1,"googleart_m03kbd5","wga_crivelli, carlo, (1430-1495)","(309, 925)",
+188,100,"[ippolito caffi]","[1814, 1866]","[caffi, ippolito]","[1809, 1866]",1,"googleart_m03cz9zt","wga_caffi, ippolito, (1809-1866)","(3046, 594)",
+189,100,"[fra angelico, fra giovanni da fiesole (guido di pietro)]","[1395, 1455]","[angelico, fra]","[1400, 1455]",1,"googleart_m031b2","wga_angelico, fra, (1400-1455)","(627, 72)",
+190,100,"[jean clouet]","[1480, 1541]","[clouet, jean]","[1485, 1541]",1,"googleart_m03vd__","wga_clouet, jean, (1485-1541)","(3222, 799)",
+191,97,"[claude lefèbvre]","[1632, 1675]","[lefebvre, claude]","[1637, 1675]",1,"googleart_m03nt96t","wga_lefebvre, claude, (1637-1675)","(3191, 2030)",
+192,100,"[jean hey, master of moulins]","[1475, 1500]","[master of moulins]","[1480, 1500]",1,"wiki_jean-hey","wga_master of moulins, (1480-1500)","(1080, 2313)",
+193,100,"[jacopo de' barbari]","[1450, 1516]","[barbari, jacopo de']","[1445, 1516]",1,"googleart_m026xbyt","wga_barbari, jacopo de', (1445-1516)","(2595, 170)",
+194,100,"[lucas van valckenborch]","[1535, 1597]","[valckenborch, lucas van]","[1530, 1597]",1,"googleart_m02qvvlb","wga_valckenborch, lucas van, (1530-1597)","(2785, 4428)",
+195,100,"[luca d'egidio di ventura, luca signorelli]","[1445, 1523]","[signorelli, luca]","[1450, 1523]",1,"wiki_luca-signorelli","wga_signorelli, luca, (1450-1523)","(1408, 3821)",
+196,100,"[paul de vos]","[1591, 1678]","[vos, paul de]","[1596, 1678]",1,"googleart_m03cshty","wga_vos, paul de, (1596-1678)","(3026, 4588)",
+197,100,"[israhel van meckenem]","[1445, 1503]","[meckenem, israhel van the younger]","[1440, 1503]",1,"googleart_m026pz6n","wga_meckenem, israhel van the younger, (1440-1503)","(2578, 2416)",
+198,100,"[ercole de' roberti]","[1451, 1496]","[roberti, ercole de']","[1456, 1496]",1,"googleart_m02r7htx","wga_roberti, ercole de', (1456-1496)","(2814, 3504)",
+199,100,"[hans holbein the elder]","[1465, 1524]","[holbein, hans the elder]","[1460, 1524]",1,"googleart_m0cy7g","wga_holbein, hans the elder, (1460-1524)","(4344, 1733)",
+200,100,"[jan van eyck, johannes de eyck]","[1390, 1441]","[eyck, jan van]","[1395, 1441]",1,"wiki_jan-van-eyck","wga_eyck, jan van, (1395-1441)","(1048, 1168)",
+201,100,"[simon marmion]","[1425, 1489]","[marmion, simon]","[1420, 1489]",1,"googleart_m0g3ny2","wga_marmion, simon, (1420-1489)","(4453, 2245)",
+202,100,"[wolf huber]","[1485, 1553]","[huber, wolf]","[1490, 1553]",1,"googleart_m026hc11","wga_huber, wolf, (1490-1553)","(2560, 1766)",
+203,100,"[boetius à bolswert]","[1585, 1633]","[bolswert, boetius adamsz.]","[1580, 1633]",1,"googleart_m06w86h2","wga_bolswert, boetius adamsz., (1580-1633)","(3763, 398)",
+204,100,"[jacopo bassano]","[1510, 1592]","[bassano, jacopo]","[1515, 1592]",1,"wiki_jacopo-bassano","wga_bassano, jacopo, (1515-1592)","(1011, 203)",
+205,100,"[werner van den valckert]","[1585, 1627]","[valckert, werner jacobsz. van den]","[1580, 1627]",1,"googleart_m07scbqp","wga_valckert, werner jacobsz. van den, (1580-1627)","(3904, 4430)",
+206,100,"[francis swaine]","[1725, 1782]","[swaine, francis]","[1720, 1782]",1,"googleart_m0gk7w6","wga_swaine, francis, (1720-1782)","(4498, 3950)",
+207,100,"[francesco maffei]","[1605, 1660]","[maffei, francesco]","[1600, 1660]",1,"googleart_m026gtv7","wga_maffei, francesco, (1600-1660)","(2559, 2188)",
+208,100,"[giovanni battista moroni]","[1520, 1578]","[moroni, giovanni battista]","[1525, 1578]",1,"googleart_m02kb23","wga_moroni, giovanni battista, (1525-1578)","(2707, 2941)",
+209,100,"[ercole de' roberti]","[1451, 1496]","[roberti, ercole de']","[1456, 1496]",1,"googleart_m02r7htx","wga_roberti, ercole de', (1456-1496)","(2814, 3503)",
+210,100,"[geertgen tot sint jans]","[1465, 1495]","[geertgen tot sint jans]","[1460, 1490]",1,"googleart_m03z6sl","wga_geertgen tot sint jans, (1460-1490)","(3243, 1370)",
+211,100,"[duccio, duccio di buoninsegna]","[1250.0, 1330.0]","[duccio di buoninsegna]","[1255, 1319]",1,"wiki_duccio","wga_duccio di buoninsegna, (1255-1319)","(489, 1091)",
+212,100,"[scipione pulzone]","[1550, 1598]","[pulzone, scipione]","[1544, 1598]",1,"googleart_m025zbyv","wga_pulzone, scipione, (1544-1598)","(2518, 3370)",
+213,100,"[augustus charles pugin]","[1762, 1832]","[pugin, augustus charles]","[1768, 1832]",1,"googleart_m086zrw","wga_pugin, augustus charles, (1768-1832)","(3955, 3368)",
+214,100,"[francisco rizi]","[1608, 1685]","[rizi, francisco]","[1614, 1685]",1,"googleart_m03c5y7v","wga_rizi, francisco, (1614-1685)","(2977, 3500)",
+215,100,"[marietta robusti]","[1560, 1590]","[robusti, marietta]","[1554, 1590]",1,"wiki_marietta-robusti","wga_robusti, marietta, (1554-1590)","(1470, 3510)",
+216,100,"[giuseppe zocchi]","[1711, 1767]","[zocchi, giuseppe]","[1717, 1767]",1,"googleart_m02vqf8x","wga_zocchi, giuseppe, (1717-1767)","(2843, 4727)",
+217,100,"[paul sandby]","[1731, 1809]","[sandby, paul]","[1725, 1809]",1,"googleart_m037w39","wga_sandby, paul, (1725-1809)","(2941, 3695)",
+218,100,"[jacob van der ulft]","[1621, 1689]","[ulft, jacob van der]","[1627, 1689]",1,"googleart_m0bmj2m8","wga_ulft, jacob van der, (1627-1689)","(4235, 4099)",
+219,100,"[giulio campi]","[1502, 1572]","[campi, giulio]","[1508, 1572]",1,"googleart_m07d56k","wga_campi, giulio, (1508-1572)","(3834, 622)",
+220,100,"[abraham janssens]","[1567, 1632]","[janssens, abraham]","[1573, 1632]",1,"googleart_m0593ly","wga_janssens, abraham, (1573-1632)","(3526, 1826)",
+221,100,"[lippo memmi]","[1291, 1356]","[memmi, lippo]","[1285, 1361]",1,"googleart_m02r3h90","wga_memmi, lippo, (1285-1361)","(2799, 2435)",
+222,100,"[barnaba da modena]","[1367.0, 1375.0]","[barnaba da modena]","[1361, 1383]",1,"googleart_m02qkd1t","wga_barnaba da modena, (1361-1383)","(2765, 178)",
+223,100,"[luca di tommè]","[1350.0, 1365.0]","[luca di tommè]","[1356, 1389]",1,"googleart_m03d8z95","wga_luca di tommè, (1356-1389)","(3075, 2155)",
+224,100,"[pieter van laer]","[1599, 1642]","[laer, pieter van]","[1592, 1642]",1,"googleart_m07yxc9","wga_laer, pieter van, (1592-1642)","(3931, 1962)",
+225,100,"[johann liss]","[1597, 1631]","[liss, johann]","[1590, 1631]",1,"googleart_m06dhm2","wga_liss, johann, (1590-1631)","(3729, 2112)",
+226,100,"[eugenio lucas velázquez]","[1817, 1870]","[lucas velázquez, eugenio]","[1824, 1870]",1,"googleart_m0vsb5g5","wga_lucas velázquez, eugenio, (1824-1870)","(5025, 2156)",
+227,100,"[john crome]","[1761, 1821]","[crome, john]","[1768, 1821]",1,"googleart_m0ps33","wga_crome, john, (1768-1821)","(1152, 928)",
+228,100,"[marco dente]","[1493, 1527]","[dente da ravenna, marco]","[1486, 1527]",1,"googleart_m03d802j","wga_dente da ravenna, marco, (1486-1527)","(3070, 1009)",
+229,100,"[jan griffier]","[1652, 1718]","[griffier, jan i]","[1645, 1718]",1,"googleart_m03c9802","wga_griffier, jan i, (1645-1718)","(2986, 1559)",
+230,100,"[vittore carpaccio]","[1465, 1526]","[carpaccio, vittore]","[1472, 1526]",1,"wiki_vittore-carpaccio","wga_carpaccio, vittore, (1472-1526)","(2172, 666)",
+231,100,"[vasily vereshchagin, василий верещагин]","[1842, 1904]","[vereshchagin, vasily petrovich]","[1835, 1909]",0,"wiki_vasily-vereshchagin","wga_vereshchagin, vasily petrovich, (1835-1909)","(2148, 4488)",
+232,88,"[giovanni battista cipriani]","[1727, 1785]","[piranesi, giovanni battista]","[1720, 1778]",0,"googleart_m01g71_","wga_piranesi, giovanni battista, (1720-1778)","(2443, 3282)",
+233,85,"[giovanni battista paggi]","[1554, 1627]","[castello, giovanni battista]","[1547, 1637]",0,"googleart_m02759zl","wga_castello, giovanni battista, (1547-1637)","(2618, 693)",
+234,100,"[hieronymus cock]","[1518, 1570]","[cock, hieronymus]","[1510, 1570]",1,"googleart_m026r975","wga_cock, hieronymus, (1510-1570)","(2580, 804)",
+235,100,"[bartolomeo vivarini]","[1432, 1499]","[vivarini, bartolomeo]","[1440, 1499]",1,"googleart_m05cdfk","wga_vivarini, bartolomeo, (1440-1499)","(3557, 4563)",
+236,100,"[francesco granacci]","[1469, 1543]","[granacci, francesco]","[1477, 1543]",1,"googleart_m0274fyt","wga_granacci, francesco, (1477-1543)","(2615, 1537)",
+237,100,"[harald sohlberg]","[1869, 1935]","[sohlberg, harald]","[1877, 1935]",1,"googleart_m0bqy3b","wga_sohlberg, harald, (1877-1935)","(4242, 3851)",
+238,100,"[jan dirksz both]","[1610, 1652]","[both, jan]","[1618, 1652]",1,"googleart_m07_m2d","wga_both, jan, (1618-1652)","(3829, 447)",
+239,100,"[abraham janssens]","[1567, 1632]","[janssens, abraham]","[1573, 1632]",1,"googleart_m0593ly","wga_janssens, abraham, (1573-1632)","(3526, 1827)",
+240,100,"[jan wyck]","[1652, 1702]","[wyck, jan]","[1644, 1700]",1,"googleart_m05313rc","wga_wyck, jan, (1644-1700)","(3495, 4697)",
+241,86,"[giovanni battista bertani]","[1516, 1576]","[moroni, giovanni battista]","[1525, 1578]",0,"googleart_m02vvgcc","wga_moroni, giovanni battista, (1525-1578)","(2848, 2941)",
+242,85,"[jean baptiste vanmour]","[1671, 1737]","[morel, jean-baptiste]","[1662, 1732]",0,"googleart_m09df4w","wga_morel, jean-baptiste, (1662-1732)","(4073, 2929)",
+243,100,"[vincenzo catena]","[1470, 1531]","[catena, vincenzo]","[1480, 1531]",1,"googleart_m0287_g_","wga_catena, vincenzo, (1480-1531)","(2678, 703)",
+244,100,"[hans memling]","[1430, 1494]","[memling, hans]","[1440, 1494]",1,"wiki_hans-memling","wga_memling, hans, (1440-1494)","(864, 2434)",
+245,97,"[adriaen isenbrandt]","[1480, 1551]","[isenbrant, adriaen]","[1490, 1551]",1,"googleart_m031d58","wga_isenbrant, adriaen, (1490-1551)","(2925, 1800)",
+246,100,"[giuseppe bernardino bison]","[1762, 1844]","[bison, giuseppe bernardino]","[1762, 1844]",1,"googleart_m026n1fh","wga_bison, giuseppe bernardino, (1762-1844)","(2573, 348)",
+247,96,"[giovan battista langetti]","[1625, 1676]","[langetti, giovanni battista]","[1635, 1676]",1,"googleart_m026gtmq","wga_langetti, giovanni battista, (1635-1676)","(2558, 1987)",
+248,100,"[walter leistikow]","[1865, 1908]","[leistikow, walter]","[1855, 1908]",1,"googleart_m0268css","wga_leistikow, walter, (1855-1908)","(2544, 2039)",
+249,100,"[taddeo gaddi]","[1290, 1366]","[gaddi, taddeo]","[1300, 1366]",1,"googleart_m01wqmw","wga_gaddi, taddeo, (1300-1366)","(2489, 1326)",
+250,100,"[clara peeters]","[1594, 1657]","[peeters, clara]","[1594, 1657]",1,"googleart_m0266vrh","wga_peeters, clara, (1594-1657)","(376, 3197)",
+251,100,"[ottavio leoni]","[1568, 1630]","[leoni, ottavio]","[1578, 1630]",1,"googleart_m0b0nr5","wga_leoni, ottavio, (1578-1630)","(4163, 2055)",
+252,88,"[dirck van santvoort]","[1610, 1680]","[santvoort, dirck dircksz.]","[1600, 1680]",1,"googleart_m0h64vxf","wga_santvoort, dirck dircksz., (1600-1680)","(4566, 3707)",
+253,100,"[bernat martorell]","[1390, 1452]","[martorell, bernat]","[1400, 1452]",1,"googleart_m0cnz9j","wga_martorell, bernat, (1400-1452)","(4321, 2262)",
+254,100,"[ivan nikitin, иван никитин]","[1690, 1741]","[nikitin, ivan nikitich]","[1680, 1742]",1,"wiki_ivan-nikitin","wga_nikitin, ivan nikitich, (1680-1742)","(991, 3060)",
+255,100,"[jan wellens de cock]","[1480, 1527]","[cock, jan wellens de]","[1490, 1529]",1,"googleart_m047q750","wga_cock, jan wellens de, (1490-1529)","(3290, 805)",
+256,100,"[master of saint veronica]","[1410.0, 1410.0]","[master of saint veronica]","[1400, 1420]",1,"googleart_m010glghg","wga_master of saint veronica, (1400-1420)","(2356, 2317)",
+257,100,"[william morris hunt]","[1824, 1879]","[morris, william]","[1834, 1896]",0,"googleart_m04td2w","wga_morris, william, (1834-1896)","(3435, 2943)",
+258,100,"[william morris]","[1834, 1896]","[hunt, william morris]","[1824, 1879]",0,"googleart_m08304","wga_hunt, william morris, (1824-1879)","(2222, 1780)",
+259,100,"[john hamilton mortimer]","[1740, 1779]","[hamilton, john]","[1750, 1750]",1,"googleart_m02z86d4","wga_hamilton, john, (1750-1750)","(2913, 1641)",
+260,100,"[girolamo da treviso]","[1508, 1544]","[girolamo da treviso the younger]","[1497, 1544]",1,"googleart_m02r22z7","wga_girolamo da treviso the younger, (1497-1544)","(2797, 1458)",
+261,100,"[luis de morales]","[1509, 1586]","[morales, luis de]","[1520, 1586]",1,"googleart_m03frxr","wga_morales, luis de, (1520-1586)","(3087, 2921)",
+262,100,"[cornelis pietersz bega]","[1620, 1664]","[bega, cornelis]","[1631, 1664]",1,"googleart_m07kj1sx","wga_bega, cornelis, (1631-1664)","(3873, 241)",
+263,100,"[juan de las roelas]","[1558, 1625]","[roelas, juan de las]","[1570, 1625]",1,"googleart_m03c363f","wga_roelas, juan de las, (1570-1625)","(2971, 3517)",
+264,100,"[giulio bonasone]","[1498, 1574]","[bonasone, giulio]","[1510, 1576]",1,"googleart_m03cxmp2","wga_bonasone, giulio, (1510-1576)","(3043, 402)",
+265,85,"[george baxter]","[1804, 1867]","[hayter, george]","[1792, 1871]",0,"googleart_m04glpv5","wga_hayter, george, (1792-1871)","(3361, 1664)",
+266,100,"[francisco herrera the elder]","[1576, 1656]","[herrera, francisco de, the elder]","[1590, 1656]",1,"googleart_m05_wb7","wga_herrera, francisco de, the elder, (1590-1656)","(3537, 1693)",
+267,100,"[pirro ligorio]","[1514, 1583]","[ligorio, pirro]","[1500, 1583]",1,"googleart_m04k9xf","wga_ligorio, pirro, (1500-1583)","(3385, 2088)",
+268,99,"[william turner]","[1789, 1862]","[turner, joseph mallord william]","[1775, 1851]",0,"googleart_m0285ph2","wga_turner, joseph mallord william, (1775-1851)","(2674, 4085)",
+269,88,"[cristóvão de figueiredo, cristovao de figueiredo]","[1500, 1543]","[figueiredo, cristóvano]","[1515, 1543]",1,"wiki_cristovao-de-figueiredo","wga_figueiredo, cristóvano, (1515-1543)","(416, 1223)",
+270,100,"[gebroeders van limburg (herman, paul, and johan), limbourg brothers]","[1385, 1416]","[limbourg brothers]","[1370, 1416]",1,"wiki_limbourg-brothers","wga_limbourg brothers, (1370-1416)","(1381, 2090)",
+271,100,"[john smart i of ipswich]","[1756, 1813]","[smart, john]","[1741, 1811]",0,"googleart_m0t504pj","wga_smart, john, (1741-1811)","(4686, 3842)",
+272,100,"[master of the dresden prayer book]","[1480.0, 1520.0]","[master of the dresden prayer book]","[1465, 1515]",1,"googleart_m0t5fvn2","wga_master of the dresden prayer book, (1465-1515)","(4890, 2342)",
+273,85,"[jean baptiste vanmour]","[1671, 1737]","[oudry, jean-baptiste]","[1686, 1755]",0,"googleart_m09df4w","wga_oudry, jean-baptiste, (1686-1755)","(4073, 3121)",
+274,100,"[master of the virgo inter virgines]","[1487.0, 1500.0]","[master of the virgo inter virgines]","[1470, 1500]",1,"googleart_m047rps6","wga_master of the virgo inter virgines, (1470-1500)","(3293, 2379)",
+275,100,"[michelangelo, michelangelo di lodovico buonarroti simoni]","[1475, 1564]","[anselmi, michelangelo]","[1492, 1556]",0,"wiki_michelangelo","wga_anselmi, michelangelo, (1492-1556)","(1563, 82)",
+276,86,"[jean-charles françois]","[1717, 1769]","[lacroix, charles-françois]","[1700, 1782]",0,"googleart_m0m0jrvp","wga_lacroix, charles-françois, (1700-1782)","(4627, 1960)",
+277,100,"[adriaen coorte]","[1665, 1707]","[coorte, adriaen]","[1683, 1707]",1,"googleart_m05cfqkj","wga_coorte, adriaen, (1683-1707)","(3558, 851)",
+278,100,"[martin schongauer]","[1448, 1491]","[schongauer, martin]","[1430, 1491]",1,"wiki_martin-schongauer","wga_schongauer, martin, (1430-1491)","(1503, 3756)",
+279,100,"[andrea andreani]","[1540, 1623]","[andreani, andrea]","[1558, 1629]",1,"googleart_m0sw1","wga_andreani, andrea, (1558-1629)","(4653, 66)",
+280,88,"[george beare]","[1746.0, 1749.0]","[barret, george]","[1728, 1784]",0,"googleart_m05w46ql","wga_barret, george, (1728-1784)","(3649, 186)",
+281,100,"[lazzaro bastiani]","[1429, 1512]","[bastiani, lazzaro]","[1449, 1512]",1,"googleart_m02rlr91","wga_bastiani, lazzaro, (1449-1512)","(2823, 209)",
+282,100,"[aelbert jacobsz cuyp, aelbert cuyp]","[1620, 1691]","[cuyp, aelbert]","[1620, 1691]",1,"googleart_m010z6","wga_cuyp, aelbert, (1620-1691)","(25, 944)",
+283,100,"[françois marius granet]","[1775, 1849]","[granet, françois-marius]","[1755, 1849]",1,"googleart_m04rp5h","wga_granet, françois-marius, (1755-1849)","(3429, 1539)",
+284,96,"[juan rexach]","[1411, 1486]","[reixach, juan]","[1431, 1484]",1,"googleart_m0t5fjk2","wga_reixach, juan, (1431-1484)","(4798, 3441)",
+285,85,"[giovanni battista paggi]","[1554, 1627]","[crespi, giovanni battista]","[1575, 1632]",0,"googleart_m02759zl","wga_crespi, giovanni battista, (1575-1632)","(2618, 920)",
+286,100,"[bartolomeo veneto]","[1480, 1550.0]","[bartolomeo veneto]","[1502, 1531]",1,"googleart_m05zj8z3","wga_bartolomeo veneto, (1502-1531)","(233, 193)",
+287,100,"[andrea di bartolo, andrea del castagno, andrea di bartolo di bargilla]","[1400.0, 1457]","[andrea del castagno]","[1423, 1457]",1,"wiki_andrea-del-castagno","wga_andrea del castagno, (1423-1457)","(131, 61)",
+288,85,"[giovanni battista paggi]","[1554, 1627]","[crescenzi, giovanni battista]","[1577, 1635]",0,"googleart_m02759zl","wga_crescenzi, giovanni battista, (1577-1635)","(2618, 918)",
+289,85,"[giovanni battista paggi]","[1554, 1627]","[caracciolo, giovanni battista]","[1578, 1635]",0,"googleart_m02759zl","wga_caracciolo, giovanni battista, (1578-1635)","(2618, 645)",
+290,100,"[jan van de velde]","[1593, 1641]","[velde, jan van de, i]","[1569, 1623]",0,"googleart_m04f57y5","wga_velde, jan van de, i, (1569-1623)","(3347, 4463)",
+291,100,"[guglielmo giraldi]","[1469.0, 1469.0]","[giraldi, guglielmo]","[1445, 1489]",1,"googleart_m0t50c85","wga_giraldi, guglielmo, (1445-1489)","(4750, 1455)",
+292,85,"[giovanni battista galestruzzi]","[1618, 1677]","[falda, giovanni battista]","[1643, 1678]",0,"googleart_m02rbv2y","wga_falda, giovanni battista, (1643-1678)","(2817, 1182)",
+293,100,"[niccolò boldrini]","[1525.0, 1566.0]","[boldrini, niccolò]","[1500, 1570]",1,"googleart_m03cxm93","wga_boldrini, niccolò, (1500-1570)","(3042, 395)",
+294,100,"[defendente ferrari]","[1510.0, 1528.0]","[ferrari, defendente]","[1485, 1540]",1,"googleart_m02qnzgz","wga_ferrari, defendente, (1485-1540)","(2773, 1206)",
+295,88,"[adolf von becker]","[1831, 1909]","[meckel, adolf von]","[1856, 1893]",0,"googleart_m03mby_l","wga_meckel, adolf von, (1856-1893)","(3168, 2415)",
+296,100,"[giampietrino]","[1495, 1521]","[giampietrino]","[1520.0, 1550.0]",1,"googleart_m02w7slf","wga_giampietrino, (1520-1520)","(2869, 1407)",
+297,92.07,"[antonio maria zanetti]","[1680, 1767]","[zanetti, anton maria ii]","[1706, 1778]",0,"googleart_m07s8jgf","wga_zanetti, anton maria ii, (1706-1778)","(3902, 4710)",
+298,100,"[jan van de velde]","[1593, 1641]","[velde, jan jansz. van de]","[1619, 1662]",0,"googleart_m04f57y5","wga_velde, jan jansz. van de, (1619-1662)","(3347, 4462)",
+299,100,"[jacob savery]","[1566, 1603]","[savery, jacob ii]","[1592, 1651]",0,"googleart_m0bxzcy4","wga_savery, jacob ii, (1592-1651)","(4261, 3721)",
+300,100,"[antonio fantuzzi]","[1510, 1550]","[fantuzzi, antonio]","[1537, 1550]",1,"googleart_m0gtt12q","wga_fantuzzi, antonio, (1537-1550)","(4515, 1185)",
+301,85,"[giovanni battista galestruzzi]","[1618, 1677]","[magno, giovanni battista]","[1591, 1674]",0,"googleart_m02rbv2y","wga_magno, giovanni battista, (1591-1674)","(2817, 2194)",
+302,85,"[giuseppe antonio landi]","[1713, 1791]","[fabbrini, giuseppe antonio]","[1740, 1795]",0,"googleart_m03bzqf2","wga_fabbrini, giuseppe antonio, (1740-1795)","(2961, 1169)",
+303,94,"[quirijn van brekelenkam]","[1650.0, 1667.0]","[brekelenkam, quiringh van]","[1622, 1669]",1,"googleart_m03y0cqm","wga_brekelenkam, quiringh van, (1622-1669)","(3237, 507)",
+304,100,"[agnolo gaddi]","[1350, 1396]","[gaddi, agnolo]","[1380.0, 1400.0]",1,"googleart_m01wqnn","wga_gaddi, agnolo, (1369-1369)","(2490, 1324)",
+305,100,"[andrea schiavone]","[1540.0, 1573.0]","[schiavone, andrea]","[1510, 1563]",1,"googleart_m026vqy0","wga_schiavone, andrea, (1510-1563)","(2591, 3745)",
+306,100,"[jacobello del fiore]","[1400.0, 1450.0]","[jacobello del fiore]","[1370, 1439]",1,"googleart_m02qdxkk","wga_jacobello del fiore, (1370-1439)","(2756, 1809)",
+307,100,"[melchior broederlam]","[1350, 1409]","[broederlam, melchior]","[1381, 1409]",1,"wiki_melchior-broederlam","wga_broederlam, melchior, (1381-1409)","(1549, 525)",
+308,97,"[jacob de gheyn iii]","[1596, 1641]","[gheyn, jacob de ii]","[1565, 1629]",0,"googleart_m0gr0dc","wga_gheyn, jacob de ii, (1565-1629)","(4509, 1395)",
+309,86,"[dirk van hoogstraten]","[1596, 1640]","[hoogstraten, samuel van]","[1627, 1678]",0,"googleart_m080nqgm","wga_hoogstraten, samuel van, (1627-1678)","(3940, 1751)",
+310,100,"[hans hoffmann]","[1578.0, 1585.0]","[hoffmann, hans]","[1545, 1591]",1,"googleart_m0j26v0f","wga_hoffmann, hans, (1545-1591)","(4593, 1728)",
+311,100,"[henri victor regnault]","[1810, 1878]","[regnault, henri]","[1843, 1871]",0,"googleart_m01s2qv","wga_regnault, henri, (1843-1871)","(2475, 3430)",
+312,100,"[dieric bouts, dirk bouts]","[1415, 1475]","[bouts, dieric the younger]","[1448, 1491]",0,"googleart_m07z_y1","wga_bouts, dieric the younger, (1448-1491)","(469, 475)",
+313,100,"[petrus christus]","[1410, 1476]","[christus, petrus]","[1410, 1475]",1,"wiki_petrus-christus","wga_christus, petrus, (1410-1475)","(1766, 758)",
+314,100,"[frans hals]","[1580, 1666]","[hals, frans ii]","[1618, 1669]",0,"googleart_m0ch5l","wga_hals, frans ii, (1618-1669)","(655, 1633)",
+315,100,"[hendrick cornelisz. van vliet]","[1650.0, 1686.0]","[vliet, hendrick cornelisz. van]","[1611, 1675]",1,"googleart_m03b_gbk","wga_vliet, hendrick cornelisz. van, (1611-1675)","(2959, 4567)",
+316,100,"[battista franco veneziano]","[1550.0, 1561.0]","[franco, battista]","[1510, 1561]",1,"googleart_m027h6zr","wga_franco, battista, (1510-1561)","(2634, 1293)",
+317,89,"[master of the cini madonna]","[1310, 1330]","[master of the palazzo venezia madonna]","[1350, 1350]",0,"googleart_m0t5fpd_","wga_master of the palazzo venezia madonna, (1350-1350)","(4843, 2364)",
+318,96,"[jan provoost]","[1505.0, 1550.0]","[provost, jan]","[1465, 1529]",1,"googleart_m07pwql","wga_provost, jan, (1465-1529)","(3889, 3356)",
+319,100,"[silvestro lega]","[1868.0, 1868.0]","[lega, silvestro]","[1826, 1895]",1,"wiki_silvestro-lega","wga_lega, silvestro, (1826-1895)","(1994, 2033)",
+320,100,"[giovanni antonio da brescia]","[1503, 1509]","[giovanni antonio da brescia]","[1460, 1523]",1,"googleart_m03cv8s9","wga_giovanni antonio da brescia, (1460-1523)","(3029, 1437)",
+321,100,"[il pordenone]","[1528.0, 1530.0]","[pordenone]","[1484, 1539]",1,"googleart_m08qf_8","wga_pordenone, (1484-1539)","(4021, 3323)",
+322,100,"[augustus pugin]","[1812, 1852]","[pugin, augustus charles]","[1768, 1832]",0,"googleart_m0q1js","wga_pugin, augustus charles, (1768-1832)","(4645, 3368)",
+323,100,"[tanzio da varallo]","[1625.0, 1630.0]","[tanzio da varallo]","[1580, 1632]",1,"googleart_m027s022","wga_tanzio da varallo, (1580-1632)","(2641, 3965)",
+324,100,"[antonio maria viani]","[1603.0, 1629.0]","[viani, antonio maria]","[1555, 1635]",1,"googleart_m03d1ccq","wga_viani, antonio maria, (1555-1635)","(3051, 4522)",
+325,90,"[master of the lee hours]","[1455.0, 1455.0]","[master of the hours of maréchal de boucicaut]","[1405, 1420]",0,"googleart_m0t50c8q","wga_master of the hours of maréchal de boucicaut, (1405-1420)","(4751, 2349)",
+326,100,"[pieter claesz]","[1597, 1660]","[claesz., pieter]","[1597, 1661]",1,"googleart_m06zmm3","wga_claesz., pieter, (1597-1661)","(1794, 783)",
+327,100,"[johann heinrich schönfeld]","[1609, 1684]","[schönfeld, johann heinrich]","[1609, 1683]",1,"googleart_m09v8z7q","wga_schönfeld, johann heinrich, (1609-1683)","(4266, 3774)",
+328,100,"[giotto]","[1266, 1337]","[giotto di bondone]","[1267, 1337]",1,"googleart_m0kp91","wga_giotto di bondone, (1267-1337)","(4772, 1433)",
+329,100,"[andrea di bartolo]","[1400.0, 1405.0]","[andrea di bartolo]","[1360, 1428]",1,"googleart_m0czdrnx","wga_andrea di bartolo, (1360-1428)","(4487, 63)",
+330,86,"[jacob van campen]","[1596, 1657]","[es, jacob van]","[1596, 1666]",0,"googleart_m042yfm","wga_es, jacob van, (1596-1666)","(1152, 3335)",
+331,85,"[jan van de velde]","[1593, 1641]","[venne, jan van der]","[1592, 1651]",0,"googleart_m04f57y5","wga_venne, jan van der, (1592-1651)","(4472, 3428)",
+332,86,"[pieter jansz quast]","[1606, 1647]","[post, pieter jansz]","[1608, 1669]",0,"googleart_m0bwk9cs","wga_post, pieter jansz, (1608-1669)","(3327, 4385)",
+333,89,"[willem van de velde the elder]","[1611, 1693]","[herp, willem van, the elder]","[1614, 1677]",0,"googleart_m03lk97","wga_herp, willem van, the elder, (1614-1677)","(1692, 3223)",
+334,90,"[giovanni battista crespi]","[1573, 1632]","[crescenzi, giovanni battista]","[1577, 1635]",0,"googleart_m07rn1b","wga_crescenzi, giovanni battista, (1577-1635)","(918, 4007)",
+335,85,"[pier francesco mola]","[1612, 1666]","[cittadini, pier francesco]","[1616, 1681]",0,"googleart_m0c2qzf","wga_cittadini, pier francesco, (1616-1681)","(777, 4409)",
+336,85,"[jacob gerritsz. cuyp]","[1594, 1652]","[hasselt, jacob gerritsz. van]","[1598, 1674]",0,"googleart_m08ff2n","wga_hasselt, jacob gerritsz. van, (1598-1674)","(1656, 4111)",
+337,88,"[pierre-auguste renoir, pierre auguste renoir]","[1841, 1919]","[cot, pierre-auguste]","[1837, 1883]",0,"wiki_pierre-auguste-renoir","wga_cot, pierre-auguste, (1837-1883)","(882, 1780)",
+338,85,"[nicolaes maes, nicolaes maas]","[1634, 1693]","[hals, nicolaes]","[1628, 1686]",0,"wiki_nicolaes-maes","wga_hals, nicolaes, (1628-1686)","(1636, 1629)",
+339,89,"[hans holbein the younger]","[1497, 1543]","[leu, hans the younger]","[1490, 1531]",0,"googleart_m0cy9m","wga_leu, hans the younger, (1490-1531)","(2062, 862)",
+340,90,"[antonio zanchi]","[1631, 1722]","[franchi, antonio]","[1638, 1709]",0,"googleart_m02q2_92","wga_franchi, antonio, (1638-1709)","(1282, 2778)",
+341,88,"[bernardino luini]","[1482, 1532]","[licinio, bernardino]","[1489, 1565]",0,"googleart_m04qf6w","wga_licinio, bernardino, (1489-1565)","(2080, 3512)",
+342,97,"[jan van den hoecke]","[1611, 1651]","[hecke, jan van den]","[1619, 1684]",0,"googleart_m02rt157","wga_hecke, jan van den, (1619-1684)","(1666, 2869)",
+343,85,"[cornelis de man]","[1621, 1706]","[heem, cornelis de]","[1631, 1695]",0,"googleart_m07k9997","wga_heem, cornelis de, (1631-1695)","(1668, 3979)",
+344,93,"[domenico veneziano, domenico di bartolomeo]","[1410, 1461]","[domenico di bartolo]","[1400, 1447]",0,"wiki_domenico-veneziano","wga_domenico di bartolo, (1400-1447)","(1054, 475)",
+345,85,"[francesco furini]","[1600, 1646]","[guarino, francesco]","[1611, 1654]",0,"googleart_m0bcll2","wga_guarino, francesco, (1611-1654)","(1586, 4341)",
+346,85,"[francisco bayeu y subías, francisco bayeu y subias]","[1734, 1795]","[bayeu y subias, ramón]","[1746, 1793]",0,"googleart_m08w6kw","wga_bayeu y subias, ramón, (1746-1793)","(217, 636)",
+347,89,"[antonello di giovanni di antonio, antonello da messina]","[1430, 1479]","[giovanni angelo d'antonio]","[1443, 1476]",0,"wiki_antonello-da-messina","wga_giovanni angelo d'antonio, (1443-1476)","(1436, 160)",
+348,86,"[jacob van hulsdonck]","[1582, 1647]","[es, jacob van]","[1596, 1666]",0,"googleart_m0hhvd5q","wga_es, jacob van, (1596-1666)","(1152, 4740)",
+349,88,"[francesco furini]","[1600, 1646]","[susini, francesco]","[1585, 1653]",0,"googleart_m0bcll2","wga_susini, francesco, (1585-1653)","(3943, 4341)",
+350,90,"[jean-baptiste pater]","[1695, 1736]","[nattier, jean-baptiste]","[1678, 1726]",0,"googleart_m0bx6qs","wga_nattier, jean-baptiste, (1678-1726)","(3020, 4387)",
+351,85,"[lorenzo di niccolò]","[1390.0, 1412.0]","[bicci di lorenzo]","[1373, 1452]",0,"googleart_m02plrsk","wga_bicci di lorenzo, (1373-1452)","(330, 2751)",
+352,86,"[jacob van loo]","[1614, 1670]","[es, jacob van]","[1596, 1666]",0,"googleart_m05h252h","wga_es, jacob van, (1596-1666)","(1152, 3679)",
+353,85,"[frans pourbus the younger]","[1569, 1622]","[pourbus, frans the elder]","[1545, 1581]",0,"googleart_m01h5y9","wga_pourbus, frans the elder, (1545-1581)","(3333, 2469)",
+354,88,"[hendrick bloemaert]","[1601, 1672]","[bogaert, hendrick]","[1626, 1674]",0,"googleart_m0bbxr47","wga_bogaert, hendrick, (1626-1674)","(387, 4339)",
+355,88,"[pieter brueghel the younger]","[1564, 1636]","[brueghel, pieter iii]","[1589, 1608]",0,"googleart_m0h6m9","wga_brueghel, pieter iii, (1589-1608)","(543, 4723)",
+356,86,"[cornelis galle the elder]","[1576, 1650]","[danckerts, cornelis the elder]","[1603, 1656]",0,"googleart_m04ykwh0","wga_danckerts, cornelis the elder, (1603-1656)","(965, 3543)",
+357,87,"[giovanni battista cima, cima da conegliano]","[1459, 1517]","[cavaletto, giovanni battista]","[1486, 1523]",0,"wiki_cima-da-conegliano","wga_cavaletto, giovanni battista, (1486-1523)","(709, 374)",
+358,85,"[giovanni battista salvi da sassoferrato]","[1609, 1685]","[falda, giovanni battista]","[1643, 1678]",0,"googleart_m04zl6z","wga_falda, giovanni battista, (1643-1678)","(1182, 3555)",
+359,88,"[alexandre-jean noël]","[1752, 1834]","[dubois-drahonet, alexandre-jean]","[1791, 1829]",0,"googleart_g1232phh9","wga_dubois-drahonet, alexandre-jean, (1791-1829)","(1084, 2330)",
+360,85,"[lorenzo di niccolò]","[1390.0, 1412.0]","[bicci, lorenzo di]","[1350, 1427]",0,"googleart_m02plrsk","wga_bicci, lorenzo di, (1350-1427)","(332, 2751)",
+361,88,"[jean-baptiste pater]","[1695, 1736]","[santerre, jean-baptiste]","[1651, 1717]",0,"googleart_m0bx6qs","wga_santerre, jean-baptiste, (1651-1717)","(3704, 4387)",
+362,88,"[pieter brueghel de oude, pieter bruegel the elder]","[1525, 1569]","[brueghel, pieter iii]","[1589, 1608]",0,"wiki_pieter-bruegel-the-elder","wga_brueghel, pieter iii, (1589-1608)","(543, 1793)",
+363,102,"[vasily vereshchagin, василий верещагин]","[1842, 1904]","[vereshchagin, vasily petrovich]","[1835, 1909]",0,"wiki_vasily-vereshchagin","wga_vereshchagin, vasily petrovich, (1835-1909)","(2147, 4487)",
+364,100,"[vasily vereshchagin, василий верещагин]","[1842, 1904]","[vereshchagin, vasily vasilyevich]","[1842, 1904]",1,"wiki_vasily-vereshchagin","wga_vereshchagin, vasily vasilyevich, (1842-1904)","(2147, 4488)",
+365,82,"[alfred parsons, alfred william parsons r.a.]","[1847, 1920]","[finch, a. w., finch, alfred, finch, alfred w., finch, alfred william, finch, alfred-william, finch, william, finch, willy]","[1854, 1930]",0,"wiki_alfred-parsons","wga_finch, alfred william, (1854-1930)",,
+366,80,"[alphonse mucha, alfons maria mucha]","[1860, 1939]","[maureau, alphonse]","[1870, 1877.0]",0,"googleart_m0p_nx","wga_maureau, alphonse, (1870-1870)",,
+367,80,"[constantin guys, ernest-adolphe-hyacinthe-constantin guys]","[1802, 1892]","[hansen, constantin]","[1804, 1880]",0,"googleart_m07pm5_","wga_hansen, constantin, (1804-1880)",,
+368,80,"[david scott]","[1806, 1849]","[cox, david]","[1783, 1859]",0,"wiki_david-scott","wga_cox, david, (1783-1859)",,
+369,80,"[george benjamin luks, george luks]","[1867, 1933]","[clausen, george]","[1852, 1944]",0,"googleart_m038p14","wga_clausen, george, (1852-1944)",,
+370,84,"[іван георгій пінзель, johann georg pinzel]","[1707, 1761]","[platzer, f. j., platzer, joh. viktor, platzer, johann georg, plazer, johann georg]","[1704, 1761]",0,"wiki_johann-georg-pinzel","wga_platzer, johann georg, (1704-1761)",,
+371,79,"[john bauer, john albert bauer]","[1882, 1918]","[baertsoen, albert]","[1866, 1922]",0,"wiki_john-bauer","wga_baertsoen, albert, (1866-1922)",,
+372,80,"[john varley]","[1778, 1842]","[vanderlyn, john]","[1775, 1852]",0,"googleart_m041g6q","wga_vanderlyn, john, (1775-1852)",,
+373,86,"[william hart, hart, william, hart, william m.]","[1823, 1894]","[hunt, william, hunt, william m., hunt, william morris, hunt, william-morris]","[1824, 1879]",0,"googleart_m0547qv","wga_hunt, william morris, (1824-1879)",,
+374,82,"[jean-françois janinet]","[1752, 1814]","[sablet, jean-françois]","[1745, 1819]",0,"googleart_g1218lcq2","wga_sablet, jean-françois, (1745-1819)",,
+375,79,"[nicolas ponce]","[1746, 1831]","[pocock, nicholas]","[1741, 1821]",0,"googleart_g1218lcvs","wga_pocock, nicholas, (1741-1821)",,
+376,79,"[henri-charles guérard]","[1846, 1897]","[leickert, charles henri joseph]","[1816, 1907]",0,"googleart_g121_bv1m","wga_leickert, charles henri joseph, (1816-1907)",,
+377,79,"[jean baptiste andré gautier d'agoty]","[1740, 1786]","[greuze, jean-baptiste]","[1725, 1805]",0,"googleart_g123655yh","wga_greuze, jean-baptiste, (1725-1805)",,
+378,83,"[huns, k. f., gun, karl fedorovič, huhn, karl, gun, karlis fridrichovič, hūns, kārlis teodors, kārlis hūns, huhn, charles, huhn, karl theodor, huhn, karl theodor fjodorowitsch]","[1831, 1877]","[piloty, karl theodor von]","[1826, 1886]",0,"googleart_m011v6dhq","wga_piloty, karl theodor von, (1826-1886)",,
+379,79,"[master of delft]","[1470, 1520]","[master of bellaert]","[1483, 1487]",0,"googleart_m0120wfyd","wga_master of bellaert, (1483-1487)",,
+380,79,"[master of delft]","[1470, 1520]","[master of budapest]","[1500, 1500]",0,"googleart_m0120wfyd","wga_master of budapest, (1500-1500)",,
+381,80,"[johannes wierix]","[1549, 1620]","[wierix, jan]","[1549, 1618]",1,"googleart_m0120zsrg","wga_wierix, jan, (1549-1618)",,
+382,81,"[jean-baptiste carpeaux]","[1827, 1875]","[madou, jean-baptiste]","[1796, 1877]",0,"googleart_m01rpc_","wga_madou, jean-baptiste, (1796-1877)",,
+383,81,"[jean-baptiste carpeaux]","[1827, 1875]","[robie, jean-baptiste]","[1821, 1910]",0,"googleart_m01rpc_","wga_robie, jean-baptiste, (1821-1910)",,
+384,79,"[bernardino campi]","[1522, 1591]","[lanino, bernardino]","[1512, 1581]",0,"googleart_m025wbyl","wga_lanino, bernardino, (1512-1581)",,
+385,80,"[pieter van anraedt]","[1635, 1678]","[lint, pieter van]","[1609, 1690]",0,"googleart_m0261psh","wga_lint, pieter van, (1609-1690)",,
+386,82,"[bartolomeo cesi]","[1556, 1629]","[schedoni, bartolomeo]","[1578, 1615]",0,"googleart_m0271dhk","wga_schedoni, bartolomeo, (1578-1615)",,
+387,81,"[giovanni battista galestruzzi]","[1618, 1677]","[carlone, giovanni battista]","[1603, 1684]",0,"googleart_m02rbv2y","wga_carlone, giovanni battista, (1603-1684)",,
+388,84,"[giovanni pietro possenti]","[1618, 1659]","[do, giovanni]","[1617, 1656]",0,"googleart_m03c12md","wga_do, giovanni, (1617-1656)",,
+389,82,"[johann wilhelm schirmer]","[1807, 1863]","[preyer, johann wilhelm]","[1803, 1889]",0,"googleart_m04nsnq","wga_preyer, johann wilhelm, (1803-1889)",,
+390,80,"[augustus egg]","[1816, 1863]","[williams, george augustus]","[1814, 1901]",0,"googleart_m04wqc9","wga_williams, george augustus, (1814-1901)",,
+391,81,"[carl werner, werner, carl friedrich heinrich, werner, carl, werner, c. f. h.]","[1808, 1894]","[bloch, carl heinrich]","[1834, 1890]",0,"googleart_m04y7gvf","wga_bloch, carl heinrich, (1834-1890)",,
+392,80,"[abraham van diepenbeeck]","[1596, 1675]","[dijck, abraham van]","[1635, 1672]",0,"googleart_m059dgv","wga_dijck, abraham van, (1635-1672)",,
+393,81,"[jean-baptiste wicar]","[1762, 1834]","[mallet, jean-baptiste]","[1759, 1835]",0,"googleart_m05c04_2","wga_mallet, jean-baptiste, (1759-1835)",,
+394,81,"[jean-baptiste wicar]","[1762, 1834]","[regnault, jean-baptiste]","[1754, 1829]",0,"googleart_m05c04_2","wga_regnault, jean-baptiste, (1754-1829)",,
+395,81,"[jean-baptiste wicar]","[1762, 1834]","[augustin, jean-baptiste-jacques]","[1759, 1832]",0,"googleart_m05c04_2","wga_augustin, jean-baptiste-jacques, (1759-1832)",,
+396,88,"[chester harding, harding, c., harding, charles chester, harding, chester, harding, charles]","[1792, 1866]","[harding, j. d., harding, james duffield]","[1797, 1863]",0,"googleart_m05n1x3","wga_harding, james duffield, (1798-1863)",,
+397,80,"[jakob bogdani]","[1658, 1724]","[bogdány, jakab]","[1660, 1724]",1,"googleart_m05p5tzb","wga_bogdány, jakab, (1660-1724)",,
+398,83,"[samuel waugh]","[1814, 1885]","[bough, samuel]","[1822, 1878]",0,"googleart_m05tn9m","wga_bough, samuel, (1822-1878)",,
+399,81,"[george beare]","[1746.0, 1749]","[marées, george de]","[1697, 1776]",0,"googleart_m05w46ql","wga_marées, george de, (1697-1776)",,
+400,82,"[john frederick lewis]","[1804, 1876]","[kensett, john frederick]","[1816, 1872]",0,"googleart_m06dgqb","wga_kensett, john frederick, (1816-1872)",,
+401,81,"[hoüel, jean-pierre-louis-laurent, houel, jean-pierre-laurent, houël, jean [vorlage], houel, jean, houel, jean pierre louis laurent, hoüel, jean pierre laurent louis, houel, jean p., jean-pierre houël, houel, jean-pierre-louis-laurent]","[1735, 1813]","[peyron, jean-françois-pierre]","[1744, 1814]",0,"googleart_m076_v2","wga_peyron, jean-françois-pierre, (1744-1814)",,
+402,81,"[félix bracquemond]","[1833, 1914]","[bracquemond, marie]","[1840, 1916]",0,"googleart_m07n_jf","wga_bracquemond, marie, (1840-1916)",,
+403,80,"[pieter soutman]","[1620.0, 1849.0]","[wouwerman, pieter]","[1623, 1682]",0,"googleart_m07s76_2","wga_wouwerman, pieter, (1623-1682)",,
+404,80,"[pieter soutman]","[1620.0, 1849.0]","[bout, pieter]","[1658, 1719]",0,"googleart_m07s76_2","wga_bout, pieter, (1658-1719)",,
+405,84,"[giovanni angelo canini]","[1609, 1666]","[do, giovanni]","[1617, 1656]",0,"googleart_m08mdg3","wga_do, giovanni, (1617-1656)",,
+406,79,"[william langson lathrop, lathrop, william langson, lathrop, w. l., lathrop, william]","[1859, 1938]","[blair, william, blair-bruce, william, bruce, w. blair, bruce, william blair]","[1859, 1906]",0,"googleart_m094_rc","wga_bruce, william blair, (1859-1906)",,
+407,84,"[apollonio di giovanni]","[1414, 1465]","[giovanni di paolo]","[1399, 1482]",0,"googleart_m0_s5dm2","wga_giovanni di paolo, (1399-1482)",,
+408,84,"[moses van uyttenbroeck]","[1600, 1646]","[uyttenbroeck, moyses matheusz van]","[1595, 1647]",1,"googleart_m0b76wcg","wga_uyttenbroeck, moyses matheusz van, (1595-1647)",,
+409,82,"[jan van almeloveen]","[1652, 1828.0]","[os, jan van]","[1744, 1808]",0,"googleart_m0h1xyd","wga_os, jan van, (1744-1808)",,
+410,79,"[master of the getty epistles]","[1528, 1549]","[master of the parrot]","[1525, 1550.0]",0,"googleart_m0t501w4","wga_master of the parrot, (1525-1525)",,
+411,83,"[huns, k. f., gun, karl fedorovič, huhn, karl, gun, karlis fridrichovič, hūns, kārlis teodors, kārlis teodors hūns, huhn, charles, huhn, karl theodor, huhn, karl theodor fjodorowitsch]","[1830, 1877]","[piloty, karl theodor von]","[1826, 1886]",0,"googleart_m0t509sb","wga_piloty, karl theodor von, (1826-1886)",,
+412,80,"[fehr, charles de, fehrt, a.j. de, defehrt, a. j., ferth, de, a. j. defehrt, fehr, carl de, fehrt, bertrand de, fehrt, de]","[1723, 1774]","[croce, charles f. della, croix, charles-f. de la, croix, charles-françois grenier, delacroix, charles f., grenier de lacroix, charles-françois, lacroix de marseille, lacroix de marseille, charles f., lacroix les peintres, lacroix, charles f. de, lacroix, charles françois de, lacroix, charles-françois]","[1700, 1782]",0,"googleart_m0t50db9","wga_lacroix, charles-françois, (1700-1782)",,
+413,80,"[fehr, charles de, fehrt, a.j. de, defehrt, a. j., ferth, de, a. j. defehrt, fehr, carl de, fehrt, bertrand de, fehrt, de]","[1723, 1774]","[saint-aubin, charles-germain de]","[1721, 1786]",0,"googleart_m0t50db9","wga_saint-aubin, charles-germain de, (1721-1786)",,
+414,84,"[lorenzo a castro]","[1664, 1700]","[vaccaro, lorenzo]","[1655, 1706]",0,"googleart_m0t5fsd4","wga_vaccaro, lorenzo, (1655-1706)",,
+415,79,"[master of saint matthew]","[1390, 1399]","[master of the codex of saint george]","[1300, 1400]",0,"googleart_m0vnnnnj","wga_master of the codex of saint george, (1300-1400)",,
+416,79,"[jan van scorel]","[1495, 1562]","[amstel, jan van]","[1500, 1542]",0,"googleart_m02nfj8","wga_amstel, jan van, (1500-1542)",,
+417,93,"[peter angelis]","[1685, 1734]","[angellis, pieter]","[1685, 1734]",1,"googleart_m0bwhbxw","wga_angellis, pieter, (1685-1734)",,
+418,79.2,"[cornelis bos]","[1506, 1566]","[anthonisz, cornelis]","[1499, 1555]",0,"googleart_m0dgrgtn","wga_anthonisz, cornelis, (1499-1555)",,
+419,87,"[jan asselijn]","[1610, 1652]","[asselyn, jan]","[1610, 1652]",1,"googleart_m07ywyz","wga_asselyn, jan, (1610-1652)",,
+420,97,"[gioacchino assereto]","[1600, 1649]","[assereto, gioachino]","[1600, 1649]",1,"googleart_m027yy5v","wga_assereto, gioachino, (1600-1649)",,
+421,79,"[antoine pesne]","[1683, 1757]","[aveline, antoine]","[1691, 1743]",0,"wiki_antoine-pesne","wga_aveline, antoine, (1691-1743)",,
+422,85,"[ludolf bakhuizen]","[1630, 1708]","[backhuysen, ludolf]","[1630, 1708]",1,"googleart_m03fzrv","wga_backhuysen, ludolf, (1630-1708)",,
+423,89,"[piero del pollaiolo, piero di iacopo d'antonio benci, pollaiolo, piero del, piero del pollaiuolo, pollaiuolo, piero, pollaiuolo, piero di jacopo d'antonio benci del, pollaiuolo, piero del]","[1441, 1496]","[bartolomeo della gatta, bartolommeo della gatta, dei, pietro di antonio, dellagatta, bartolomeo, gatta, bartolommeo della (don), gatta, don bartolomeo della, gatta, pietro della, piero di antonio dei, pietro d'antonio dei, pietro della gatta, pietro di antonio dei]","[1448, 1502]",0,"googleart_m01hxtl","wga_bartolomeo della gatta, (1448-1502)",,
+424,83,"[fra bartolomeo]","[1472, 1517]","[bartolomeo di giovanni]","[1480, 1510]",0,"googleart_m031bl","wga_bartolomeo di giovanni, (1480-1510)",,
+425,98,"[jan abrahamsz beerstraaten]","[1622, 1666]","[beerstraten, jan abrahamsz.]","[1622, 1666]",1,"googleart_m05kks6x","wga_beerstraten, jan abrahamsz., (1622-1666)",,
+426,95,"[gerrit adriaenszoon berckheyde]","[1638, 1698]","[berckheyde, gerrit adriaensz.]","[1638, 1698]",1,"googleart_m02w7_ts","wga_berckheyde, gerrit adriaensz., (1638-1698)",,
+427,81,"[fonghaia, bernardino da, bernardino fungai, bernardino cristofano di nicolo d' antonio di pietro, fungai, bernardino cristofano di nicolo d' antonio di pietro, fonghai, bernardino, fungari, bernardino cristofano, bernardino di nicolo fungai, fungai, bernardino, fongario, bernardino]","[1460, 1516]","[bernardino d'antonio del signoraccio, bernardino d'antonio del signoruccio, bernardino da pistoia, bernardino dei detti, bernardino del signoraccio, bernardino di antonio detti del signoraccio, bernardino di antonio serantoni, detti, bernardino d'antonio del signoraccio dei]","[1460, 1532]",0,"googleart_m057bw4d","wga_bernardino del signoraccio, (1460-1532)",,
+428,92,"[abraham van beijeren]","[1620, 1690]","[beyeren, abraham van]","[1620, 1690]",1,"googleart_m0g6mr3","wga_beyeren, abraham van, (1620-1690)",,
+429,80,"[bisschop, jan de, jan de bisschop, episcopius, johannes, episcopio, giovanni, episcopius, joannes, bisschop, j. d.]","[1628, 1671]","[bisschop, cornelis]","[1630, 1674]",0,"googleart_m0bmbchh","wga_bisschop, cornelis, (1630-1674)",,
+430,84,"[abraham bosse]","[1604, 1676]","[bosschaert, abraham]","[1612, 1643]",0,"googleart_m032jjq","wga_bosschaert, abraham, (1612-1643)",,
+431,98,"[jan gerritsz van bronckhorst]","[1603, 1661]","[bronchorst, jan gerritsz van]","[1603, 1661]",1,"googleart_m02rt1dt","wga_bronchorst, jan gerritsz van, (1603-1661)",,
+432,80,"[abraham begeyn]","[1637, 1697]","[brueghel, abraham]","[1631, 1697]",0,"googleart_m0c_59v","wga_brueghel, abraham, (1631-1697)",,
+433,83,"[giovanni battista tiepolo, giambattista tiepolo]","[1696, 1770]","[busiri, giovanni battista]","[1698, 1757]",0,"googleart_m01fr20","wga_busiri, giovanni battista, (1698-1757)",,
+434,93,"[denis calvaert]","[1540, 1619]","[calvaert, denys]","[1540, 1619]",1,"googleart_m06ztgw","wga_calvaert, denys, (1540-1619)",,
+435,92,"[luca cambiasi]","[1527, 1585]","[cambiaso, luca]","[1527, 1585]",1,"googleart_m07f5w9","wga_cambiaso, luca, (1527-1585)",,
+436,91,"[alonzo cano]","[1601, 1667]","[cano, alonso]","[1601, 1667]",1,"wiki_alonzo-cano","wga_cano, alonso, (1601-1667)",,
+437,79,"[francesco zuccarelli]","[1702, 1788]","[cappella, francesco]","[1711, 1774]",0,"googleart_m0g1t7","wga_cappella, francesco, (1711-1774)",,
+438,83,"[giovanni battista crespi]","[1573, 1632]","[caracciolo, giovanni battista]","[1578, 1635]",0,"googleart_m07rn1b","wga_caracciolo, giovanni battista, (1578-1635)",,
+439,97,"[luca carlevarijs]","[1663, 1730]","[carlevaris, luca]","[1663, 1730]",1,"googleart_m026mrqx","wga_carlevaris, luca, (1663-1730)",,
+440,81,"[giovanni battista salvi da sassoferrato]","[1609, 1685]","[carlone, giovanni battista]","[1603, 1684]",0,"googleart_m04zl6z","wga_carlone, giovanni battista, (1603-1684)",,
+441,79,"[girolamo da treviso]","[1508, 1544]","[carpi, girolamo da]","[1501, 1556]",0,"googleart_m02r22z7","wga_carpi, girolamo da, (1501-1556)",,
+442,94,"[ludovico carracci]","[1555, 1619]","[carracci, lodovico]","[1555, 1619]",1,"googleart_m03gmgb","wga_carracci, lodovico, (1555-1619)",,
+443,83,"[giovanni battista crespi]","[1573, 1632]","[castello, giovanni battista]","[1547, 1637]",0,"googleart_m07rn1b","wga_castello, giovanni battista, (1547-1637)",,
+444,81,"[giovanni battista naldini]","[1537, 1591]","[cavalieri, giovanni battista de']","[1525, 1601]",0,"googleart_m0gxxlp","wga_cavalieri, giovanni battista de', (1525-1601)",,
+445,81,"[giovanni battista zelotti]","[1526, 1578]","[cavalieri, giovanni battista de']","[1525, 1601]",0,"googleart_m027y_z5","wga_cavalieri, giovanni battista de', (1525-1601)",,
+446,80,"[bartolomeo cesi]","[1556, 1629]","[cavarozzi, bartolomeo]","[1590, 1625]",0,"googleart_m0271dhk","wga_cavarozzi, bartolomeo, (1590-1625)",,
+447,79,"[jean-baptiste greuze]","[1725, 1809]","[charpentier, jean-baptiste the elder]","[1728, 1806]",0,"googleart_m02yd1s","wga_charpentier, jean-baptiste the elder, (1728-1806)",,
+448,82,"[giovanni battista tiepolo, giambattista tiepolo]","[1696, 1770]","[cimaroli, giovanni battista]","[1687, 1771]",0,"googleart_m01fr20","wga_cimaroli, giovanni battista, (1687-1771)",,
+449,96,"[charles-nicolas cochin the elder]","[1688, 1754]","[cochin, charles-nicolas i]","[1688, 1754]",1,"googleart_m0gffqzx","wga_cochin, charles-nicolas i, (1688-1754)",,
+450,81,"[giovanni battista piazzetta]","[1682, 1754]","[crosato, giovanni battista]","[1685, 1758]",0,"googleart_m0czzrc","wga_crosato, giovanni battista, (1685-1758)",,
+451,79,"[francesco furini]","[1600, 1646]","[curradi, francesco]","[1570, 1661]",0,"googleart_m0bcll2","wga_curradi, francesco, (1570-1661)",,
+452,81,"[jacob gerritsz. cuyp]","[1594, 1652]","[cuyp, benjamin gerritsz.]","[1612, 1652]",0,"googleart_m08ff2n","wga_cuyp, benjamin gerritsz., (1612-1652)",,
+453,79,"[willem jacobsz delff]","[1580, 1638]","[delff, cornelis jacobsz]","[1570, 1643]",0,"googleart_m07s7bwm","wga_delff, cornelis jacobsz, (1570-1643)",,
+454,79,"[jean-baptiste greuze]","[1725, 1809]","[deshays, jean-baptiste]","[1729, 1765]",0,"googleart_m02yd1s","wga_deshays, jean-baptiste, (1729-1765)",,
+455,94,"[narcisse virgilio díaz, narcisse-virgilio diaz, narcisse-virgilio díaz de la peña]","[1807, 1876]","[diaz de la peña, narcisse virgile]","[1807, 1876]",1,"googleart_m03fvl3","wga_diaz de la peña, narcisse virgile, (1807-1876)",,
+456,79,"[abraham van beijeren]","[1620, 1690]","[dijck, abraham van]","[1635, 1680]",0,"googleart_m0g6mr3","wga_dijck, abraham van, (1635-1680)",,
+457,84,"[giovanni francesco romanelli]","[1610, 1662]","[do, giovanni]","[1617, 1656]",0,"googleart_m0273cw7","wga_do, giovanni, (1617-1656)",,
+458,84,"[giovanni andrea sirani]","[1610, 1670]","[do, giovanni]","[1617, 1656]",0,"googleart_m02pv97x","wga_do, giovanni, (1617-1656)",,
+459,84,"[giovanni francesco grimaldi]","[1606, 1680]","[do, giovanni]","[1617, 1656]",0,"googleart_m04s3ty","wga_do, giovanni, (1617-1656)",,
+460,84,"[giovanni battista salvi da sassoferrato]","[1609, 1685]","[do, giovanni]","[1617, 1656]",0,"googleart_m04zl6z","wga_do, giovanni, (1617-1656)",,
+461,84,"[giovanni lorenzo bernini, gian lorenzo bernini]","[1598, 1680]","[do, giovanni]","[1617, 1656]",0,"googleart_m039xt","wga_do, giovanni, (1617-1656)",,
+462,84,"[giovanni benedetto castiglione]","[1609, 1664]","[do, giovanni]","[1617, 1656]",0,"googleart_m077d8t","wga_do, giovanni, (1617-1656)",,
+463,84,"[giovanni francesco barbieri, guercino]","[1591, 1666]","[do, giovanni]","[1617, 1656]",0,"googleart_m013p84","wga_do, giovanni, (1617-1656)",,
+464,96,"[édouard dubufe]","[1820, 1883]","[dubufe, edouard]","[1820, 1883]",1,"googleart_m07_1y0","wga_dubufe, edouard, (1820-1883)",,
+465,80,"[jan van eyck, johannes de eyck]","[1390, 1441]","[eyck, hubert van]","[1425.0, 1426]",0,"wiki_jan-van-eyck","wga_eyck, hubert van, (1426-1426)",,
+466,80,"[pietro faccini]","[1562, 1602]","[facchetti, pietro]","[1537, 1619]",0,"googleart_m027f6zf","wga_facchetti, pietro, (1537-1619)",,
+467,79,"[giovanni domenico campiglia]","[1692, 1768]","[ferretti, giovanni domenico]","[1692, 1768]",0,"googleart_m02880sz","wga_ferretti, giovanni domenico, (1692-1768)",,
+468,83,"[giovanni battista moroni]","[1520, 1578]","[fontana, giovanni battista]","[1524, 1587]",0,"googleart_m02kb23","wga_fontana, giovanni battista, (1524-1587)",,
+469,87,"[domenico di francesco d'antonio, domenico di michelino, domenico di francesco, michelino, domenico di francesco]","[1417, 1491]","[cherico, francesco d'antonio del, chierico, francesco d'antonio del, chierico, francesco d'antonio di francesco, del chierico, francesco d'antonio, francesco d' antonio del chierico, francesco d' antonio di francesco del chierico, francesco d'antonio del chierico, francesco di antonio del cherico, francesco di antonio del chierico]","[1433, 1484]",0,"googleart_m038pht","wga_francesco di antonio del chierico, (1433-1484)",,
+470,90,"[frans francken the younger]","[1581, 1642]","[francken, frans ii]","[1581, 1642]",1,"googleart_m03cvr00","wga_francken, frans ii, (1581-1642)",,
+471,96,"[theodoor galle]","[1571, 1633]","[galle, theodor]","[1571, 1633]",1,"googleart_m0c3y23_","wga_galle, theodor, (1571-1633)",,
+472,80,"[giovanni di paolo]","[1395, 1482]","[giovanni da oriolo]","[1439, 1474]",0,"googleart_m08rv2l","wga_giovanni da oriolo, (1439-1474)",,
+473,79,"[giovanni antonio da brescia]","[1503, 1509]","[giovanni da udine]","[1487, 1564]",0,"googleart_m03cv8s9","wga_giovanni da udine, (1487-1564)",,
+474,79,"[giovanni di paolo]","[1395, 1482]","[giovanni di francesco del cervelliera]","[1412, 1459]",0,"googleart_m08rv2l","wga_giovanni di francesco del cervelliera, (1412-1459)",,
+475,81,"[giovanni di paolo]","[1395, 1482]","[giovanni di piamonte]","[1456, 1472]",0,"googleart_m08rv2l","wga_giovanni di piamonte, (1456-1472)",,
+476,79,"[giovanni di paolo]","[1395, 1482]","[girolamo di giovanni da camerino]","[1449, 1473]",0,"googleart_m08rv2l","wga_girolamo di giovanni da camerino, (1449-1473)",,
+477,97,"[hendrik goltzius]","[1558, 1617]","[goltzius, hendrick]","[1558, 1617]",1,"googleart_m03fzzx","wga_goltzius, hendrick, (1558-1617)",,
+478,96,"[jan gossaert (jennyn van hennegouwe), jan gossaert, mabuse]","[1478, 1532]","[gossart, jan]","[1478, 1532]",1,"wiki_mabuse","wga_gossart, jan, (1478-1532)",,
+479,79,"[jules breton, jules adolphe aimé louis breton]","[1827, 1906]","[goupil, jules-adolphe]","[1839, 1883]",0,"wiki_jules-breton","wga_goupil, jules-adolphe, (1839-1883)",,
+480,79,"[abraham bloemaert]","[1564, 1651]","[govaerts, abraham]","[1589, 1626]",0,"googleart_m03fz_9","wga_govaerts, abraham, (1589-1626)",,
+481,81,"[jean-baptiste oudry]","[1686, 1755]","[guélard, jean-baptiste-antoine]","[1719, 1755]",0,"wiki_jean-baptiste-oudry","wga_guélard, jean-baptiste-antoine, (1719-1755)",,
+482,79,"[jean-baptiste isabey]","[1767, 1855]","[guérin, paulin-jean-baptiste]","[1783, 1855]",0,"googleart_m02vfrl","wga_guérin, paulin-jean-baptiste, (1783-1855)",,
+483,93,"[eduard gaertner]","[1801, 1877]","[gärtner, eduard]","[1801, 1877]",1,"googleart_m0gydqvf","wga_gärtner, eduard, (1801-1877)",,
+484,81,"[édouard manet, edouard manet]","[1832, 1883]","[hamman, edouard]","[1819, 1888]",0,"wiki_edouard-manet","wga_hamman, edouard, (1819-1888)",,
+485,82,"[jacob van loo]","[1614, 1670]","[hasselt, jacob gerritsz. van]","[1598, 1674]",0,"googleart_m05h252h","wga_hasselt, jacob gerritsz. van, (1598-1674)",,
+486,92,"[willem claeszoon heda]","[1594, 1680]","[heda, willem claesz.]","[1594, 1680]",1,"googleart_m03f_6c","wga_heda, willem claesz., (1594-1680)",,
+487,85,"[deveria, eugene, eugène devéria, deveria, e., devéria, eugène, devéria, eugène françois marie joseph, devéria, françois-marie-joseph-eugène, deveria, eugène]","[1805, 1865]","[heim, françois-joseph]","[1787, 1865]",0,"googleart_m03qjn_w","wga_heim, françois-joseph, (1787-1865)",,
+488,85,"[peto, john f., peto, john frederick, john f. peto]","[1854, 1907]","[herring, john frederick the younger]","[1820, 1907]",0,"googleart_m013_3s","wga_herring, john frederick the younger, (1820-1907)",,
+489,94,"[meindert hobbema]","[1638, 1709]","[hobbema, meyndert]","[1638, 1709]",1,"googleart_m03fzc1","wga_hobbema, meyndert, (1638-1709)",,
+490,96,"[george inness]","[1825, 1894]","[innes, george]","[1825, 1894]",1,"wiki_george-inness","wga_innes, george, (1825-1894)",,
+491,97,"[jean-baptiste isabey]","[1767, 1855]","[isabey, jean-baptist]","[1767, 1855]",1,"googleart_m02vfrl","wga_isabey, jean-baptist, (1767-1855)",,
+492,97,"[angelica kauffman, maria anna angelica katharina kauffman]","[1741, 1807]","[kauffmann, angelica]","[1741, 1807]",1,"wiki_angelica-kauffman","wga_kauffmann, angelica, (1741-1807)",,
+493,88,"[philip de koninck]","[1619, 1688]","[koninck, philips]","[1619, 1688]",1,"googleart_m06sc73","wga_koninck, philips, (1619-1688)",,
+494,95,"[jan kupecký]","[1667, 1740]","[kupecky, jan]","[1667, 1740]",1,"googleart_m053_h1","wga_kupecky, jan, (1667-1740)",,
+495,79,"[jacques stella]","[1596, 1657]","[estain, jacques, l'estin, jacques de, l'estin, jean-bapt., lestain, jacques de, lestain, jean-bapt., lestin, jacques de, letin, jacques de, létin, jacques, létin, jacques de, ninet de l'estain, jacques, ninet de lestin, jacques, ninet de lettin, jacques, ninet de létin, jacques]","[1597, 1661]",0,"googleart_m05b_6yr","wga_l'estin, jacques de, (1597-1661)",,
+496,94,"[laurent de la hyre]","[1606, 1656]","[la hire, laurent de]","[1606, 1656]",1,"googleart_m08j0n2","wga_la hire, laurent de, (1606-1656)",,
+497,98,"[adélaïde labille-guiard]","[1749, 1803]","[labille-guiard, adélaide]","[1749, 1803]",1,"googleart_m05_8yp","wga_labille-guiard, adélaide, (1749-1803)",,
+498,79.68,"[jean-baptiste pillement]","[1728, 1808]","[lallemand, jean-baptiste]","[1716, 1803]",0,"googleart_m02pyk1w","wga_lallemand, jean-baptiste, (1716-1803)",,
+499,81,"[thomas ender]","[1793, 1875]","[landseer, thomas]","[1795, 1880]",0,"googleart_m0crckkk","wga_landseer, thomas, (1795-1880)",,
+500,96,"[ernest lawson]","[1873, 1939]","[lawson, ernst]","[1873, 1939]",1,"googleart_m09td69","wga_lawson, ernst, (1873-1939)",,
+501,80,"[nooms, regnier, nooms, renier, zeeman, remy, nooms, remigius, zeeman, remigius, zeeman, zeeman, r., reinier nooms, nooms, reinier, zeeman, reinier, nooms, remy, zeeman, regnier]","[1623, 1667]","[leemput, remigius van]","[1607, 1675]",0,"googleart_m0h6pg0","wga_leemput, remigius van, (1607-1675)",,
+502,79,"[leonardo di ser piero da vinci, leonardo da vinci]","[1452, 1519]","[leonardo da pistoia]","[1483, 1518]",0,"wiki_leonardo-da-vinci","wga_leonardo da pistoia, (1483-1518)",,
+503,97,"[levitan, isaak ilych, levitan, isaak il'ič, isaac levitan, levitan, isaac, levitan, isaak il'ich, исаак левитан, lewitan, isaak iljitsch, levitan, isaak ilitch]","[1860, 1900]","[levitan, isaak ilyich]","[1860, 1900]",1,"wiki_isaac-levitan","wga_levitan, isaak ilyich, (1860-1900)",,
+504,82,"[dirck van delen]","[1605, 1671]","[lisse, dirck van der]","[1607, 1669]",0,"googleart_m07s7sps","wga_lisse, dirck van der, (1607-1669)",,
+505,79,"[charles-andré van loo]","[1705, 1765]","[loo, carle van]","[1705, 1765]",1,"googleart_m05yppx","wga_loo, carle van, (1705-1765)",,
+506,94,"[johann carl loth]","[1632, 1698]","[loth, johann karl]","[1632, 1698]",1,"googleart_m03cphdy","wga_loth, johann karl, (1632-1698)",,
+507,88,"[isaack luttichuys]","[1616, 1673]","[luttichuijs, isaac]","[1616, 1673]",1,"googleart_m0gx__7q","wga_luttichuijs, isaac, (1616-1673)",,
+508,79,"[francesco maffei]","[1605, 1660]","[maltese, francesco]","[1610, 1660]",0,"googleart_m026gtv7","wga_maltese, francesco, (1610-1660)",,
+509,80,"[bartolomeo cesi]","[1556, 1629]","[manfredi, bartolomeo]","[1582, 1622]",0,"googleart_m0271dhk","wga_manfredi, bartolomeo, (1582-1622)",,
+510,92,"[carlo maratta]","[1625, 1713]","[maratti, carlo]","[1625, 1713]",1,"googleart_m08z2js","wga_maratti, carlo, (1625-1713)",,
+511,86,"[mario nuzzi, mario nuzzi (mario de' fiori)]","[1603, 1673]","[mario dei fiori]","[1603, 1673]",1,"wiki_mario-nuzzi","wga_mario dei fiori, (1603-1673)",,
+512,79,"[master of the virgo inter virgines]","[1487.0, 1903]","[master of the parrot]","[1525, 1550.0]",0,"googleart_m047rps6","wga_master of the parrot, (1525-1525)",,
+513,82.17,"[baciccio, giovanni battista, gaulli, giambattista, baciccia, giambattista gauli, gaulli, giovanni b., giovanni battista gaulli, gaulli, giovanni battista, baciccia, giovanni battista, bacciccia, il, baciccio, il, bacciccia, giovanni battista, bacciccio, giovanni battista, baciccia, il, bacciccio, il, gaulli, giovan battista]","[1639, 1709]","[merano, giovanni battista]","[1632, 1698]",0,"googleart_m06vspx","wga_merano, giovanni battista, (1632-1698)",,
+514,93,"[philippe mercier]","[1689, 1760]","[mercier, philip]","[1689, 1760]",1,"googleart_m05q8cn7","wga_mercier, philip, (1689-1760)",,
+515,97,"[philippe mercier]","[1689, 1760]","[mercier, philipe]","[1689, 1760]",1,"googleart_m05q8cn7","wga_mercier, philipe, (1689-1760)",,
+516,82,"[jacob van loo]","[1614, 1670]","[merck, jacob fransz. van der]","[1610, 1664]",0,"googleart_m05h252h","wga_merck, jacob fransz. van der, (1610-1664)",,
+517,96,"[michiel jansz. van mierevelt]","[1567, 1641]","[miereveld, michiel jansz. van]","[1567, 1641]",1,"googleart_m072xgy","wga_miereveld, michiel jansz. van, (1567-1641)",,
+518,90,"[daniël mijtens]","[1590, 1647]","[mijtens, daniel i]","[1590, 1647]",1,"googleart_m06y9rj","wga_mijtens, daniel i, (1590-1647)",,
+519,83,"[pieter van laer]","[1599, 1642]","[mol, pieter van]","[1599, 1650]",0,"googleart_m07yxc9","wga_mol, pieter van, (1599-1650)",,
+520,83,"[jan gossaert (jennyn van hennegouwe), jan gossaert, mabuse]","[1478, 1532]","[mostaert, jan]","[1475, 1555]",0,"wiki_mabuse","wga_mostaert, jan, (1475-1555)",,
+521,98,"[frederik de moucheron]","[1633, 1686]","[moucheron, frederick de]","[1633, 1686]",1,"googleart_m07k4mpg","wga_moucheron, frederick de, (1633-1686)",,
+522,90,"[pieter mulier ii]","[1637, 1701]","[mulier, pieter the younger]","[1637, 1701]",1,"googleart_m0gfdc_g","wga_mulier, pieter the younger, (1637-1701)",,
+523,96,"[giovanni battista naldini]","[1537, 1591]","[naldini, giovan battista]","[1537, 1591]",1,"googleart_m0gxxlp","wga_naldini, giovan battista, (1537-1591)",,
+524,82,"[deveria, eugene, eugène devéria, deveria, e., devéria, eugène, devéria, eugène françois marie joseph, devéria, françois-marie-joseph-eugène, deveria, eugène]","[1805, 1865]","[navez, françois-joseph]","[1787, 1869]",0,"googleart_m03qjn_w","wga_navez, françois-joseph, (1787-1869)",,
+525,93,"[pieter neefs the elder]","[1578, 1656]","[neeffs, peeter the elder]","[1578, 1656]",1,"googleart_m03d3trh","wga_neeffs, peeter the elder, (1578-1656)",,
+526,83,"[mulier, p., pieter de molijn, molijn, pieter de, molyn, pieter de]","[1595, 1661]","[neyn, pieter de]","[1597, 1639]",0,"googleart_m07k9wyt","wga_neyn, pieter de, (1597-1639)",,
+527,93,"[willem van nieulandt ii]","[1584, 1635]","[nieulandt, willem van, the younger]","[1584, 1635]",1,"googleart_m09gjx1p","wga_nieulandt, willem van, the younger, (1584-1635)",,
+528,82,"[jacob van loo]","[1614, 1670]","[oost, jacob van, the elder]","[1603, 1671]",0,"googleart_m05h252h","wga_oost, jacob van, the elder, (1603-1671)",,
+529,81,"[isaac van ostade]","[1621, 1649]","[oosten, izaac van]","[1613, 1661]",0,"wiki_isaac-van-ostade","wga_oosten, izaac van, (1613-1661)",,
+530,97,"[isaac van ostade]","[1621, 1649]","[ostade, isaack van]","[1621, 1649]",1,"wiki_isaac-van-ostade","wga_ostade, isaack van, (1621-1649)",,
+531,97,"[anthonie palamedes]","[1601, 1673]","[palamedesz., anthonie]","[1601, 1673]",1,"googleart_m0by04hl","wga_palamedesz., anthonie, (1601-1673)",,
+532,98,"[giovanni paolo panini]","[1691, 1765]","[pannini, giovanni paolo]","[1691, 1765]",1,"wiki_giovanni-paolo-panini","wga_pannini, giovanni paolo, (1691-1765)",,
+533,80,"[juan de arellano]","[1614, 1676]","[pareja, juan de]","[1606, 1670]",0,"googleart_m026z4yz","wga_pareja, juan de, (1606-1670)",,
+534,80,"[william hoare]","[1707, 1792]","[pars, william]","[1742, 1782]",0,"googleart_m032854","wga_pars, william, (1742-1782)",,
+535,95,"[bartolomeo passarotti]","[1529, 1592]","[passerotti, bartolomeo]","[1529, 1592]",1,"googleart_m0271kk7","wga_passerotti, bartolomeo, (1529-1592)",,
+536,90,"[joachim patinir, joachim patinir (de patiner)]","[1480, 1524]","[patenier, joachim]","[1480, 1524]",1,"wiki_joachim-patinir","wga_patenier, joachim, (1480-1524)",,
+537,80,"[sano di pietro]","[1406, 1481]","[pietro da milano]","[1410, 1473]",0,"googleart_m0d5zcd","wga_pietro da milano, (1410-1473)",,
+538,86,"[fra angelico, fra giovanni da fiesole (guido di pietro)]","[1395, 1455]","[ambrogio, pietro di giovanni, ambrosi, pietro di giovanni, giovanni di pietro d'ambrogio, pietro di giovann d' ambrogio, pietro di giovanni d'ambrogio, pietro di giovanni di ambrogio, pietro di giovanni pucci]","[1410, 1449]",0,"googleart_m031b2","wga_pietro di giovanni d'ambrogio, (1410-1449)",,
+539,83,"[giovanni battista moroni]","[1520, 1578]","[pittoni, giovanni battista, the elder]","[1520, 1585]",0,"googleart_m02kb23","wga_pittoni, giovanni battista, the elder, (1520-1585)",,
+540,81,"[giovanni andrea sirani]","[1610, 1670]","[podesta, giovanni andrea]","[1608, 1674]",0,"googleart_m02pv97x","wga_podesta, giovanni andrea, (1608-1674)",,
+541,98,"[cornelius van poelenburgh]","[1594, 1667]","[poelenburgh, cornelis van]","[1594, 1667]",1,"googleart_m0270g7h","wga_poelenburgh, cornelis van, (1594-1667)",,
+542,83,"[pieter jansz van asch]","[1603, 1678]","[post, pieter jansz]","[1608, 1669]",0,"googleart_m07s5949","wga_post, pieter jansz, (1608-1669)",,
+543,98,"[hendrik gerritsz pot]","[1580, 1657]","[pot, hendrick gerritsz]","[1580, 1657]",1,"googleart_m02vyh5h","wga_pot, hendrick gerritsz, (1580-1657)",,
+544,97,"[gabriel perelle]","[1604, 1677]","[pérelle, gabriel]","[1604, 1677]",1,"googleart_m0vsb5l_","wga_pérelle, gabriel, (1604-1677)",,
+545,81,"[erasmus quellinus ii]","[1607, 1678]","[quellinus, artus i]","[1609, 1668]",0,"googleart_m02rt24j","wga_quellinus, artus i, (1609-1668)",,
+546,80,"[jean audran]","[1667, 1756]","[ranc, jean]","[1674, 1735]",0,"googleart_m0c3vf3q","wga_ranc, jean, (1674-1735)",,
+547,95,"[jerg ratgeb]","[1480, 1526]","[ratgeb, jörg]","[1480, 1526]",1,"wiki_jerg-ratgeb","wga_ratgeb, jörg, (1480-1526)",,
+548,81,"[giovanni antonio da brescia]","[1503, 1509]","[requesta, giovanni antonio]","[1481, 1528]",0,"googleart_m03cv8s9","wga_requesta, giovanni antonio, (1481-1528)",,
+549,80,"[frans hals]","[1580, 1666]","[rijckhals, frans]","[1600, 1647]",0,"googleart_m0ch5l","wga_rijckhals, frans, (1600-1647)",,
+550,80,"[mulier, p., pieter de molijn, molijn, pieter de, molyn, pieter de]","[1595, 1661]","[ring, pieter de]","[1615, 1660]",0,"googleart_m07k9wyt","wga_ring, pieter de, (1615-1660)",,
+551,97,"[theodoor rombouts]","[1597, 1637]","[rombouts, theodor]","[1597, 1637]",1,"googleart_m02rs6jp","wga_rombouts, theodor, (1597-1637)",,
+552,81,"[andrei rublev, андрей рублёв]","[1360, 1430]","[rublyov, andrey]","[1360, 1430]",1,"googleart_m030dmf","wga_rublyov, andrey, (1360-1430)",,
+553,81,"[david teniers the younger]","[1610, 1690]","[ryckaert, david the younger]","[1612, 1661]",0,"googleart_m03h0s3","wga_ryckaert, david the younger, (1612-1661)",,
+554,85,"[antoine sallaert]","[1580, 1650]","[sallaert, anthonis]","[1580, 1650]",1,"googleart_m0crf44d","wga_sallaert, anthonis, (1580-1650)",,
+555,98,"[alonso sánchez coello]","[1531, 1588]","[sanchez coello, alonso]","[1531, 1588]",1,"googleart_m078576","wga_sanchez coello, alonso, (1531-1588)",,
+556,81,"[jean-baptiste belin]","[1653, 1715]","[santerre, jean-baptiste]","[1651, 1717]",0,"googleart_m0gcgfk","wga_santerre, jean-baptiste, (1651-1717)",,
+557,83,"[fra bartolomeo]","[1472, 1517]","[sanvito, bartolomeo]","[1435, 1518]",0,"googleart_m031bl","wga_sanvito, bartolomeo, (1435-1518)",,
+558,97,"[roelant savery]","[1576, 1639]","[savery, roelandt]","[1576, 1639]",1,"googleart_m0blpx1","wga_savery, roelandt, (1576-1639)",,
+559,84,"[jacob van schuppen]","[1670, 1751]","[schuppen, jacques van]","[1670, 1751]",1,"googleart_m0g05qh","wga_schuppen, jacques van, (1670-1751)",,
+560,79,"[sebastiano del piombo]","[1485, 1547]","[serlio, sebastiano]","[1475, 1554]",0,"googleart_m04p81n","wga_serlio, sebastiano, (1475-1554)",,
+561,80,"[bartolomeo cesi]","[1556, 1629]","[sermartelli, bartolomeo]","[1563, 1600]",0,"googleart_m0271dhk","wga_sermartelli, bartolomeo, (1563-1600)",,
+562,97,"[israel silvestre]","[1621, 1691]","[silvestre, israël]","[1621, 1691]",1,"googleart_m0f_q_j","wga_silvestre, israël, (1621-1691)",,
+563,98,"[pieter cornelisz van slingelandt]","[1640, 1691]","[slingeland, pieter cornelisz. van]","[1640, 1691]",1,"googleart_m09g6slv","wga_slingeland, pieter cornelisz. van, (1640-1691)",,
+564,82,"[joris van der haagen]","[1615, 1669]","[son, joris van]","[1623, 1667]",0,"googleart_m09gfly_","wga_son, joris van, (1623-1667)",,
+565,80,"[adriaen van de velde]","[1636, 1672]","[spelt, adrian van der]","[1630, 1673]",0,"googleart_m03hgc9","wga_spelt, adrian van der, (1630-1673)",,
+566,79,"[giovanni battista salvi da sassoferrato]","[1609, 1685]","[spinelli, giovanni battista]","[1630, 1660]",0,"googleart_m04zl6z","wga_spinelli, giovanni battista, (1630-1660)",,
+567,79,"[giovanni battista galestruzzi]","[1618, 1677]","[spinelli, giovanni battista]","[1630, 1660]",0,"googleart_m02rbv2y","wga_spinelli, giovanni battista, (1630-1660)",,
+568,98,"[bartholomeus spranger]","[1546, 1611]","[spranger, bartholomaeus]","[1546, 1611]",1,"googleart_m0ddd7x","wga_spranger, bartholomaeus, (1546-1611)",,
+569,80,"[francis swaine]","[1725, 1782]","[stringer, francis]","[1760, 1778]",0,"googleart_m0gk7w6","wga_stringer, francis, (1760-1778)",,
+570,97,"[joseph-benoît suvée]","[1743, 1807]","[suvée, joseph-benoit]","[1743, 1807]",1,"googleart_m03gwd10","wga_suvée, joseph-benoit, (1743-1807)",,
+571,82,"[isaac van swanenburg]","[1537, 1614]","[swanenburg, willem isaacsz. van]","[1580, 1612]",0,"googleart_m09ghfn3","wga_swanenburg, willem isaacsz. van, (1580-1612)",,
+572,84,"[jean-baptiste huet]","[1745, 1811]","[séroux d'agincourt, jean-baptiste]","[1730, 1814]",0,"googleart_m0bvs4t","wga_séroux d'agincourt, jean-baptiste, (1730-1814)",,
+573,92,"[frits thaulow]","[1847, 1906]","[thaulow, fritz]","[1847, 1906]",1,"googleart_m0dy3hs","wga_thaulow, fritz, (1847-1906)",,
+574,97,"[theodoor van thulden]","[1606, 1669]","[thulden, theodor van]","[1606, 1669]",1,"wiki_theodoor-van-thulden","wga_thulden, theodor van, (1606-1669)",,
+575,83,"[johann heinrich füssli, henry fuseli]","[1741, 1825]","[tischbein, johann heinrich the younger]","[1742, 1808]",0,"googleart_m01djng","wga_tischbein, johann heinrich the younger, (1742-1808)",,
+576,90,"[cosimo tura]","[1430, 1495]","[tura, cosmè]","[1430, 1495]",1,"googleart_m08vnm4","wga_tura, cosmè, (1430-1495)",,
+577,93,"[uhde, fritz karl hermann v., fritz von uhde, uhde, friedrich karl hermann von, uhde, fritz von]","[1848, 1911]","[uhde, fritz van]","[1848, 1911]",1,"googleart_m02w8qc1","wga_uhde, fritz van, (1848-1911)",,
+578,84,"[lucas van valckenborch]","[1535, 1597]","[valckenborch, marten van i]","[1534, 1612]",0,"googleart_m02qvvlb","wga_valckenborch, marten van i, (1534-1612)",,
+579,79,"[louise élisabeth vigée le brun, louise elisabeth vigee le brun]","[1755, 1842]","[vigée-lebrun, élisabeth]","[1755, 1842]",1,"wiki_louise-elisabeth-vigee-le-brun","wga_vigée-lebrun, élisabeth, (1755-1842)",,
+580,98,"[ferdinand georg waldmüller]","[1793, 1865]","[waldmüller, fedinand georg]","[1793, 1865]",1,"wiki_ferdinand-georg-waldm-ller","wga_waldmüller, fedinand georg, (1793-1865)",,
+581,97,"[antonie waterloo]","[1609, 1690]","[waterloo, anthonie]","[1609, 1690]",1,"googleart_m0bh7bwz","wga_waterloo, anthonie, (1609-1690)",,
+582,96,"[johan hendrik weissenbruch]","[1824, 1903]","[weissenbruch, jan hendrik]","[1824, 1903]",1,"wiki_johan-hendrik-weissenbruch","wga_weissenbruch, jan hendrik, (1824-1903)",,
+583,79,"[edward william cooke]","[1811, 1880]","[williams, edward charles]","[1807, 1881]",0,"googleart_m02w8rhh","wga_williams, edward charles, (1807-1881)",,
+584,79,"[william edward frost]","[1810, 1877]","[williams, edward charles]","[1807, 1881]",0,"googleart_m04q2rr8","wga_williams, edward charles, (1807-1881)",,
+585,81,"[bernardino di betto, pinturicchio]","[1454, 1513]","[zaganelli, bernardino di bosio]","[1460, 1510]",0,"wiki_pinturicchio","wga_zaganelli, bernardino di bosio, (1460-1510)",,
+586,79,"[giuseppe zocchi]","[1711, 1767]","[zais, giuseppe]","[1709, 1781]",0,"googleart_m02vqf8x","wga_zais, giuseppe, (1709-1781)",,
+587,98,"[giovanni battista zelotti]","[1526, 1578]","[zelotti, givanni battista]","[1526, 1578]",1,"googleart_m027y_z5","wga_zelotti, givanni battista, (1526-1578)",,
+588,94,"[federico zuccari]","[1542, 1609]","[zuccaro, federico]","[1542, 1609]",1,"googleart_m0g1ss","wga_zuccaro, federico, (1542-1609)",,
+589,93,"[taddeo zuccari]","[1529, 1566]","[zuccaro, taddeo]","[1529, 1566]",1,"googleart_m0g1sc","wga_zuccaro, taddeo, (1529-1566)",,
+590,100,"[clara peeters]","[1594, 1657]","[peeters, peeters, bonaventura, peeters, bonaventura (1), peeters, bonaventura i, peeters, bonaventure, peeters, bonaventure (1), peeters, bonaventure (i)]","[1614, 1652]",0,"googleart_m0266vrh","wga_peeters, bonaventura i, (1614-1652)","(402, 3088)",24
+591,100,"[dieric bouts, dirk bouts]","[1415, 1577.0]","[bouts, dieric the elder]","[1415, 1475]",1,"googleart_m07z_y1","wga_bouts, dieric the elder, (1415-1475)","(500, 466)",114
+592,100,"[emile bernard, émile bernard, émile henri bernard]","[1868, 1941]","[henri, henri-martin, martin, henri, martin, henri jean guillaume, martin, henri-jean-guillaume]","[1860, 1943]",0,"wiki_emile-bernard","wga_martin, henri-jean-guillaume, (1860-1943)","(576, 2186)",37
+593,100,"[henri marie raymond de toulouse-lautrec-monfa, henri de toulouse-lautrec]","[1864, 1901]","[henri, henri-martin, martin, henri, martin, henri jean guillaume, martin, henri-jean-guillaume]","[1860, 1943]",0,"googleart_m0h7vt","wga_martin, henri-jean-guillaume, (1860-1943)","(945, 2186)",812
+594,100,"[henri-martin, martin, henri, henri, martin, henri jean guillaume, henri-jean guillaume martin, henri martin, martin, henri-jean-guillaume]","[1860, 1943]","[toulouse-lautrec, henri de]","[1864, 1901]",0,"wiki_henri-martin","wga_toulouse-lautrec, henri de, (1864-1901)","(950, 3918)",551
+595,100,"[henri-martin, martin, henri, henri, martin, henri jean guillaume, henri-jean guillaume martin, henri martin, martin, henri-jean-guillaume]","[1860, 1943]","[delavallée, henri]","[1862, 1943]",0,"wiki_henri-martin","wga_delavallée, henri, (1862-1943)","(950, 980)",409
+596,100,"[henri-martin, martin, henri, henri, martin, henri jean guillaume, henri-jean guillaume martin, henri martin, martin, henri-jean-guillaume]","[1860, 1943]","[evenepoel, henri]","[1872, 1899]",0,"wiki_henri-martin","wga_evenepoel, henri, (1872-1899)","(950, 1138)",410
+597,99,"[henri matisse, henri-émile-benoît matisse]","[1869, 1954]","[henri, henri-martin, martin, henri, martin, henri jean guillaume, martin, henri-jean-guillaume]","[1860, 1943]",0,"googleart_m0gct_","wga_martin, henri-jean-guillaume, (1860-1943)","(951, 2186)",500
+598,78,"[joaquin torres garcia, joaquín torres garcía]","[1874, 1949]","[mir i trinxet, joaquim, mir trinxet, joaquim, mir trinxet, joaquím, mir trinxet, joaquín, mir y trinxet, joaquim, mir y trinxet, joaquím, mir y trinxet, joaquín, mir, joaquim, mir, joaquin, mir, joaquín]","[1873, 1940]",0,"wiki_joaquin-torres-garcia","wga_mir trinxet, joaquím, (1873-1940)","(1191, 2813)",25
+599,100,"[robert campin, master of flémalle]","[1375, 1470.0]","[master of flémalle]","[1375, 1444]",1,"wiki_robert-campin","wga_master of flémalle, (1375-1444)","(1971, 2236)",95
+600,100,"[robert henri, robert henry cozad, cozad, robert henry, henri, robert]","[1865, 1929]","[henri, henri-martin, martin, henri, martin, henri jean guillaume, martin, henri-jean-guillaume]","[1860, 1943]",0,"googleart_m03y3wz","wga_martin, henri-jean-guillaume, (1860-1943)","(1984, 2186)",289
+601,100,"[piero del pollaiolo, piero di iacopo d'antonio benci, pollaiolo, piero del, piero del pollaiuolo, pollaiuolo, piero, pollaiuolo, piero di jacopo d'antonio benci del, pollaiuolo, piero del]","[1441, 1496]","[pollaiuolo, antonio del]","[1431, 1498]",0,"googleart_m01hxtl","wga_pollaiuolo, antonio del, (1431-1498)","(2546, 3201)",18
+602,100,"[henri le sidaner]","[1862, 1939]","[henri, henri-martin, martin, henri, martin, henri jean guillaume, martin, henri-jean-guillaume]","[1860, 1943]",0,"googleart_m026cz86","wga_martin, henri-jean-guillaume, (1860-1943)","(2626, 2186)",10
+603,100,"[giuliano bugiardini]","[1475, 1577]","[bugiardini, giuliano]","[1475, 1554]",1,"googleart_m0282srf","wga_bugiardini, giuliano, (1475-1554)","(2735, 550)",13
+604,100,"[carlo francesco nuvolone]","[1609, 1702]","[nuvolone, carlo francesco]","[1609, 1662]",1,"googleart_m0283bl7","wga_nuvolone, carlo francesco, (1609-1662)","(2736, 2972)",11
+605,78,"[master of 1518]","[1518, 1540.0]","[master of ab monogram]","[1530, 1530]",0,"googleart_m02qf1rs","wga_master of ab monogram, (1530-1530)","(2811, 2223)",9
+606,78,"[master of 1518]","[1518, 1540.0]","[master of the parrot]","[1525, 1550.0]",0,"googleart_m02qf1rs","wga_master of the parrot, (1525-1525)","(2811, 2297)",8
+607,78,"[master of 1518]","[1518, 1540.0]","[master of the castello della manta]","[1410, 1884.0]",0,"googleart_m02qf1rs","wga_master of the castello della manta, (1410-1410)","(2811, 2268)",16
+608,78,"[master of 1518]","[1518, 1540.0]","[master of female half-lengths]","[1530, 1540]",0,"googleart_m02qf1rs","wga_master of female half-lengths, (1530-1540)","(2811, 2234)",17
+609,78,"[master of 1518]","[1518, 1540.0]","[master of the lille adoration]","[1510, 1530]",0,"googleart_m02qf1rs","wga_master of the lille adoration, (1510-1530)","(2811, 2292)",8
+610,78,"[master of 1518]","[1518, 1540.0]","[master of the fontainebleau school]","[1500, 1600]",0,"googleart_m02qf1rs","wga_master of the fontainebleau school, (1500-1600)","(2811, 2276)",15
+611,78,"[master of 1518]","[1518, 1540.0]","[master of ac monogram]","[1500, 1600]",0,"googleart_m02qf1rs","wga_master of ac monogram, (1500-1600)","(2811, 2224)",4
+612,78,"[master of 1518]","[1518, 1540.0]","[master of the brunswick monogram]","[1525, 1550]",0,"googleart_m02qf1rs","wga_master of the brunswick monogram, (1525-1550)","(2811, 2265)",6
+613,78,"[master of 1518]","[1518, 1540.0]","[master of the holy blood]","[1520.0, 1530]",0,"googleart_m02qf1rs","wga_master of the holy blood, (1530-1530)","(2811, 2279)",6
+614,78,"[master of 1518]","[1518, 1540.0]","[master of the joseph sequence]","[1500, 1550.0]",0,"googleart_m02qf1rs","wga_master of the joseph sequence, (1500-1500)","(2811, 2284)",5
+615,100,"[carlo bonavia]","[1575.0, 1788]","[bonavia, carlo]","[1751, 1788]",1,"googleart_m02qhdfd","wga_bonavia, carlo, (1751-1788)","(2814, 397)",8
+616,100,"[memmi, lippo, lippo memmi, lippo di memmo di filippuccio]","[1290, 1333.0]","[memmo di filippuccio]","[1288, 1324]",0,"googleart_m02r3h90","wga_memmo di filippuccio, (1288-1324)","(2852, 2368)",7
+617,80,"[giovanni battista galestruzzi]","[1618, 1677]","[langetti, giovanni battista]","[1635, 1676]",0,"googleart_m02rbv2y","wga_langetti, giovanni battista, (1635-1676)","(2869, 1921)",18
+618,78,"[alexandre bida]","[1813, 1895]","[dillens, adolphe-alexandre]","[1821, 1877]",0,"googleart_m02x29m4","wga_dillens, adolphe-alexandre, (1821-1877)","(2937, 1021)",14
+619,78,"[alexandre bida]","[1813, 1895]","[cabanel, alexandre]","[1823, 1889]",0,"googleart_m02x29m4","wga_cabanel, alexandre, (1823-1889)","(2937, 578)",14
+620,78,"[alexandre bida]","[1813, 1895]","[antigna, alexandre]","[1817, 1878]",0,"googleart_m02x29m4","wga_antigna, alexandre, (1817-1878)","(2937, 84)",13
+621,78,"[alexandre bida]","[1813, 1895]","[pils, isidore-alexandre-augustin]","[1813, 1875]",0,"googleart_m02x29m4","wga_pils, isidore-alexandre-augustin, (1813-1875)","(2937, 3168)",16
+622,78,"[alessandro casolano]","[1552, 1606]","[allori, alessandro]","[1535, 1607]",0,"googleart_m03c_l5q","wga_allori, alessandro, (1535-1607)","(3031, 35)",26
+623,78,"[johann georg bergmüller]","[1688, 1762]","[platzer, f. j., platzer, joh. viktor, platzer, johann georg, plazer, johann georg]","[1704, 1761]",0,"googleart_m03d2jfr","wga_platzer, johann georg, (1704-1761)","(3089, 3183)",11
+624,100,"[grandville, gérard, gérard, jean-ignace-isidore, gérard, ignace isodore, g., ..., grandville, jean-ignace gerard, grandville, j.-j., gérard, ignace j., gérard, jean j., grandville, jean-ignace isidore gérard, jean ignace isidore gérard grandville, grandville, jean ignace isadore, grandville, gérard, isidore, grandville, j. j. [j], grandville, jean-ignace-isidor, granville, jean j., grandville, jean j., gérard, jean ignace isidore, grandville, jean i., grandville, jean ignace isidor]","[1803, 1847]","[os, georg jakob joh., os, georgius, os, georgius jacobus johannes, os, georgius jacobus johannes van, os, georgius van, van os, j.-j.-g.]","[1782, 1861]",0,"googleart_m03hh_z","wga_os, georgius van, (1782-1861)","(3156, 3007)",16
+625,100,"[henri lebasque]","[1865, 1937]","[henri, henri-martin, martin, henri, martin, henri jean guillaume, martin, henri-jean-guillaume]","[1860, 1943]",0,"googleart_m03nx1p1","wga_martin, henri-jean-guillaume, (1860-1943)","(3218, 2186)",4
+626,78,"[master of the llangattock hours]","[1450, 1460]","[master of ávila]","[1400, 1500]",0,"googleart_m0462p74","wga_master of ávila, (1400-1500)","(3291, 2313)",17
+627,78,"[master of the llangattock hours]","[1450, 1460]","[master of 1456]","[1450, 1450]",0,"googleart_m0462p74","wga_master of 1456, (1450-1450)","(3291, 2221)",17
+628,78,"[master of the llangattock hours]","[1450, 1460]","[master of 1416]","[1400, 1500]",0,"googleart_m0462p74","wga_master of 1416, (1400-1500)","(3291, 2220)",17
+629,78,"[friedrich preller the elder]","[1804, 1878]","[loos, friedrich]","[1797, 1890]",0,"googleart_m053_kgt","wga_loos, friedrich, (1797-1890)","(3492, 2069)",6
+630,100,"[vicente juan masip]","[1475, 1579]","[masip, vicente]","[1475, 1550]",1,"googleart_m05l2qk","wga_masip, vicente, (1475-1550)","(3588, 2202)",8
+631,100,"[henri-gabriel ibels]","[1867, 1936]","[henri, henri-martin, martin, henri, martin, henri jean guillaume, martin, henri-jean-guillaume]","[1860, 1943]",0,"googleart_m064mqf3","wga_martin, henri-jean-guillaume, (1860-1943)","(3680, 2186)",43
+632,78,"[henry mosler]","[1841, 1920]","[moret, henry]","[1856, 1913]",0,"googleart_m079fmn","wga_moret, henry, (1856-1913)","(3796, 2862)",9
+633,78,"[pieter de jode ii]","[1606, 1674]","[ring, pieter de]","[1615, 1660]",0,"googleart_m09gkhmx","wga_ring, pieter de, (1615-1660)","(4048, 3380)",337
+634,78,"[jan van call]","[1655, 1703]","[pee, jan van]","[1640, 1710]",0,"googleart_m0ds9dq_","wga_pee, jan van, (1640-1710)","(4328, 3087)",7
+635,100,"[fanny churberg, churberg, fanny maria, churberg, fanny, -y.]","[1845, 1892]","[aranda, luis jimenes, jimenez aranda, luis, jimenez y aranda, luis, jimenez-aranda, luis, jiménez aranda, luis, jiménez y aranda, luis]","[1845, 1928]",0,"googleart_m0g7v0b","wga_jiménez y aranda, luis, (1845-1928)","(4385, 1776)",5
+636,100,"[fanny churberg, churberg, fanny maria, churberg, fanny, -y.]","[1845, 1892]","[rico y ortega, martín]","[1833, 1908]",0,"googleart_m0g7v0b","wga_rico y ortega, martín, (1833-1908)","(4385, 3363)",6
+637,78,"[jean-louis anselin]","[1754, 1823]","[demarne, jean-louis]","[1752, 1829]",0,"googleart_m0gj9jd5","wga_demarne, jean-louis, (1752-1829)","(4407, 988)",5
+638,100,"[adriaan de lelie]","[1755, 1850]","[lelie, adriaan de]","[1755, 1820]",1,"googleart_m0gx2606","wga_lelie, adriaan de, (1755-1820)","(4439, 1975)",21
+639,78,"[master of la seu d'urgell]","[1460, 1499]","[master of ávila]","[1400, 1500]",0,"googleart_m0t503h6","wga_master of ávila, (1400-1500)","(4578, 2313)",5
+640,78,"[master of la seu d'urgell]","[1460, 1499]","[master of 1416]","[1400, 1500]",0,"googleart_m0t503h6","wga_master of 1416, (1400-1500)","(4578, 2220)",5
+641,78,"[master of guillebert de mets]","[1455.0, 1455.0]","[master of ávila]","[1400, 1500]",0,"googleart_m0t5059z","wga_master of ávila, (1400-1500)","(4589, 2313)",8
+642,78,"[master of guillebert de mets]","[1455.0, 1455.0]","[master of 1456]","[1450, 1450]",0,"googleart_m0t5059z","wga_master of 1456, (1450-1450)","(4589, 2221)",8
+643,78,"[master of guillebert de mets]","[1455.0, 1455.0]","[master of 1416]","[1400, 1500]",0,"googleart_m0t5059z","wga_master of 1416, (1400-1500)","(4589, 2220)",8
+644,78,"[master of soriguerola]","[1250.0, 1350.0]","[master of 1310]","[1310, 1310]",0,"googleart_m0t506qs","wga_master of 1310, (1310-1310)","(4603, 2219)",5
+645,78,"[friedrich wilhelm klose]","[1804, 1863]","[loos, friedrich]","[1797, 1890]",0,"googleart_m0t508zx","wga_loos, friedrich, (1797-1890)","(4623, 2069)",5
+646,78,"[master of the jardin de vertueuse consolation and assistant]","[1450, 1475]","[master of ávila]","[1400, 1500]",0,"googleart_m0t509f3","wga_master of ávila, (1400-1500)","(4628, 2313)",17
+647,78,"[master of the jardin de vertueuse consolation and assistant]","[1450, 1475]","[master of 1416]","[1400, 1500]",0,"googleart_m0t509f3","wga_master of 1416, (1400-1500)","(4628, 2220)",17
+648,78,"[master of the jardin de vertueuse consolation and assistant]","[1450, 1475]","[master of 1456]","[1450, 1450]",0,"googleart_m0t509f3","wga_master of 1456, (1450-1450)","(4628, 2221)",17
+649,78,"[master of the lee hours]","[1455.0, 1455.0]","[master of 1416]","[1400, 1500]",0,"googleart_m0t50c8q","wga_master of 1416, (1400-1500)","(4641, 2220)",5
+650,78,"[master of the lee hours]","[1455.0, 1455.0]","[master of 1456]","[1450, 1450]",0,"googleart_m0t50c8q","wga_master of 1456, (1450-1450)","(4641, 2221)",5
+651,78,"[master of the lee hours]","[1455.0, 1455.0]","[master of ávila]","[1400, 1500]",0,"googleart_m0t50c8q","wga_master of ávila, (1400-1500)","(4641, 2313)",5
+652,78,"[master of the cini madonna]","[1310, 1330]","[master of 1310]","[1310, 1310]",0,"googleart_m0t5fpd_","wga_master of 1310, (1310-1310)","(4709, 2219)",4
+653,78,"[master of the brussels initials]","[1404.0, 1404.0]","[master of ávila]","[1400, 1500]",0,"googleart_m0t5fpq4","wga_master of ávila, (1400-1500)","(4712, 2313)",7
+654,78,"[master of the brussels initials]","[1404.0, 1404.0]","[master of 1416]","[1400, 1500]",0,"googleart_m0t5fpq4","wga_master of 1416, (1400-1500)","(4712, 2220)",7
+655,78,"[second master of estopiñán]","[1433, 1466]","[master of ávila]","[1400, 1500]",0,"googleart_m0t5fqyg","wga_master of ávila, (1400-1500)","(4721, 2313)",5
+656,78,"[second master of estopiñán]","[1433, 1466]","[master of 1416]","[1400, 1500]",0,"googleart_m0t5fqyg","wga_master of 1416, (1400-1500)","(4721, 2220)",5
+657,78,"[second master of estopiñán]","[1433, 1466]","[master of 1456]","[1450, 1450]",0,"googleart_m0t5fqyg","wga_master of 1456, (1450-1450)","(4721, 2221)",5
+658,78,"[master of the brussels romuléon]","[1465, 1470.0]","[master of ávila]","[1400, 1500]",0,"googleart_m0vnn9m2","wga_master of ávila, (1400-1500)","(4765, 2313)",24
+659,78,"[master of the brussels romuléon]","[1465, 1470.0]","[master of 1416]","[1400, 1500]",0,"googleart_m0vnn9m2","wga_master of 1416, (1400-1500)","(4765, 2220)",24
+660,78,"[thomas ayres, ayres, thomas almond, ayres, thomas a.]","[1816, 1858]","[boys, t., boys, thomas, boys, thomas shotter]","[1803, 1874]",0,"googleart_m0zbvb1s","wga_boys, thomas shotter, (1803-1874)","(4889, 471)",8
+661,78,"[joachim wtewael, joachim anthonisz wtewael (uytewael)]","[1566, 1638]","[anthonisz, aert]","[1579, 1620]",0,"wiki_joachim-wtewael","wga_anthonisz, aert, (1579-1620)","(82, 1180)",54
+662,78,"[gerrit adriaenszoon berckheyde]","[1638, 1698]","[berckheyde, job adriaensz]","[1630, 1693]",0,"googleart_m02w7_ts","wga_berckheyde, job adriaensz, (1630-1693)","(284, 2915)",21
+663,78,"[pieter codde]","[1599, 1678]","[boel, pieter]","[1622, 1674]",0,"googleart_m02wvxkn","wga_boel, pieter, (1622-1674)","(378, 2928)",13
+664,80,"[abraham bloemaert]","[1564, 1651]","[bosschaert, abraham]","[1612, 1643]",0,"googleart_m03fz_9","wga_bosschaert, abraham, (1612-1643)","(431, 3125)",108
+665,78,"[jan de bray]","[1627, 1697]","[bray, dirck de]","[1651, 1678]",0,"googleart_m09pmd3","wga_bray, dirck de, (1651-1678)","(487, 4071)",29
+666,78,"[jan de bray]","[1627, 1697]","[bray, joseph de]","[1628, 1664]",0,"googleart_m09pmd3","wga_bray, joseph de, (1628-1664)","(489, 4071)",30
+667,78,"[adam van breen]","[1585, 1640]","[breen, gillis van]","[1595, 1622]",0,"googleart_m0t50c06","wga_breen, gillis van, (1595-1622)","(496, 4637)",67
+668,78,"[francisco rizi]","[1608, 1685]","[camilo, francisco]","[1615, 1673]",0,"googleart_m03c5y7v","wga_camilo, francisco, (1615-1673)","(606, 3015)",8
+669,78,"[dirck van delen]","[1605, 1671]","[cats, dirck van]","[1607, 1632]",0,"googleart_m07s7sps","wga_cats, dirck van, (1607-1632)","(694, 3870)",12
+670,79,"[abraham van beijeren]","[1620, 1690]","[dijck, abraham van]","[1635, 1672]",0,"googleart_m0g6mr3","wga_dijck, abraham van, (1635-1672)","(1017, 4383)",11
+671,81,"[giovanni battista zelotti]","[1526, 1578]","[fontana, giovanni battista]","[1524, 1587]",0,"googleart_m027y_z5","wga_fontana, giovanni battista, (1524-1587)","(1228, 2728)",16
+672,78,"[jacob van hulsdonck]","[1582, 1647]","[geel, jacob van]","[1585, 1638]",0,"googleart_m0hhvd5q","wga_geel, jacob van, (1585-1638)","(1345, 4494)",4
+673,84,"[henri-martin, martin, henri, henri, martin, henri jean guillaume, henri-jean guillaume martin, henri martin, martin, henri-jean-guillaume]","[1860, 1943]","[gervex, henri]","[1852, 1929]",0,"wiki_henri-martin","wga_gervex, henri, (1852-1929)","(1362, 950)",412
+674,78,"[matteo di giovanni]","[1430, 1495]","[alamagna, giovanni de, alamanus, johanes, alamanus, zoanne, alemagna, giovanni d', alemagna, giovanni de, giovanni d'alemagna, giovanni da murano, giovanni tedesco, giovanni teutonico, giovanni todesco, iohannes de alemania, iohannes de muriano, johannes de ulma, maistro zuhane tedesco, zuane da murano, zuane de muriano, zuanne todesco johannes de alemanea quondam johannis]","[1440, 1450]",0,"googleart_m05m__qz","wga_giovanni d'alemagna, (1441-1450)","(1414, 3592)",8
+675,79,"[matteo di giovanni]","[1430, 1495]","[giovanni di piamonte]","[1456, 1472]",0,"googleart_m05m__qz","wga_giovanni di piamonte, (1456-1472)","(1428, 3592)",13
+676,78,"[francisco rizi]","[1608, 1685]","[gutiérrez cabello, francisco]","[1616, 1670]",0,"googleart_m03c5y7v","wga_gutiérrez cabello, francisco, (1616-1670)","(1537, 3015)",9
+677,78,"[francisco rizi]","[1608, 1685]","[herrera, francisco de, the younger]","[1622, 1685]",0,"googleart_m03c5y7v","wga_herrera, francisco de, the younger, (1622-1685)","(1631, 3015)",7
+678,78,"[cornelius, peter von, cornelius, peter joseph von, cornelius, peter, cornelius, peter joseph, peter von cornelius, cornelius, joseph]","[1783, 1867]","[hess, peter von]","[1792, 1871]",0,"googleart_m03jst5","wga_hess, peter von, (1792-1871)","(1638, 3171)",10
+679,78,"[gustave doré, paul gustave doré, gustave dore]","[1832, 1883]","[jonghe, gustave léonard de]","[1829, 1893]",0,"wiki_gustave-dore","wga_jonghe, gustave léonard de, (1829-1893)","(1785, 888)",780
+680,79,"[jean-baptiste greuze]","[1725, 1809]","[lallemand, jean-baptiste]","[1716, 1803]",0,"googleart_m02yd1s","wga_lallemand, jean-baptiste, (1716-1803)","(1903, 1123)",59
+681,78,"[gustave doré, paul gustave doré, gustave dore]","[1832, 1883]","[lassalle-bordes, gustave]","[1814, 1886]",0,"wiki_gustave-dore","wga_lassalle-bordes, gustave, (1814-1886)","(1931, 888)",780
+682,78,"[fries, e., fries, adam friedrich carl ernst, ernst fries, fries, ernst]","[1801, 1833]","[loos, friedrich]","[1797, 1890]",0,"googleart_m0h1g7lb","wga_loos, friedrich, (1797-1890)","(2069, 4461)",12
+683,78,"[friedrich von amerling]","[1803, 1887]","[loos, friedrich]","[1797, 1890]",0,"googleart_m04f89v","wga_loos, friedrich, (1797-1890)","(2069, 3359)",6
+684,78,"[karl friedrich lessing]","[1808, 1880]","[loos, friedrich]","[1797, 1890]",0,"googleart_m0kszhd","wga_loos, friedrich, (1797-1890)","(2069, 4524)",7
+685,79,"[jean-baptiste jacques augustin]","[1759, 1832]","[mallet, jean-baptiste]","[1759, 1835]",0,"googleart_m0fgr44","wga_mallet, jean-baptiste, (1759-1835)","(2139, 4348)",12
+686,78,"[jean hey, master of moulins]","[1475, 1500]","[master of 1416]","[1400, 1500]",0,"wiki_jean-hey","wga_master of 1416, (1400-1500)","(2220, 1140)",23
+687,78,"[master of saint veronica]","[1410.0, 1410.0]","[master of 1416]","[1400, 1500]",0,"googleart_m010glghg","wga_master of 1416, (1400-1500)","(2220, 2458)",7
+688,78,"[robert campin, master of flémalle]","[1375, 1470.0]","[master of 1456]","[1450, 1450]",0,"wiki_robert-campin","wga_master of 1456, (1450-1450)","(2221, 1971)",46
+689,78,"[jean hey, master of moulins]","[1475, 1500]","[master of ávila]","[1400, 1500]",0,"wiki_jean-hey","wga_master of ávila, (1400-1500)","(2313, 1140)",23
+690,78,"[master of saint veronica]","[1410.0, 1410.0]","[master of ávila]","[1400, 1500]",0,"googleart_m010glghg","wga_master of ávila, (1400-1500)","(2313, 2458)",7
+691,78,"[joos de momper]","[1564, 1635]","[momper, philips de, i]","[1598, 1634]",0,"googleart_m027whwf","wga_momper, philips de, i, (1598-1634)","(2834, 2721)",6
+692,78,"[jan van der heyden]","[1637, 1712]","[pee, jan van]","[1640, 1710]",0,"googleart_m05g5_1","wga_pee, jan van, (1640-1710)","(3087, 3566)",54
+693,78,"[sano di pietro]","[1406, 1481]","[pietro di domenico da montepulciano]","[1418, 1422]",0,"googleart_m0d5zcd","wga_pietro di domenico da montepulciano, (1418-1422)","(3161, 4293)",13
+694,79,"[giovanni di paolo]","[1395, 1482]","[ambrogio, pietro di giovanni, ambrosi, pietro di giovanni, giovanni di pietro d'ambrogio, pietro di giovann d' ambrogio, pietro di giovanni d'ambrogio, pietro di giovanni di ambrogio, pietro di giovanni pucci]","[1410, 1449]",0,"googleart_m08rv2l","wga_pietro di giovanni d'ambrogio, (1410-1449)","(3163, 3984)",26
+695,81,"[giovanni battista zelotti]","[1526, 1578]","[pittoni, giovanni battista, the elder]","[1520, 1585]",0,"googleart_m027y_z5","wga_pittoni, giovanni battista, the elder, (1520-1585)","(3181, 2728)",15
+696,82.17,"[pieter jansz. saenredam]","[1597, 1665]","[post, pieter jansz]","[1608, 1669]",0,"googleart_m06dy7j","wga_post, pieter jansz, (1608-1669)","(3219, 3709)",88
+697,78,"[gabriel de saint-aubin]","[1724, 1780]","[saint-aubin, charles-germain de]","[1721, 1786]",0,"googleart_m051hztq","wga_saint-aubin, charles-germain de, (1721-1786)","(3539, 3472)",45
+698,78,"[francisco rizi]","[1608, 1685]","[solís, francisco de]","[1620, 1684]",0,"googleart_m03c5y7v","wga_solís, francisco de, (1620-1684)","(3725, 3015)",6
+699,79,"[jean-baptiste greuze]","[1725, 1809]","[séroux d'agincourt, jean-baptiste]","[1730, 1814]",0,"googleart_m02yd1s","wga_séroux d'agincourt, jean-baptiste, (1730-1814)","(3826, 1123)",57
+700,78,"[alessandro allori]","[1535, 1607]","[vittoria, alessandro]","[1525, 1608]",0,"googleart_m0rvt","wga_vittoria, alessandro, (1525-1608)","(4398, 4552)",14
+701,78,"[marrel, jakob (d. j.), marell, jakob, marrellus, jakob, jacob marrel, marsell, jakob, murel, jacob, morrel, jakob, marrel, jacob, marrellus, jacob, marzell, jacob, moral, jacob, morrel, jacob, marrel, jakob, morsel, jacob, marzell, jakob, moreel, jacob, marrell, jacob]","[1614, 1681]","[vrel, jacobus]","[1550.0, 1700.0]",0,"googleart_m07k7rkf","wga_vrel, jacobus, (1654-1654)","(4434, 3835)",12
+702,78,"[ambrogio, pietro di giovanni, ambrosi, pietro di giovanni, giovanni di pietro d'ambrogio, pietro di giovann d' ambrogio, pietro di giovanni d'ambrogio, pietro di giovanni di ambrogio, pietro di giovanni pucci]","[1410, 1449]","[sano di pietro]","[1406, 1481]","False","googleart_m0d5zcd","wga_pietro di giovanni d'ambrogio, (1410-1449)",,
+,,,,,,1,"googleart_m074t70","wga_maris, jacobus hendricus, (1837-1899)",,
+,,,,,,1,"googleart_m03fs2x","wga_mor van dashorst, anthonis, (1516-1576)",,
