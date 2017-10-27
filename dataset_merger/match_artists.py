@@ -194,7 +194,7 @@ def fix_sim_matrix(dataset_names, dfs_to_merge, sim_matrix, manually_checked_df)
                 indices[i] = found[0]
             else:
                 indices[i] = None
-                print u'Not found {}: :{}:'.format(dataset_names[i], ids[i])
+                # print u'Not found {}: :{}:'.format(dataset_names[i], ids[i])
         if indices[0] is not None and indices[1] is not None:
             new_sim_value = row['is_same'] * (101 + int(row['score'] >= 100))
             sim_matrix[indices[0], indices[1]] = new_sim_value
