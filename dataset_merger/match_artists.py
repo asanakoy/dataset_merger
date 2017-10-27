@@ -13,6 +13,7 @@ import multiprocessing
 import make_data.dataset
 import wikiart.info.preprocess_info
 from art_utils.pandas_tools import is_null_object
+from art_utils.text_tools import parse_bool
 from art_utils.joblib_wrapper import ParallelTqdm, delayed
 from art_utils.text_tools import extract_all_years
 import dataset_merger.read_datasets
@@ -126,15 +127,21 @@ def compute_sim_for_row(row_a, ns, num_cols):
     names_a = row_a.artist_names
     years_range_a = row_a.years_range
     for j, row_b in enumerate(artists_df_b.itertuples()):
-        if hasattr(row_a, 'url_wiki') and hasattr(row_b, 'url_wiki') and \
+        if hasattr(row_a, 'wikidata_qid') and hasattr(row_b, 'wikidata_qid') and \
+                not is_null_object(row_a.wikidata_qid) and not is_null_object(row_b.wikidata_qid):
+            cur_sim[j] = (row_a.wikidata_qid.strip().lower() == row_b.wikidata_qid.strip().lower()) * 101
+        elif hasattr(row_a, 'url_wiki') and hasattr(row_b, 'url_wiki') and \
                 not is_null_object(row_a.url_wiki) and not is_null_object(row_b.url_wiki) and \
                 'wikipedia.org' in row_a.url_wiki and \
                 'wikipedia.org' in row_b.url_wiki:
             cur_sim[j] = get_sim_urls_wiki(row_a.url_wiki, row_b.url_wiki)
+        elif hasattr(row_a, 'artist_id_degruyter') and hasattr(row_b, 'artist_id_degruyter') and \
+                not is_null_object(row_a.url_wiki) and not is_null_object(row_b.url_wiki):
+            cur_sim[j] = (row_a.artist_id_degruyter == row_b.artist_id_degruyter) * 101
         else:
             names_b = row_b.artist_names
             years_range_b = row_b.years_range
-            years_sim = get_years_range_sim(years_range_a, years_range_b, max_dist=0)
+            years_sim = get_years_range_sim(years_range_a, years_range_b, max_dist=-1)
             names_sim = get_names_sim(names_a, names_b)
             cur_sim[j] = years_sim * names_sim
     return cur_sim
@@ -146,7 +153,7 @@ def compute_sim_matrix(keys, artists_with_years_dict, n_jobs=1):
     num_cols = len(second_df)
     if 'url_wiki' not in second_df:
         second_df['url_wiki'] = np.nan
-    second_df = second_df[['artist_names', 'years_range', 'url_wiki']]
+    second_df = second_df[['artist_names', 'years_range', 'url_wiki', 'artist_id_degruyter', 'wikidata_qid']]
 
     # create a manager to share dataframe across the processes
     mgr = multiprocessing.Manager()
@@ -207,20 +214,6 @@ def get_num_top_matches(sims, min_sim=0):
             else:
                 break
     return k
-
-
-def parse_bool(value):
-    if isinstance(value, basestring):
-        value = value.lower()
-    try:
-        return bool(int(value))
-    except:
-        if value == 'true':
-            return True
-        elif value == 'false':
-            return False
-        else:
-            raise ValueError('canot convert to bool: {}'.format(value))
 
 
 def generate_matches_for_manual_check(dataset_names, dfs_to_merge, sim, min_sim=85, max_sim=100,
@@ -329,7 +322,7 @@ def combine_artists(objects_list):
     map(lambda x: new_keys.update(x), [x.keys() for x in objects_list])
     new_keys -= {'artist_slug', 'total_items_count', 'artist_id'}
     for key in new_keys:
-        if key in ['artist_name', 'url_wiki']:
+        if key in ['artist_name', 'url_wiki', 'artist_id_degruyter', 'wikidata_qid']:
             new_object[key] = combine_objects.take_first(objects_list, key)
         elif key in ['years']:
             new_object[key] = combine_objects.take_union(objects_list, key, take_group_works=False)
