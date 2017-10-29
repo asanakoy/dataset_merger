@@ -9,6 +9,7 @@ import pandas as pd
 import regex as re
 import urllib
 import multiprocessing
+from sklearn.utils import gen_even_slices
 
 import make_data.dataset
 import wikiart.info.preprocess_info
@@ -37,12 +38,12 @@ def get_years_range_sim(range_a, range_b, is_bio=False, max_dist=85.0, max_delta
     Returns: similarity score from 0 to 1.0
 
     """
-    range_a, range_b = list(range_a), list(range_b)
     if (np.isnan(range_a[0]) or np.isnan(range_b[0])) and \
             (np.isnan(range_a[1]) or np.isnan(range_b[1])):
         raise ValueError('Cannot compare 2 ranges with nans: {}, {}'.format(range_a, range_b))
 
     if allow_second_range_with_nan:
+        range_a, range_b = list(range_a), list(range_b)
         if np.isnan(range_b[0]):
             assert not np.isnan(range_b[1]), 'one of the dates must be not none!'
             range_b[0] = range_a[0]
@@ -56,10 +57,12 @@ def get_years_range_sim(range_a, range_b, is_bio=False, max_dist=85.0, max_delta
                 return 0
             max_dist = 0
 
+    assert isinstance(range_a, list) and isinstance(range_b, list)
     ranges = [range_a, range_b]
     ranges.sort()
     for i in xrange(2):
         ranges[i] = np.asarray(ranges[i], dtype=float)
+    assert np.all(np.isfinite(ranges)), ranges
 
     if bio_range is not None:
         max_dist = 0  # disable if we have bio
@@ -142,12 +145,22 @@ def compute_sim_for_row(row_a, ns, num_cols):
             names_b = row_b.artist_names
             years_range_b = row_b.years_range
             years_sim = get_years_range_sim(years_range_a, years_range_b, max_dist=-1)
-            names_sim = get_names_sim(names_a, names_b)
-            cur_sim[j] = years_sim * names_sim
+            if years_sim < 0.5:
+                cur_sim[j] = years_sim * 0.9
+            else:
+                names_sim = get_names_sim(names_a, names_b)
+                cur_sim[j] = years_sim * names_sim
     return cur_sim
 
 
-def compute_sim_matrix(keys, artists_with_years_dict, n_jobs=1):
+def compute_sim_for_block(rows, ns, num_cols):
+    sim_rows = np.zeros((len(rows), num_cols), dtype=np.float32)
+    for i, row in enumerate(rows.iterrows()):
+        sim_rows[i] = compute_sim_for_row(row[1], ns, num_cols)
+    return sim_rows
+
+
+def compute_sim_matrix(keys, artists_with_years_dict, n_jobs=1, num_blocks=None):
     assert len(keys) == 2, keys
     second_df = artists_with_years_dict[keys[1]].copy()
     num_cols = len(second_df)
@@ -168,10 +181,19 @@ def compute_sim_matrix(keys, artists_with_years_dict, n_jobs=1):
             sim_matrix[i, :] = compute_sim_for_row(row_a, ns, num_cols)
     else:
         num_rows = len(artists_with_years_dict[keys[0]])
-        print 'Num taks: {}'.format(num_rows)
-        sim_rows = ParallelTqdm(n_jobs=n_jobs, max_nbytes=512, verbose=8)(total=num_rows)\
-            (delayed(compute_sim_for_row)(row_a[1], ns, num_cols)
-             for row_a in artists_with_years_dict[keys[0]].iterrows())
+        if num_blocks is None:
+            print 'Num tasks: {}'.format(num_rows)
+            sim_rows = ParallelTqdm(n_jobs=n_jobs, max_nbytes=512, verbose=8)(total=num_rows)\
+                (delayed(compute_sim_for_row)(row_a[1], ns, num_cols)
+                 for row_a in artists_with_years_dict[keys[0]].iterrows())
+        else:
+            first_df = artists_with_years_dict[keys[0]]
+            print 'Num tasks: {}'.format(num_blocks)
+            assert num_blocks >= n_jobs
+            slices = gen_even_slices(len(first_df), num_blocks)
+            sim_rows = ParallelTqdm(n_jobs=n_jobs, max_nbytes=512, verbose=35)(total=num_blocks) \
+                (delayed(compute_sim_for_block)(first_df.iloc[s], ns, num_cols) for s in slices)
+
         sim_matrix = np.vstack(sim_rows)
     return sim_matrix
 
