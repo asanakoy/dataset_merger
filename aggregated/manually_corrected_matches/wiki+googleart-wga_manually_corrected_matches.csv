@@ -1,4 +1,4 @@
-,"score","names_wiki+googleart","dates_wiki+googleart","names_wga","dates_wga","is_same","artist_id_wiki+googleart","artist_id_wga","idx",
+,"score","names_wiki+googleart","dates_wiki+googleart","names_wga","dates_wga","is_same","artist_id_wiki+googleart","artist_id_wga","idx","Unnamed: 10"
 0,100,"[caravaggio, michelangelo merisi da caravaggio]","[1571, 1610]","[cecco del caravaggio]","[1610.0, 1650.0]",0,"googleart_m020bg","wga_cecco del caravaggio, (1610-1610)","(300, 721)",
 1,100,"[ambrosius bosschaert, ambrosius bosschaerts the elder]","[1573, 1621]","[bosschaert, ambrosius the younger]","[1609, 1645]",0,"googleart_m0zxv","wga_bosschaert, ambrosius the younger, (1609-1645)","(5062, 440)",
 2,100,"[corrado giaquinto]","[1703, 1765]","[giaquinto, corrado]","[1703, 1766]",1,"googleart_m059k72","wga_giaquinto, corrado, (1703-1766)","(3527, 1410)",
@@ -629,7 +629,7 @@
 627,78,"[master of the llangattock hours]","[1450, 1460]","[master of 1456]","[1450, 1450]",0,"googleart_m0462p74","wga_master of 1456, (1450-1450)","(3291, 2221)",17
 628,78,"[master of the llangattock hours]","[1450, 1460]","[master of 1416]","[1400, 1500]",0,"googleart_m0462p74","wga_master of 1416, (1400-1500)","(3291, 2220)",17
 629,78,"[friedrich preller the elder]","[1804, 1878]","[loos, friedrich]","[1797, 1890]",0,"googleart_m053_kgt","wga_loos, friedrich, (1797-1890)","(3492, 2069)",6
-630,100,"[vicente juan masip]","[1475, 1579]","[masip, vicente]","[1475, 1550]",1,"googleart_m05l2qk","wga_masip, vicente, (1475-1550)","(3588, 2202)",8
+630,100,"[vicente juan masip]","[1475, 1579]","[masip, vicente]","[1475, 1550]",0,"googleart_m05l2qk","wga_masip, vicente, (1475-1550)","(3588, 2202)",8
 631,100,"[henri-gabriel ibels]","[1867, 1936]","[henri, henri-martin, martin, henri, martin, henri jean guillaume, martin, henri-jean-guillaume]","[1860, 1943]",0,"googleart_m064mqf3","wga_martin, henri-jean-guillaume, (1860-1943)","(3680, 2186)",43
 632,78,"[henry mosler]","[1841, 1920]","[moret, henry]","[1856, 1913]",0,"googleart_m079fmn","wga_moret, henry, (1856-1913)","(3796, 2862)",9
 633,78,"[pieter de jode ii]","[1606, 1674]","[ring, pieter de]","[1615, 1660]",0,"googleart_m09gkhmx","wga_ring, pieter de, (1615-1660)","(4048, 3380)",337
@@ -702,5 +702,15 @@
 700,78,"[alessandro allori]","[1535, 1607]","[vittoria, alessandro]","[1525, 1608]",0,"googleart_m0rvt","wga_vittoria, alessandro, (1525-1608)","(4398, 4552)",14
 701,78,"[marrel, jakob (d. j.), marell, jakob, marrellus, jakob, jacob marrel, marsell, jakob, murel, jacob, morrel, jakob, marrel, jacob, marrellus, jacob, marzell, jacob, moral, jacob, morrel, jacob, marrel, jakob, morsel, jacob, marzell, jakob, moreel, jacob, marrell, jacob]","[1614, 1681]","[vrel, jacobus]","[1550.0, 1700.0]",0,"googleart_m07k7rkf","wga_vrel, jacobus, (1654-1654)","(4434, 3835)",12
 702,78,"[ambrogio, pietro di giovanni, ambrosi, pietro di giovanni, giovanni di pietro d'ambrogio, pietro di giovann d' ambrogio, pietro di giovanni d'ambrogio, pietro di giovanni di ambrogio, pietro di giovanni pucci]","[1410, 1449]","[sano di pietro]","[1406, 1481]","False","googleart_m0d5zcd","wga_pietro di giovanni d'ambrogio, (1410-1449)",,
-,,,,,,1,"googleart_m074t70","wga_maris, jacobus hendricus, (1837-1899)",,
-,,,,,,1,"googleart_m03fs2x","wga_mor van dashorst, anthonis, (1516-1576)",,
+703,79,,,,,1,"googleart_m074t70","wga_maris, jacobus hendricus, (1837-1899)",,
+704,80,,,,,1,"googleart_m03fs2x","wga_mor van dashorst, anthonis, (1516-1576)",,
+705,81,,,,,1,"googleart_m04l4pt","wga_francia, francesco, (1450-1517)",,
+706,82,,,,,1,"googleart_m08hxhy","wga_sassetta, (1394-1450)",,
+707,82,,,,,1,"googleart_m05l2qk","wga_juanes, juan de, (1523-1579)",,
+708,100,,,,,1,"googleart_m071ksm","wga_carducho, vicente, (1576-1638)",,
+709,101,,,,,0,"googleart_m0547qv","wga_harnett, william michael, (1848-1892)",,
+710,102,,,,,0,"googleart_m05c04_2","wga_bosio, jean françois, (1764-1827)",,
+711,103,,,,,1,"googleart_m0t502l_","wga_meifrén y roig, eliseo, (1859-1940)",,
+712,104,,,,,0,"wiki_piero-di-cosimo","wga_fiorenzo di lorenzo, (1445-1522)",,
+713,105,,,,,0,"googleart_m08hxhy","wga_giovanni dal ponte, (1385-1438)",,
+714,106,,,,,0,"googleart_m02w897m","wga_hals, frans ii, (1618-1669)",,

@@ -121,7 +121,7 @@
 124,97,"[régnier, nicolas, nicolas régnier]","[1591, 1667]","[regnier, nicolas]","[1626.0, 1626.0]",1,"wga_régnier, nicolas, (1591-1667)","meisterwerke_regnier, nicolas","(2725, 1688)",15,"[35.0, 41.0]"
 125,97,"[walter gramatté]","[1897, 1929]","[gramatte, walter]","[1916.0, 1928.0]",1,"googleart_m02qkld0","meisterwerke_gramatte, walter","(2761, 689)",71,"[19.0, 1.0]"
 126,86,"[herri met de bles, bles, herri met de]","[1510, 1550]","[bles, hendrick met de]","[1550.0, 1550.0]",1,"wga_bles, herri met de, (1510-1550)","meisterwerke_bles, hendrick met de","(2800, 179)",16,"[40.0, 0.0]"
-127,90,"[willem van de velde the younger, velde, willem van de, the younger]","[1633, 1707]","[velde d. j., willem van de]","[1650.0, 1650.0]",0,"googleart_m02r706","meisterwerke_velde d. j., willem van de","(2807, 2034)",95,"[17.0, 57.0]"
+127,90,"[willem van de velde the younger, velde, willem van de, the younger]","[1633, 1707]","[velde d. j., willem van de]","[1650.0, 1650.0]",1,"googleart_m02r706","meisterwerke_velde d. j., willem van de","(2807, 2034)",95,"[17.0, 57.0]"
 128,87,"[heintz, joseph the elder, joseph heintz the elder]","[1564, 1609]","[heintz d. a., joseph]","[1594.0, 1600.0]",1,"wga_heintz, joseph the elder, (1564-1609)","meisterwerke_heintz d. a., joseph","(2817, 752)",12,"[30.0, 9.0]"
 129,98,"[jean-françois pierre peyron, peyron, jean-françois-pierre]","[1744, 1814]","[peyron, jean-francois-pierre]","[1802.0, 1802.0]",1,"googleart_m02rs5s7","meisterwerke_peyron, jean-francois-pierre","(2824, 1593)",13,"[58.0, 12.0]"
 130,95,"[gerrit adriaenszoon berckheyde]","[1638, 1698]","[berckheyde, gerrit adriaensz]","[1650.0, 1696.0]",1,"googleart_m02w7_ts","meisterwerke_berckheyde, gerrit adriaensz","(2860, 150)",22,"[12.0, 2.0]"
@@ -556,7 +556,7 @@
 559,100,"[marieschi, michele, michele marieschi]","[1710, 1743]","[marieschi, michele]","[1732.0, 1750.0]",1,"wga_marieschi, michele, (1710-1743)","meisterwerke_marieschi, michele","(2569, 1162)",30,"[22.0, 7.0]"
 560,100,"[schiavone, andrea, andrea schiavone]","[1510, 1573.0]","[schiavone, andrea]","[1563.0, 1563.0]",1,"googleart_m026vqy0","meisterwerke_schiavone, andrea","(2588, 1806)",17,"[53.0, 10.0]"
 561,100,"[barbari, jacopo de', jacopo de' barbari]","[1445, 1516]","[barbari, jacopo de']","[1504.0, 1504.0]",1,"wga_barbari, jacopo de', (1445-1516)","meisterwerke_barbari, jacopo de'","(2592, 107)",59,"[59.0, 12.0]"
-562,100,"[sustris, lambert, lambert sustris]","[1515, 1584]","[sustris, lambert]","[1591.0, 1591.0]",0,"wga_sustris, lambert, (1515-1560)","meisterwerke_sustris, lambert","(2609, 1923)",26,"[76.0, 7.0]"
+562,100,"[sustris, lambert, lambert sustris]","[1515, 1584]","[sustris, lambert]","[1591.0, 1591.0]",1,"wga_sustris, lambert, (1515-1560)","meisterwerke_sustris, lambert","(2609, 1923)",26,"[76.0, 7.0]"
 563,100,"[alberti, cherubino, cherubino alberti]","[1553, 1615]","[alberti, cherubino]","[1550.0, 1550.0]",1,"googleart_m027695k","meisterwerke_alberti, cherubino","(2615, 26)",37,"[3.0, 65.0]"
 564,100,"[alexander roslin, roslin, alexander]","[1718, 1793]","[roslin, alexander]","[1768.0, 1768.0]",1,"wga_roslin, alexander, (1718-1793)","meisterwerke_roslin, alexander","(2618, 1751)",15,"[50.0, 25.0]"
 565,100,"[fabritius, barent, barent fabritius]","[1624, 1673]","[fabritius, barent]","[1650.0, 1650.0]",1,"googleart_m0279z24","meisterwerke_fabritius, barent","(2621, 538)",13,"[26.0, 23.0]"
@@ -733,7 +733,6 @@
 736,100,"[hodges, william, william hodges]","[1744, 1797]","[hodges, william]","[1775.0, 1775.0]",1,"googleart_m0756v3","meisterwerke_hodges, william","(3801, 781)",17,"[31.0, 22.0]"
 737,100,"[castiglione, giovanni benedetto, giovanni benedetto castiglione]","[1609, 1664]","[castiglione, giovanni benedetto]","[1650.0, 1655.0]",1,"wga_castiglione, giovanni benedetto, (1609-1664)","meisterwerke_castiglione, giovanni benedetto","(3813, 313)",119,"[41.0, 9.0]"
 738,100,"[both, jan, jan dirksz both]","[1610, 1652]","[both, jan]","[1650.0, 1650.0]",1,"googleart_m07_m2d","meisterwerke_both, jan","(3825, 218)",98,"[40.0, 2.0]"
-739,100,"[otto mueller]","[1874, 1930]","[mueller, otto]","[1903.0, 1950.0]",0,"googleart_m07dlfs","meisterwerke_mueller, otto","(3833, 1484)",69,"[29.0, 20.0]"
 740,100,"[rottmann, carl, carl rottmann]","[1797, 1850]","[rottmann, carl anton joseph]","[1822.0, 1847.0]",1,"googleart_m07g6xv","meisterwerke_rottmann, carl anton joseph","(3839, 1756)",14,"[25.0, 3.0]"
 741,100,"[peter rindisbacher]","[1806, 1834]","[rindisbacher, peter]","[1821.0, 1834.0]",1,"googleart_m07gw4g","meisterwerke_rindisbacher, peter","(3842, 1721)",33,"[15.0, 0.0]"
 742,100,"[lastman, pieter pietersz., pieter lastman]","[1583, 1633]","[lastman, pieter pietersz.]","[1612.0, 1625.0]",1,"googleart_m07hgdr","meisterwerke_lastman, pieter pietersz.","(3846, 1024)",30,"[29.0, 8.0]"
@@ -778,7 +777,7 @@
 781,100,"[roelant savery]","[1576, 1639]","[savery, roelant]","[1612.0, 1624.0]",1,"googleart_m0blpx1","meisterwerke_savery, roelant","(4221, 1793)",42,"[36.0, 15.0]"
 782,100,"[pater, jean baptiste joseph, jean-baptiste pater]","[1695, 1736]","[pater, jean-baptiste]","[1730.0, 1735.0]",1,"googleart_m0bx6qs","meisterwerke_pater, jean-baptiste","(4250, 1567)",32,"[35.0, 1.0]"
 783,100,"[chodowiecki, daniel nikolaus, daniel chodowiecki]","[1726, 1801]","[chodowiecki, daniel nikolaus]","[1770.0, 1770.0]",1,"wga_chodowiecki, daniel nikolaus, (1726-1801)","meisterwerke_chodowiecki, daniel nikolaus","(4257, 362)",526,"[44.0, 31.0]"
-784,100,"[bernardo daddi, daddi, bernardo]","[1280, 1348]","[daddi, bernardo]","[1345.0, 1350.0]",0,"googleart_m0cfcd3","meisterwerke_daddi, bernardo","(4290, 435)",54,"[65.0, 2.0]"
+784,100,"[bernardo daddi, daddi, bernardo]","[1280, 1348]","[daddi, bernardo]","[1345.0, 1350.0]",1,"googleart_m0cfcd3","meisterwerke_daddi, bernardo","(4290, 435)",54,"[65.0, 2.0]"
 785,100,"[aert de gelder, gelder, aert de]","[1645, 1727]","[gelder, aert de]","[1650.0, 1702.0]",1,"wga_gelder, aert de, (1645-1727)","meisterwerke_gelder, aert de","(4299, 638)",32,"[5.0, 25.0]"
 786,100,"[valentin de boulogne]","[1591, 1632]","[boulogne, valentin de]","[1629.0, 1630.0]",1,"wga_valentin de boulogne, (1591-1632)","meisterwerke_boulogne, valentin de","(4332, 222)",33,"[38.0, 2.0]"
 787,100,"[piazzetta, giovanni battista, giovanni battista piazzetta]","[1682, 1754]","[piazzetta, giovanni battista]","[1750.0, 1750.0]",1,"wga_piazzetta, giovanni battista, (1682-1754)","meisterwerke_piazzetta, giovanni battista","(4345, 1600)",62,"[68.0, 4.0]"
@@ -859,7 +858,6 @@
 863,100,"[roos, philipp peter]","[1657, 1706]","[roos, philipp peter]","[1692.0, 1700.0]",1,"wga_roos, philipp peter, (1657-1706)","meisterwerke_roos, philipp peter","(8516, 1746)",12,"[35.0, 6.0]"
 864,100,"[rosselli, francesco]","[1445, 1513]","[rosselli, francesco]","[1480.0, 1481.0]",1,"wga_rosselli, francesco, (1445-1513)","meisterwerke_rosselli, francesco","(8522, 1752)",11,"[35.0, 32.0]"
 865,100,"[sanchez coello, alonso]","[1531, 1588]","[sanchez coello, alonso]","[1570.0, 1570.0]",1,"wga_sanchez coello, alonso, (1531-1588)","meisterwerke_sanchez coello, alonso","(8577, 1783)",10,"[39.0, 18.0]"
-866,100,"[sassetta]","[1394, 1450]","[sassetta]","[1436.0, 1450.0]",1,"wga_sassetta, (1394-1450)","meisterwerke_sassetta","(8594, 1792)",36,"[42.0, 0.0]"
 867,100,"[tischbein, johann friedrich august]","[1750, 1812]","[tischbein, johann friedrich august]","[1791.0, 1802.0]",1,"wga_tischbein, johann friedrich august, (1750-1812)","meisterwerke_tischbein, johann friedrich august","(8796, 1968)",10,"[41.0, 10.0]"
 868,100,"[ugolino di nerio]","[1317, 1339]","[nerio, ugolino di]","[1327.0, 1327.0]",1,"wga_ugolino di nerio, (1317-1339)","meisterwerke_nerio, ugolino di","(8840, 1501)",31,"[10.0, 12.0]"
 869,100,"[veit, philipp]","[1793, 1877]","[veit, philipp]","[1817.0, 1836.0]",1,"wga_veit, philipp, (1793-1877)","meisterwerke_veit, philipp","(9183, 2032)",10,"[24.0, 41.0]"
@@ -1306,7 +1304,7 @@
 1311,82,"[fasolo, giovanni antonio]","[1530, 1572]","[varese, giovanni antonio da]","[1550.0, 1550.0]","False","wga_fasolo, giovanni antonio, (1530-1572)","meisterwerke_varese, giovanni antonio da",,,
 1312,83,"[mol, pieter van]","[1599, 1650]","[avont, pieter van]","[1650.0, 1650.0]","False","wga_mol, pieter van, (1599-1650)","meisterwerke_avont, pieter van",,,
 1313,81,"[preyer, johann wilhelm]","[1803, 1889]","[cordes, johann wilhelm]","[1850.0, 1850.0]","False","wga_preyer, johann wilhelm, (1803-1889)","meisterwerke_cordes, johann wilhelm",,,
-1314,86,"[tischbein, johann heinrich the younger]","[1742, 1808]","[tischbein, johann heinrich wilhelm]","[1778.0, 1798.0]","0","wga_tischbein, johann heinrich the younger, (1742-1808)","meisterwerke_tischbein, johann heinrich wilhelm",,,
+1314,86,"[tischbein, johann heinrich the younger]","[1742, 1808]","[tischbein, johann heinrich wilhelm]","[1778.0, 1798.0]",0,"wga_tischbein, johann heinrich the younger, (1742-1808)","meisterwerke_tischbein, johann heinrich wilhelm",,,
 1315,84,"[vollerdt, johann christian]","[1708, 1769]","[brand, johann christian]","[1744.0, 1760.0]","False","wga_vollerdt, johann christian, (1708-1769)","meisterwerke_brand, johann christian",,,
 1316,82,"[vollerdt, johann christian]","[1708, 1769]","[fiedler, johann christian]","[1750.0, 1750.0]","False","wga_vollerdt, johann christian, (1708-1769)","meisterwerke_fiedler, johann christian",,,
 1317,83,,,,,0,"googleart_m03d8f_","meisterwerke_vouet, simon (nachfolger)",,,
@@ -1329,3 +1327,69 @@
 1334,100,"[jensen, c. a., jensen, christian albrecht]","[1792, 1870]","[jensen, c. a., jensen, christian albrecht]","[1792, 1870]","True","wga_jensen, christian albrecht, (1792-1870)","meisterwerke_jensen, christian albrecht",,,
 1335,100,"[tamm, franz werner von, tamm, werner von, dam, dapprait, tamm, franz werner, aprêt, dapret, dapper, daprait, tamm, franz w., varnertam, francesco, daprêt]","[1658, 1724]","[aprêt, dam, dapper, dapprait, daprait, dapret, daprêt, tamm, franz w., tamm, franz werner, tamm, franz werner von, tamm, werner von, varnertam, francesco]","[1658, 1724]","True","wga_tamm, franz werner von, (1658-1724)","meisterwerke_tamm, franz werner von",,,
 1336,100,"[uhde, fritz karl hermann v., fritz von uhde, uhde, fritz van, uhde, friedrich karl hermann von, uhde, fritz von]","[1848, 1911]","[uhde, friedrich karl hermann von, uhde, fritz karl hermann v., uhde, fritz von]","[1848, 1911]","True","wga_uhde, fritz van, (1848-1911)","meisterwerke_uhde, fritz von",,,
+1337,100,"[weenix, jan, jan weenix]","[1640, 1719]","[weenix, jan]","[1642, 1719]",1,"googleart_m03fzgx","meisterwerke_weenix, jan",,,
+1338,100,"[polidoro caldera da caravaggio, caldara, polidoro, caravaggio, polidoro caldara da, polidoro da caravaggio]","[1499, 1543]","[caldara, polidoro, polidoro da caravaggio]","[1490, 1543]",1,"googleart_m03hh0m","meisterwerke_caldara, polidoro",,,
+1339,100,"[bian shoumin]","[1684, 1752]","[shoumin, bian]","[1725, 1747]",1,"googleart_m047d97q","meisterwerke_shoumin, bian",,,
+1340,100,"[ts'ao-t'ang, a cunha, p. Simon xavier, tao-jên, yü-shan, acunha, p. Simon xavier, p. Simon xavier acunha, mojingdaoren, wu li, t'ao-ch'i chü-shih, p. Simon xavier a cunha, wu, li]","[1631, 1718]","[shih-t'ao, tao chi]","[1641, 1720]",0,"googleart_m04dzpt6","meisterwerke_tao chi",,,
+1341,100,"[francesco raibolini]","[1450, 1517]","[eigentlich: francesco raibolini, francia, francesco]","[1448, 1517]",1,"googleart_m04l4pt","meisterwerke_francia, francesco",,,
+1342,100,"[sassoferrato, giovanni battista salvi da sassoferrato]","[1609, 1685]","[eigentlich: giovanni battista salvi, sassoferrato]","[1605, 1685]",1,"googleart_m04zl6z","meisterwerke_sassoferrato",,,
+1343,100,"[vicente juan masip, masip, vicente]","[1475, 1579]","[eigentlich: vicente juan masip, juanes, juan de]","[1523, 1579]",1,"googleart_m05l2qk","meisterwerke_juanes, juan de",,,
+1344,100,"[bril, paul, paul bril]","[1554, 1626]","[bril (auch brill), paulus, bril, paul]","[1556, 1626]",1,"googleart_m06gk6r","meisterwerke_bril, paul",,,
+1345,100,"[vincenzo carducci]","[1585, 1638]","[carducho, vicente, eigentlich: vincenzo carducci]","[1576, 1638]",1,"googleart_m071ksm","meisterwerke_carducho, vicente",,,
+1346,88,"[zha, shibiao, ch'a shih-piao, cha, shibiao, erzhan, meihe, zha shibiao, cha, erzhan]","[1615, 1698]","[k'un-ts'an, shih-ch'i]","[1610, 1693]",0,"googleart_m08d1md","meisterwerke_k'un-ts'an",,,
+1347,100,"[alberegno, jacobello]","[1360.0, 1397]","[alberegno, jacobello]","[1367, 1397]",1,"wga_alberegno, jacobello, (1397-1397)","meisterwerke_alberegno, jacobello",,,
+1348,100,"[antoniazzo romano]","[1430, 1508]","[antonio aquili, romano, antoniazzo]","[1430, 1512]",1,"wga_antoniazzo romano, (1430-1508)","meisterwerke_romano, antoniazzo",,,
+1349,100,"[francesco bassano the younger, bassano, francesco]","[1549, 1592]","[bassano, jacopo, eigentlich: jacopo da ponte. vater von francesco und leandro bassano]","[1510, 1592]",0,"wga_bassano, francesco, (1549-1592)","meisterwerke_bassano, jacopo",,,
+1350,100,"[bellotto, bernardo, bernardo bellotto, bernardo francesco paolo ernesto bellotto]","[1720, 1780]","[canaletto (ii), eigentlich: bernardo bellotto]","[1721, 1780]",1,"wga_bellotto, bernardo, (1720-1780)","meisterwerke_canaletto (ii)",,,
+1351,100,"[bellucci, antonio]","[1654, 1726]","[bellucci, antonio]","[1654, 1727]",1,"wga_bellucci, antonio, (1654-1726)","meisterwerke_bellucci, antonio",,,
+1352,100,"[belvedere, andrea]","[1652, 1732]","[belvedere, andrea]","[1646, 1732]",1,"wga_belvedere, andrea, (1652-1732)","meisterwerke_belvedere, andrea",,,
+1353,100,"[bergognone, ambrogio, ambrogio bergognone]","[1453, 1523]","[ambrogio da fossano, bergognone, ambrogio]","[1455, 1522]",1,"wga_bergognone, ambrogio, (1453-1523)","meisterwerke_bergognone, ambrogio",,,
+1354,96,"[bigot, trophîme]","[1600, 1650]","[bigot, trophime]","[1595, 1650]",1,"wga_bigot, trophîme, (1600-1650)","meisterwerke_bigot, trophime",,,
+1355,100,"[bonifacio veronese, bonifazio veronese]","[1487, 1557]","[bonifazio de' pitati, genannt: bonifazio veronese]","[1487, 1553]",1,"wga_bonifacio veronese, (1487-1557)","meisterwerke_bonifazio de' pitati",,,
+1356,100,"[capanna, puccio]","[1338, 1348]","[capanna, puccio]","[1310, 1350]",1,"wga_capanna, puccio, (1338-1348)","meisterwerke_capanna, puccio",,,
+1357,100,"[cesare da sesto]","[1477, 1523]","[cesare milanese, sesto, cesare da]","[1480, 1521]",1,"wga_cesare da sesto, (1477-1523)","meisterwerke_sesto, cesare da",,,
+1358,100,"[conca, sebastiano, sebastiano conca]","[1680, 1764]","[conca, sebastiano]","[1679, 1764]",1,"wga_conca, sebastiano, (1680-1764)","meisterwerke_conca, sebastiano",,,
+1359,100,"[conca, tommaso]","[1734, 1822]","[conca, tommaso]","[1735, 1822]",1,"wga_conca, tommaso, (1734-1822)","meisterwerke_conca, tommaso",,,
+1360,100,"[courtois, jacques]","[1621, 1676]","[courtois, jacques, le bourguignon]","[1621, 1675]",1,"wga_courtois, jacques, (1621-1676)","meisterwerke_courtois, jacques",,,
+1361,100,"[crivelli, vittore]","[1440, 1501]","[crivelli, vittore (und gehilfen), crivelli, vittorio (und gehilfen)]","[1440, 1502]",1,"wga_crivelli, vittore, (1440-1501)","meisterwerke_crivelli, vittorio (und gehilfen)",,,
+1362,100,"[dossi, battista]","[1490, 1548]","[dossi, dosso, eigentlich: giovanni battista luteri dossi]","[1480, 1542]",1,"wga_dossi, battista, (1490-1548)","meisterwerke_dossi, dosso",,,
+1363,102,"[dossi, dosso, dosso dossi, giovanni di niccolò de luteri]","[1490, 1542]","[dossi, dosso, eigentlich: giovanni battista luteri dossi]","[1480, 1542]",0,"wga_dossi, dosso, (1490-1542)","meisterwerke_dossi, dosso",,,
+1364,100,"[duccio, duccio di buoninsegna]","[1250.0, 1330.0]","[duccio di buoninsegna]","[1250, 1318]",1,"wga_duccio di buoninsegna, (1255-1319)","meisterwerke_duccio di buoninsegna",,,
+1365,100,"[eyck, hubert van]","[1425.0, 1426]","[eyck, hubert van]","[1370, 1426]",1,"wga_eyck, hubert van, (1426-1426)","meisterwerke_eyck, hubert van",,,
+1366,85,"[falda, giovanni battista, falda, joan b., falda, i. b., falti, johannes baptista, faltus, johannes baptista]","[1643, 1678]","[bacicca, gaulli, giovanni battista]","[1639, 1709]",0,"wga_falda, giovanni battista, (1643-1678)","meisterwerke_gaulli, giovanni battista",,,
+1367,85,"[falda, giovanni battista, falda, joan b., falda, i. b., falti, johannes baptista, faltus, johannes baptista]","[1643, 1678]","[eigentlich: giovanni battista salvi, sassoferrato]","[1605, 1685]",0,"wga_falda, giovanni battista, (1643-1678)","meisterwerke_sassoferrato",,,
+1368,100,"[vincenzo foppa, foppa, vincenzo]","[1427, 1515]","[foppa, vincenzo]","[1427, 1516]",1,"wga_foppa, vincenzo, (1427-1515)","meisterwerke_foppa, vincenzo",,,
+1369,102,"[francia, francesco]","[1450, 1517]","[eigentlich: francesco raibolini, francia, francesco]","[1448, 1517]",1,"wga_francia, francesco, (1450-1517)","meisterwerke_francia, francesco",,,
+1370,100,"[giambologna]","[1524, 1608]","[giambologna, giovanni da bologna]","[1529, 1608]",1,"wga_giambologna, (1524-1608)","meisterwerke_giovanni da bologna",,,
+1371,100,"[giovanni di pietro]","[1510.0, 1528]","[giovanni di pietro, spagna]","[1450, 1528]",1,"wga_giovanni di pietro, (1528-1528)","meisterwerke_spagna",,,
+1372,92,"[jacobello del bonomo]","[1375, 1385]","[jacobello di bonomo]","[1368, 1378]",1,"wga_jacobello del bonomo, (1375-1385)","meisterwerke_jacobello di bonomo",,,
+1373,100,"[joos van wassenhove]","[1460, 1476.0]","[eigentlich: joos van wassenhove, gent, justus van]","[1460, 1480]",1,"wga_joos van wassenhove, (1460-1460)","meisterwerke_gent, justus van",,,
+1374,100,"[masolino da panicale]","[1383, 1447]","[panicale, masolino da, tommaso di cristofano fini]","[1383, 1440]",1,"wga_masolino da panicale, (1383-1447)","meisterwerke_panicale, masolino da",,,
+1375,88,"[jean hey, master of moulins]","[1475, 1500]","[hay, jean]","[1480, 1505]",1,"wga_master of moulins, (1480-1500)","meisterwerke_hay, jean",,,
+1376,94,"[melone, altobello]","[1485, 1543]","[meloni, altobello]","[1517, 1527]",1,"wga_melone, altobello, (1485-1543)","meisterwerke_meloni, altobello",,,
+1377,100,"[memmi, lippo, lippo memmi, lippo di memmo di filippuccio]","[1290, 1350.0]","[memmi, lippo]","[1285, 1357]",1,"wga_memmi, lippo, (1285-1361)","meisterwerke_memmi, lippo",,,
+1378,100,"[nelli, ottaviano]","[1370, 1444]","[nelli, ottaviano]","[1375, 1444]",1,"wga_nelli, ottaviano, (1370-1444)","meisterwerke_nelli, ottaviano",,,
+1379,100,"[nuzi, allegretto]","[1318, 1373]","[nuzi, allegretto]","[1315, 1373]",1,"wga_nuzi, allegretto, (1318-1373)","meisterwerke_nuzi, allegretto",,,
+1380,100,"[orrente, pedro]","[1580, 1644]","[orrente, pedro de]","[1588, 1645]",1,"wga_orrente, pedro, (1580-1644)","meisterwerke_orrente, pedro de",,,
+1381,96,"[penni, giovan francesco]","[1496, 1528]","[il fattore, penni, giovanni francesco]","[1488, 1530]",1,"wga_penni, giovan francesco, (1496-1528)","meisterwerke_penni, giovanni francesco",,,
+1382,100,"[pietro da rimini]","[1324, 1338]","[rimini, pietro da]","[1300, 1350]",1,"wga_pietro da rimini, (1324-1338)","meisterwerke_rimini, pietro da",,,
+1383,86,"[pietro di giovanni di ambrogio, ambrosi, pietro di giovanni, pietro di giovann d' ambrogio, pietro di giovanni pucci, giovanni di pietro d'ambrogio, ambrogio, pietro di giovanni, pietro di giovanni d'ambrogio]","[1410, 1449]","[angelico, fra, beato angelico; fra giovanni da fiesole; guido di pietro]","[1387, 1455]",0,"wga_pietro di giovanni d'ambrogio, (1410-1449)","meisterwerke_angelico, fra",,,
+1384,100,"[santi, giovanni]","[1435, 1494]","[santi, giovanni]","[1430, 1494]",1,"wga_santi, giovanni, (1435-1494)","meisterwerke_santi, giovanni",,,
+1385,102,"[sassetta]","[1394, 1450]","[eigentlich: stefano di giovanni di consolo da cortona, sassetta]","[1392, 1450]",1,"wga_sassetta, (1394-1450)","meisterwerke_sassetta",,,
+1386,100,"[schongauer, martin, martin schongauer]","[1430, 1491]","[martin, martinus opifex]","[1450.0, 1450.0]",0,"wga_schongauer, martin, (1430-1491)","meisterwerke_martinus opifex",,,
+1387,88,"[tura, giovanni francesco]","[1485, 1546]","[il fattore, penni, giovanni francesco]","[1488, 1530]",0,"wga_tura, giovanni francesco, (1485-1546)","meisterwerke_penni, giovanni francesco",,,
+1388,88,"[tura, giovanni francesco]","[1485, 1546]","[caroto, giovanni francesco]","[1480, 1555]",0,"wga_tura, giovanni francesco, (1485-1546)","meisterwerke_caroto, giovanni francesco",,,
+1389,100,"[uyl, jan jansz. den, the elder]","[1595, 1639]","[uyl, jan jansz. den]","[1595, 1640]",1,"wga_uyl, jan jansz. den, the elder, (1595-1639)","meisterwerke_uyl, jan jansz. den",,,
+1390,100,"[andrea solario, andrea solario (solari), solario, andrea]","[1460, 1525]","[solario, andrea]","[1460, 1522]",1,"wiki_andrea-solario","meisterwerke_solario, andrea",,,
+1391,100,"[canaletto, giovanni antonio canal]","[1697, 1768]","[genannt: englischer canaletto, scott, samuel]","[1702, 1772]",0,"wiki_canaletto","meisterwerke_scott, samuel",,,
+1392,100,"[donatello, donato di niccolò di betto bardi]","[1386, 1466]","[donatello, donato di niccolò di betto bardi]","[1382, 1466]",1,"wiki_donatello","meisterwerke_donatello",,,
+1393,100,"[luca d'egidio di ventura, luca signorelli, signorelli, luca]","[1445, 1523]","[signorelli, luca]","[1450, 1523]",1,"wiki_luca-signorelli","meisterwerke_signorelli, luca",,,
+1394,100,"[piero di cosimo, piero di cosimo (piero di lorenzo)]","[1462, 1522]","[eigentlich: piero di lorenzo, piero di cosimo]","[1462, 1521]",1,"wiki_piero-di-cosimo","meisterwerke_piero di cosimo",,,
+1395,100,"[alessandro di mariano di vanni filipepi, botticelli, sandro, sandro botticelli]","[1444, 1510]","[botticelli, sandro, eigentlich: allessandro filipepi]","[1445, 1510]",1,"wiki_sandro-botticelli","meisterwerke_botticelli, sandro",,,
+1396,100,,,,,1,"googleart_m07dlfs","meisterwerke_mueller, otto",,,
+1397,,,,,,0,"googleart_m02rbv2y","meisterwerke_sassoferrato",,,
+1398,,,,,,0,"googleart_m0547qv","meisterwerke_harnett, william michael",,,
+1399,,,,,,0,"wga_carlone, giovanni battista, (1603-1684)","meisterwerke_sassoferrato",,,
+1400,,,,,,0,"wga_langetti, giovanni battista, (1635-1676)","meisterwerke_sassoferrato",,,
+1401,,,,,,1,"wga_niccolò da foligno, (1430-1502)","meisterwerke_alunno, niccolo",,,
+1402,,,,,,0,"wga_spinelli, giovanni battista, (1630-1660)","meisterwerke_sassoferrato",,,
