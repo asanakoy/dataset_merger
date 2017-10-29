@@ -183,7 +183,7 @@ def compute_sim_matrix(keys, artists_with_years_dict, n_jobs=1, num_blocks=None)
         num_rows = len(artists_with_years_dict[keys[0]])
         if num_blocks is None:
             print 'Num tasks: {}'.format(num_rows)
-            sim_rows = ParallelTqdm(n_jobs=n_jobs, max_nbytes=512, verbose=8)(total=num_rows)\
+            sim_rows = ParallelTqdm(n_jobs=n_jobs, max_nbytes=512, verbose=1)(total=num_rows)\
                 (delayed(compute_sim_for_row)(row_a[1], ns, num_cols)
                  for row_a in artists_with_years_dict[keys[0]].iterrows())
         else:
@@ -191,7 +191,7 @@ def compute_sim_matrix(keys, artists_with_years_dict, n_jobs=1, num_blocks=None)
             print 'Num tasks: {}'.format(num_blocks)
             assert num_blocks >= n_jobs
             slices = gen_even_slices(len(first_df), num_blocks)
-            sim_rows = ParallelTqdm(n_jobs=n_jobs, max_nbytes=512, verbose=35)(total=num_blocks) \
+            sim_rows = ParallelTqdm(n_jobs=n_jobs, max_nbytes=512, verbose=8)(total=num_blocks) \
                 (delayed(compute_sim_for_block)(first_df.iloc[s], ns, num_cols) for s in slices)
 
         sim_matrix = np.vstack(sim_rows)
