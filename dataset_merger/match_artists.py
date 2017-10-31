@@ -121,35 +121,40 @@ def get_sim_urls_wiki(url_a, url_b):
     return float(urls[0] == urls[1]) * 101
 
 
+def get_sim_between_rows(row_a, row_b):
+    names_a = row_a.artist_names
+    years_range_a = row_a.years_range
+    if hasattr(row_a, 'wikidata_qid') and hasattr(row_b, 'wikidata_qid') and \
+            not is_null_object(row_a.wikidata_qid) and not is_null_object(row_b.wikidata_qid):
+        cur_sim = (row_a.wikidata_qid.strip().lower() == row_b.wikidata_qid.strip().lower()) * 101
+    elif hasattr(row_a, 'url_wiki') and hasattr(row_b, 'url_wiki') and \
+         not is_null_object(row_a.url_wiki) and not is_null_object(row_b.url_wiki) and \
+         'wikipedia.org' in row_a.url_wiki and \
+         'wikipedia.org' in row_b.url_wiki:
+        cur_sim = get_sim_urls_wiki(row_a.url_wiki, row_b.url_wiki)
+    elif hasattr(row_a, 'artist_id_degruyter') and hasattr(row_b, 'artist_id_degruyter') and \
+         not is_null_object(row_a.artist_id_degruyter) and not is_null_object(row_b.artist_id_degruyter):
+        cur_sim = (row_a.artist_id_degruyter == row_b.artist_id_degruyter) * 101
+    else:
+        names_b = row_b.artist_names
+        years_range_b = row_b.years_range
+        years_sim = get_years_range_sim(years_range_a, years_range_b, max_dist=-1)
+        if years_sim < 0.5:
+            cur_sim = years_sim * 0.9
+        else:
+            names_sim = get_names_sim(names_a, names_b)
+            cur_sim = years_sim * names_sim
+    return cur_sim
+
+
 def compute_sim_for_row(row_a, ns, num_cols):
     if hasattr(ns, 'df'):
         artists_df_b = ns.df
     else:
         artists_df_b = ns
     cur_sim = np.zeros(num_cols)
-    names_a = row_a.artist_names
-    years_range_a = row_a.years_range
     for j, row_b in enumerate(artists_df_b.itertuples()):
-        if hasattr(row_a, 'wikidata_qid') and hasattr(row_b, 'wikidata_qid') and \
-                not is_null_object(row_a.wikidata_qid) and not is_null_object(row_b.wikidata_qid):
-            cur_sim[j] = (row_a.wikidata_qid.strip().lower() == row_b.wikidata_qid.strip().lower()) * 101
-        elif hasattr(row_a, 'url_wiki') and hasattr(row_b, 'url_wiki') and \
-                not is_null_object(row_a.url_wiki) and not is_null_object(row_b.url_wiki) and \
-                'wikipedia.org' in row_a.url_wiki and \
-                'wikipedia.org' in row_b.url_wiki:
-            cur_sim[j] = get_sim_urls_wiki(row_a.url_wiki, row_b.url_wiki)
-        elif hasattr(row_a, 'artist_id_degruyter') and hasattr(row_b, 'artist_id_degruyter') and \
-                not is_null_object(row_a.url_wiki) and not is_null_object(row_b.url_wiki):
-            cur_sim[j] = (row_a.artist_id_degruyter == row_b.artist_id_degruyter) * 101
-        else:
-            names_b = row_b.artist_names
-            years_range_b = row_b.years_range
-            years_sim = get_years_range_sim(years_range_a, years_range_b, max_dist=-1)
-            if years_sim < 0.5:
-                cur_sim[j] = years_sim * 0.9
-            else:
-                names_sim = get_names_sim(names_a, names_b)
-                cur_sim[j] = years_sim * names_sim
+        cur_sim[j] = get_sim_between_rows(row_a, row_b)
     return cur_sim
 
 
