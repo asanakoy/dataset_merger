@@ -794,7 +794,6 @@
 798,100,"[marmion, simon, simon marmion]","[1420, 1489]","[marmion, simon]","[1459.0, 1459.0]",1,"googleart_m0g3ny2","meisterwerke_marmion, simon","(4447, 1164)",61,"[39.0, 30.0]"
 799,100,"[droochsloot, joost cornelisz., joost cornelisz droochsloot]","[1586, 1666]","[droochsloot, joost cornelisz.]","[1654.0, 1654.0]",1,"wga_droochsloot, joost cornelisz., (1586-1666)","meisterwerke_droochsloot, joost cornelisz.","(4455, 488)",19,"[68.0, 12.0]"
 800,100,"[utrecht, adriaen van, adriaen van utrecht]","[1599, 1652]","[utrecht, adriaen van]","[1640.0, 1645.0]",1,"wga_utrecht, adriaen van, (1599-1652)","meisterwerke_utrecht, adriaen van","(4476, 2015)",15,"[41.0, 7.0]"
-801,100,"[joos van cleve, cleve, joos van]","[1485, 1541]","[cleve, joos van]","[1525.0, 1550.0]",0,"googleart_m0gp54j","meisterwerke_cleve, joos van","(4497, 380)",38,"[40.0, 9.0]"
 802,100,"[hyacinthe rigaud, rigaud, hyacinthe]","[1659, 1743]","[rigaud, hyacinthe]","[1701.0, 1715.0]",1,"googleart_m0gt69","meisterwerke_rigaud, hyacinthe","(4507, 1719)",63,"[42.0, 28.0]"
 803,100,"[poccetti, bernardino, bernardino poccetti]","[1548, 1612]","[poccetti, bernardino]","[1550.0, 1550.0]",1,"googleart_m0gwjfy","meisterwerke_poccetti, bernardino","(4518, 1625)",22,"[2.0, 62.0]"
 804,100,"[jan van os, os, jan van]","[1744, 1808]","[os, jan van]","[1780.0, 1780.0]",1,"googleart_m0gy18jq","meisterwerke_os, jan van","(4530, 1546)",12,"[36.0, 28.0]"
@@ -1044,7 +1043,6 @@
 1051,97,"[brakenburg, richard]","[1650, 1702]","[brakenburgh, richard]","[1650.0, 1650.0]",1,"wga_brakenburg, richard, (1650-1702)","meisterwerke_brakenburgh, richard",,,
 1052,100,"[bramante, donato]","[1444, 1514]","[bramante, donato]","[1477.0, 1477.0]",1,"wga_bramante, donato, (1444-1514)","meisterwerke_bramante, donato",,,
 1053,84,"[brand, johann christian]","[1722, 1795]","[fiedler, johann christian]","[1750.0, 1750.0]",0,"wga_brand, johann christian, (1722-1795)","meisterwerke_fiedler, johann christian",,,
-1054,100,"[brand, johann christian]","[1722, 1795]","[brand, johann christian]","[1744.0, 1760.0]",0,"wga_brand, johann christian, (1722-1795)","meisterwerke_brand, johann christian",,,
 1055,96,"[bray, dirck de]","[1651, 1678]","[bray, dirk de]","[1673.0, 1673.0]",1,"wga_bray, dirck de, (1651-1678)","meisterwerke_bray, dirk de",,,
 1056,100,"[breck, john leslie]","[1860, 1899]","[breck, john leslie]","[1890.0, 1890.0]",1,"wga_breck, john leslie, (1860-1899)","meisterwerke_breck, john leslie",,,
 1057,100,"[brinckmann, philipp hieronymus]","[1709, 1760]","[brinckmann, philipp hieronymus]","[1750.0, 1750.0]",1,"wga_brinckmann, philipp hieronymus, (1709-1760)","meisterwerke_brinckmann, philipp hieronymus",,,
@@ -1387,9 +1385,20 @@
 1394,100,"[piero di cosimo, piero di cosimo (piero di lorenzo)]","[1462, 1522]","[eigentlich: piero di lorenzo, piero di cosimo]","[1462, 1521]",1,"wiki_piero-di-cosimo","meisterwerke_piero di cosimo",,,
 1395,100,"[alessandro di mariano di vanni filipepi, botticelli, sandro, sandro botticelli]","[1444, 1510]","[botticelli, sandro, eigentlich: allessandro filipepi]","[1445, 1510]",1,"wiki_sandro-botticelli","meisterwerke_botticelli, sandro",,,
 1396,100,,,,,1,"googleart_m07dlfs","meisterwerke_mueller, otto",,,
-1397,,,,,,0,"googleart_m02rbv2y","meisterwerke_sassoferrato",,,
+1397,90,,,,,0,"googleart_m02rbv2y","meisterwerke_sassoferrato",,,
 1398,,,,,,0,"googleart_m0547qv","meisterwerke_harnett, william michael",,,
 1399,,,,,,0,"wga_carlone, giovanni battista, (1603-1684)","meisterwerke_sassoferrato",,,
 1400,,,,,,0,"wga_langetti, giovanni battista, (1635-1676)","meisterwerke_sassoferrato",,,
 1401,,,,,,1,"wga_niccolò da foligno, (1430-1502)","meisterwerke_alunno, niccolo",,,
 1402,,,,,,0,"wga_spinelli, giovanni battista, (1630-1660)","meisterwerke_sassoferrato",,,
+1403,,,,,,1,"wga_brand, johann christian, (1722-1795)","meisterwerke_brand, johann christian",,,
+1404,,,,,,1,"wga_ferrari, defendente, (1485-1540)","meisterwerke_ferrari, defendente",,,
+1405,,,,,,1,"wga_liss, johann, (1590-1631)","meisterwerke_liss, johann",,,
+1406,,,,,,1,"wga_gérard, françois, (1770-1837)","meisterwerke_gerard, francois pascal simon",,,
+1407,,,,,,1,"googleart_m0cy9m","meisterwerke_holbein d. j., hans (und werkstatt)",,,
+1408,,,,,,1,"googleart_m0gp54j","meisterwerke_cleve, joos van",,,
+1409,,,,,,1,"wga_boilly, louis léopold, (1761-1845)","meisterwerke_boilly, louis-leopold",,,
+1410,,,,,,1,"wga_siciolante da sermoneta, girolamo, (1521-1575)","meisterwerke_siciolante, gerolamo",,,
+1411,,,,,,1,"googleart_m03hh23","meisterwerke_barocci, federico",,,
+1412,,,,,,1,"wga_malouel, jean, (1397-1415)","meisterwerke_malouel, jean",,,
+1413,,,,,,0,"wga_francesco di antonio del chierico, (1433-1484)","meisterwerke_michelino, domenico di",,,
