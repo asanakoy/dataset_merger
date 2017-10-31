@@ -105,7 +105,9 @@ def get_names_sim(names_a, names_b):
     scores = list()
     for a in names_a:
         for b in names_b:
-            scores.append(fuzz.token_set_ratio(a, b))
+            scores.append(fuzz.token_set_ratio(a, b,
+                                               force_ascii=False  # Don't ignore non-ascii symbols
+                                               ))
     return max(scores)
 
 
