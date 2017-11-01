@@ -4,6 +4,7 @@ import time
 import warnings
 from collections import namedtuple
 from collections import defaultdict
+import importlib
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
@@ -18,49 +19,67 @@ from eval.feature_extractor_tf import FeatureExtractorTf
 
 warnings.filterwarnings('ignore', category=pd.io.pytables.PerformanceWarning)
 
-ARTISTS_VERSION = '0.92'
-VERSION = '0.92'
+ARTISTS_VERSION = '1.00'
+VERSION = '1.00'
 output_dir = '/export/home/asanakoy/workspace/dataset_merger/aggregated/info'
 
 
 def get_duplicate_groups(image_handles, dist_matrix):
-    # todo: do not remove more than one duplicate from the same dataset
+    """
 
-    unique_image_groups = list()
+    Args:
+        image_handles: list, contains image handles (dataset_name, image_id)
+        dist_matrix: matrix len(image_handles) x len(image_handles) of distances between images
+
+    Returns:
+         image_duplicate_groups: list, each element is an image group.
+            Image group is a list of image handles which are considered as duplicates.
+
+    """
+    image_duplicate_groups = list()
     for i in tqdm(xrange(len(image_handles)), desc='search for unique images'):
-        if dist_matrix[i, i] == 0:
+        cur_dataset = image_handles[i][0]
+        if dist_matrix[i, i] == 0:  # image was not assigned to any group yet
             cur_images_group = [image_handles[i]]
+            # To keep track the number of images per dataset in teh current group.
+            # Don't remove add to the group more than one image from the same dataset.
+            cur_group_images_per_dataset = defaultdict(int)
+
             for j in xrange(i + 1, len(image_handles)):
-                if dist_matrix[i, j] <= 0.1 and image_handles[i][0] != image_handles[j][0]:  # 5% of closest, different datasets
+                duplicate_dataset = image_handles[j][0]
+                if (dist_matrix[i, j] <= 0.1 and cur_dataset != duplicate_dataset and   # 5% of closest, different datasets. Distance is in [0, 2]
+                   cur_group_images_per_dataset[duplicate_dataset] == 0):
+                    cur_group_images_per_dataset[duplicate_dataset] += 1
                     cur_images_group.append(image_handles[j])
                     dist_matrix[j, :] = 100  # eliminate row
                     dist_matrix[:, j] = 100  # eliminate row
-            unique_image_groups.append(cur_images_group)
-    return unique_image_groups
+            image_duplicate_groups.append(cur_images_group)
+    return image_duplicate_groups
 
 
 def get_unique_images(image_handles, artist_id, snapshot_path=None, extractor=None):
     """
 
     Args:
-        image_handles: lsit of image handles (dataset_name, image_id)
-        snapshot_path: net snapshot path
+        image_handles: list, contains image handles (dataset_name, image_id)
+        snapshot_path: net snapshot path to use for feature extraction
 
     Returns:
-        - list of unique image handles
-        - list of unique image groups (each group contain all handles of duplicates)
+        image_handles: list of image handles representing unique images (without duplicates).
+            Essentially contains the first element from each image duplicate group.
+        image_duplicate_groups: list, each element is an image group.
+            Image group is a list of image handles which are considered as duplicates.
     """
 
     num_datasets = len(np.unique([x[0] for x in image_handles]))
     if num_datasets == 1:
         return image_handles, [[x] for x in image_handles]
 
-    # TODO: calculate between blocks only
-
     image_paths = list()
     for handle in image_handles:
         dataset_name, image_id = handle
-        image_paths.append(join(art_datasets.read.crops_dir[dataset_name],
+        module_info = importlib.import_module(dataset_name + '.info')
+        image_paths.append(join(module_info.crops_dir(),
                                 image_id + u'.{}'.format(art_datasets.read.image_ext(dataset_name))))
 
     net_args = {'gpu_memory_fraction': 0.75,
@@ -81,12 +100,12 @@ def get_unique_images(image_handles, artist_id, snapshot_path=None, extractor=No
     assert np.max(dist_matrix) <= 2.0, np.max(dist_matrix)
     assert np.all(np.diagonal(dist_matrix) == 0), np.diagonal(dist_matrix)
 
-    unique_image_groups = get_duplicate_groups(image_handles, dist_matrix)
-    total_images_used = len([x for gr in unique_image_groups for x in gr])
+    image_duplicate_groups = get_duplicate_groups(image_handles, dist_matrix)
+    total_images_used = len([x for gr in image_duplicate_groups for x in gr])
     assert total_images_used == len(image_handles), '{}:: {} != {}'.format(
         artist_id, total_images_used, len(image_handles))
 
-    return [x[0] for x in unique_image_groups], unique_image_groups
+    return [x[0] for x in image_duplicate_groups], image_duplicate_groups
 
 
 def group_duplicates(dfs, artists_df, snapshot_path, output_dir):
@@ -99,13 +118,13 @@ def group_duplicates(dfs, artists_df, snapshot_path, output_dir):
         output_dir:
 
     Returns:
-        dictionary artist_id: (list of groups of duplicate works)
+        dictionary, {artist_id: (list of groups of duplicate works)}
 
     """
     save_path = join(output_dir, 'unique_images_per_artist_v{}.h5'.format(VERSION))
     if os.path.exists(save_path):
-        unique_image_handles = dd.io.load(save_path)
-        return unique_image_handles
+        image_duplicate_groups = dd.io.load(save_path)
+        return image_duplicate_groups
 
     net_args = {'gpu_memory_fraction': 0.96,
                 'conv5': 'conv5/conv:0', 'fc6':
@@ -114,8 +133,11 @@ def group_duplicates(dfs, artists_df, snapshot_path, output_dir):
                                    mean_path=None,
                                    net_args=net_args)
 
+    # image_handles['some-artist-id-from-the-merged-dataset'] is a list of
+    # pairs [(original_dataset_name, image_id), ...]. Essentially it's a list of all images
+    # (counting duplicates as well) belonging to a specific artist.
     image_handles = dict()
-    unique_image_handles = dict()
+    image_duplicate_groups = dict()
     print 'merged artists:', len(artists_df)
     for row in tqdm(artists_df[:].itertuples(), total=len(artists_df)):
         #     print row.artist_id, row.artist_ids
@@ -127,15 +149,15 @@ def group_duplicates(dfs, artists_df, snapshot_path, output_dir):
             cur_image_ids = zip([dataset_name] * len(cur_image_ids), cur_image_ids)
             #         print '{}: {}'.format(artist_id_short, len(cur_image_ids))
             image_handles[row.artist_id].extend(cur_image_ids)
-        _, unique_image_handles[row.artist_id] = get_unique_images(image_handles[row.artist_id],
+        _, image_duplicate_groups[row.artist_id] = get_unique_images(image_handles[row.artist_id],
                                                                    row.artist_id,
                                                                    snapshot_path, extractor=extractor)
 
     import tables
     warnings.filterwarnings('ignore', category=tables.NaturalNameWarning)
-    dd.io.save(save_path, unique_image_handles)
+    dd.io.save(save_path, image_duplicate_groups)
     print 'Saved.'
-    return unique_image_handles
+    return image_duplicate_groups
 
 
 def get_artwork_object(dfs, image_handle):
@@ -163,13 +185,37 @@ def combine_artworks(objects_list):
     return new_object
 
 
-def create_artworks_df(dfs, artists_df, unique_image_handles, output_dir):
-    objects = list()
+def create_artworks_df(dfs, artists_df, image_duplicate_groups_per_artist, output_dir):
+    """
+    Create a dataframe with unique works info.
+    Merge metadata of duplicated works and remove duplicates.
+    Args:
+        dfs:
+        artists_df:
+        image_duplicate_groups_per_artist:
+        output_dir:
 
-    cnt = 0
+    Returns:
+        unique_artworks_df: DataFrame, containing info about unique works.
+
+    """
+    # key=lambda tup: tup[1])
+    priority = {
+        'wikiart': 0,
+        'wiki': 0,
+        'googleart': 1,
+        'rijks': 1,
+        'moma': 2,
+        'artuk': 3,
+        'wga': 4,
+        'meisterwerke:': 5,
+    }
     new_artwork_objects = list()
-    for artist_id, image_groups in tqdm(unique_image_handles.iteritems()):
+    for artist_id, image_groups in tqdm(image_duplicate_groups_per_artist.iteritems()):
         for group in image_groups:
+            # To take prototype for group not from 'wga' and 'meisterwerke' if possible we sort
+            # handles according to dataset priority
+            group.sort(key=lambda g: priority[g[0]])
             objects = [get_artwork_object(dfs, x) for x in group]
             new_object = combine_artworks(objects)
             new_object['artist_id'] = artist_id
@@ -177,9 +223,6 @@ def create_artworks_df(dfs, artists_df, unique_image_handles, output_dir):
             new_object['years_range'] = artists_df.loc[artist_id, 'years_range']
             new_object['image_id'] = group[0][1]
             new_object['source'] = group[0][0]
-            if new_object['source'] == 'wga' and len(group) > 1:
-                new_object['image_id'] = group[1][1]
-                new_object['source'] = group[1][0]
             new_object['duplicate_ids'] = map(lambda x: x[0] + '_' + x[1], group)
 
             new_artwork_objects.append(new_object)
@@ -196,23 +239,17 @@ def main():
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
-    dataset_name = 'wiki+googleart+wga+meisterwerke'
+    dataset_name = 'wiki+googleart+wga+meisterwerke+moma+artuk+rijks'
     # artists_df can be generated with match_artists.ipynb
     artists_df = pd.read_hdf(
         '/export/home/asanakoy/workspace/dataset_merger/aggregated/info/artists_{}_v{}.hdf5'.format(
             dataset_name, ARTISTS_VERSION))
 
-    datasets = ['wiki', 'googleart', 'wga', 'meisterwerke']
+    datasets = ['wiki', 'artuk', 'googleart', 'moma', 'rijks', 'wga', 'meisterwerke']
     dfs = read_datasets(datasets)
 
-    artists_with_years_dict = dict()
-    artists_with_years_dict['googleart'] = get_artists_with_years('googleart', dfs)
-    artists_with_years_dict['wiki'] = get_artists_with_years('wiki', dfs)
-    artists_with_years_dict['wga'] = get_artists_with_years('wga', dfs)
-    artists_with_years_dict['meisterwerke'] = get_artists_with_years('meisterwerke', dfs)
-
-    unique_image_handles = group_duplicates(dfs, artists_df, snapshot_path, output_dir)
-    unique_artworks_df = create_artworks_df(dfs, artists_df, unique_image_handles, output_dir)
+    image_duplicate_groups = group_duplicates(dfs, artists_df, snapshot_path, output_dir)
+    unique_artworks_df = create_artworks_df(dfs, artists_df, image_duplicate_groups, output_dir)
     assert not unique_artworks_df.index.has_duplicates
     unique_artworks_df.to_hdf(join(output_dir, 'artworks_{}_v{}.hdf5'.format(dataset_name,
                                                                              VERSION)),
