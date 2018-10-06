@@ -21,8 +21,8 @@ from eval.feature_extractor_tf import FeatureExtractorTf
 
 warnings.filterwarnings('ignore', category=pd.io.pytables.PerformanceWarning)
 
-ARTISTS_VERSION = '1.01'
-VERSION = '1.01'
+ARTISTS_VERSION = '1.02'
+VERSION = '1.02'
 output_dir = expanduser('~/workspace/artnet/info')
 
 
@@ -236,7 +236,8 @@ def create_artworks_df(dfs, artists_df, image_duplicate_groups_per_artist, outpu
         'meisterwerke': 5,
     }
     new_artwork_objects = list()
-    for artist_id, image_groups in tqdm(image_duplicate_groups_per_artist.iteritems()):
+    for artist_id, image_groups in tqdm(image_duplicate_groups_per_artist.iteritems(),
+                                        total=len(image_duplicate_groups_per_artist)):
         for group in image_groups:
             # To take prototype for group not from 'wga' and 'meisterwerke' if possible we sort
             # handles according to dataset priority
